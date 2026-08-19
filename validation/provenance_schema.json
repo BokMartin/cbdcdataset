@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "run_id", "call_id", "ts_utc", "layer", "git_commit",
+    "corpus_manifest_sha256", "split_sha256", "prompt_sha256", "prompt_file",
+    "codebook_sha256", "provider", "api_endpoint", "api_version",
+    "model_requested", "model_returned", "provider_request_id", "params",
+    "doc_id", "doc_sha256", "page", "chunk_id", "chunk_start", "chunk_end",
+    "page_text_sha256", "input_sha256", "request_body", "response_raw",
+    "parsed_output", "json_schema_sha256", "schema_valid", "parser_version",
+    "post_processing_rules_version", "usage", "latency_ms", "finish_reason",
+    "status_code", "attempts", "retry_backoff_ms", "errors", "runtime",
+    "redaction_policy"
+  ],
+  "properties": {
+    "schema_valid": {"type": "boolean"},
+    "page": {"type": "integer", "minimum": 1},
+    "chunk_start": {"type": "integer", "minimum": 0},
+    "chunk_end": {"type": "integer", "minimum": 0},
+    "latency_ms": {"type": "number", "minimum": 0},
+    "status_code": {"type": "integer"},
+    "attempts": {"type": "integer", "minimum": 1},
+    "retry_backoff_ms": {"type": "number", "minimum": 0},
+    "errors": {"type": "array"},
+    "params": {"type": "object"},
+    "usage": {"type": "object"},
+    "runtime": {"type": "object"}
+  },
+  "additionalProperties": true,
+  "x-storage": "archive/{layer}_{YYYYMMDD}_{run_id}.jsonl",
+  "x-integrity": "RUN_{run_id}.json contains the cumulative SHA-256 row hash-chain"
+}

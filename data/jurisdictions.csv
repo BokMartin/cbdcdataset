@@ -1,0 +1,50 @@
+jur,iso3,country,net_privacy_posture,cluster
+AE,ARE,United Arab Emirates,0.0343,financial_inclusion
+AM,ARM,Armenia,0.0,financial_inclusion
+AU,AUS,Australia,0.1086,sovereignty_competition
+AW,ABW,Aruba,0.0407,financial_inclusion
+BIS,BIS,International standard-setters (BIS / IMF / FSB),0.0053,monetary_transmission
+BO,BOL,Bolivia,-0.1875,financial_inclusion
+BR,BRA,Brazil,0.0179,monetary_transmission
+BS,BHS,Bahamas,-0.0439,financial_inclusion
+CA,CAN,Canada,0.0508,sovereignty_competition
+CN,CHN,China,0.0766,state_control
+CO,COL,Colombia,0.0,monetary_transmission
+CZ,CZE,Czech Republic,0.0479,sovereignty_competition
+DK,DNK,Denmark,0.025,cash_substitution
+ECCU,ECCU,Eastern Caribbean (OECS / ECCU),0.0625,financial_inclusion
+ES,ESP,Spain,0.0,sovereignty_competition
+EU,EMU,Euro Area,0.1098,sovereignty_competition
+FR,FRA,France,0.0,
+GH,GHA,Ghana,0.1924,financial_inclusion
+HK,HKG,Hong Kong,0.1419,sovereignty_competition
+HU,HUN,Hungary,0.0585,sovereignty_competition
+ID,IDN,Indonesia,0.0643,monetary_transmission
+IL,ISR,Israel,0.2539,sovereignty_competition
+IN,IND,India,0.1154,monetary_transmission
+IS,ISL,Iceland,0.1105,cash_substitution
+IT,ITA,Italy,0.1215,sovereignty_competition
+JP,JPN,Japan,0.0516,sovereignty_competition
+MG,MDG,Madagascar,0.0238,financial_inclusion
+MO,MAC,Macau,0.0344,monetary_transmission
+NA,NAM,Namibia,,
+NO,NOR,Norway,0.0597,cash_substitution
+NZ,NZL,New Zealand,0.1038,cash_substitution
+PE,PER,Peru,0.0921,monetary_transmission
+PH,PHL,Philippines,0.0312,monetary_transmission
+PW,PLW,Republic of Palau,-0.2222,financial_inclusion
+PY,PRY,Banco Central del Paraguay (2024 design paper) — composite,-0.3636,financial_inclusion
+RU,RUS,Russian Federation,0.1222,state_control
+RW,RWA,Rwanda,0.0,financial_inclusion
+SE,SWE,Sweden,0.0824,cash_substitution
+SG,SGP,Singapore,0.0035,sovereignty_competition
+SZ,SWZ,Eswatini,0.1169,financial_inclusion
+TH,THA,Thailand,0.1056,monetary_transmission
+TR,TUR,Turkey,0.1364,financial_inclusion
+TT,TTO,Trinidad and Tobago,0.0217,monetary_transmission
+UA,UKR,Ukraine,0.0789,financial_inclusion
+UK,GBR,United Kingdom,0.1529,sovereignty_competition
+UN,UNI,International / cross-border bodies (UN-system),0.0053,monetary_transmission
+US,USA,United States,0.1278,sovereignty_competition
+UY,URY,Uruguay,0.0263,monetary_transmission
+ZA,ZAF,South Africa,-0.04,monetary_transmission

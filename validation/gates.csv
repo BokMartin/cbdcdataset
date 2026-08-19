@@ -1,0 +1,11 @@
+id,metric,point_threshold,ci_threshold,minimum_n,scope,status
+P0,Series 3 boundary,,,,prospective corpus,open
+E1,extraction recall,>=0.90,lower>=0.85,,probability pages,pending
+E2,subgroup extraction recall,>=0.85,,15,language OCR long,pending
+E3,extraction precision and workload,>=0.80,,,candidate count<=3x gold,pending
+S1,span fidelity,>=0.95,,,exact+normalized; audit normalized,pending
+T1,translation meaning preservation,>=0.95,,40,bilingual pairs,pending
+C1,classification recall,>=0.80,,15,PRIV.* and AML.LIMIT; rare-code census,pending
+C2,kept-drop false-negative rate,<=0.10,,,blind kept+dropped sample,pending
+R1,repeated-run span agreement,>=0.90,,,three calibration runs; per-language,pending
+G1,gold evidence,,,150,probability sample then sealed reserve,pending

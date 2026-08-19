@@ -1,0 +1,28 @@
+{
+ "gated": {
+  "sovereignty_competition": 12,
+  "state_control": 11,
+  "payment_modernization": 9,
+  "financial_inclusion": 9,
+  "monetary_transmission": 7
+ },
+ "ungated": {
+  "state_control": 10,
+  "sovereignty_competition": 9,
+  "cash_substitution": 9,
+  "payment_modernization": 8,
+  "financial_inclusion": 6,
+  "monetary_transmission": 6
+ },
+ "cash_dominants_ungated": [
+  "FR",
+  "GH",
+  "IN",
+  "IS",
+  "MG",
+  "NZ",
+  "SE",
+  "SZ",
+  "UY"
+ ]
+}
