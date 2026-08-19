@@ -4,6 +4,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -71,7 +72,16 @@ def main():
         "figures/centres.png", "figures/privacy_components.png", "paper/current.docx", "paper/current.pdf",
     ]:
         require((ROOT / path).is_file() and (ROOT / path).stat().st_size > 0, path)
-    print("verify: 27 checks passed")
+    expected_figures = {
+        "correlations.png": (1839, 1120),
+        "composition.png": (1824, 2400),
+        "centres.png": (2100, 2200),
+        "privacy_components.png": (1967, 2976),
+    }
+    for name, size in expected_figures.items():
+        with Image.open(ROOT / "figures" / name) as image:
+            require(image.mode == "RGB" and image.size == size, f"figure format: {name}")
+    print("verify: checks passed")
 
 
 if __name__ == "__main__":
