@@ -17,7 +17,10 @@ def main():
     for line in (ROOT / "checksums.sha256").read_text(encoding="utf-8").splitlines():
         expected, name = line.split(maxsplit=1)
         path = ROOT / name.strip()
-        require(hashlib.sha256(path.read_bytes()).hexdigest() == expected, f"checksum: {name}")
+        content = path.read_bytes()
+        if path.suffix.lower() in {".csv", ".json", ".sha256"}:
+            content = content.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+        require(hashlib.sha256(content).hexdigest() == expected, f"checksum: {name}")
     schema = json.loads((ROOT / "validation/provenance_schema.json").read_text(encoding="utf-8"))
     require(schema.get("type") == "object" and len(schema.get("required", [])) >= 40, "provenance schema")
     candidates = pd.read_csv(ROOT / "data/candidates.csv", keep_default_na=False)
