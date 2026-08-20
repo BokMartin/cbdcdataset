@@ -6,7 +6,7 @@
     "candidates_sha256": "df44cc8caf5199c6cf1c7081fde5e2a48c9077203d409786b4bc1c93ba9b4059",
     "candidates_canonical_lf_sha256": "e8f35133ab0b3c57aba5e66e475fff62d8561133465008ae529f06d3dcb83721",
     "gold": "validation\\human_gold\\gold_extraction_martin_v10f.csv",
-    "gold_sha256": "915519db78df7441e424452293c16de8f2ecc6e1dea7d9d9461c5f199cb25719"
+    "gold_sha256": "d1e5c729b94fd693cf7bf6a19d0dd603864f528d6a2ac1ed3f4f0e06fee1a422"
   },
   "matching": {
     "unit": "candidate quote to one human paragraph on the same doc_id and page",
@@ -152,14 +152,14 @@
     "probability_partial_kept": {
       "matched": 5,
       "total": 30,
-      "missing_phrase_notes": 29
+      "without_optional_phrase_note": 29
     }
   },
   "limitations": [
-    "All 351 gold paragraphs are labelled; the artifact is not yet frozen.",
-    "33 partial-positive rows still lack the phrase note required for phrase-level verification.",
+    "All 351 gold export rows are labelled or explicitly excluded; the artifact is not yet frozen.",
+    "33 partial-positive rows have no optional phrase note; they remain valid paragraph-level positives, while exact-span validity requires manual adjudication.",
     "Metrics cover only sampled pages present in the human-gold workbook, not the full corpus.",
-    "Three stress_ocr_zerotext pages in the workbook differ from validation/sample.csv and are excluded as skip_language.",
+    "Three canonical stress_ocr_zerotext pages are verified structural blanks and excluded from semantic metrics under administrative correction GOLD-CORR-001.",
     "Second independent LLM extraction and the human second-coder decision remain pending."
   ]
 }

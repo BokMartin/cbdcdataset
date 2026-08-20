@@ -14,6 +14,7 @@ ALLOWED = {
     "NE-bez nosné info",
     "NE-cizí CBDC/research",
     "skip_language",
+    "structural_blank",
 }
 
 
@@ -34,6 +35,7 @@ def main():
     require((gold["included"].astype(str) == "1").sum() == counts["positive"], "gold positive count")
     require((gold["included"].astype(str) == "0").sum() == counts["negative"], "gold negative count")
     require((gold["label"] == "skip_language").sum() == counts["skip_language"], "gold language skips")
+    require((gold["label"] == "structural_blank").sum() == counts["structural_blank"], "gold structural blanks")
     require((gold["label"] == "").sum() == counts["unmarked"], "gold unmarked count")
     require((gold["label"] == "ANO-částečně").sum() == counts["partial_positive"], "gold partial count")
     partial_without_note = (gold["label"].eq("ANO-částečně") & gold["note"].eq("")).sum()
@@ -41,17 +43,37 @@ def main():
     unresolved = gold.loc[gold["label"].eq(""), "workbook_row"].astype(int).tolist()
     require(unresolved == manifest["unmarked_workbook_rows"], "gold unresolved rows")
     sample = pd.read_csv(ROOT / "validation/sample.csv", keep_default_na=False)
+    page_manifest = pd.read_csv(ROOT / "validation/page_manifest.csv", keep_default_na=False)
     gold_pages = set(zip(gold["doc_id"], gold["page"].astype(int)))
-    sample_pages = set(zip(sample["doc_id"], sample["page"].astype(int)))
-    mismatches = sorted(f"{doc_id}|{page}" for doc_id, page in gold_pages - sample_pages)
-    require(mismatches == manifest["sample_page_mismatches"], "gold/sample page mismatch")
+    sampled = sample[sample["stratum"].ne("reserve_sealed")]
+    sample_pages = set(zip(sampled["doc_id"], sampled["page"].astype(int)))
+    require(gold_pages == sample_pages, "gold must cover the canonical unsealed sample")
+    require(gold["gold_id"].nunique() == counts["pages"], "gold page count")
+
+    blanks = gold[gold["label"].eq("structural_blank")]
+    blank_pages = set(zip(blanks["doc_id"], blanks["page"].astype(int)))
+    documented = {
+        (row["doc_id"], int(row["page"]))
+        for correction in manifest["administrative_corrections"]
+        for row in correction["added_machine_rows"]
+    }
+    require(blank_pages == documented, "documented structural blanks")
+    blank_manifest = page_manifest[
+        page_manifest.apply(lambda row: (row["doc_id"], int(row["page"])) in blank_pages, axis=1)
+    ]
+    require(len(blank_manifest) == counts["structural_blank"], "structural blank manifest rows")
+    require((pd.to_numeric(blank_manifest["chars"]) == 0).all(), "structural blank text")
+    require(blank_manifest["ocr_needed"].astype(str).str.lower().isin(["true", "1"]).all(), "structural blank OCR flag")
+    require(blank_manifest["render_sha256"].ne("").all(), "structural blank render evidence")
+    require(manifest["sample_page_mismatches"] == [], "gold/sample mismatch must be empty")
     require(manifest["status"] == "labels_complete_unfrozen", "unexpected gold status")
     print(
         "human gold: labels_complete_unfrozen; "
         f"positive={counts['positive']}; negative={counts['negative']}; "
         f"skip={counts['skip_language']}; unmarked={counts['unmarked']}; "
-        f"partial_without_note={counts['partial_without_note']}; "
-        f"sample_page_mismatches={len(mismatches)}"
+        f"structural_blank={counts['structural_blank']}; "
+        f"partial_without_optional_note={counts['partial_without_note']}; "
+        "sample_page_mismatches=0"
     )
 
 

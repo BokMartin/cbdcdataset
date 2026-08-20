@@ -11,7 +11,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 POSITIVE = {"ANO", "ANO-částečně"}
-SKIP = {"", "skip_language"}
+SKIP = {"", "skip_language", "structural_blank"}
 
 
 def resolve(path):
@@ -259,14 +259,14 @@ def main():
     if unmarked_count:
         limitations.append(f"Gold has {unmarked_count} unresolved labels.")
     else:
-        limitations.append("All 351 gold paragraphs are labelled; the artifact is not yet frozen.")
+        limitations.append("All 351 gold export rows are labelled or explicitly excluded; the artifact is not yet frozen.")
     if partial_without_note:
         limitations.append(
-            f"{partial_without_note} partial-positive rows still lack the phrase note required for phrase-level verification."
+            f"{partial_without_note} partial-positive rows have no optional phrase note; they remain valid paragraph-level positives, while exact-span validity requires manual adjudication."
         )
     limitations.extend([
         "Metrics cover only sampled pages present in the human-gold workbook, not the full corpus.",
-        "Three stress_ocr_zerotext pages in the workbook differ from validation/sample.csv and are excluded as skip_language.",
+        "Three canonical stress_ocr_zerotext pages are verified structural blanks and excluded from semantic metrics under administrative correction GOLD-CORR-001.",
         "Second independent LLM extraction and the human second-coder decision remain pending.",
     ])
     summary = {
@@ -312,7 +312,7 @@ def main():
             "probability_partial_kept": {
                 "matched": int((probability["label"].eq("ANO-částečně") & probability["matched_kept"]).sum()),
                 "total": int(probability["label"].eq("ANO-částečně").sum()),
-                "missing_phrase_notes": int((probability["label"].eq("ANO-částečně") & probability["note"].eq("")).sum()),
+                "without_optional_phrase_note": int((probability["label"].eq("ANO-částečně") & probability["note"].eq("")).sum()),
             },
         },
         "limitations": limitations,

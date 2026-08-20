@@ -50,7 +50,7 @@ def main():
     )
     require(
         set(open_items.loc[open_items["status"].isin(["open", "required_pending", "deferred_open"]), "item_id"])
-        == {"GOLD-002", "GOLD-003", "LLM-002", "HUMAN-002"},
+        == {"LLM-002", "HUMAN-002"},
         "open validation items",
     )
     require(codebook["code"].nunique() == 35 and codebook["family"].nunique() == 16, "codebook shape")
