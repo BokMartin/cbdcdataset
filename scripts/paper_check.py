@@ -58,7 +58,11 @@ def main():
         "entity framing": "forty-seven jurisdictions and two institutional composites" in text,
         "robustness": all(robustness[key]["shadow"]["r"] < -0.2 for key in ["headline", "decision_only", "document_balanced", "min8_privacy_statements", "wholesale_excluded"]) and robustness["lodo_range"]["shadow"]["max"] < -0.2,
         "page limit": len(PdfReader(ROOT / "paper/current.pdf").pages) <= 12,
-        "stage counts": "thirteen active and twenty-three paused" in text and stages["stage_final"].value_counts().to_dict().get("active_research") == 13 and stages["stage_final"].value_counts().to_dict().get("paused_research") == 23,
+        "stage counts": all(phrase in text for phrase in [
+            "one live deployment", "ten pilots", "thirteen active research programmes",
+            "twenty-two paused programmes", "one cancelled project",
+        ]) and stages["stage_final"].value_counts().to_dict().get("active_research") == 13 and stages["stage_final"].value_counts().to_dict().get("paused_research") == 22 and stages["stage_final"].value_counts().to_dict().get("cancelled") == 1,
+        "DCash cancellation": "The cancelled case is DCash 2.0" in text and "ECCU remains in the historical design analysis" in text,
         "vocabulary democracy": decimal(text, audit["pairwise"]["vocabulary"]["vdem"]["r"]),
         "posture democracy": decimal(text, audit["pairwise"]["commitment"]["vdem"]["r"]),
         "posture shadow economy": decimal(text, audit["pairwise"]["commitment"]["shadow"]["r"]),

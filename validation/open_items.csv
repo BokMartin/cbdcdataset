@@ -1,0 +1,7 @@
+item_id,phase,status,owner,required_before,action
+GOLD-001,human_gold,complete,Martin,gold_freeze,"Rows 269 and 336 completed as NE-bez nosné info"
+GOLD-002,human_gold,open,Martin,gold_freeze,"Identify the relevant phrase in notes for 33 partial-positive rows"
+GOLD-003,human_gold,open,authors,gold_freeze,"Reconcile three stress_ocr_zerotext workbook pages with validation/sample.csv"
+LLM-002,extraction,required_pending,independent LLM,final_analysis,"Run the same frozen extraction protocol and archive a blinded comparison"
+HUMAN-002,human_validation,deferred_open,Martin and Dominik,submission,"Decide whether Dominik performs a blinded audit; otherwise declare the single-coder limitation"
+GATES-001,validation,pending,authors,API_runs,"Sign gates only after frozen gold and reviewer clearance"

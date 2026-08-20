@@ -1,0 +1,43 @@
+{
+  "schema": "human_gold_manifest_v1",
+  "coder": "Martin Bok",
+  "coder_count": 1,
+  "received_date": "2026-08-20",
+  "status": "labels_complete_unfrozen",
+  "unit": "paragraph",
+  "source_workbook": "validation/human_gold/source/GOLD_EXTRACTION_v10final_MARTIN.xlsx",
+  "source_sha256": "a0c7243a439bc9c838a7fa26e113ff47a46f3e9b7ff10de057d1113bbe72e1ee",
+  "machine_export": "validation/human_gold/gold_extraction_martin_v10f.csv",
+  "counts": {
+    "pages": 78,
+    "paragraphs": 351,
+    "positive": 112,
+    "negative": 224,
+    "skip_language": 15,
+    "unmarked": 0,
+    "partial_positive": 34,
+    "partial_without_note": 33
+  },
+  "unmarked_workbook_rows": [],
+  "sample_page_mismatches": [
+    "NO_Norway_norges-bank-memo-1-2021|10",
+    "NO_Norway_norges-bank-memo-1-2021|31",
+    "NO_Norway_norges-bank-memo-1-2021|52"
+  ],
+  "second_human_audit": {
+    "status": "deferred_open",
+    "owner": "Dominik or another blinded second coder",
+    "decision_point": "before human-gold freeze and submission"
+  },
+  "second_llm_extraction": {
+    "status": "required_pending",
+    "scope": "same frozen protocol, followed by archived comparison"
+  },
+  "freeze_conditions": [
+    "no unmarked paragraph rows",
+    "each ANO-částečně row identifies the relevant phrase in poznámka",
+    "reconcile the three stress_ocr_zerotext workbook pages with validation/sample.csv",
+    "coder signs the completed artifact",
+    "single-coder limitation is declared or a blinded second-person audit is completed"
+  ]
+}

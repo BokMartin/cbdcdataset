@@ -33,11 +33,26 @@ def main():
     manifest = pd.read_csv(ROOT / "validation/page_manifest.csv", keep_default_na=False)
     split = pd.read_csv(ROOT / "validation/split.csv", keep_default_na=False)
     sample = pd.read_csv(ROOT / "validation/sample.csv", keep_default_na=False)
+    open_items = pd.read_csv(ROOT / "validation/open_items.csv", keep_default_na=False)
+    gold_audit = json.loads((ROOT / "results/gold_candidate_audit.json").read_text(encoding="utf-8"))
 
     require(len(candidates) == 6_139, "candidate count")
     require((candidates["v5_verdict"] == "keep").sum() == 5_624, "kept count")
     require(candidates["doc_id"].nunique() == 93, "yielding document count")
     require(candidates["seg_id"].is_unique, "seg_id uniqueness")
+    require(gold_audit["schema"] == "gold_candidate_audit_v1", "gold audit schema")
+    require(gold_audit["matching"]["threshold"] == 0.8, "gold audit threshold")
+    primary = gold_audit["paragraph_metrics"]["probability_kept_candidates"]
+    require(
+        {key: primary[key] for key in ["n", "tp", "fp", "fn", "tn"]}
+        == {"n": 285, "tp": 34, "fp": 8, "fn": 58, "tn": 185},
+        "gold audit primary counts",
+    )
+    require(
+        set(open_items.loc[open_items["status"].isin(["open", "required_pending", "deferred_open"]), "item_id"])
+        == {"GOLD-002", "GOLD-003", "LLM-002", "HUMAN-002"},
+        "open validation items",
+    )
     require(codebook["code"].nunique() == 35 and codebook["family"].nunique() == 16, "codebook shape")
     require(not codebook.astype(str).apply(lambda col: col.str.contains("&amp;", regex=False)).any().any(), "encoded HTML in codebook")
     require(len(scores) == 48 and scores["jur"].is_unique, "score entities")
@@ -62,8 +77,17 @@ def main():
     require((sample["stratum"] == "probability").sum() == 60, "probability sample")
     require((sample["stratum"] == "reserve_sealed").sum() == 40, "sealed reserve")
     require(not sample[["fname", "page"]].astype(str).agg("|".join, axis=1).duplicated().any(), "sample uniqueness")
-    require(stages["stage_final"].value_counts().to_dict().get("active_research") == 13, "active stage count")
-    require(stages["stage_final"].value_counts().to_dict().get("paused_research") == 23, "paused stage count")
+    stage_counts = stages["stage_final"].value_counts().to_dict()
+    require(stage_counts.get("active_research") == 13, "active stage count")
+    require(stage_counts.get("paused_research") == 22, "paused stage count")
+    require(stage_counts.get("cancelled") == 1, "cancelled stage count")
+    dcash = stages.loc[stages["jur"] == "ECCU"].squeeze()
+    require(
+        dcash["stage"] == dcash["stage_final"] == "cancelled"
+        and dcash["doc_id"] == "ECCU_ECCB_MonetaryCouncil_112_2026"
+        and "suspension of DCash 2.0 development" in dcash["evidence"],
+        "DCash cancellation evidence",
+    )
     sensitivity = json.loads((ROOT / "results/cash_gate_sensitivity.json").read_text(encoding="utf-8"))
     require(sensitivity["ungated"].get("cash_substitution") == 9, "cash-gate sensitivity")
     for path in [
