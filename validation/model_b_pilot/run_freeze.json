@@ -1,0 +1,33 @@
+{
+  "status": "complete_validated_diagnostic",
+  "input_package_sha256": "07edf061006b25656ff0b2a08e1df1b9ebb4b9e54b2d210da614b4718bd6ccb5",
+  "responses_sha256": "136f8b82a3da692e3e906fb893288c9a850a62eff0e2d9e6a203693ede49e805",
+  "run_metadata_sha256": "2f4250a90ac5599b3047a77e3783f668b788e9f658aed8425545b584deeb5b71",
+  "comparison_script_sha256": "e59bad3d161bff8f753935c44bf9d8ce9640b70cb4b487e9b211dd6c85e9a0f3",
+  "comparison_result_sha256": "0aef73e652649bf8aa09f7a61131a06d346dedf1bf903f283ae3caba5c1e4bea",
+  "statement_assignments_sha256": "af0ae16501643d99864ebdc38f232e9b02282ad5ede97a023005fe9474906920",
+  "paragraph_audit_sha256": "2f58334566b740d0645bcc1b4daf699f0da790e4e563e25b18e11b5a80bf191c",
+  "response_records": 78,
+  "model_calls": 70,
+  "protocol_skips": 8,
+  "statements": 202,
+  "probability_paragraph_recall": 0.5543478260869565,
+  "probability_paragraph_recall_cluster_bootstrap_95": [
+    0.3898069679849341,
+    0.7033333333333331
+  ],
+  "probability_paragraph_precision": 0.7183098591549296,
+  "probability_paragraph_precision_cluster_bootstrap_95": [
+    0.4150618087182824,
+    0.9670506912442396
+  ],
+  "conservative_statement_precision": 0.5099009900990099,
+  "strict_span_fidelity": 0.7920792079207921,
+  "model_b_to_model_a_span_overlap": 0.4801980198019802,
+  "gate_outcomes": {
+    "E1": "fail",
+    "E2": "fail_on_stress_long",
+    "E3": "fail_precision_pass_workload",
+    "S1": "fail"
+  }
+}

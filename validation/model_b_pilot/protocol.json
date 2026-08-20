@@ -1,0 +1,48 @@
+{
+  "protocol_id": "model_b_v9_primary_extraction_78",
+  "protocol_status": "frozen_before_model_run",
+  "sample": "validation/sample.csv",
+  "included_strata": [
+    "probability",
+    "stress_nonEN",
+    "stress_ocr_zerotext",
+    "stress_ocr_lowtext",
+    "stress_long"
+  ],
+  "excluded_strata": ["reserve_sealed"],
+  "expected_pages": 78,
+  "expected_documents": 42,
+  "source_verification": "SHA-256 against validation/doc_hashes.csv",
+  "text_extraction": {
+    "library": "pypdf",
+    "version": "5.9.0",
+    "method": "PdfReader.pages[page-1].extract_text()",
+    "strip": true,
+    "minimum_characters": 250,
+    "maximum_prompt_characters": 9000,
+    "ocr_fallback": false
+  },
+  "prompt": "validation/model_b_pilot/prompt_v9.txt",
+  "output_schema": "validation/model_b_pilot/output_schema.json",
+  "page_order": "validation/sample.csv row order after excluding reserve_sealed",
+  "independence": {
+    "input_excludes_human_labels": true,
+    "input_excludes_prior_model_outputs": true,
+    "cross_model_deduplication_before_comparison": false,
+    "within_run_deduplication_before_archiving_raw_output": false
+  },
+  "run_metadata_required": [
+    "provider",
+    "interface",
+    "displayed_model",
+    "run_started_utc",
+    "run_finished_utc",
+    "protocol_sha256",
+    "input_package_sha256"
+  ],
+  "notes": [
+    "The prompt and preprocessing reproduce the primary v9 extraction layer.",
+    "Raw independent output is archived before any deduplication so cross-model comparison remains valid.",
+    "Rows below the original 250-character threshold are logged as skipped and are not sent to the model."
+  ]
+}

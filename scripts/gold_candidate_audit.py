@@ -267,7 +267,7 @@ def main():
     limitations.extend([
         "Metrics cover only sampled pages present in the human-gold workbook, not the full corpus.",
         "Three canonical stress_ocr_zerotext pages are verified structural blanks and excluded from semantic metrics under administrative correction GOLD-CORR-001.",
-        "Second independent LLM extraction and the human second-coder decision remain pending.",
+        "A blinded OpenAI/Codex Model B v9 pilot is archived in results/model_b_pilot.json; it did not clear the extraction or strict span-fidelity gates. The human second-coder decision remains pending.",
     ])
     summary = {
         "schema": "gold_candidate_audit_v1",

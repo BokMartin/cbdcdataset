@@ -1,0 +1,42 @@
+{
+  "provider": "OpenAI",
+  "interface": "Codex isolated subagents",
+  "displayed_model": "Codex (backend model identifier not exposed to subagent runtime)",
+  "run_started_utc": "2026-08-20T18:40:20.8731484Z",
+  "run_finished_utc": "2026-08-20T18:50:42.4357091Z",
+  "protocol_sha256": "e8e14ef7e7d95cc9f3b58f128950a55b800a3ac4403057b1cf4672c6ed1f48b9",
+  "input_package_sha256": "07edf061006b25656ff0b2a08e1df1b9ebb4b9e54b2d210da614b4718bd6ccb5",
+  "parallel_workers": 3,
+  "partitions": [
+    "B001-B026",
+    "B027-B052",
+    "B053-B078"
+  ],
+  "context_isolation": "fork_turns=none; sealed package only",
+  "temperature": "not exposed by Codex interface",
+  "raw_content_edited_after_generation": false,
+  "raw_parts": [
+    {
+      "file": "part1.jsonl",
+      "sha256": "2ed9e46b41e826b966190d5c5c81e968d15f92d8da8828e619cf5fe1cf685916",
+      "records": 26,
+      "statements": 48
+    },
+    {
+      "file": "part2.jsonl",
+      "sha256": "bcce7fa608ef9405f645f20b633fb455c964b10448237f6bb9ac9fe6b4f32720",
+      "records": 26,
+      "statements": 108
+    },
+    {
+      "file": "part3.jsonl",
+      "sha256": "3f83dde2cd549a2687d0b4c536bcfdc67954c7015e6709df2372f654a9134e5c",
+      "records": 26,
+      "statements": 46
+    }
+  ],
+  "responses_sha256": "136f8b82a3da692e3e906fb893288c9a850a62eff0e2d9e6a203693ede49e805",
+  "response_status_erratum": "BLIND_TASK example used ok for ready; all workers followed the example; raw statuses retained",
+  "quote_word_limit_violations": 1,
+  "main_context_viewed_outputs_only_after_all_workers_finished": true
+}

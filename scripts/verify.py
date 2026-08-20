@@ -33,8 +33,19 @@ def main():
     manifest = pd.read_csv(ROOT / "validation/page_manifest.csv", keep_default_na=False)
     split = pd.read_csv(ROOT / "validation/split.csv", keep_default_na=False)
     sample = pd.read_csv(ROOT / "validation/sample.csv", keep_default_na=False)
+    model_b_input = pd.read_csv(
+        ROOT / "validation/model_b_pilot/input_manifest.csv", keep_default_na=False
+    )
+    model_b_audit = pd.read_csv(
+        ROOT / "validation/model_b_pilot/audit_manifest.csv", keep_default_na=False
+    )
     open_items = pd.read_csv(ROOT / "validation/open_items.csv", keep_default_na=False)
+    gates = pd.read_csv(ROOT / "validation/gates.csv", keep_default_na=False)
     gold_audit = json.loads((ROOT / "results/gold_candidate_audit.json").read_text(encoding="utf-8"))
+    model_b = json.loads((ROOT / "results/model_b_pilot.json").read_text(encoding="utf-8"))
+    model_b_freeze = json.loads(
+        (ROOT / "validation/model_b_pilot/run_freeze.json").read_text(encoding="utf-8")
+    )
 
     require(len(candidates) == 6_139, "candidate count")
     require((candidates["v5_verdict"] == "keep").sum() == 5_624, "kept count")
@@ -50,9 +61,41 @@ def main():
     )
     require(
         set(open_items.loc[open_items["status"].isin(["open", "required_pending", "deferred_open"]), "item_id"])
-        == {"LLM-002", "HUMAN-002"},
+        == {"HUMAN-002"},
         "open validation items",
     )
+    require(
+        model_b["schema"] == "model_b_v9_pilot_v1"
+        and model_b["extraction"] == {
+            "sample_pages": 78,
+            "model_calls": 70,
+            "protocol_skips": 8,
+            "statements": 202,
+            "pages_with_statements": 35,
+        },
+        "Model B extraction counts",
+    )
+    require(
+        model_b["paragraph_metrics"]["probability"]["recall"] < 0.90
+        and model_b["paragraph_metrics"]["probability"]["precision"] < 0.80
+        and model_b["span_fidelity"]["verified_rate"] < 0.95,
+        "Model B failed gates",
+    )
+    require(
+        gates.set_index("id").loc[["E1", "E2", "E3", "S1"], "status"].eq("fail").all(),
+        "Model B gate status",
+    )
+    response_path = ROOT / "validation/model_b_pilot/responses.jsonl"
+    require(
+        hashlib.sha256(response_path.read_bytes()).hexdigest()
+        == model_b_freeze["responses_sha256"],
+        "Model B response freeze",
+    )
+    raw = b"".join(
+        (ROOT / f"validation/model_b_pilot/raw/part{part}.jsonl").read_bytes()
+        for part in (1, 2, 3)
+    )
+    require(raw == response_path.read_bytes(), "Model B raw concatenation")
     require(codebook["code"].nunique() == 35 and codebook["family"].nunique() == 16, "codebook shape")
     require(not codebook.astype(str).apply(lambda col: col.str.contains("&amp;", regex=False)).any().any(), "encoded HTML in codebook")
     require(len(scores) == 48 and scores["jur"].is_unique, "score entities")
@@ -77,6 +120,22 @@ def main():
     require((sample["stratum"] == "probability").sum() == 60, "probability sample")
     require((sample["stratum"] == "reserve_sealed").sum() == 40, "sealed reserve")
     require(not sample[["fname", "page"]].astype(str).agg("|".join, axis=1).duplicated().any(), "sample uniqueness")
+    require(
+        list(model_b_input.columns) == ["input_id", "status", "prompt_file", "prompt_sha256"],
+        "Model B blind manifest fields",
+    )
+    require(
+        len(model_b_input) == 78
+        and model_b_input["status"].value_counts().to_dict()
+        == {"ready": 70, "skipped_lt250": 8},
+        "Model B pilot size",
+    )
+    require(
+        len(model_b_audit) == 78
+        and model_b_audit["doc_id"].nunique() == 42
+        and model_b_audit["input_id"].tolist() == model_b_input["input_id"].tolist(),
+        "Model B audit manifest",
+    )
     stage_counts = stages["stage_final"].value_counts().to_dict()
     require(stage_counts.get("active_research") == 13, "active stage count")
     require(stage_counts.get("paused_research") == 22, "paused stage count")

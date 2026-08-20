@@ -1,0 +1,226 @@
+{
+  "schema": "model_b_v9_pilot_v1",
+  "status": "diagnostic_gold_unfrozen",
+  "inputs": {
+    "responses_sha256": "136f8b82a3da692e3e906fb893288c9a850a62eff0e2d9e6a203693ede49e805",
+    "run_metadata_sha256": "2f4250a90ac5599b3047a77e3783f668b788e9f658aed8425545b584deeb5b71",
+    "audit_manifest_sha256": "05f71677b7e03dba61d7badff063a38aa7d292b6e4ab6809932659d4452b4e8e",
+    "input_package_sha256": "07edf061006b25656ff0b2a08e1df1b9ebb4b9e54b2d210da614b4718bd6ccb5",
+    "matching_threshold": 0.8
+  },
+  "run": {
+    "provider": "OpenAI",
+    "interface": "Codex isolated subagents",
+    "displayed_model": "Codex (backend model identifier not exposed to subagent runtime)",
+    "run_started_utc": "2026-08-20T18:40:20.8731484Z",
+    "run_finished_utc": "2026-08-20T18:50:42.4357091Z",
+    "protocol_sha256": "e8e14ef7e7d95cc9f3b58f128950a55b800a3ac4403057b1cf4672c6ed1f48b9",
+    "input_package_sha256": "07edf061006b25656ff0b2a08e1df1b9ebb4b9e54b2d210da614b4718bd6ccb5",
+    "parallel_workers": 3,
+    "partitions": [
+      "B001-B026",
+      "B027-B052",
+      "B053-B078"
+    ],
+    "context_isolation": "fork_turns=none; sealed package only",
+    "temperature": "not exposed by Codex interface",
+    "raw_content_edited_after_generation": false,
+    "raw_parts": [
+      {
+        "file": "part1.jsonl",
+        "sha256": "2ed9e46b41e826b966190d5c5c81e968d15f92d8da8828e619cf5fe1cf685916",
+        "records": 26,
+        "statements": 48
+      },
+      {
+        "file": "part2.jsonl",
+        "sha256": "bcce7fa608ef9405f645f20b633fb455c964b10448237f6bb9ac9fe6b4f32720",
+        "records": 26,
+        "statements": 108
+      },
+      {
+        "file": "part3.jsonl",
+        "sha256": "3f83dde2cd549a2687d0b4c536bcfdc67954c7015e6709df2372f654a9134e5c",
+        "records": 26,
+        "statements": 46
+      }
+    ],
+    "responses_sha256": "136f8b82a3da692e3e906fb893288c9a850a62eff0e2d9e6a203693ede49e805",
+    "response_status_erratum": "BLIND_TASK example used ok for ready; all workers followed the example; raw statuses retained",
+    "quote_word_limit_violations": 1,
+    "main_context_viewed_outputs_only_after_all_workers_finished": true
+  },
+  "extraction": {
+    "sample_pages": 78,
+    "model_calls": 70,
+    "protocol_skips": 8,
+    "statements": 202,
+    "pages_with_statements": 35
+  },
+  "span_fidelity": {
+    "exact": 28,
+    "normalized": 132,
+    "failed": 42,
+    "verified_rate": 0.7920792079207921,
+    "strict_failures_supported_by_same_page_gold_text": 37,
+    "strict_failures_unresolved": 5,
+    "source_or_same_page_gold_support_rate": 0.9752475247524752
+  },
+  "statement_alignment": {
+    "assigned_positive": 103,
+    "assigned_negative": 43,
+    "assigned_excluded": 0,
+    "unassigned": 56,
+    "precision_among_assigned_nonexcluded": 0.7054794520547946,
+    "conservative_precision_unassigned_as_false_positive": 0.5099009900990099
+  },
+  "paragraph_metrics": {
+    "probability": {
+      "n": 285,
+      "tp": 51,
+      "fp": 20,
+      "fn": 41,
+      "tn": 173,
+      "precision": 0.7183098591549296,
+      "recall": 0.5543478260869565,
+      "f1": 0.6257668711656442
+    },
+    "probability_cluster_bootstrap_95": {
+      "precision": {
+        "observed": 0.7183098591549296,
+        "low_95": 0.4150618087182824,
+        "high_95": 0.9670506912442396,
+        "finite_draws": 2000
+      },
+      "recall": {
+        "observed": 0.5543478260869565,
+        "low_95": 0.3898069679849341,
+        "high_95": 0.7033333333333331,
+        "finite_draws": 2000
+      },
+      "f1": {
+        "observed": 0.6257668711656442,
+        "low_95": 0.43191812746985514,
+        "high_95": 0.777790346907994,
+        "finite_draws": 2000
+      }
+    },
+    "all_strata": {
+      "n": 336,
+      "tp": 60,
+      "fp": 27,
+      "fn": 52,
+      "tn": 197,
+      "precision": 0.6896551724137931,
+      "recall": 0.5357142857142857,
+      "f1": 0.6030150753768845
+    },
+    "by_stratum": {
+      "all": {
+        "n": 336,
+        "tp": 60,
+        "fp": 27,
+        "fn": 52,
+        "tn": 197,
+        "precision": 0.6896551724137931,
+        "recall": 0.5357142857142857,
+        "f1": 0.6030150753768845
+      },
+      "probability": {
+        "n": 285,
+        "tp": 51,
+        "fp": 20,
+        "fn": 41,
+        "tn": 173,
+        "precision": 0.7183098591549296,
+        "recall": 0.5543478260869565,
+        "f1": 0.6257668711656442
+      },
+      "stress_long": {
+        "n": 39,
+        "tp": 9,
+        "fp": 5,
+        "fn": 11,
+        "tn": 14,
+        "precision": 0.6428571428571429,
+        "recall": 0.45,
+        "f1": 0.5294117647058824
+      },
+      "stress_nonEN": {
+        "n": 9,
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "tn": 7,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0
+      },
+      "stress_ocr_lowtext": {
+        "n": 3,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3,
+        "precision": null,
+        "recall": null,
+        "f1": 0.0
+      },
+      "stress_ocr_zerotext": {
+        "n": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": 0.0
+      }
+    }
+  },
+  "page_metrics": {
+    "probability": {
+      "n": 55,
+      "tp": 18,
+      "fp": 6,
+      "fn": 10,
+      "tn": 21,
+      "precision": 0.75,
+      "recall": 0.6428571428571429,
+      "f1": 0.6923076923076924
+    },
+    "all_strata": {
+      "n": 63,
+      "tp": 21,
+      "fp": 7,
+      "fn": 10,
+      "tn": 25,
+      "precision": 0.75,
+      "recall": 0.6774193548387096,
+      "f1": 0.7118644067796611
+    }
+  },
+  "protocol_skip_effect": {
+    "pages": 8,
+    "eligible_gold_paragraphs": 5,
+    "positive_gold_paragraphs": 0
+  },
+  "cross_model_overlap": {
+    "model_b_statements": 202,
+    "model_b_matched_to_any_model_a": 97,
+    "model_b_match_rate": 0.4801980198019802,
+    "model_a_statements_on_sample_pages": 129,
+    "model_a_recovered_by_model_b": 89,
+    "model_a_recovery_rate": 0.689922480620155,
+    "kept_model_a_statements_on_sample_pages": 113,
+    "kept_model_a_recovered_by_model_b": 78,
+    "kept_model_a_recovery_rate": 0.6902654867256637,
+    "exact_code_agreement_among_matches": 0.711340206185567
+  },
+  "limitations": [
+    "Human labels are complete but not frozen.",
+    "The exact backend model identifier was not exposed if run_metadata says so.",
+    "Cross-model overlap is span-based and is not a substitute for human adjudication.",
+    "Same-page gold support for strict span failures is diagnostic only; it does not replace strict source-text fidelity."
+  ]
+}

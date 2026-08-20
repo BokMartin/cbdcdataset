@@ -1,0 +1,17 @@
+{
+  "frozen_utc": "2026-08-20T18:37:12.563282+00:00",
+  "run_status": "input_frozen_model_not_run",
+  "source_corpus_sha256": "b42bd59d5b4e3f78d89acec3948a5d6687e26c47f2c420164d72810af2d5170c",
+  "historical_v9_script_sha256": "269247868bde6e050ad3713dada7cc9d4eb1e0fbb6a98a3346fd4ffb799b6f3a",
+  "historical_v9_workbook_sha256": "e8cc218766068b3b006b87defe9081ef7a114427c2dc0e12b67850bc0dd53108",
+  "historical_prompt_sha256": "b498d73c8a30835307d961b546ae803bf60e4081c85811e947784065677d35f9",
+  "prompt_template_sha256": "cbd064f4fc62311297210b539bd72ccc258ced4294673c6faa9214acda2b2f8d",
+  "preparation_script_sha256": "c24c3592338b28dd21586289eaee285b68946ea038422633018a96500902e566",
+  "blind_input_manifest_sha256": "c3dc62ea7d65d86bdb362322d05ac5c3e1905d83ea6e056ce1759915208a6345",
+  "audit_manifest_sha256": "05f71677b7e03dba61d7badff063a38aa7d292b6e4ab6809932659d4452b4e8e",
+  "package_manifest_sha256": "a990ae87b5618924d365eb673d85f2f86d7d10c50e97a8d792d082f8bc9ba292",
+  "sealed_zip_sha256": "07edf061006b25656ff0b2a08e1df1b9ebb4b9e54b2d210da614b4718bd6ccb5",
+  "page_count": 78,
+  "ready_count": 70,
+  "skipped_lt250_count": 8
+}

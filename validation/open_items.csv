@@ -2,6 +2,6 @@ item_id,phase,status,owner,required_before,action
 GOLD-001,human_gold,complete,Martin,gold_freeze,"Rows 269 and 336 completed as NE-bez nosné info"
 GOLD-002,human_gold,complete,authors,gold_freeze,"ANO-částečně defined as a paragraph-level positive; phrase note is optional and exact-span validity will be manually adjudicated"
 GOLD-003,human_gold,complete,authors,gold_freeze,"Administrative correction GOLD-CORR-001 replaced unsampled G079-G081 with canonical visually verified blank pages G069-G071"
-LLM-002,extraction,required_pending,independent LLM,final_analysis,"Run the same frozen extraction protocol and archive a blinded comparison"
+LLM-002,extraction,complete,OpenAI Codex Model B,final_analysis,"Blind v9 pilot archived: 78 records; 70 calls; 8 protocol skips; diagnostic gates E1/E2/E3/S1 failed"
 HUMAN-002,human_validation,deferred_open,Martin and Dominik,submission,"Decide whether Dominik performs a blinded audit; otherwise declare the single-coder limitation"
-GATES-001,validation,pending,authors,API_runs,"Sign gates only after frozen gold and reviewer clearance"
+GATES-001,validation,pending,authors,API_runs,"Do not sign: Model B pilot failed E1/E2/E3/S1; freeze gold and revise extraction before a new preregistered evaluation"
