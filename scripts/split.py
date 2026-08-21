@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SEED = 42
 N_PROBABILITY = 60
 N_RESERVE = 40
+PROSPECTIVE_LANGUAGE_OVERRIDES = {"JP_BoJ_Pilot_JP": "ja"}
 
 
 def hash_rank(doc_id):
@@ -87,6 +88,8 @@ def make_sample(manifest, split, queue):
     plan += stress(held_out[held_out["tableish"]], "stress_tableish", 3)
     plan += stress(held_out[held_out["chars"] > 4_500], "stress_long", 4)
     result = pd.DataFrame(plan)
+    for doc_id, language in PROSPECTIVE_LANGUAGE_OVERRIDES.items():
+        result.loc[result["doc_id"].eq(doc_id), "language"] = language
     result["pdf_available"] = True
     if result[["fname", "page"]].astype(str).agg("|".join, axis=1).duplicated().any():
         raise AssertionError("duplicate sampled page")

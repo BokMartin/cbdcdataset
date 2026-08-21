@@ -1,9 +1,9 @@
 id,phase,criterion,owner,status,evidence,blocking
-C01,error_audit,"All 41 FN, 20 FP and 5 unresolved spans adjudicated",Martin,pending,,yes
-C02,error_audit,"Reference and language-metadata corrections versioned before tuning, including JP_BoJ_Pilot_JP zh→ja",Martin,pending,,yes
+C01,error_audit,"All 41 FN, 20 FP and 5 unresolved spans adjudicated",Martin,complete,"validation/calibration_v10/error_cases.csv; validation/calibration_v10/audit_summary.json; validation/calibration_v10/source/CALIBRATION_AUDIT_v10_FINALIZED.xlsx",yes
+C02,error_audit,"Reference and language-metadata corrections versioned before tuning, including JP_BoJ_Pilot_JP zh→ja",Martin,complete,"validation/calibration_v10/calibration_reference_v10_1.csv; data/documents.csv; validation/split.csv; validation/sample.csv",yes
 C03,human_reliability,"HUMAN-002 resolved: blind second-human audit or explicit single-coder limitation",Authors,pending,,yes
 C04,protocol,"Every material confirmed cause maps to a tested change or documented no-change decision",Authors,pending,,yes
-C05,protocol,"One shared semantic protocol fixed for Model A and Model B",Authors,pending,,yes
+C05,protocol,"One shared semantic protocol fixed for Model A and Model B",Authors,complete,"validation/extraction_v10_1/PROMPT_CORE.md; validation/extraction_v10_1/output_schema.json; validation/extraction_v10_1/run_config.json",yes
 C06,protocol,"Primary rule fixed: Model A, Model B, or verified union",Authors,pending,,yes
 C07,calibration,"A, B and union results archived on 78 development pages",Authors,pending,,yes
 C08,calibration,"Calibration results compatible with E1/E2/E3/S1; remaining failures documented",Authors,pending,,yes

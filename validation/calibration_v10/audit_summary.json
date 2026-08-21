@@ -1,11 +1,11 @@
 {
   "schema": "calibration_error_audit_v1",
-  "status": "pending_human_adjudication",
+  "status": "complete",
   "inputs": {
     "paragraph_audit_sha256": "2f58334566b740d0645bcc1b4daf699f0da790e4e563e25b18e11b5a80bf191c",
     "statement_assignments_sha256": "af0ae16501643d99864ebdc38f232e9b02282ad5ede97a023005fe9474906920",
-    "taxonomy_sha256": "3bbe8e67aaede10113bac14ae432460311f74dc3b9f8b861f315eeb4d846bd78",
-    "error_cases_sha256": "ce1eeeca79318a0db9881be3f91d1f10b7e0c206e7eaec9e9281898e06f1b852"
+    "taxonomy_sha256": "315774c937da6111ca2c6c0e2d9674387eb21c73e435ff66b301da3ca9205b1d",
+    "error_cases_sha256": "84ebb54e5079e25a9f0709cdc9ea15d6ba2f998df94d5895986cccd3f14bc186"
   },
   "counts": {
     "all": 66,
@@ -14,13 +14,27 @@
       "FP": 20,
       "SPAN": 5
     },
-    "adjudicated": 0,
-    "pending": 66
+    "adjudicated": 66,
+    "pending": 0
   },
   "primary_causes": {
-    "FN": {},
-    "FP": {},
-    "SPAN": {}
+    "FN": {
+      "FN_CLASSIFICATION_ERROR": 1,
+      "FN_GOLD_SCOPE_DISPUTE": 17,
+      "FN_CONCLUSION_MISSED": 16,
+      "FN_OTHER": 3,
+      "FN_LAYOUT_LIST_TABLE": 1,
+      "FN_MATCHER_ONLY": 3
+    },
+    "FP": {
+      "FP_GENERAL_NO_SUBSTANCE": 4,
+      "FP_HYPOTHETICAL_NO_POSITION": 15,
+      "FP_GOLD_FALSE_NEGATIVE": 1
+    },
+    "SPAN": {
+      "SPAN_OCR_EQUIVALENT": 2,
+      "SPAN_PDF_NORMALIZATION": 3
+    }
   },
   "rules": {
     "development_pages": 78,

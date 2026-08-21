@@ -96,6 +96,6 @@ BO_BCB_Boliviano_Digital_2025,es|retail_or_general,held_out,hash-rank
 UY_Uruguay_BCU_BilleteDigital_2017,es|retail_or_general,held_out,hash-rank
 ES_Spain_2022,es|retail_or_general,held_out,hash-rank
 FR_BdF_2022,fr|wholesale,held_out,singleton->held_out
+JP_BoJ_Pilot_JP,ja|retail_or_general,held_out,singleton->held_out
 RU_Russia_concept_08042021,ru/uk|retail_or_general,calibration,hash-rank
 RU_Russia_digital_ruble_30062025,ru/uk|retail_or_general,held_out,hash-rank
-JP_BoJ_Pilot_JP,zh|retail_or_general,held_out,singleton->held_out

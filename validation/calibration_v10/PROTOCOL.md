@@ -1,5 +1,7 @@
 # v10 extraction calibration protocol
 
+Status 2026-08-21: Phase 1 is complete (41 FN, 20 FP and 5 span cases adjudicated). The corrected development reference is `calibration_reference_v10_1.csv`; it versions 17 scope exclusions and one false-negative correction while preserving the original human workbook. The shared Model A/B candidate protocol is in `validation/extraction_v10_1/`. It has not yet passed calibration and the reserve remains sealed.
+
 ## Scope
 
 The 78 unsealed pages are development data. They may be inspected and reused for prompt and parser calibration. The 40 `reserve_sealed` pages remain unopened until the revised protocol is frozen.
@@ -30,7 +32,7 @@ The error audit is human adjudication. An LLM may summarize completed categories
 
 1. Summarize counts by confirmed error cause. Separate extractor errors, reference-standard corrections, matcher errors, and source-layer failures.
 2. Map every material cause to a specific change in `change_log.csv`. Record expected benefit and failure risk before testing.
-3. Replace page-level free extraction with two stages:
+3. Apply two semantic stages within one structured request to avoid a second API pass:
    - high-recall screening of paragraph/layout blocks for own-project design-relevant claims;
    - classification of retained exact spans using the current 35-code v10 codebook.
 4. Prefer conclusions, decisions and explicit proposals over topic headings, literature, foreign projects and lists without a substantive assertion.

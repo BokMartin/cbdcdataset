@@ -241,10 +241,10 @@ def import_workbook(workbook_path):
     frames = []
     for sheet_name, case_type in [("FN audit", "FN"), ("FP audit", "FP"), ("Span audit", "SPAN")]:
         frame = pd.read_excel(workbook_path, sheet_name=sheet_name, dtype=str).fillna("")
-        required = {"case_id", *HUMAN_FIELDS}
+        required = {"case_id", "language", *HUMAN_FIELDS}
         if not required.issubset(frame.columns):
             raise AssertionError(f"missing workbook columns on {sheet_name}: {sorted(required - set(frame.columns))}")
-        frame = frame[["case_id", *HUMAN_FIELDS]].copy()
+        frame = frame[["case_id", "language", *HUMAN_FIELDS]].copy()
         frame["case_type"] = case_type
         frames.append(frame)
     audit = pd.concat(frames, ignore_index=True)
@@ -257,6 +257,8 @@ def import_workbook(workbook_path):
             raise AssertionError(f"invalid status: {row.case_id}:{row.status}")
         if row.status == "adjudicated" and (not row.source_verdict or not row.primary_cause or not row.adjudicator):
             raise AssertionError(f"incomplete adjudication: {row.case_id}")
+        if row.case_type == "SPAN" and row.language:
+            expected[row.case_id]["language"] = row.language
         for field in HUMAN_FIELDS:
             expected[row.case_id][field] = getattr(row, field)
     with CASES.open("w", encoding="utf-8", newline="") as handle:

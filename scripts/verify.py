@@ -55,6 +55,23 @@ def main():
     calibration_taxonomy = pd.read_csv(
         ROOT / "validation/calibration_v10/taxonomy.csv", keep_default_na=False
     )
+    calibration_reference = pd.read_csv(
+        ROOT / "validation/calibration_v10/calibration_reference_v10_1.csv",
+        keep_default_na=False,
+    )
+    calibration_reference_summary = json.loads(
+        (ROOT / "validation/calibration_v10/calibration_reference_v10_1.json")
+        .read_text(encoding="utf-8")
+    )
+    extraction_config = json.loads(
+        (ROOT / "validation/extraction_v10_1/run_config.json").read_text(encoding="utf-8")
+    )
+    extraction_schema = json.loads(
+        (ROOT / "validation/extraction_v10_1/output_schema.json").read_text(encoding="utf-8")
+    )
+    calibration_freeze = pd.read_csv(
+        ROOT / "validation/calibration_v10/freeze_checklist.csv", keep_default_na=False
+    )
 
     require(len(candidates) == 6_139, "candidate count")
     require((candidates["v5_verdict"] == "keep").sum() == 5_624, "kept count")
@@ -70,7 +87,7 @@ def main():
     )
     require(
         set(open_items.loc[open_items["status"].isin(["open", "required_pending", "deferred_open"]), "item_id"])
-        == {"HUMAN-002", "CALIB-001", "CALIB-002", "CALIB-003"},
+        == {"HUMAN-002", "CALIB-002"},
         "open validation items",
     )
     require(
@@ -82,18 +99,59 @@ def main():
     )
     require(
         calibration_summary["schema"] == "calibration_error_audit_v1"
+        and calibration_summary["status"] == "complete"
         and calibration_summary["rules"]["reserve_status"] == "sealed"
         and calibration_summary["counts"]["all"] == 66
-        and calibration_summary["counts"]["pending"]
-        + calibration_summary["counts"]["adjudicated"] == 66
-        and calibration_summary["counts"]["adjudicated"]
-        == int(calibration["status"].eq("adjudicated").sum()),
+        and calibration_summary["counts"]["pending"] == 0
+        and calibration_summary["counts"]["adjudicated"] == 66
+        and calibration["status"].eq("adjudicated").all(),
         "calibration audit status",
     )
     require(
         calibration_taxonomy["category_id"].is_unique
         and set(calibration_taxonomy["case_type"]) == {"FN", "FP", "SPAN"},
         "calibration taxonomy",
+    )
+    require(
+        calibration_reference_summary["schema"] == "calibration_reference_v10_1"
+        and calibration_reference_summary["reserve_status"] == "sealed"
+        and calibration_reference_summary["counts"] == {
+            "rows": 351,
+            "pages": 78,
+            "all_truth": {"negative": 240, "excluded": 15, "positive": 96},
+            "probability_truth": {"negative": 209, "excluded": 5, "positive": 76},
+            "scope_exclusions": 17,
+            "false_negative_corrections": 1,
+        }
+        and len(calibration_reference) == 351,
+        "corrected calibration reference",
+    )
+    schema_codes = set(
+        extraction_schema["properties"]["units"]["items"]["properties"]
+        ["statements"]["items"]["properties"]["code1"]["enum"]
+    )
+    require(
+        extraction_config["status"] == "calibration_candidate_not_reserve_frozen"
+        and extraction_config["development_pages"] == 78
+        and extraction_config["reserve_pages"] == 40
+        and extraction_config["reserve_status"] == "sealed"
+        and extraction_config["input"]["semantic_prefilter"] is False
+        and schema_codes == set(codebook["code"]),
+        "v10.1 shared extraction protocol",
+    )
+    require(
+        calibration_freeze.set_index("id").loc[["C01", "C02", "C05"], "status"]
+        .eq("complete").all()
+        and calibration_freeze.set_index("id").loc[["C04", "C06", "C07", "C08", "C09"], "status"]
+        .eq("pending").all(),
+        "calibration freeze progression",
+    )
+    require(
+        documents.loc[documents["doc_id"].eq("JP_BoJ_Pilot_JP"), "language"].eq("ja").all()
+        and split.loc[split["doc_id"].eq("JP_BoJ_Pilot_JP"), "stratum"].eq("ja|retail_or_general").all()
+        and sample.loc[sample["doc_id"].eq("JP_BoJ_Pilot_JP"), "language"].eq("ja").all()
+        and model_b_audit.loc[model_b_audit["doc_id"].eq("JP_BoJ_Pilot_JP"), "language"].eq("zh").all(),
+        "prospective Japanese metadata with archived v9 evidence preserved",
     )
     require(
         model_b["schema"] == "model_b_v9_pilot_v1"

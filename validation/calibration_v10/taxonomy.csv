@@ -10,6 +10,7 @@ FN_OCR_SOURCE_LAYER,FN,OCR/source-layer failure,"Relevant content is absent or m
 FN_MATCHER_ONLY,FN,Matcher false negative,"The model produced a valid span but deterministic alignment failed","Fix matcher or offsets without changing semantic prompt"
 FN_OUTPUT_LIMIT_DUPLICATION,FN,Output limit or premature deduplication,"The claim is omitted because of output limits, list compression, or deduplication","Archive raw exhaustive output; deduplicate after recall measurement"
 FN_OTHER,FN,Other FN,"No listed FN rule fits","Describe mechanism and add a narrowly scoped corrective action"
+FN_CLASSIFICATION_ERROR,FN,Existing code misassigned,"The model extracted a supported in-scope statement but assigned an incorrect existing family","Retain the verified span, correct the code, and test classification rules; do not treat it as a pure extraction-recall miss"
 FP_FOREIGN_RESEARCH,FP,Foreign project or research,"Output reports another jurisdiction, cited literature, or a hypothetical study rather than the issuer's own position","Require explicit own-project scope evidence in every output"
 FP_GENERAL_NO_SUBSTANCE,FP,General talk without a claim,"Heading, topic list, aspiration or broad prose contains no substantive design assertion","Require a complete assertion and conclusion/proposal test"
 FP_HYPOTHETICAL_NO_POSITION,FP,Possibility without issuer position,"Text discusses what could happen but the issuer neither proposes nor decides it","Separate scenario/research from an issuer proposal"

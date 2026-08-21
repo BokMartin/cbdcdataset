@@ -43,7 +43,7 @@ IS_CBI_2018,IS_Iceland_Special_Publication_12.pdf,True,36,official,extracted,ret
 IT_BdI_MISP_2021,IT_Italy_N.10-MISP.pdf,True,70,pseudo_official,extracted,retail_or_general,,en,3.3
 JP_BoJ_2022,JP_BoJ_rel220526a.pdf,False,21,official,extracted,retail_or_general,,en,0.86
 JP_BoJ_Pilot_EN,JP_BoJ_dig240531a.pdf,False,29,official,extracted,retail_or_general,,en,0.97
-JP_BoJ_Pilot_JP,JP_BoJ_archived_dig240422a.pdf,False,27,official,extracted,retail_or_general,,zh,0.04
+JP_BoJ_Pilot_JP,JP_BoJ_archived_dig240422a.pdf,False,27,official,extracted,retail_or_general,,ja,0.04
 JP_BoJ_PoC2,JP_BoJ_dig230529a.pdf,False,31,official,extracted,retail_or_general,,en,1.81
 MG_BFM_2023,MG_Madagascar_BFM-eAriary-project-651d75b89c1a3.pdf,False,17,official,extracted,retail_or_general,,en,0.0
 MG_BFM_OP_2023,MG_Madagascar_projet-eAriary-One-pager.pdf,False,1,official,extracted,retail_or_general,,es,6.0
