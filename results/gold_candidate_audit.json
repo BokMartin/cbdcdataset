@@ -3,7 +3,7 @@
   "status": "diagnostic_gold_unfrozen",
   "inputs": {
     "candidates": "data/candidates.csv",
-    "candidates_sha256": "df44cc8caf5199c6cf1c7081fde5e2a48c9077203d409786b4bc1c93ba9b4059",
+    "candidates_sha256": "e8f35133ab0b3c57aba5e66e475fff62d8561133465008ae529f06d3dcb83721",
     "candidates_canonical_lf_sha256": "e8f35133ab0b3c57aba5e66e475fff62d8561133465008ae529f06d3dcb83721",
     "gold": "validation/human_gold/gold_extraction_martin_v10f.csv",
     "gold_sha256": "d1e5c729b94fd693cf7bf6a19d0dd603864f528d6a2ac1ed3f4f0e06fee1a422"

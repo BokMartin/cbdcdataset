@@ -274,7 +274,7 @@ def main():
         "status": "diagnostic_gold_unfrozen",
         "inputs": {
             "candidates": candidate_path.relative_to(ROOT).as_posix() if candidate_path.is_relative_to(ROOT) else candidate_path.as_posix(),
-            "candidates_sha256": sha256(candidate_path),
+            "candidates_sha256": sha256(candidate_path, canonical_text=True),
             "candidates_canonical_lf_sha256": sha256(candidate_path, canonical_text=True),
             "gold": gold_path.relative_to(ROOT).as_posix() if gold_path.is_relative_to(ROOT) else gold_path.as_posix(),
             "gold_sha256": sha256(gold_path, canonical_text=True),
