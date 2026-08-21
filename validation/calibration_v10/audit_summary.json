@@ -1,0 +1,31 @@
+{
+  "schema": "calibration_error_audit_v1",
+  "status": "pending_human_adjudication",
+  "inputs": {
+    "paragraph_audit_sha256": "2f58334566b740d0645bcc1b4daf699f0da790e4e563e25b18e11b5a80bf191c",
+    "statement_assignments_sha256": "af0ae16501643d99864ebdc38f232e9b02282ad5ede97a023005fe9474906920",
+    "taxonomy_sha256": "3bbe8e67aaede10113bac14ae432460311f74dc3b9f8b861f315eeb4d846bd78",
+    "error_cases_sha256": "ce1eeeca79318a0db9881be3f91d1f10b7e0c206e7eaec9e9281898e06f1b852"
+  },
+  "counts": {
+    "all": 66,
+    "by_type": {
+      "FN": 41,
+      "FP": 20,
+      "SPAN": 5
+    },
+    "adjudicated": 0,
+    "pending": 66
+  },
+  "primary_causes": {
+    "FN": {},
+    "FP": {},
+    "SPAN": {}
+  },
+  "rules": {
+    "development_pages": 78,
+    "reserve_pages": 40,
+    "reserve_status": "sealed",
+    "reserve_reuse_after_unblinding": false
+  }
+}

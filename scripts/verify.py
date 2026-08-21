@@ -46,6 +46,15 @@ def main():
     model_b_freeze = json.loads(
         (ROOT / "validation/model_b_pilot/run_freeze.json").read_text(encoding="utf-8")
     )
+    calibration = pd.read_csv(
+        ROOT / "validation/calibration_v10/error_cases.csv", keep_default_na=False
+    )
+    calibration_summary = json.loads(
+        (ROOT / "validation/calibration_v10/audit_summary.json").read_text(encoding="utf-8")
+    )
+    calibration_taxonomy = pd.read_csv(
+        ROOT / "validation/calibration_v10/taxonomy.csv", keep_default_na=False
+    )
 
     require(len(candidates) == 6_139, "candidate count")
     require((candidates["v5_verdict"] == "keep").sum() == 5_624, "kept count")
@@ -61,8 +70,30 @@ def main():
     )
     require(
         set(open_items.loc[open_items["status"].isin(["open", "required_pending", "deferred_open"]), "item_id"])
-        == {"HUMAN-002"},
+        == {"HUMAN-002", "CALIB-001", "CALIB-002", "CALIB-003"},
         "open validation items",
+    )
+    require(
+        len(calibration) == 66
+        and calibration["case_id"].is_unique
+        and calibration["case_type"].value_counts().to_dict()
+        == {"FN": 41, "FP": 20, "SPAN": 5},
+        "calibration error package",
+    )
+    require(
+        calibration_summary["schema"] == "calibration_error_audit_v1"
+        and calibration_summary["rules"]["reserve_status"] == "sealed"
+        and calibration_summary["counts"]["all"] == 66
+        and calibration_summary["counts"]["pending"]
+        + calibration_summary["counts"]["adjudicated"] == 66
+        and calibration_summary["counts"]["adjudicated"]
+        == int(calibration["status"].eq("adjudicated").sum()),
+        "calibration audit status",
+    )
+    require(
+        calibration_taxonomy["category_id"].is_unique
+        and set(calibration_taxonomy["case_type"]) == {"FN", "FP", "SPAN"},
+        "calibration taxonomy",
     )
     require(
         model_b["schema"] == "model_b_v9_pilot_v1"

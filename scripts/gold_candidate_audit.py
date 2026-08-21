@@ -273,10 +273,10 @@ def main():
         "schema": "gold_candidate_audit_v1",
         "status": "diagnostic_gold_unfrozen",
         "inputs": {
-            "candidates": str(candidate_path.relative_to(ROOT)) if candidate_path.is_relative_to(ROOT) else str(candidate_path),
+            "candidates": candidate_path.relative_to(ROOT).as_posix() if candidate_path.is_relative_to(ROOT) else candidate_path.as_posix(),
             "candidates_sha256": sha256(candidate_path),
             "candidates_canonical_lf_sha256": sha256(candidate_path, canonical_text=True),
-            "gold": str(gold_path.relative_to(ROOT)) if gold_path.is_relative_to(ROOT) else str(gold_path),
+            "gold": gold_path.relative_to(ROOT).as_posix() if gold_path.is_relative_to(ROOT) else gold_path.as_posix(),
             "gold_sha256": sha256(gold_path, canonical_text=True),
         },
         "matching": {

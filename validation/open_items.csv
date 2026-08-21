@@ -5,3 +5,7 @@ GOLD-003,human_gold,complete,authors,gold_freeze,"Administrative correction GOLD
 LLM-002,extraction,complete,OpenAI Codex Model B,final_analysis,"Blind v9 pilot archived: 78 records; 70 calls; 8 protocol skips; diagnostic gates E1/E2/E3/S1 failed"
 HUMAN-002,human_validation,deferred_open,Martin and Dominik,submission,"Decide whether Dominik performs a blinded audit; otherwise declare the single-coder limitation"
 GATES-001,validation,pending,authors,API_runs,"Do not sign: Model B pilot failed E1/E2/E3/S1; freeze gold and revise extraction before a new preregistered evaluation"
+CALIB-001,extraction_calibration,required_pending,Martin,protocol_freeze,"Adjudicate 41 FN, 20 FP and 5 unresolved spans in the v10 calibration package"
+CALIB-002,protocol_revision,required_pending,authors,reserve_run,"Test Model A, Model B and the pre-specified verified union on 78 development pages; then freeze one shared protocol"
+CALIB-003,language_metadata,required_pending,authors,protocol_freeze,"Correct prospective JP_BoJ_Pilot_JP language metadata from zh to ja and arrange Japanese-capable review or an explicit exclusion; preserve archived v9 evidence"
+RESERVE-001,heldout_evaluation,pending,authors,full_corpus,"Keep 40 reserve pages sealed until the calibration checklist is complete; evaluate once with frozen gates"

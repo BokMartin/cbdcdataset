@@ -1,0 +1,7 @@
+change_id,trigger_categories,component,exact_change,expected_benefit,known_risk,calibration_test,model_a_result,model_b_result,union_result,decision,reviewer,date
+CHG-001,,scope_prompt,,,,,,,,pending,,
+CHG-002,,segmentation,,,,,,,,pending,,
+CHG-003,,source_layer,,,,,,,,pending,,
+CHG-004,,span_verifier,,,,,,,,pending,,
+CHG-005,,classification,,,,,,,,pending,,
+CHG-006,,deduplication_union,,,,,,,,pending,,
