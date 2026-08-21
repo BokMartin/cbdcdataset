@@ -1,0 +1,43 @@
+{
+  "schema": "cbdc_extraction_v10_1_authoritative_validation",
+  "validated_utc": "2026-08-21T14:23:10.7312612Z",
+  "validator": {
+    "repository_commit": "47c7baf",
+    "script": "scripts/extraction_v10_1.py validate-output"
+  },
+  "phase": "calibration",
+  "reserve_status": "sealed",
+  "counts": {
+    "requests": 13,
+    "units": 78,
+    "statements": 96,
+    "text_verified_spans": 96,
+    "unsupported_spans": 0
+  },
+  "valid": true,
+  "hashes": {
+    "package_zip_sha256": "df008710a9f7b5bb62cc4ba7f32c01689c473ecad5bf5f3b9889de8c1f4859ce",
+    "run_manifest_sha256": "bd9c4f05af2a6fc205df0a03da8ebeffe85551af7bfa52c6587216926cbf71c5",
+    "sealed_raw_responses_sha256": "dc13ea28553792145101063326158f2d930ab1295eab7ea1f61d4b3677fd9bbf",
+    "schema_retry_effective_responses_sha256": "7f2d98b6924737fa5e2dbf24aece5b96848aa0799a6c7b80a7e90ea4adbc4d65",
+    "final_effective_responses_sha256": "4d0bb4bfdd133091952b70d4858c13f1c122e859ce2cf02af0c6618884973f97",
+    "schema_retry_manifest_sha256": "e40ab092562f205dcb50b981a51ef4cf07d6df5f243b1f341fde5884ea12ef47",
+    "span_retry_manifest_sha256": "5bf2a98b3232b82c30b02d9803c69139ed4eb98ed32598e37b46f3d298c16f23",
+    "authoritative_span_audit_sha256": "7a1ad3c5cedc3b5510718e7a4602cb86d98ad5c9bfa0aeceac3a5c39f9b0051d"
+  },
+  "retry_accounting": {
+    "schema_contract_fields_changed": 1,
+    "source_quote_fields_changed": 11,
+    "semantic_or_classification_changes": 0,
+    "statements_dropped": 0
+  },
+  "open_metadata_issue": {
+    "unit_id": "CAL-058-U01",
+    "doc_id": "NO_Norway_norges-bank-memo-1-2021",
+    "page": 47,
+    "frozen_language": "en",
+    "observed_source_language": "no",
+    "action_before_reserve": "Correct prospective page-level language metadata and document the calibration-package mismatch; do not alter the sealed calibration archive."
+  },
+  "evaluation_status": "not_unblinded; wait for sealed Claude run before matching to calibration reference"
+}

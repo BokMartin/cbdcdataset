@@ -1,0 +1,47 @@
+{
+  "request_id": "CAL-R0011",
+  "units": [
+    {
+      "unit_id": "CAL-061-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-061-P0010-B01",
+          "quote": "The programme showed how an interbank CBDC could help secure the development of tokenised financial markets by providing stakeholders with the benefits of distributed ledger technology, in particular distributed ledger-based end-to-end processing of tokenised securities settlement and payment-versus-payment transactions, including cross-border transactions, while benefiting from secure central bank money settlement for the transactions made in this manner.",
+          "quote_en": null,
+          "code1": "PROC.pilot_learning",
+          "odr": "finding",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-062-U01",
+      "status": "structural_blank",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-063-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-064-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-065-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-066-U01",
+      "status": "structural_blank",
+      "statements": []
+    }
+  ]
+}

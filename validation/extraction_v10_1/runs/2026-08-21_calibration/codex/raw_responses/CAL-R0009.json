@@ -1,0 +1,159 @@
+{
+  "request_id": "CAL-R0009",
+  "units": [
+    {
+      "unit_id": "CAL-049-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-050-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-050-P0036-B01",
+          "quote": "In Brazil the main objective of the introduction of a CBDC is to provide entrepreneurs with a safe and reliable environment to innovate through the use of programmability technologies, such as programable money and smart contracts. In the  context of a modern payment system, already available to the Brazilian population, a full -fledged CBDC must enable new functionalities, beyond those brought by an instant payment arrangement. Therefore, the innovation tool for which the BCB envisions the greatest potential is the development of a platform for smart payments.",
+          "quote_en": null,
+          "code1": "PROG.generic",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-050-P0036-B01",
+          "quote": "Although innovations based on smart payment technologies are being used in the decentralized finance ecosystem, their current governance devices fall short of the requirements compatible with the level of integrity essential to the operation of financial and payment systems. Thus, as observed in Aramonte and Schrimpf (2021), a fully decentralized environment is most likely not achievable under current integrity requirements.",
+          "quote_en": null,
+          "code1": "TECH.DLT",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 2,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-051-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-051-P0008-B01",
+          "quote": "E - C N Y i s a n a c c ount - ba s e d, qua s i - a c c ount - ba s e d a nd va l ue - ba s e d hy b r i d pa y m e nt i ns t r um e nt . I t ha s a va r i a bl e f a c e va l ue a nd i t s va l ue t r a ns f e r t a ke s t he f or m of c r y p t oc ur r e nc y s t r i ng s .",
+          "quote_en": null,
+          "code1": "TECH.TOKEN.decided_yes",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-051-P0008-B01",
+          "quote": "T he e - C N Y i s a s ubs t i t ut e f or M 0. T hus , i t i s t r e a t e d t he s a m e a s t he phy s i c a l R M B unde r M 0, w hi c h c a r r i e s a nd pa y s no i nt e r e s t .",
+          "quote_en": null,
+          "code1": "PROG.remuneration_no",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-051-P0008-B01",
+          "quote": "C ons i s t e nt w i t h t he m a na ge m e nt of phy s i c a l R M B , t he P B O C doe s not c ha r g e a ut hor i z e d ope r a t or s f or e x c ha nge a nd c i r c ul a t i on s e r vi c e s , a nd t he ope r a t or s do not c ha r g e i ndi vi dua l c l i e nt s f or t he e xc ha nge of e - C N Y e i t he r .",
+          "quote_en": null,
+          "code1": "ADOPT.experience",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-051-P0008-B01",
+          "quote": "A c c or di ng t o s e t t l e m e nt f i na l i t y , t he e - C N Y i s l oos e l y c oupl e d w i t h ba nk a c c ount s , a nd t hus pa y m e nt s t hr ough e - C N Y w a l l e t s a r e s e t t l e d upon pa y m e nt .",
+          "quote_en": null,
+          "code1": "INTEROP.domestic",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-051-P0008-B01",
+          "quote": "E - C N Y f ol l ow s t he pr i nc i pl e of “ a nony m i t y f or s m a l l va l ue a nd t r a c e a bl e f or hi g h va l ue , ” a nd a t t a c he s g r e a t i m por t a nc e t o pr ot e c t i ng pe r s ona l i nf or m a t i o n a nd pr i va c y . I t a i m s t o m e e t t he publ i c de m a nd f or a nony m ous s m a l l va l ue pa y m e nt s e r vi c e s ba s e d on t he r i s k f e a t ur e s a nd i nf or m a t i on pr oc e s s i ng l og i c of c ur r e nt e l e c t r oni c pa y m e nt s y s t e m . M e a nw hi l e , i t i s ne c e s s a r y t o g ua r d a ga i ns t t he m i s us e of e - C N Y i n i l l e g a l a nd c r i m i na l a c t i vi t i e s , s uc h a s t e l e - f r a ud, I nt e r ne t g a m bl i ng , m one y l a unde r i ng, a nd t a x e va s i on by m a ki ng s ur e t ha t t r a ns a c t i ons c om pl y w i t h A M L / C F T r e qui r e m e nt s .",
+          "quote_en": null,
+          "code1": "PRIV.ANON",
+          "odr": "decision",
+          "privacy_direction": "conditional",
+          "privacy_relation": "from_state",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-051-P0008-B01",
+          "quote": "T he e - C N Y s y s t e m c ol l e c t s l e s s t r a ns a c t i on i nf or m a t i on t ha n t r a di t i ona l e l e c t r oni c pa y m e nt a nd doe s not pr ovi de i nf or m a t i on t o t hi r d pa r t i e s or ot he r g ove r nm e nt a ge nc i e s unl e s s s t i pul a t e d ot he r w i s e i n l a w s a nd r e gul a t i ons .",
+          "quote_en": null,
+          "code1": "PRIV.MIN",
+          "odr": "decision",
+          "privacy_direction": "increases",
+          "privacy_relation": "from_state",
+          "strength": 3,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-052-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-052-P0020-B01",
+          "quote": "This initiative aims to meet the growing public demand for convenient, secure, inclusive and privacy- friendly retail payments.",
+          "quote_en": null,
+          "code1": "ACCESS.universal",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-052-P0020-B01",
+          "quote": "Hence, the institutional design of e-MOP aims to address the demand for payment services from both public and private entities.",
+          "quote_en": null,
+          "code1": "SYS.design",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 2,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-052-P0020-B01",
+          "quote": "As a legal tender by nature, e-MOP can be accessed via specialised software and hardware wallets.",
+          "quote_en": null,
+          "code1": "SYS.design",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-053-U01",
+      "status": "structural_blank",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-054-U01",
+      "status": "ok",
+      "statements": []
+    }
+  ]
+}

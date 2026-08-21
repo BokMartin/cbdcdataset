@@ -5,10 +5,10 @@ C03,human_reliability,"HUMAN-002 resolved: blind second-human audit or explicit 
 C04,protocol,"Every material confirmed cause maps to a tested change or documented no-change decision",Authors,pending,,yes
 C05,protocol,"One shared semantic protocol fixed for Model A and Model B",Authors,complete,"validation/extraction_v10_1/PROMPT_CORE.md; validation/extraction_v10_1/output_schema.json; validation/extraction_v10_1/run_config.json",yes
 C06,protocol,"Primary rule fixed: Model A, Model B, or verified union",Authors,pending,,yes
-C07,calibration,"A, B and union results archived on 78 development pages",Authors,pending,,yes
-C08,calibration,"Calibration results compatible with E1/E2/E3/S1; remaining failures documented",Authors,pending,,yes
+C07,calibration,"A, B and union results archived on 78 development pages",Authors,complete,"validation/extraction_v10_1/runs/2026-08-21_calibration/ARCHIVE_MANIFEST.json; validation/extraction_v10_1/runs/2026-08-21_calibration/evaluation/calibration_results.json",yes
+C08,calibration,"Calibration results compatible with E1/E2/E3/S1; remaining failures documented",Authors,fail_blocks_reserve,"E1/E2/E3 fail; S1 passes; 69 blind scope re-adjudications required before v10.2",yes
 C09,freeze,"Prompt, codebook, parser, OCR, chunker, verifier, matcher, dedup and union rule hashed",Authors,pending,,yes
-C10,freeze,"Exact model IDs/configuration and raw-output archive plan recorded",Authors,pending,,yes
+C10,freeze,"Exact model IDs/configuration and raw-output archive plan recorded",Authors,partial,"Claude API model/config archived; Codex desktop backend ID unavailable, so a pinned OpenAI API run is required before reserve",yes
 C11,freeze,"Reserve human-coding procedure fixed and blinded from model outputs",Authors,pending,,yes
 C12,freeze,"All blocking checklist rows signed before reserve access",Authors,pending,,yes
 C13,reserve,"Model A and B outputs sealed and hashed before comparison",Authors,pending,,yes

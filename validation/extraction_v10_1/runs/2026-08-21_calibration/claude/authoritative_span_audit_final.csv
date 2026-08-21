@@ -1,0 +1,1087 @@
+request_id,unit_id,doc_id,page,statement_ordinal,code1,quote,span_status
+CAL-R0001,CAL-001-U01,CN_China_BIS_2022,57,1,PROG.remuneration_considered,"a zero -nominal return, central bank balance sheet preserving CBDC would be feasible if an efficient bank’s deposit and transaction marginal (average)",text_verified
+CAL-R0001,CAL-003-U01,RU_Russia_digital_ruble_30062025,23,1,SYS.design,Механизмы исполнения смарт-контрактов на платформе цифрового рубля функционируют с применением процедур контроля целостности смарт-контрактов и разграничения прав доступа к возможности их запуска.,text_verified
+CAL-R0001,CAL-003-U01,RU_Russia_digital_ruble_30062025,23,2,OPS.resilience,"Для защиты информации на платформе цифрового рубля используется система удостоверяющих центров, созданных на основе отечественных средств криптографической защиты информации (СКЗИ), сертифицированных ФСБ России.",text_verified
+CAL-R0001,CAL-003-U01,RU_Russia_digital_ruble_30062025,23,3,OPS.resilience,"Для обеспечения безопасности и надежности функционирования платформы цифрового рубля используются специализированные системы мониторинга информационной безопасности, позволяющие оперативно реагировать на любые попытки компьютерных атак и проводить обработку инцидентов информационной безопасности с целью защиты финансовых средств пользователей и участников платформы цифрового рубля и конфиденциальности информации.",text_verified
+CAL-R0001,CAL-003-U01,RU_Russia_digital_ruble_30062025,23,4,KYC.IDV,Использование программного модуля также обеспечивает надежное подтверждение личности владельца счета цифрового рубля.,text_verified
+CAL-R0001,CAL-005-U01,HK_HKMA_eHKD_Phase2_2025,27,1,ADOPT.experience,"the survey found that most retail users expect it to be free of charge for both online and offline transactions, given the numerous convenient payment options available in Hong Kong.",text_verified
+CAL-R0001,CAL-005-U01,HK_HKMA_eHKD_Phase2_2025,27,2,ADOPT.experience,The survey found that 68% of merchants would expect a fee structure that aligns with their current merchant fee.,text_verified
+CAL-R0001,CAL-005-U01,HK_HKMA_eHKD_Phase2_2025,27,3,TECH.TOKEN.considered,Phase 2 pilots tested two distinct approaches for representing balances in offline payment systems: the account-based model and the unspent transaction output (UTXO) model (see Box B).,text_verified
+CAL-R0001,CAL-005-U01,HK_HKMA_eHKD_Phase2_2025,27,4,SYS.design,"In contrast, the UTXO model entails higher data storage requirements due to its need to record the entire transaction history to ensure traceability and validate unspent outputs. Additionally, the model’s “splitting” mechanism, where balances are divided into smaller units with each transaction, leads to increased data fragmentation. This results in larger and less predictable data sizes, particularly as users’ balances become fragmented over multiple transactions. Synchronisation in the UTXO model is also more resource-intensive, as it requires transmitting the full transaction history to identify unspent units, leading to longer synchronisation times and a heavier reliance on broadband signals.",text_verified
+CAL-R0001,CAL-005-U01,HK_HKMA_eHKD_Phase2_2025,27,5,TECH.TOKEN.decided_no,"The account-based model will therefore be more suitable for implementing an offline e-HKD, were one to be introduced.",text_verified
+CAL-R0002,CAL-009-U01,IL_Israel_#U05d0#U05e8#U05db#U05d9#U05d8#U05e7#U05d8#U05d5#U05e8#U05d4-#U05dc#U05d5#U05d2#U05d9#U05ea-#U05d0#U05e0#U05d2#U05dc#U05d9#U05ea.pdf,9,1,SYS.design,"The digital shekel system will operate as a financial system for immediate payments between end users (individuals, businesses, various organizations, and government agencies). According to the two-tier model, the Bank of Israel and intermediaries will be involved in providing the complete solution to end users.",text_verified
+CAL-R0002,CAL-009-U01,IL_Israel_#U05d0#U05e8#U05db#U05d9#U05d8#U05e7#U05d8#U05d5#U05e8#U05d4-#U05dc#U05d5#U05d2#U05d9#U05ea-#U05d0#U05e0#U05d2#U05dc#U05d9#U05ea.pdf,9,2,KYC.INTERMED,"In the layer of intermediaries, a distinction will be made between two types of participants that require different functionality in implementing the solution: payment service providers (PSPs) and f unding institutions (FIs).",text_verified
+CAL-R0002,CAL-009-U01,IL_Israel_#U05d0#U05e8#U05db#U05d9#U05d8#U05e7#U05d8#U05d5#U05e8#U05d4-#U05dc#U05d5#U05d2#U05d9#U05ea-#U05d0#U05e0#U05d2#U05dc#U05d9#U05ea.pdf,9,3,PROG.generic,"Additionally, there may be additional advanced service providers (ASPs) that end users are not required to interact with, although they will be able to provide end users with additional services, including information services, conditional payments, or other innovative payment applications.",text_verified
+CAL-R0002,CAL-012-U01,IL_Israel_#U05d0#U05e8#U05db#U05d9#U05d8#U05e7#U05d8#U05d5#U05e8#U05d4-#U05dc#U05d5#U05d2#U05d9#U05ea-#U05d0#U05e0#U05d2#U05dc#U05d9#U05ea.pdf,23,1,SYS.design,"the central bank will act as an intermediary between the two entities and will execute the debit operation from the FI's digital shekel wallet and, in parallel, the credit operation to the end user's digital shekel wallet.",text_verified
+CAL-R0002,CAL-012-U01,IL_Israel_#U05d0#U05e8#U05db#U05d9#U05d8#U05e7#U05d8#U05d5#U05e8#U05d4-#U05dc#U05d5#U05d2#U05d9#U05ea-#U05d0#U05e0#U05d2#U05dc#U05d9#U05ea.pdf,23,2,PRIV.BAL,"Alternatively, the reconciliation can be carried out as a transfer of digital shekels between the FI and the end user, without involving the central bank. However, this configuration might raise privacy and AML compliance issues for the FI.",text_verified
+CAL-R0002,CAL-012-U01,IL_Israel_#U05d0#U05e8#U05db#U05d9#U05d8#U05e7#U05d8#U05d5#U05e8#U05d4-#U05dc#U05d5#U05d2#U05d9#U05ea-#U05d0#U05e0#U05d2#U05dc#U05d9#U05ea.pdf,23,3,AML.LIMIT,"It is possible that the generic solution presented above will enable conversions of low amounts, up to certain thresholds which will be determined on the basis of, among other things, issues related to AML/CFT.",text_verified
+CAL-R0003,CAL-013-U01,ID_Indonesia_2023a,5,1,SYS.design,"On the first stage (immediate state), Bank Indonesia develops wholesale Digital Rupiah (w-Digital Rupiah) cash ledger (issuance, redemption, and transference of funds use cases). On the next stage (intermediate state), Bank Indonesia will expand the w-Digital Rupiah use cases to include broader types of financial market transactions. Lastly, on the final stage (end state), Bank Indonesia will pilot the integrated end-to-end design of w-Digital Rupiah and retail Digital Rupiah (r-Digital Rupiah).",text_verified
+CAL-R0003,CAL-014-U01,EU_ECB_ThirdProgress_2025,8,1,ACCESS.universal,the ECB reiterated the Eurosystem’s commitment to creating a digital euro that benefits the private sector – both PSPs and merchants – while guaranteeing access and usability for all citizens.,text_verified
+CAL-R0003,CAL-017-U01,HK_HKMA_2021,10,1,OTHER.keep,"It will not address whether or why a central bank should issue a n rCBDC.  Instead, it focuses on how a central bank can issue a n rCBDC practically if it considers that such issuance is desirable in the local context.",text_verified
+CAL-R0003,CAL-017-U01,HK_HKMA_2021,10,2,KYC.INTERMED,"The architecture proposed in this whitepaper is not a blueprint for the infrastructure of e-HKD, nor does it approach a decision on the CBDC distribution model chosen for implementing e -HKD.",text_verified
+CAL-R0004,CAL-019-U01,IN_RBI_ConceptNote_2022,45,1,PRIV.ANON,"This means that the identity of 
+CBDC users would need to be known to at least 
+some authority or institution in the wider CBDC 
+network who can validate the legitimacy of their 
+transaction.",text_verified
+CAL-R0004,CAL-019-U01,IN_RBI_ConceptNote_2022,45,2,KYC.INTERMED,"AML responsibilities could be handled  
+entirely by the Payment Interface Providers 
+(commercial banks). Under the intermediate 
+model, commercial banks may be best placed 
+to conduct AML/CFT checks and the 
+responsibility for compliance with AML/CFT 
+guidelines should rest with them.",text_verified
+CAL-R0004,CAL-019-U01,IN_RBI_ConceptNote_2022,45,3,PRIV.CB.visibility.opaque,"This arrangement means that the Bank 
+would not hold granular personal data on any 
+user, reducing the privacy concerns that could 
+arise in connection with holding personal user 
+data, but AML requirements could still be met by 
+the CBDC system as a whole.",text_verified
+CAL-R0004,CAL-019-U01,IN_RBI_ConceptNote_2022,45,4,KYC.INTERMED,"It needs to be ensured that the ultimate 
+responsibility for Customer Due Di ligence 
+(CDD) is clearly delineated in the framework.",text_verified
+CAL-R0004,CAL-019-U01,IN_RBI_ConceptNote_2022,45,5,AML.MON,"The design of the CBDC should have 
+the embedded mechanism for identifying and 
+monitoring the transactions , as per the 
+threshold limit as applicable in case of cash, to 
+maintain the financial sector integrity.",text_verified
+CAL-R0004,CAL-019-U01,IN_RBI_ConceptNote_2022,45,6,PRIV.ANON,"CBDC would need to be 
+compliant with AML regulations, which rules out 
+truly anonymous payments.",text_verified
+CAL-R0004,CAL-019-U01,IN_RBI_ConceptNote_2022,45,7,PRIV.ANON,"CBDC 
+could be designed to protect privacy and give 
+users control over who they share data with, 
+even if CBDC payments are not truly 
+anonymous (or secret).",text_verified
+CAL-R0004,CAL-023-U01,BS_Bahamas_SandDollar_2019,27,1,ADOPT.experience,"Overall, Exuma exhibits levels of financial access comparable to the national averages, with a high mobile phones usage rate.  While there is openness to greater use of digital payments services, there are existing pockets of reticence , linked mostly to the convenience of access or security concerns of using digital financial services.",text_verified
+CAL-R0004,CAL-023-U01,BS_Bahamas_SandDollar_2019,27,2,ACCESS.universal,"Some 93% indicated that they operate a deposit account within a local bank , compared to the national average in the 80% range. Some 2% indicated that they held a deposit account with the local post office, while 4% stated that they have a deposit account with a credit union, and 4% informed that they did not own a deposit account.",text_verified
+CAL-R0005,CAL-027-U01,TR_Turkey_Digital_Turkish_Lira_First_Phase_Evaluation_Report,34,1,SYS.design,"The component called “wallet application” within the scope of Phase-1 is the whole of the mobile application, wallet, DID agent, and local database components.",text_verified
+CAL-R0005,CAL-027-U01,TR_Turkey_Digital_Turkish_Lira_First_Phase_Evaluation_Report,34,2,TECH.TOKEN.decided_yes,"In online payments, while ownership of the money can be proved through the wallet application, the money and ownership information are stored in the digital currency system. In offline payments, the money itself will be available on user-managed wallet devices.",text_verified
+CAL-R0005,CAL-027-U01,TR_Turkey_Digital_Turkish_Lira_First_Phase_Evaluation_Report,34,3,SYS.design,A user of the digital currency system must first have a DID value that identifies them. The DID value can be considered as an identifier that distinguishes the user from others.,text_verified
+CAL-R0005,CAL-028-U01,CN_China_BIS_2022,197,1,TECH.DLT,"We decided to increase our efforts to experiment with the limits of technologies by utilising technologies such as blockchain, whi ch are emerging fast with potential to play a role in payments.",text_verified
+CAL-R0005,CAL-029-U01,CN_China_BIS_2022,117,1,TECH.DLT,"This experiment adopts and examines : (i) hybrid architecture ; and (ii) DLT -
+method ledger management as a basic model, following recommendations of 
+international organis ations such as the BIS and cases of central banks of major 
+countries.",text_verified
+CAL-R0005,CAL-029-U01,CN_China_BIS_2022,117,2,SYS.design,"In a hybrid architecture, the creation, issuance, and redemption of CBDC is performed by the central 
+bank, while distribution is carried out jointly with private financial institutions.",text_verified
+CAL-R0005,CAL-029-U01,CN_China_BIS_2022,117,3,PROC.pilot_learning,"The first stage of the experiment, completed in December 2021, reviewed the technological feasibility 
+of basic issuance, distribution, and redemption in a distributed ledger -based CBDC experiment  
+environment.",text_verified
+CAL-R0005,CAL-030-U01,NZ_RBNZ_cbdc-insights-dossier-for-public-1,48,1,PRIV.MIN,"RBNZ’s initial preference is to ensure that users have the right level of control over their own data whilst also not inhibiting innovation in the right places. Users should own their data and start opted out, with clear opt-in options supported by a consent framework similar to the future NZ Consumer Data Right framework.",text_verified
+CAL-R0005,CAL-030-U01,NZ_RBNZ_cbdc-insights-dossier-for-public-1,48,2,ADOPT.experience,RBNZ’s initial preference is to ensure wide adoption of CBDC without inhibiting organic innovation opportunities. Users will be able to spend/transfer/receive CBDC using a payment method at the point of interaction that meets their needs,text_verified
+CAL-R0006,CAL-032-U01,US_NYFed_CedarPhaseOne_2022,4,1,PROC.pilot_learning,Test results from the experiment revealed that the blockchain-enabled payments system settles transactions in fewer than ten seconds on average and that throughput across the system increases as additional currencies are included.,text_verified
+CAL-R0006,CAL-032-U01,US_NYFed_CedarPhaseOne_2022,4,2,PROC.pilot_learning,"Under simulated test scenarios based on market throughput estimates, FX spot trades were atomically settled in under ten seconds, validating the project objectives of enabling instant and atomic settlement using DLT",text_verified
+CAL-R0006,CAL-032-U01,US_NYFed_CedarPhaseOne_2022,4,3,TECH.DLT,"Phase I of Project Cedar was designed around a multi-ledger construct in which each currency was maintained on a separate ledger, operated by its respective simulated central bank.",text_verified
+CAL-R0006,CAL-032-U01,US_NYFed_CedarPhaseOne_2022,4,4,TECH.TOKEN.considered,"The Phase I prototype included design choices such as a permissioned blockchain network, an Unspent Transaction Output (UTXO) data model, and Rust as the primary programming language.",text_verified
+CAL-R0006,CAL-032-U01,US_NYFed_CedarPhaseOne_2022,4,5,TECH.DLT,"The Phase I prototype included design choices such as a permissioned blockchain network, an Unspent Transaction Output (UTXO) data model, and Rust as the primary programming language.",text_verified
+CAL-R0006,CAL-032-U01,US_NYFed_CedarPhaseOne_2022,4,6,SYS.design,"several important research topics were designated as out of scope for Phase I, including scalability, privacy, and programmability.",text_verified
+CAL-R0006,CAL-032-U01,US_NYFed_CedarPhaseOne_2022,4,7,PROC.pilot_learning,the Phase I prototype also demonstrated a successful guide for how wCBDC may be exchanged in a multi-ledger ecosystem,text_verified
+CAL-R0006,CAL-033-U01,EU_ECB_2024,2,1,CASH.relation,"The rulebook is essential to ensure that digital euro payments are accepted throughout the euro area, just like cash payments, and will work in a harmonised manner.",text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,1,INST.mandate,BoG is the issuer of the eCedi,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,2,KYC.INTERMED,Commercial banks are in charge of the distribution,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,3,KYC.INTERMED,FinTechs are authorized to provide wallets/services,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,4,PRIV.CB.visibility.transparent,The eCedi has to provide transparency of consumers and transactions in order to mitigate money laundering in the eCedi ecosystem.,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,5,CASH.relation,"Legal tender – accepted and used for all  
+payment scenarios",text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,6,ACCESS.universal,Works effectively both online and offline,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,7,ADOPT.experience,Cost efficient to consumers and merchants,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,8,INTEROP.domestic,"Interoperability with existing payment  
+infrastructure on the Ghanaian market",text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,9,PROG.generic,Potential for the programmable payments,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,10,INTEROP.crossborder,Potential for cross border payments,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,11,OPS.resilience,Strong resilience and availability,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,12,SYS.design,Payments are instant,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,13,INST.mandate,"the eCedi has to be under full control of BoG, being the only entity to create and destroy digital cash",text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,14,KYC.INTERMED,"the ecosystem of eCedi should include the participation of banks, SDIs and PSPs to facilitate interaction between the central bank and end consumers",text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,15,SYS.design,One of the eCedi’s technical solutions addressing cyber-attack prevention is the separation of the issuance and distribution modules of the core infrastructure.,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,16,OPS.resilience,The eCedi will also be scalable to handle large volumes of transactions and provide 24/7 availability and support instant payments.,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,17,ACCESS.universal,the possibility of offline transactions is a relevant requirement,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,18,INTEROP.domestic,The eCedi therefore has to be integrated into existing infrastructure and payment instruments.,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,19,PROG.generic,the eCedi should support programmable use cases to enable innovation and new business models while maintaining the trust of the people,text_verified
+CAL-R0006,CAL-035-U01,GH_Ghana_2021,25,20,CASH.relation,the eCedi must be a close resemblance of cash in addition to having the capability for online transactions among other similar features,text_verified
+CAL-R0006,CAL-036-U01,CN_China_BIS_2022,101,1,INST.mandate,"Bank Indonesia plans to issue CBDC as a response to three key drivers: first, “to emphasise BI’s role as the country’s sole authority for currency issuance, including in digital form, to maintain monetary sovereignty”; second, to take part in international initiatives among central banks or international organisations related to the issuance of CBDCs; and third, to spur on the integration of the national digital economy and financial system.",text_verified
+CAL-R0006,CAL-036-U01,CN_China_BIS_2022,101,2,SYS.design,"Bank Indonesia  has formulated the main goal of CBDC in Indonesia, which is to provide a legal digital payment instrument in the Republic of Indonesia to support the performance  of the central bank’s duties, as well as supporting financial system stability and integration of the digital economy and  financial system",text_verified
+CAL-R0006,CAL-036-U01,CN_China_BIS_2022,101,3,SYS.design,"sovereign CBDC would provide  the public with a direct claim on the central bank , which would ensure trust and improve the functioning of the monetary system",text_verified
+CAL-R0006,CAL-036-U01,CN_China_BIS_2022,101,4,STAB.disintermediation,"CBDC issuance may entail several threats that may hinder monetary and financial system stability, such  as the risks of disintermediation and bank runs, which would lead to the obstruction of monetary  and macroprudential policy exercised by the central bank",text_verified
+CAL-R0007,CAL-037-U01,CN_China_BIS_2022,33,1,OTHER.keep,"In this context, the issuance of a CBDC is not a priority, at least in the short term.",text_verified
+CAL-R0007,CAL-038-U01,JP_BoJ_Pilot_EN,6,1,SYS.design,"The system will be equipped with a series of basic functions that were also built into the system for the PoCs, namely, issuance, payout, credit transfer, acceptance, and redemption (Figure 4).",text_verified
+CAL-R0007,CAL-038-U01,JP_BoJ_Pilot_EN,6,2,AML.LIMIT,"In addition, the system will be equipped with auto-swing6 and auto-charge7 functions, which can be triggered at the time of transfer, and limit check functions against, for example, a holding limit .",text_verified
+CAL-R0007,CAL-038-U01,JP_BoJ_Pilot_EN,6,3,SYS.design,"In the pilot program, we aim t o cover a wider range of technical considerations and solutions than the PoCs, by expanding the scope of the system to include not only the central system but also  the intermediary systems and endpoint devices.",text_verified
+CAL-R0007,CAL-038-U01,JP_BoJ_Pilot_EN,6,4,SYS.design,"Further, additional functions , such as scheduled transfer including batch transfer, debit transfer, and balance/transaction statement inquiry, which were built in to the system for PoC Phase 2, are also planned to be incorporated.",text_verified
+CAL-R0007,CAL-038-U01,JP_BoJ_Pilot_EN,6,5,SYS.design,"An auto-swing function is the automated acceptance of CBDC for the amount in excess of a holding limit into, for example, a bank deposit account linked to a CBDC account.",text_verified
+CAL-R0007,CAL-038-U01,JP_BoJ_Pilot_EN,6,6,SYS.design,"An auto-charge function is the automated payout of CBDC for the amount that enables a transfer from, for example, a bank deposit linked to a CBDC account, when the balance of a CBDC account is insufficient for the transfer.",text_verified
+CAL-R0008,CAL-047-U01,RU_Russia_consultation_paper_201013,18,1,PRIV.CB.visibility.transparent,"The use of a digital ruble will increase settlement transparency and help reduce AML/CFT/
+CFPWMD risks as well as the costs of the financial industry in counteracting illegal actions.",text_verified
+CAL-R0008,CAL-047-U01,RU_Russia_consultation_paper_201013,18,2,PRIV.CB.visibility.transparent,"One of 
+the advantages of the introduction of a digital ruble is the possibility of conducting analysis based 
+on large amounts of data on economic entities and their payments.",text_verified
+CAL-R0008,CAL-047-U01,RU_Russia_consultation_paper_201013,18,3,KYC.INTERMED,"At this point, it is more realistic to implement a model where financial institutions responsible 
+for the execution of the national AML/CFT/CFPWMD legislation are endowed with relevant powers 
+and their current functionality related to AML/CFT/CFPWMD is extended, inter alia, to digital ruble 
+operations.",text_verified
+CAL-R0008,CAL-047-U01,RU_Russia_consultation_paper_201013,18,4,PROG.generic,"establishing a procedure (specifics) for returning money to consumers when they cancel 
+transactions or return goods previously paid for using digital rubles;",text_verified
+CAL-R0008,CAL-047-U01,RU_Russia_consultation_paper_201013,18,5,ACCESS.universal,"When developing interfaces and devices for 
+digital ruble payments, it is necessary to take into account the needs of people with disabilities. 
+In particular, it is important to provide for different channels of information exchange and ways to 
+control account balances and to conduct transactions for people with sensory impairments (sight, 
+hearing), to ensure that visually impaired and blind people use familiar adaptive access programmes, 
+and to develop simplified interfaces and modes for people with mental disabilities.",text_verified
+CAL-R0009,CAL-050-U01,CN_China_BIS_2022,36,1,PROG.generic,"In Brazil the main objective of the introduction of a CBDC is to provide entrepreneurs with a safe and reliable environment to innovate through the use of programmability technologies, such as programable money and smart contracts.",text_verified
+CAL-R0009,CAL-050-U01,CN_China_BIS_2022,36,2,SYS.design,"Therefore, the innovation tool for which the BCB envisions the greatest potential is the development of a platform for smart payments.",text_verified
+CAL-R0009,CAL-051-U01,CN_China_2021,8,1,INTEROP.domestic,"c
+onne
+c
+t
+di
+g
+i
+t
+a
+l
+w
+a
+l
+l
+e
+t
+s
+of
+di
+f
+f
+e
+r
+e
+nt
+ope
+r
+a
+t
+or
+s
+a
+s
+w
+e
+l
+l
+a
+s
+c
+onne
+c
+t
+e
+-
+C
+N
+Y
+w
+a
+l
+l
+e
+t
+w
+i
+t
+h
+ba
+nk
+a
+c
+c
+ount
+s
+,
+t
+hus
+i
+m
+pr
+ovi
+ng
+t
+he
+i
+nt
+e
+r
+ope
+r
+a
+bi
+l
+i
+t
+y
+of
+pa
+y
+m
+e
+nt
+i
+ns
+t
+r
+um
+e
+nt
+s
+.",text_verified
+CAL-R0009,CAL-051-U01,CN_China_2021,8,2,TECH.TOKEN.decided_yes,"E
+-
+C
+N
+Y
+i
+s
+a
+n
+a
+c
+c
+ount
+-
+ba
+s
+e
+d,
+qua
+s
+i
+-
+a
+c
+c
+ount
+-
+ba
+s
+e
+d
+a
+nd
+va
+l
+ue
+-
+ba
+s
+e
+d
+hy
+b
+r
+i
+d
+pa
+y
+m
+e
+nt
+i
+ns
+t
+r
+um
+e
+nt
+.
+I
+t
+ha
+s
+a
+va
+r
+i
+a
+bl
+e
+f
+a
+c
+e
+va
+l
+ue
+a
+nd
+i
+t
+s
+va
+l
+ue
+t
+r
+a
+ns
+f
+e
+r
+t
+a
+ke
+s
+t
+he
+f
+or
+m
+of
+c
+r
+y
+p
+t
+oc
+ur
+r
+e
+nc
+y
+s
+t
+r
+i
+ng
+s
+.",text_verified
+CAL-R0009,CAL-051-U01,CN_China_2021,8,3,PROG.remuneration_no,"T
+he
+e
+-
+C
+N
+Y
+i
+s
+a
+s
+ubs
+t
+i
+t
+ut
+e
+f
+or
+M
+0.
+T
+hus
+,
+i
+t
+i
+s
+t
+r
+e
+a
+t
+e
+d
+t
+he
+s
+a
+m
+e
+a
+s
+t
+he
+phy
+s
+i
+c
+a
+l
+R
+M
+B
+unde
+r
+M
+0,
+w
+hi
+c
+h
+c
+a
+r
+r
+i
+e
+s
+a
+nd
+pa
+y
+s
+no
+i
+nt
+e
+r
+e
+s
+t
+.",text_verified
+CAL-R0009,CAL-051-U01,CN_China_2021,8,4,ADOPT.experience,"C
+ons
+i
+s
+t
+e
+nt
+w
+i
+t
+h
+t
+he
+m
+a
+na
+ge
+m
+e
+nt
+of
+phy
+s
+i
+c
+a
+l
+R
+M
+B
+,
+t
+he
+P
+B
+O
+C
+doe
+s
+not
+c
+ha
+r
+g
+e
+a
+ut
+hor
+i
+z
+e
+d
+ope
+r
+a
+t
+or
+s
+f
+or
+e
+x
+c
+ha
+nge
+a
+nd
+c
+i
+r
+c
+ul
+a
+t
+i
+on
+s
+e
+r
+vi
+c
+e
+s
+,
+a
+nd
+t
+he
+ope
+r
+a
+t
+or
+s
+do
+not
+c
+ha
+r
+g
+e
+i
+ndi
+vi
+dua
+l
+c
+l
+i
+e
+nt
+s
+f
+or
+t
+he
+e
+xc
+ha
+nge
+of
+e
+-
+C
+N
+Y
+e
+i
+t
+he
+r
+.",text_verified
+CAL-R0009,CAL-051-U01,CN_China_2021,8,5,SYS.design,"A
+c
+c
+or
+di
+ng
+t
+o
+s
+e
+t
+t
+l
+e
+m
+e
+nt
+f
+i
+na
+l
+i
+t
+y
+,
+t
+he
+e
+-
+C
+N
+Y
+i
+s
+l
+oos
+e
+l
+y
+c
+oupl
+e
+d
+w
+i
+t
+h
+ba
+nk
+a
+c
+c
+ount
+s
+,
+a
+nd
+t
+hus
+pa
+y
+m
+e
+nt
+s
+t
+hr
+ough
+e
+-
+C
+N
+Y
+w
+a
+l
+l
+e
+t
+s
+a
+r
+e
+s
+e
+t
+t
+l
+e
+d
+upon
+pa
+y
+m
+e
+nt
+.",text_verified
+CAL-R0009,CAL-051-U01,CN_China_2021,8,6,PRIV.BAL,"M
+e
+a
+nw
+hi
+l
+e
+,
+i
+t
+i
+s
+ne
+c
+e
+s
+s
+a
+r
+y
+t
+o
+g
+ua
+r
+d
+a
+ga
+i
+ns
+t
+t
+he
+m
+i
+s
+us
+e
+of
+e
+-
+C
+N
+Y
+i
+n
+i
+l
+l
+e
+g
+a
+l
+a
+nd
+c
+r
+i
+m
+i
+na
+l
+a
+c
+t
+i
+vi
+t
+i
+e
+s
+,
+s
+uc
+h
+a
+s
+t
+e
+l
+e
+-
+f
+r
+a
+ud,
+I
+nt
+e
+r
+ne
+t
+g
+a
+m
+bl
+i
+ng
+,
+m
+one
+y
+l
+a
+unde
+r
+i
+ng,
+a
+nd
+t
+a
+x
+e
+va
+s
+i
+on
+by
+m
+a
+ki
+ng
+s
+ur
+e
+t
+ha
+t
+t
+r
+a
+ns
+a
+c
+t
+i
+ons
+c
+om
+pl
+y
+w
+i
+t
+h
+A
+M
+L
+/
+C
+F
+T
+r
+e
+qui
+r
+e
+m
+e
+nt
+s
+.",text_verified
+CAL-R0009,CAL-051-U01,CN_China_2021,8,7,PRIV.MIN,"T
+he
+e
+-
+C
+N
+Y
+s
+y
+s
+t
+e
+m
+c
+ol
+l
+e
+c
+t
+s
+l
+e
+s
+s
+t
+r
+a
+ns
+a
+c
+t
+i
+on
+i
+nf
+or
+m
+a
+t
+i
+on
+t
+ha
+n
+t
+r
+a
+di
+t
+i
+ona
+l
+e
+l
+e
+c
+t
+r
+oni
+c
+pa
+y
+m
+e
+nt
+a
+nd
+doe
+s
+not
+pr
+ovi
+de
+i
+nf
+or
+m
+a
+t
+i
+on
+t
+o
+t
+hi
+r
+d
+pa
+r
+t
+i
+e
+s
+or
+ot
+he
+r
+g
+ove
+r
+nm
+e
+nt
+a
+ge
+nc
+i
+e
+s
+unl
+e
+s
+s
+s
+t
+i
+pul
+a
+t
+e
+d
+ot
+he
+r
+w
+i
+s
+e
+i
+n
+l
+a
+w
+s
+a
+nd
+r
+e
+gul
+a
+t
+i
+ons
+.",text_verified
+CAL-R0009,CAL-052-U01,MO_AMCM_eMOP_WP,20,1,CASH.relation,"As a legal tender by nature, e-MOP can be accessed via specialised software and hardware wallets.",text_verified
+CAL-R0009,CAL-052-U01,MO_AMCM_eMOP_WP,20,2,INTEROP.domestic,"e-MOP will also be integrated into existing payment tools or online consumption platforms, serving as a basis for cross-platform payments and settlements as well as",text_verified
+CAL-R0010,CAL-058-U01,NO_Norway_norges-bank-memo-1-2021,47,1,OPS.resilience,På den annen side vil et kontobasert system med en egen modul for lokal lagring trolig være best egnet til umiddelbare og endelige offline-betalinger i en beredskapssituasjon.,text_verified
+CAL-R0010,CAL-058-U01,NO_Norway_norges-bank-memo-1-2021,47,2,TECH.TOKEN.considered,"Selv om skillet mellom løsninger i BIS (2018) kan være nyttig for eksempel ved analyser av økonomiske virkninger, synes det ikke hensiktsmessig å opprettholde skillet i det videre arbeidet med å validere løsninger mot egenskaper, særlig i teknisk testing.",text_verified
+CAL-R0011,CAL-061-U01,FR_BdF_2022,10,1,PROC.pilot_learning,"The Banque de France was the first to conduct interbank CBDC experiments, including the implementation of a CBDC “under real conditions” .",text_verified
+CAL-R0011,CAL-061-U01,FR_BdF_2022,10,2,PROC.pilot_learning,"The tests conducted under real conditions focused on delivery versus payment (DvP), payment versus payment (PvP) transactions, and cross-border payments involving, in most cases, tokenised financial assets.",text_verified
+CAL-R0011,CAL-061-U01,FR_BdF_2022,10,3,TECH.DLT,"The programme showed how an interbank CBDC could help secure the development of tokenised financial markets by providing stakeholders with the benefits of distributed ledger technology, in particular distributed ledger-based end-to-end processing of tokenised securities settlement and payment-versus-payment transactions, including cross-border transactions, while benefiting from secure central bank money settlement for the transactions made in this manner.",text_verified
+CAL-R0011,CAL-061-U01,FR_BdF_2022,10,4,INTEROP.crossborder,"The programme showed how an interbank CBDC could help secure the development of tokenised financial markets by providing stakeholders with the benefits of distributed ledger technology, in particular distributed ledger-based end-to-end processing of tokenised securities settlement and payment-versus-payment transactions, including cross-border transactions, while benefiting from secure central bank money settlement for the transactions made in this manner.",text_verified
+CAL-R0011,CAL-062-U01,UY_Uruguay_BCU_BilleteDigital_2017,6,1,SYS.design,"Sistema GSMT (Global Solutions for Money Technologies) integrado por dos módulos GDM (emisión en BCU) y GEM (en IBM) Almacenamiento, manejo y control de la circulación RGC Gestión de usuarios, transferencias y transacciones Cash-In (carga billetes digitales) – Cash-Out (cambio a billetes físicos)",text_verified
+CAL-R0011,CAL-063-U01,RU_Russia_digital_ruble_30062025,13,1,PROC.pilot_learning,"В июне 2022 г. в экспериментальной среде на тестовых цифровых рублях с банками из пилотной группы были отработаны переводы между физическими лицами (C2C), оплата товаров и услуг (C2B) по статической ссылке и возвраты по оплате товаров и услуг (B2C).",text_verified
+CAL-R0011,CAL-063-U01,RU_Russia_digital_ruble_30062025,13,2,PROC.pilot_learning,В сентябре 2022 г. были протестированы клиентские пути в приложениях участников,text_verified
+CAL-R0011,CAL-063-U01,RU_Russia_digital_ruble_30062025,13,3,SYS.design,В мае 2023 г. платформа цифрового рубля введена в промышленную эксплуатацию,text_verified
+CAL-R0011,CAL-063-U01,RU_Russia_digital_ruble_30062025,13,4,PROC.pilot_learning,"С 15 августа 2023 г. на платформе стартовало пилотирование операций с реальными цифровыми рублями на ограниченном круге пользователей и участников. Сначала к нему присоединились 13 банков, около 600 физических лиц и 30 торгово-сервисных предприятий из 11 городов России",text_verified
+CAL-R0011,CAL-063-U01,RU_Russia_digital_ruble_30062025,13,5,PROC.pilot_learning,"В 2024 г. параметры пилота были расширены, что позволило постепенно увеличить число пользователей до 9 тыс. граждан и 1200 компаний.",text_verified
+CAL-R0012,CAL-067-U01,UA_NBU_E-hryvnia_2019,39,1,PRIV.ANON,"Identification  
+Anonymous, partially anonymous or identifiable 
+Anonymous 
+Anonymous, partially anonymous or identifiable 
+Anonymous or partially anonymous 
+Identifiable",text_verified
+CAL-R0012,CAL-067-U01,UA_NBU_E-hryvnia_2019,39,2,TECH.DLT,"Technology 
+Databases (1) or DLT (2) 
+Printing 
+DLT (1) or databases (2) 
+Databases (1) or DLT (2) 
+Databases",text_verified
+CAL-R0012,CAL-067-U01,UA_NBU_E-hryvnia_2019,39,3,PROG.remuneration_no,Profit yield No No No No Yes,text_verified
+CAL-R0012,CAL-067-U01,UA_NBU_E-hryvnia_2019,39,4,AML.LIMIT,"Limits on retail transactions 
+Yes No Yes Yes Depending on transaction type",text_verified
+CAL-R0012,CAL-067-U01,UA_NBU_E-hryvnia_2019,39,5,SYS.design,Liquidity with the NBU with households / the banking system / the NBU with the banking system with the banking system with the banking system,text_verified
+CAL-R0013,CAL-076-U01,SG_MAS_mas-project-orchid-report,35,1,PROG.restriction,PBMs are designed to be used in a permissioned ecosystem and for payments of goods and services that are provided by approved merchants. This is to mitigate money laundering and terrorist financing risk concerns.,text_verified
+CAL-R0013,CAL-076-U01,SG_MAS_mas-project-orchid-report,35,2,KYC.INTERMED,"To mitigate risks, the digital SGD issuer, the merchant wallet provider and the entity handling the last mile settlement would need to be a regulated bank or payment institution.",text_verified
+CAL-R0013,CAL-076-U01,SG_MAS_mas-project-orchid-report,35,3,SYS.design,The digital SGD issuer mints and provisions the underlying digital currency backing the PBM in accordance to the terms and conditions prescribed by the PBM Creator.,text_verified
+CAL-R0013,CAL-076-U01,SG_MAS_mas-project-orchid-report,35,4,PROC.pilot_learning,"Given the experimental nature of the initial phase of Project Orchid, the trials conducted by industry participants involved a restricted group of trial participants and merchants, with low value and limited number of transactions.",text_verified
+CAL-R0013,CAL-077-U01,FR_BdF_2022,11,1,INTEROP.crossborder,"the experiments have shown 
+that the interoperability of CBDCs with each 
+other could contribute to simplifying and 
+improving the performance and accessibility 
+of such transactions and payments.",text_verified
+CAL-R0013,CAL-077-U01,FR_BdF_2022,11,2,TECH.DLT,"As the Banque de France follows a technology-
+agnostic approach, its experiments have 
+made it possible to test various technologies, 
+whether private or public DLTs implemented 
+on open or proprietary protocols.",text_verified
+CAL-R0013,CAL-077-U01,FR_BdF_2022,11,3,PROC.pilot_learning,"The 
+experiments have shown that, regardless 
+of the underlying technology, an interbank 
+CBDC can be an effective means of payment 
+for the multiple use cases envisaged.",text_verified
+CAL-R0013,CAL-077-U01,FR_BdF_2022,11,4,PROG.generic,"They 
+also confirmed that central banks can retain 
+control of the CBDC over these different 
+types of DLTs, in particular by exploiting 
+the programmability features of central bank 
+money provided by this technology.",text_verified
+CAL-R0013,CAL-077-U01,FR_BdF_2022,11,5,INTEROP.domestic,"an interbank CBDC would 
+maximise the benefits expected by the 
+market from the use of DLT for interbank 
+transactions by giving market participants a 
+secure means of settlement in central bank 
+money, thus eliminating any counterparty 
+risk, in compliance with the European 
+and international rules implemented after 
+the 2008 crisis.",text_verified
+CAL-R0013,CAL-078-U01,UA_NBU_E-hryvnia_2019,31,1,TECH.DLT,"when building the Platform, it was impossible to 
+use some of the main features that separate DLT from the 
+classic technologies for building financial information 
+systems. In particular, the idea of decentralizing the 
+transaction validation function in the network, which can be 
+implemented most successfully by means of DLT, in fact 
+contradicts the principle that only the NBU may issue e -
+hryvnia.",text_verified
+CAL-R0013,CAL-078-U01,UA_NBU_E-hryvnia_2019,31,2,TECH.DLT,"The public accessibility of the Platform’s financial 
+transactions for review and verification is not a crucial or, in 
+certain cases, even desired feature of a technology used for 
+CBDC.",text_verified
+CAL-R0013,CAL-078-U01,UA_NBU_E-hryvnia_2019,31,3,TECH.DLT,"Assessment of the basic technological solution used for 
+implementation of the Platform allows for a gen eral 
+conclusion that it will be fully possible and effective, although 
+not mandatory (due to the lack of fundamental advantages), 
+to use the distributed ledger technology for the Platform’s 
+operation under the centralized model of e -hryvnia issuance 
+and circulation.",text_verified
+CAL-R0013,CAL-078-U01,UA_NBU_E-hryvnia_2019,31,4,PROC.pilot_learning,"The main technological risk for development and distribution 
+of the Platform in its current version is that a private version 
+of the Stellar blockchain protocol (which was brought in line 
+with the NBU’s requirements) was used for the Platform. 
+Such version hampers (virtually prevents) the elimination of 
+errors and vulnerabilities of the Stellar blockchain protocol as 
+well as the development of the Platform’s functions as new 
+options are being added to the basic blockchain protocol.",text_verified
+CAL-R0013,CAL-078-U01,UA_NBU_E-hryvnia_2019,31,5,PROC.pilot_learning,"This risk makes it virtually unacceptable to apply at a national 
+scale the solution used in the Pilot Project.",text_verified
+CAL-R0013,CAL-078-U01,UA_NBU_E-hryvnia_2019,31,6,PROC.pilot_learning,"the only effective way of implementing the systems based on 
+open-source projects would be to use a test solution with 
+open Internet access to build and test the Platform’s 
+components and to develop an efficient procedure for testing 
+and introducing changes in the production environment.",text_verified
+CAL-R0013,CAL-078-U01,UA_NBU_E-hryvnia_2019,31,7,PROC.pilot_learning,"The specifics of the blockchain solution selected for the Pilot 
+Project include a requirement of time synchronization 
+between the Platform’s nodes (especially validator nodes). In 
+the test environmen t, blocks were closing unstably in the 
+event of time desynchronization of over 10 seconds between 
+validator servers.",text_verified
+CAL-R0013,CAL-078-U01,UA_NBU_E-hryvnia_2019,31,8,PROC.pilot_learning,"once a certain volume of data is stored 
+to the Platform, there is a major slowdown in recovering a 
+registered validator node and in adding a new one. Such an 
+effect was found in the test system and, to some extent, 
+during the recovery of validator nodes in the production 
+environment in the course of the Pilot Project. After six or 
+more weeks of collection of data on the Platform’s operation, 
+the recovery rate of the last 20% of data was only three times 
+higher than the speed with which new blocks emerged, which 
+led to the long recovery (over several days) of validators.",text_verified

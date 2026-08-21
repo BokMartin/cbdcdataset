@@ -72,6 +72,14 @@ def main():
     calibration_freeze = pd.read_csv(
         ROOT / "validation/calibration_v10/freeze_checklist.csv", keep_default_na=False
     )
+    calibration_archive = json.loads(
+        (ROOT / "validation/extraction_v10_1/runs/2026-08-21_calibration/ARCHIVE_MANIFEST.json")
+        .read_text(encoding="utf-8")
+    )
+    calibration_evaluation = json.loads(
+        (ROOT / "validation/extraction_v10_1/runs/2026-08-21_calibration/evaluation/calibration_results.json")
+        .read_text(encoding="utf-8")
+    )
 
     require(len(candidates) == 6_139, "candidate count")
     require((candidates["v5_verdict"] == "keep").sum() == 5_624, "kept count")
@@ -87,7 +95,7 @@ def main():
     )
     require(
         set(open_items.loc[open_items["status"].isin(["open", "required_pending", "deferred_open"]), "item_id"])
-        == {"HUMAN-002", "CALIB-002"},
+        == {"HUMAN-002", "CALIB-002", "CALIB-004", "CALIB-005"},
         "open validation items",
     )
     require(
@@ -140,11 +148,27 @@ def main():
         "v10.1 shared extraction protocol",
     )
     require(
-        calibration_freeze.set_index("id").loc[["C01", "C02", "C05"], "status"]
+        calibration_freeze.set_index("id").loc[["C01", "C02", "C05", "C07"], "status"]
         .eq("complete").all()
-        and calibration_freeze.set_index("id").loc[["C04", "C06", "C07", "C08", "C09"], "status"]
-        .eq("pending").all(),
+        and calibration_freeze.set_index("id").loc[["C04", "C06", "C09"], "status"]
+        .eq("pending").all()
+        and calibration_freeze.set_index("id").loc["C08", "status"] == "fail_blocks_reserve"
+        and calibration_freeze.set_index("id").loc["C10", "status"] == "partial",
         "calibration freeze progression",
+    )
+    union = calibration_evaluation["models"]["verified_union"]
+    require(
+        calibration_archive["reserve_status"] == "sealed and not accessed"
+        and calibration_evaluation["status"] == "development_calibration_not_confirmatory"
+        and calibration_evaluation["reserve_status"] == "sealed"
+        and calibration_archive["provider_runs"]["codex"]["authoritative_statement_count"] == 96
+        and calibration_archive["provider_runs"]["claude"]["authoritative_statement_count"] == 127
+        and union["paragraph_metrics"]["probability"]["tp"] == 45
+        and union["paragraph_metrics"]["probability"]["fn"] == 31
+        and union["paragraph_metrics"]["probability"]["recall"] < 0.90
+        and union["paragraph_metrics"]["probability"]["precision"] < 0.80
+        and union["classification"]["recall"] < 0.80,
+        "v10.1 calibration archive and failed gates",
     )
     require(
         documents.loc[documents["doc_id"].eq("JP_BoJ_Pilot_JP"), "language"].eq("ja").all()
@@ -171,8 +195,9 @@ def main():
         "Model B failed gates",
     )
     require(
-        gates.set_index("id").loc[["E1", "E2", "E3", "S1"], "status"].eq("fail").all(),
-        "Model B gate status",
+        gates.set_index("id").loc[["E1", "E2", "E3", "C1"], "status"].eq("fail").all()
+        and gates.set_index("id").loc["S1", "status"] == "pass",
+        "current v10.1 calibration gate status",
     )
     response_path = ROOT / "validation/model_b_pilot/responses.jsonl"
     require(

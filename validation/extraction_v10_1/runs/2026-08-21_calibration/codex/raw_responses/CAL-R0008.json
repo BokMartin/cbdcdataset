@@ -1,0 +1,102 @@
+{
+  "request_id": "CAL-R0008",
+  "units": [
+    {
+      "unit_id": "CAL-043-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-044-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-045-U01",
+      "status": "structural_blank",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-046-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-047-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-047-P0018-B01",
+          "quote": "It is also important that the infrastructure allows digital ruble transactions initiated by the payee or third parties with the consent of the owner, which will, inter alia, support the existing technology of automatic payments for utility and other regular services provided to households.",
+          "quote_en": null,
+          "code1": "PROG.generic",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-047-P0018-B01",
+          "quote": "The use of a digital ruble will increase settlement transparency and help reduce AML/CFT/ CFPWMD risks as well as the costs of the financial industry in counteracting illegal actions. One of the advantages of the introduction of a digital ruble is the possibility of conducting analysis based on large amounts of data on economic entities and their payments.",
+          "quote_en": null,
+          "code1": "AML.MON",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-047-P0018-B01",
+          "quote": "At this point, it is more realistic to implement a model where financial institutions responsible for the execution of the national AML/CFT/CFPWMD legislation are endowed with relevant powers and their current functionality related to AML/CFT/CFPWMD is extended, inter alia, to digital ruble operations. As part of these measures, financial institutions will need to modernise their existing resources which are currently used to analyse customer activity.",
+          "quote_en": null,
+          "code1": "KYC.INTERMED",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-047-P0018-B01",
+          "quote": "Therefore, if a digital ruble is introduced as a publicly available payment instrument, a targeted training programme should be carried out aimed at improving general digital and financial literacy and developing the skills required to perform digital ruble transactions. It would be advisable to include training in the use of digital payment instruments in the existing educational system. Special attention must be paid to certain categories of people with potentially low digital and financial literacy, as well as those who are not covered by the education system.",
+          "quote_en": null,
+          "code1": "ACCESS.universal",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 2,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-047-P0018-B01",
+          "quote": "When developing interfaces and devices for digital ruble payments, it is necessary to take into account the needs of people with disabilities. In particular, it is important to provide for different channels of information exchange and ways to control account balances and to conduct transactions for people with sensory impairments (sight, hearing), to ensure that visually impaired and blind people use familiar adaptive access programmes, and to develop simplified interfaces and modes for people with mental disabilities. There is the potential of using a voice-user interface.",
+          "quote_en": null,
+          "code1": "ACCESS.universal",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-047-P0018-B01",
+          "quote": "If a digital ruble is used to pay for goods, works or services, reliable protection of consumer rights must be ensured, including: • specifying information on payment in digital rubles in documents confirming the purchase of / payment for goods, work or services; • establishing a procedure (specifics) for returning money to consumers when they cancel transactions or return goods previously paid for using digital rubles;",
+          "quote_en": null,
+          "code1": "PROG.generic",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-048-U01",
+      "status": "ok",
+      "statements": []
+    }
+  ]
+}

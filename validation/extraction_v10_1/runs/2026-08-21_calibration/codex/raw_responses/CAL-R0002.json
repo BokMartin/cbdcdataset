@@ -1,0 +1,81 @@
+{
+  "request_id": "CAL-R0002",
+  "units": [
+    {
+      "unit_id": "CAL-007-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-008-U01",
+      "status": "structural_blank",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-009-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-009-P0009-B01",
+          "quote": "The digital shekel system will operate as a financial system for immediate payments between end users (individuals, businesses, various organizations, and government agencies). According to the two-tier model, the Bank of Israel and intermediaries will be involved in providing the complete solution to end users. In the layer of intermediaries, a distinction will be made between two types of participants that require different functionality in implementing the solution: payment service providers (PSPs) and f unding institutions (FIs).",
+          "quote_en": null,
+          "code1": "SYS.design",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-009-P0009-B01",
+          "quote": "Additionally, there may be additional advanced service providers (ASPs) that end users are not required to interact with, although they will be able to provide end users with additional services, including information services, conditional payments, or other innovative payment applications.",
+          "quote_en": null,
+          "code1": "PROG.generic",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 2,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-010-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-011-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-012-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-012-P0023-B01",
+          "quote": "Since prior acquaintance or connection between the e nd user and the FI is not required, the central bank will act as an intermediary between the two entities and will execute the debit operation from the FI's digital shekel wallet and, in parallel, the credit operation to the end user's digital shekel wallet. Since the issuance of digital shekels is performed directly from the central bank to the end user's wallet, this situation deviates from the indirect distribution model mentioned in the previous section .",
+          "quote_en": null,
+          "code1": "SYS.design",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 2,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-012-P0023-B01",
+          "quote": "It is possible that the generic solution presented above will enable conversions of low amounts, up to certain thresholds which will be determined on the basis of, among other things, issues related to AML/CFT. For higher amounts, the solution will be based on the two -step process outlined above, requiring deposit to or withdrawal from the end user's bank account.",
+          "quote_en": null,
+          "code1": "AML.LIMIT",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 2,
+          "source_mode": "text"
+        }
+      ]
+    }
+  ]
+}

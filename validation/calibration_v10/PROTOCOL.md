@@ -1,6 +1,8 @@
 # v10 extraction calibration protocol
 
-Status 2026-08-21: Phase 1 is complete (41 FN, 20 FP and 5 span cases adjudicated). The corrected development reference is `calibration_reference_v10_1.csv`; it versions 17 scope exclusions and one false-negative correction while preserving the original human workbook. The shared Model A/B candidate protocol is in `validation/extraction_v10_1/`. It has not yet passed calibration and the reserve remains sealed.
+Status 2026-08-21: Phase 1 is complete (41 FN, 20 FP and 5 span cases adjudicated). The corrected development reference is `calibration_reference_v10_1.csv`; it versions 17 scope exclusions and one false-negative correction while preserving the original human workbook. Independent v10.1 runs are archived in `validation/extraction_v10_1/runs/2026-08-21_calibration/`. The protocol did not pass E1, E2, E3 or C1; S1 passed. The reserve remains sealed.
+
+The verified union reached probability precision 0.662 and recall 0.592 (document-cluster bootstrap 95% recall CI 0.392–0.746), stress-long recall 0.650 and exact-code recall 0.240. Inspection of the disagreement directions showed a material conflict between the existing reference and the frozen v10.1 scope: several apparent false negatives are explicit exclusions under v10.1, while several apparent false positives are eligible own-project decisions or pilot findings. The next permitted development action is therefore blind human scope re-adjudication of all 69 reference/union disagreements, not prompt tuning to the current labels. The workbook intentionally hides model identity, model text and disagreement direction.
 
 ## Scope
 

@@ -1,0 +1,59 @@
+{
+  "request_id": "CAL-R0010",
+  "units": [
+    {
+      "unit_id": "CAL-055-U01",
+      "status": "structural_blank",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-056-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-056-P0018-B01",
+          "quote": "The HKMA concurs that managing competing design principles, with due regard to regulatory and compliance standards, would be one of the critical aspects in the design architecture of CBDC.",
+          "quote_en": null,
+          "code1": "PRIV.BAL",
+          "odr": "proposal",
+          "privacy_direction": "conditional",
+          "privacy_relation": "from_state",
+          "strength": 2,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-057-U01",
+      "status": "structural_blank",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-058-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-058-P0047-B01",
+          "quote": "På den annen side vil et kontobasert system med en egen modul for lokal lagring trolig være best egnet til umiddelbare og endelige offline-betalinger i en beredskapssituasjon.",
+          "quote_en": null,
+          "code1": "TECH.TOKEN.considered",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 2,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-059-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-060-U01",
+      "status": "ok",
+      "statements": []
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 
 `v10.1` is the candidate protocol for the final paper extraction. It becomes reserve-frozen only after independent Model A and Model B runs on all 78 development pages satisfy the pre-existing gates or after the single permitted cause-mapped revision. The 40 reserve pages remain sealed.
 
+Calibration outcome 2026-08-21: independent Codex and Claude runs plus their verified union are sealed and archived under `runs/2026-08-21_calibration/`. E1, E2, E3 and C1 failed; S1 passed. No reserve material was accessed. Before the single v10.2 revision, the 69 reference/union paragraph disagreements must be blindly re-adjudicated because the current human reference and v10.1 scope are not consistently aligned.
+
 ## Fixed semantics
 
 Both models use the same `PROMPT_CORE.md`, `data/codebook.csv`, input units, output schema, span verifier, matcher, and deduplication rule. Provider task files contain only interface instructions. Neither model receives human labels, calibration error cases, prior model outputs, or the other model's responses.

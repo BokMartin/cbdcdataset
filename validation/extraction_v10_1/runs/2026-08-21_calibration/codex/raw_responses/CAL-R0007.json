@@ -1,0 +1,92 @@
+{
+  "request_id": "CAL-R0007",
+  "units": [
+    {
+      "unit_id": "CAL-037-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-037-P0033-B01",
+          "quote": "In this context, the issuance of a CBDC is not a priority, at least in the short term.",
+          "quote_en": null,
+          "code1": "OTHER.keep",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-038-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-038-P0006-B01",
+          "quote": "The system will be equipped with a series of basic functions that were also built into the system for the PoCs, namely, issuance, payout, credit transfer, acceptance, and redemption (Figure 4).",
+          "quote_en": null,
+          "code1": "SYS.design",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-038-P0006-B01",
+          "quote": "In addition, the system will be equipped with auto-swing6 and auto-charge7 functions, which can be triggered at the time of transfer, and limit check functions against, for example, a holding limit .",
+          "quote_en": null,
+          "code1": "AML.LIMIT",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-038-P0006-B01",
+          "quote": "In the pilot program, we aim t o cover a wider range of technical considerations and solutions than the PoCs, by expanding the scope of the system to include not only the central system but also  the intermediary systems and endpoint devices.",
+          "quote_en": null,
+          "code1": "SYS.design",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 2,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-038-P0006-B01",
+          "quote": "Further, additional functions , such as scheduled transfer including batch transfer, debit transfer, and balance/transaction statement inquiry, which were built in to the system for PoC Phase 2, are also planned to be incorporated.",
+          "quote_en": null,
+          "code1": "SYS.design",
+          "odr": "decision",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 2,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-039-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-040-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-041-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-042-U01",
+      "status": "ok",
+      "statements": []
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "request_id": "CAL-R0004",
+  "units": [
+    {
+      "unit_id": "CAL-019-U01",
+      "status": "ok",
+      "statements": [
+        {
+          "block_id": "CAL-019-P0045-B01",
+          "quote": "A CBDC payment system would need to be compliant with AML and CFT regulations and requirements. This means that the identity of CBDC users would need to be known to at least some authority or institution in the wider CBDC network who can validate the legitimacy of their transaction.",
+          "quote_en": null,
+          "code1": "PRIV.ANON",
+          "odr": "proposal",
+          "privacy_direction": "decreases",
+          "privacy_relation": "from_state",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-019-P0045-B01",
+          "quote": "Under the intermediate model, commercial banks may be best placed to conduct AML/CFT checks and the responsibility for compliance with AML/CFT guidelines should rest with them.",
+          "quote_en": null,
+          "code1": "KYC.INTERMED",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-019-P0045-B01",
+          "quote": "This arrangement means that the Bank would not hold granular personal data on any user, reducing the privacy concerns that could arise in connection with holding personal user data, but AML requirements could still be met by the CBDC system as a whole.",
+          "quote_en": null,
+          "code1": "PRIV.CB.visibility.opaque",
+          "odr": "proposal",
+          "privacy_direction": "increases",
+          "privacy_relation": "from_state",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-019-P0045-B01",
+          "quote": "The design of the CBDC should have the embedded mechanism for identifying and monitoring the transactions , as per the threshold limit as applicable in case of cash, to maintain the financial sector integrity.",
+          "quote_en": null,
+          "code1": "AML.MON",
+          "odr": "proposal",
+          "privacy_direction": "neutral",
+          "privacy_relation": "not_applicable",
+          "strength": 3,
+          "source_mode": "text"
+        },
+        {
+          "block_id": "CAL-019-P0045-B01",
+          "quote": "As discussed above, CBDC would need to be compliant with AML regulations, which rules out truly anonymous payments. Howev er, CBDC could be designed to protect privacy and give users control over who they share data with, even if CBDC payments are not truly anonymous (or secret).",
+          "quote_en": null,
+          "code1": "PRIV.BAL",
+          "odr": "proposal",
+          "privacy_direction": "conditional",
+          "privacy_relation": "from_state",
+          "strength": 3,
+          "source_mode": "text"
+        }
+      ]
+    },
+    {
+      "unit_id": "CAL-020-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-021-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-022-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-023-U01",
+      "status": "ok",
+      "statements": []
+    },
+    {
+      "unit_id": "CAL-024-U01",
+      "status": "ok",
+      "statements": []
+    }
+  ]
+}
