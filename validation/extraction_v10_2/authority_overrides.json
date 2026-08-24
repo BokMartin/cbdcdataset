@@ -1,0 +1,218 @@
+{
+  "document_defaults": {
+    "AM_ARM_001": {
+      "project_owner": "Central Bank of Armenia / Armenian CBDC study",
+      "authority_note": "Retain only claims explicitly tied to Armenia's own CBDC project or authority position. Exclude model assumptions and literature without institutional adoption."
+    },
+    "AU_RBA_003": {
+      "project_owner": "Reserve Bank of Australia and Digital Finance CRC (Project Acacia)",
+      "authority_note": "Retain official Project Acacia design choices, requirements, and executed results. Exclude general tokenisation context and unadopted respondent suggestions."
+    },
+    "AW_ARU_001": {
+      "project_owner": "Aruba policy study / Central Bank of Aruba",
+      "authority_note": "This is a broad Aruba policy report. Retain only explicit Aruba CBDC recommendations or findings; exclude external literature and non-CBDC chapters."
+    },
+    "BO_BCB_Boliviano_Digital_2025": {
+      "project_owner": "Banco Central de Bolivia (Boliviano Digital)",
+      "authority_note": "Retain BCB project decisions, proposals, requirements, and findings; exclude headings and generic background."
+    },
+    "BS_Bahamas_SandDollar_2019": {
+      "project_owner": "Central Bank of The Bahamas (Sand Dollar)",
+      "authority_note": "Retain Sand Dollar project decisions and executed project research/findings. Exclude non-CBDC survey facts unless the text states a CBDC adoption implication."
+    },
+    "CN_China_2021": {
+      "project_owner": "People's Bank of China (e-CNY)",
+      "authority_note": "Retain PBOC e-CNY decisions, features, and requirements; exclude background and cited research."
+    },
+    "CO_Colombia_2022": {
+      "project_owner": "Banco de la Republica (Colombian CBDC work)",
+      "authority_note": "Retain only an explicit Banco de la Republica CBDC position, proposal, or project result; exclude general presentation context."
+    },
+    "EU_ECB_2024": {
+      "project_owner": "European Central Bank / Eurosystem (digital euro)",
+      "authority_note": "Retain Eurosystem digital-euro decisions, commitments, requirements, and reported findings; exclude process updates without a substantive claim."
+    },
+    "EU_ECB_ThirdProgress_2025": {
+      "project_owner": "European Central Bank / Eurosystem (digital euro)",
+      "authority_note": "Retain Eurosystem digital-euro decisions, commitments, requirements, and reported findings; exclude stakeholder discussion summaries unless adopted."
+    },
+    "FR_BdF_2022": {
+      "project_owner": "Banque de France (wholesale CBDC programme)",
+      "authority_note": "Retain Banque de France own-programme decisions and executed findings. Exclude foreign experiments and general market regulation without a CBDC-specific conclusion."
+    },
+    "GH_Ghana_2021": {
+      "project_owner": "Bank of Ghana (eCedi)",
+      "authority_note": "Retain Bank of Ghana eCedi design positions and requirements; exclude general CBDC literature."
+    },
+    "HK_HKMA_2021": {
+      "project_owner": "Hong Kong Monetary Authority (e-HKD)",
+      "authority_note": "Retain HKMA e-HKD positions and architecture claims. A disclaimer that a study is not a final blueprint is not itself a design conclusion."
+    },
+    "HK_HKMA_2022": {
+      "project_owner": "Hong Kong Monetary Authority (e-HKD)",
+      "authority_note": "Consultation format: retain only text in HKMA's response or an explicit HKMA commitment. Exclude respondent feedback and suggestions unless HKMA adopts them."
+    },
+    "HK_HKMA_eHKD_Phase2_2025": {
+      "project_owner": "Hong Kong Monetary Authority (e-HKD Phase 2 pilots)",
+      "authority_note": "Retain complete e-HKD pilot findings, conclusions, and HKMA requirements. Quote the complete claim before any trailing fragment."
+    },
+    "HK_HKMA_eHKD_PolicyDesign": {
+      "project_owner": "Hong Kong Monetary Authority (e-HKD)",
+      "authority_note": "Retain HKMA policy/design positions for e-HKD; exclude generic literature and open questions."
+    },
+    "ID_Indonesia_2022": {
+      "project_owner": "Bank Indonesia (Digital Rupiah)",
+      "authority_note": "Retain Bank Indonesia Digital Rupiah decisions, roadmap commitments, features, and requirements."
+    },
+    "ID_Indonesia_2023a": {
+      "project_owner": "Bank Indonesia (Digital Rupiah)",
+      "authority_note": "Retain Bank Indonesia Digital Rupiah decisions, roadmap commitments, features, and requirements."
+    },
+    "IL_Israel_#U05d0#U05e8#U05db#U05d9#U05d8#U05e7#U05d8#U05d5#U05e8#U05d4-#U05dc#U05d5#U05d2#U05d9#U05ea-#U05d0#U05e0#U05d2#U05dc#U05d9#U05ea.pdf": {
+      "project_owner": "Bank of Israel (digital shekel)",
+      "authority_note": "Retain Bank of Israel digital-shekel proposals, preferences, features, and requirements. Exclude figure fragments without a complete claim."
+    },
+    "IN_RBI_ConceptNote_2022": {
+      "project_owner": "Reserve Bank of India (digital rupee)",
+      "authority_note": "Retain RBI proposals, decisions, requirements, and operating-model claims for the digital rupee."
+    },
+    "IT_BdI_MISP_2021": {
+      "project_owner": "Banca d'Italia research context",
+      "authority_note": "Do not treat literature review or generic CBDC taxonomy as an Italian project decision. Retain only an explicit Banca d'Italia own-project position or finding."
+    },
+    "JP_BoJ_Pilot_EN": {
+      "project_owner": "Bank of Japan (CBDC pilot)",
+      "authority_note": "Retain Bank of Japan own-pilot decisions and executed results; exclude workgroup purposes without results."
+    },
+    "JP_BoJ_Pilot_JP": {
+      "project_owner": "Bank of Japan (CBDC pilot)",
+      "authority_note": "Japanese source. Retain Bank of Japan own-pilot decisions and executed results; exclude workgroup purposes without results."
+    },
+    "MO_AMCM_eMOP_WP": {
+      "project_owner": "Monetary Authority of Macao (e-MOP)",
+      "authority_note": "Retain AMCM e-MOP decisions, aims, features, and requirements. Exclude incomplete OCR fragments."
+    },
+    "NA_BoN_2022": {
+      "project_owner": "Bank of Namibia (Namibian CBDC work)",
+      "authority_note": "Retain Bank of Namibia own-project positions and requirements; exclude general context."
+    },
+    "NO_NB_FI2024_CBDC": {
+      "project_owner": "Norges Bank (Norwegian CBDC work)",
+      "authority_note": "Retain only Norges Bank CBDC positions or CBDC implications. Existing Norwegian payment products are context unless explicitly linked to CBDC design."
+    },
+    "NO_Norway_nb_memo_2_19_dsp": {
+      "project_owner": "Norges Bank (Norwegian CBDC work)",
+      "authority_note": "Retain Norges Bank CBDC analysis only when it states an issuer proposal, preference, requirement, or own-project finding; exclude cited theory."
+    },
+    "NO_Norway_norges-bank-memo-1-2021": {
+      "project_owner": "Norges Bank (Norwegian CBDC work)",
+      "authority_note": "Retain Norges Bank CBDC positions and requirements; exclude generic or cited research."
+    },
+    "NZ_RBNZ_cbdc-insights-dossier-for-public-1": {
+      "project_owner": "Reserve Bank of New Zealand (digital cash/CBDC)",
+      "authority_note": "Mixed workshop dossier: retain only text expressly labelled RBNZ initial preference or RBNZ workshopped preference. Exclude Accenture initial answers, questions, option tables, and unadopted participant material."
+    },
+    "RU_Russia_consultation_paper_201013": {
+      "project_owner": "Bank of Russia (digital ruble)",
+      "authority_note": "Retain explicit Bank of Russia proposals, preferences, and requirements. Exclude open questions and future research without a position."
+    },
+    "RU_Russia_digital_ruble_30062025": {
+      "project_owner": "Bank of Russia (digital ruble)",
+      "authority_note": "Retain implemented digital-ruble features, requirements, and reported results."
+    },
+    "SE_Riksbank_2017": {
+      "project_owner": "Sveriges Riksbank (e-krona)",
+      "authority_note": "Retain Riksbank e-krona proposals, preferences, and requirements; exclude generic background."
+    },
+    "SG_MAS_mas-project-orchid-report": {
+      "project_owner": "Monetary Authority of Singapore (Project Orchid / purpose-bound money)",
+      "authority_note": "Retain complete Project Orchid decisions, requirements, and executed findings. Exclude future research and incomplete fragments."
+    },
+    "SZ_Eswatini_2024-Fintech-Digital-Lilangeni-Design-Paper": {
+      "project_owner": "Central Bank of Eswatini (Digital Lilangeni)",
+      "authority_note": "Retain Central Bank of Eswatini design decisions, proposals, features, and requirements; use the supplied render when text is sparse."
+    },
+    "TH_Thailand_rCBDC_Conclusion_Report": {
+      "project_owner": "Bank of Thailand (retail CBDC pilot)",
+      "authority_note": "Retain Bank of Thailand own-pilot conclusions, requirements, and decisions."
+    },
+    "TR_Turkey_Digital_Turkish_Lira_First_Phase_Evaluation_Report": {
+      "project_owner": "Central Bank of the Republic of Turkiye (Digital Turkish Lira)",
+      "authority_note": "Retain CBRT adopted features, explicit proposals/requirements, and executed Phase 1 results. Exclude lists of future work without a conclusion."
+    },
+    "UA_NBU_E-hryvnia_2019": {
+      "project_owner": "National Bank of Ukraine (e-hryvnia pilot)",
+      "authority_note": "Retain NBU own-pilot findings and resulting decisions/requirements. Prefer a specific substantive code over PROC.pilot_learning."
+    },
+    "UN_ESCAP_4e8e7145_2023": {
+      "project_owner": "Named issuing authority in the passage (secondary official report)",
+      "authority_note": "UN ESCAP secondary report: retain only concrete issuer decisions/features explicitly attributed to a named CBDC project. Exclude author generalisations, glossaries, and unattributed recommendations."
+    },
+    "UN_ESCAP_ESCAP-2022-RP-National-study-central-bank-digital-currency-stablecoin-Maldives": {
+      "project_owner": "Maldives Monetary Authority / Maldives national CBDC study",
+      "authority_note": "Retain explicit Maldives CBDC project recommendations and authority positions. Exclude generic stakeholder lists and foreign examples."
+    },
+    "US_NYFed_CedarPhaseOne_2022": {
+      "project_owner": "Federal Reserve Bank of New York, New York Innovation Center (Project Cedar)",
+      "authority_note": "Retain Project Cedar own-test design and executed findings; exclude generic wholesale FX context."
+    },
+    "UY_BCU_Seven_Lessons_2022": {
+      "project_owner": "Banco Central del Uruguay (e-Peso pilot)",
+      "authority_note": "Retain BCU own-pilot findings and resulting design lessons; exclude cited literature."
+    },
+    "UY_Uruguay_BCU_BilleteDigital_2017": {
+      "project_owner": "Banco Central del Uruguay (e-Peso pilot)",
+      "authority_note": "Retain BCU e-Peso decisions, features, and executed findings; use original Spanish quote."
+    }
+  },
+  "unit_overrides": {
+    "CAL-001-U01": {
+      "project_owner": "Banco de la Republica (Colombia CBDC analysis)",
+      "authority_note": "BIS compendium page for Colombia. Retain only Colombian central-bank analysis/positions; exclude cited literature and generic theory. Do not treat this as PBOC material."
+    },
+    "CAL-011-U01": {
+      "project_owner": "Central Bank of Chile (Chilean CBDC analysis)",
+      "authority_note": "BIS compendium page for Chile. Retain only explicit BCCh positions or proposals; exclude payment-system background. Do not treat this as PBOC material."
+    },
+    "CAL-021-U01": {
+      "project_owner": "BIS cross-country synthesis / multiple EME central banks",
+      "authority_note": "Cross-country synthesis, not one focal issuer. Retain only a concrete claim explicitly attributed to a named central bank's own project; exclude aggregate survey findings and literature."
+    },
+    "CAL-022-U01": {
+      "project_owner": "Reserve Bank of India (digital rupee)",
+      "authority_note": "BIS compendium India chapter. Retain RBI positions and digital-rupee proposals; exclude general background. Do not treat this as PBOC material."
+    },
+    "CAL-028-U01": {
+      "project_owner": "Central Bank of the Republic of Turkiye (Digital Turkish Lira)",
+      "authority_note": "BIS compendium Turkiye chapter. Retain CBRT own-project decisions, experiments, and positions. Do not treat this as PBOC material."
+    },
+    "CAL-029-U01": {
+      "project_owner": "Bank of Korea (Korean CBDC experiment)",
+      "authority_note": "BIS compendium Korea chapter. Retain BOK own-project experiments and positions; exclude cited literature. Do not treat this as PBOC material."
+    },
+    "CAL-036-U01": {
+      "project_owner": "Bank Indonesia (Digital Rupiah)",
+      "authority_note": "BIS compendium Indonesia chapter. Retain Bank Indonesia plans, risks, and design positions. Do not treat this as PBOC material."
+    },
+    "CAL-037-U01": {
+      "project_owner": "Banco Central de la Republica Argentina (Argentine CBDC analysis)",
+      "authority_note": "BIS compendium Argentina chapter. General design lists and other countries are context; retain the explicit BCRA position about Argentine CBDC priority/study. Do not treat this as PBOC material."
+    },
+    "CAL-050-U01": {
+      "project_owner": "Banco Central do Brasil (Drex / Brazilian CBDC work)",
+      "authority_note": "BIS compendium Brazil chapter. Retain BCB own-project objectives and positions; exclude literature unless adopted. Do not treat this as PBOC material."
+    },
+    "CAL-046-U01": {
+      "project_owner": "Central Bank of Nigeria (eNaira), reported by UN ESCAP",
+      "authority_note": "Secondary official description of eNaira. Retain only concrete CBN decisions or system features explicitly reported; exclude UN ESCAP generalisations."
+    },
+    "CAL-055-U01": {
+      "project_owner": "No focal issuer: glossary page",
+      "authority_note": "Glossary page. Return no statements unless the render/source unexpectedly contains a complete focal-project claim beyond definitions."
+    },
+    "CAL-058-U01": {
+      "project_owner": "Norges Bank (Norwegian CBDC work)",
+      "authority_note": "Norwegian-language page; metadata is prospectively corrected to language=no. Retain Norges Bank CBDC positions and requirements; exclude generic/cited research."
+    }
+  }
+}

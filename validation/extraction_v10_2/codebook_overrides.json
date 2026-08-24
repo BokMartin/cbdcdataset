@@ -1,0 +1,67 @@
+{
+  "KYC.TIER": {
+    "definition": "Tiered customer due diligence or wallet KYC: simplified, standard, or enhanced checks differentiated by wallet limit, customer risk, or use case.",
+    "code_when": "The claim explicitly links different KYC/due-diligence levels to wallet type, value/holding limit, or customer risk.",
+    "dont_code_when": "Internal staff authorisation, platform access-control tiers, transaction limits without KYC, or one-level identity verification."
+  },
+  "KYC.INTERMED": {
+    "definition": "Allocation of customer KYC/AML responsibility between the central bank and authorised intermediaries such as banks or PSPs.",
+    "code_when": "The claim states who performs customer identification, due diligence, or AML/CFT checks in the CBDC operating/distribution model.",
+    "dont_code_when": "Banks are mentioned without a KYC/AML responsibility, or the claim concerns generic distribution only."
+  },
+  "PROC.pilot_learning": {
+    "definition": "Executed-pilot operational or methodological finding that has no more specific substantive design code; audit-only and excluded from centre measures.",
+    "code_when": "An own-project pilot/test produced a concrete empirical process result and no specific substantive family describes the result better.",
+    "dont_code_when": "Plans, agendas, workgroup purposes, future research, or an executed result that fits TECH, OPS, ADOPT, PRIV, AML, INTEROP, or another substantive family."
+  },
+  "LEGAL.basis": {
+    "definition": "CBDC-specific legal authority to issue, legal-tender status, or required CBDC legislation; audit-only and excluded from centre measures.",
+    "code_when": "The claim concerns the issuer's authority to issue CBDC, CBDC legal-tender status, or legislation specifically required for the focal CBDC.",
+    "dont_code_when": "General financial-market, consumer, data-protection, or infrastructure regulation without a CBDC-specific legal-basis claim."
+  },
+  "INST.mandate": {
+    "definition": "Concrete institutional governance or operating responsibility in the focal CBDC system; audit-only and excluded from centre measures.",
+    "code_when": "The claim allocates a CBDC governance, issuance, operation, oversight, or accountability role to a named institution.",
+    "dont_code_when": "Stakeholder lists, generic central-bank mandates, or mentions of institutions without a concrete focal-CBDC role."
+  },
+  "OTHER.keep": {
+    "definition": "Complete own-project design claim outside all specific families; audit-only and excluded from centre measures.",
+    "code_when": "The statement passes the scope rule but no substantive, system, process, legal, or institutional code fits.",
+    "dont_code_when": "Use as a fallback for generic context, uncertainty, fragments, or a claim that fits a named family."
+  },
+  "INTEROP.domestic": {
+    "definition": "Domestic CBDC integration, convertibility, acceptance, funding/defunding, or settlement with national payment rails, banks, PSPs, wallets, cards, or commercial-bank money.",
+    "code_when": "The focal claim is domestic technical/payment integration or par convertibility, including card-wallet or co-badging integration without a foreign element.",
+    "dont_code_when": "Pure usability/adoption without integration, or an explicit foreign jurisdiction, corridor, remittance, FX, or cross-currency flow."
+  },
+  "INTEROP.crossborder": {
+    "definition": "CBDC interoperability for explicit cross-border or cross-currency flows: foreign jurisdictions/CBDCs, corridors, remittances, PvP, or FX.",
+    "code_when": "The claim explicitly concerns a foreign jurisdiction/CBDC, international corridor, remittance, cross-border payment, FX, or cross-currency settlement.",
+    "dont_code_when": "Visa/Mastercard, card wallets, co-badging, or domestic rails without an explicit foreign/cross-border element."
+  },
+  "CASH.relation": {
+    "definition": "Relationship between the focal CBDC and physical cash: complement/substitute, coexistence, conversion, cash-like role, or legal-tender relation.",
+    "code_when": "The issuer states how CBDC relates to, converts to/from, complements, replaces, or shares legal status with cash.",
+    "dont_code_when": "General digital-payment adoption or an isolated cash word without a CBDC-cash relationship."
+  },
+  "STAB.disintermediation": {
+    "definition": "Financial-stability and monetary-transmission effects through deposits, bank funding/balance sheets, lending, bank runs, or central-bank financing.",
+    "code_when": "The focal CBDC claim concerns deposit migration, bank funding/profitability, credit supply, bank runs, or related transmission effects.",
+    "dont_code_when": "Generic macroeconomic context without a focal CBDC mechanism."
+  },
+  "OPS.resilience": {
+    "definition": "CBDC operational resilience: cyber security, continuity, availability, incident response, fraud resistance, recovery, or critical dependency risk.",
+    "code_when": "The issuer states a concrete focal-CBDC resilience feature, requirement, risk, or executed-test result.",
+    "dont_code_when": "Generic technology risk, future security research, or offline privacy/reach without an operational-resilience claim."
+  },
+  "ADOPT.experience": {
+    "definition": "CBDC adoption and user/merchant experience: convenience, accessibility of interaction, acceptance, fees, incentives, readiness, trust, or practical use cases.",
+    "code_when": "The main claim concerns willingness or barriers to use, usability, merchant acceptance, incentives, costs, or user experience.",
+    "dont_code_when": "Technical integration itself, universal reach/access itself, or generic payment-system efficiency without an adoption mechanism."
+  },
+  "SYS.design": {
+    "definition": "Core focal-CBDC architecture and operating model not captured by a more specific family: issuance/distribution structure, operator roles, system components, or wallet parameters.",
+    "code_when": "A complete own-project architecture or operating-model claim is substantive but no more specific code applies.",
+    "dont_code_when": "Use instead of TECH, KYC, INTEROP, PRIV, AML, PROG, or another specific family; stakeholder lists or generic project descriptions."
+  }
+}

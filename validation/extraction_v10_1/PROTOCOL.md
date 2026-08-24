@@ -4,6 +4,8 @@
 
 Calibration outcome 2026-08-21: independent Codex and Claude runs plus their verified union are sealed and archived under `runs/2026-08-21_calibration/`. E1, E2, E3 and C1 failed; S1 passed. No reserve material was accessed. Before the single v10.2 revision, the 69 reference/union paragraph disagreements must be blindly re-adjudicated because the current human reference and v10.1 scope are not consistently aligned.
 
+Update 2026-08-24: the author completed all 69 blind rows. Review found one QC formula defect and 25 targeted rule/code/metadata checks that require explicit author confirmation before the v10.2 machine reference is frozen. The blinded v10.2 package is built under `validation/extraction_v10_2/`; it contains no human labels or prior model outputs. The reserve remains sealed.
+
 ## Fixed semantics
 
 Both models use the same `PROMPT_CORE.md`, `data/codebook.csv`, input units, output schema, span verifier, matcher, and deduplication rule. Provider task files contain only interface instructions. Neither model receives human labels, calibration error cases, prior model outputs, or the other model's responses.

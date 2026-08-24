@@ -1,0 +1,42 @@
+{
+  "protocol_id": "cbdc_extraction_v10_2_final_calibration_candidate",
+  "status": "single_permitted_revision_calibration_not_reserve_frozen",
+  "development_pages": 78,
+  "reserve_pages": 40,
+  "reserve_status": "sealed",
+  "input": {
+    "same_development_units_as_v10_1": true,
+    "source_authority_metadata_added": true,
+    "language_correction": {"CAL-058-U01": "no"},
+    "max_units_per_request": 6,
+    "max_source_tokens_per_request": 42000,
+    "semantic_prefilter": false,
+    "render_when_supplied": true
+  },
+  "models": {
+    "openai": {
+      "model": "gpt-5.6-terra",
+      "endpoint": "/v1/responses",
+      "processing": "batch",
+      "reasoning_effort": "medium",
+      "structured_outputs": true,
+      "temperature": null
+    },
+    "anthropic": {
+      "model": "claude-sonnet-5",
+      "endpoint": "/v1/messages/batches",
+      "processing": "batch",
+      "effort": "medium",
+      "structured_outputs": true,
+      "temperature": null,
+      "max_tokens_per_request": 12000,
+      "prompt_cache_if_available": true
+    }
+  },
+  "raw_output_rule": "archive_and_hash_before_matching_or_deduplication",
+  "retry_rule": "retry_once_only_for_transport_schema_or_source_support_failure; retry_failed_units_only",
+  "cost_rule": "batch_api_compact_json_shared_prompt_cache_if_available_no_semantic_screening",
+  "calibration_stop_rule": "this_is_the_single_cause_mapped_v10_2_revision; no further tuning on development or reserve",
+  "production_rule": "freeze_model_a_model_b_or_source_verified_union_before_reserve_access",
+  "classification_claim_rule": "automated_classification_requires_C1; if_retrieval_gates_pass_but_C1_fails_use_human_final_coding_and_claim_assisted_retrieval_only"
+}

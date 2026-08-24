@@ -8,9 +8,11 @@ CHECKSUMS = ROOT / "checksums.sha256"
 EXTRA = [
     "scripts/evaluate_extraction_v10_1.py",
     "scripts/extraction_v10_1.py",
+    "scripts/extraction_v10_2.py",
     "scripts/finalize_provider_output.py",
     "scripts/prepare_scope_readjudication.py",
     "scripts/update_checksums.py",
+    "scripts/verify_extraction_v10_2.py",
     "validation/calibration_v10/calibration_reference_v10_1.csv",
     "validation/calibration_v10/calibration_reference_v10_1.json",
     "validation/calibration_v10/source/CALIBRATION_AUDIT_v10_FINALIZED.xlsx",
@@ -21,6 +23,15 @@ EXTRA = [
     "validation/extraction_v10_1/output_schema.json",
     "validation/extraction_v10_1/pricing.json",
     "validation/extraction_v10_1/run_config.json",
+    "validation/extraction_v10_2/PROMPT_CORE.md",
+    "validation/extraction_v10_2/PROTOCOL.md",
+    "validation/extraction_v10_2/REFERENCE_REVIEW.md",
+    "validation/extraction_v10_2/TASK_CLAUDE.md",
+    "validation/extraction_v10_2/TASK_CODEX.md",
+    "validation/extraction_v10_2/authority_overrides.json",
+    "validation/extraction_v10_2/codebook_overrides.json",
+    "validation/extraction_v10_2/output_schema.json",
+    "validation/extraction_v10_2/run_config.json",
 ]
 EXTRA_DIRS = [
     "validation/extraction_v10_1/runs",
@@ -44,7 +55,9 @@ def main():
         names += [
             path.relative_to(ROOT).as_posix()
             for path in sorted((ROOT / directory).rglob("*"))
-            if path.is_file() and path.relative_to(ROOT).as_posix() not in names
+            if path.is_file()
+            and not path.name.startswith("~$")
+            and path.relative_to(ROOT).as_posix() not in names
         ]
     missing = [name for name in names if not (ROOT / name).is_file()]
     if missing:

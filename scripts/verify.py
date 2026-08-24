@@ -93,9 +93,16 @@ def main():
         == {"n": 285, "tp": 34, "fp": 8, "fn": 58, "tn": 185},
         "gold audit primary counts",
     )
+    blocking_statuses = {
+        "open",
+        "required_pending",
+        "deferred_open",
+        "author_confirmation_pending",
+        "ready_for_blind_runs",
+    }
     require(
-        set(open_items.loc[open_items["status"].isin(["open", "required_pending", "deferred_open"]), "item_id"])
-        == {"HUMAN-002", "CALIB-002", "CALIB-004", "CALIB-005"},
+        set(open_items.loc[open_items["status"].isin(blocking_statuses), "item_id"])
+        == {"HUMAN-002", "CALIB-002", "CALIB-004"},
         "open validation items",
     )
     require(
