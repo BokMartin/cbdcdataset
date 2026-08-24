@@ -10,6 +10,8 @@ EXTRA = [
     "scripts/extraction_v10_1.py",
     "scripts/extraction_v10_2.py",
     "scripts/finalize_provider_output.py",
+    "scripts/freeze_reference_v10_2.py",
+    "scripts/openai_batch_v10_2.py",
     "scripts/prepare_scope_readjudication.py",
     "scripts/update_checksums.py",
     "scripts/verify_extraction_v10_2.py",
@@ -31,6 +33,12 @@ EXTRA = [
     "validation/extraction_v10_2/authority_overrides.json",
     "validation/extraction_v10_2/codebook_overrides.json",
     "validation/extraction_v10_2/output_schema.json",
+    "validation/extraction_v10_2/matching_erratum_v10_2.json",
+    "validation/extraction_v10_2/reference/SCOPE_READJUDICATION_v10_2_FROZEN.xlsx",
+    "validation/extraction_v10_2/reference/author_decisions_v10_2.json",
+    "validation/extraction_v10_2/reference/calibration_reference_v10_2.csv",
+    "validation/extraction_v10_2/reference/calibration_reference_v10_2.json",
+    "validation/extraction_v10_2/reference/reference_changes_v10_2.csv",
     "validation/extraction_v10_2/run_config.json",
 ]
 EXTRA_DIRS = [

@@ -1,0 +1,31 @@
+{
+  "schema": "matching-erratum-v10.2",
+  "discovered_stage": "after_author_reference_freeze_before_final_openai_run",
+  "reserve_status": "sealed",
+  "defect": "Legacy cross-model overlap allowed multiple Model B statements to reuse one Model A statement; reference alignment also allowed one statement to mark multiple paragraphs.",
+  "diagnostic_evidence": {
+    "legacy_model_a_statements": 23,
+    "legacy_model_b_statements": 141,
+    "legacy_reported_matches": 66,
+    "logical_upper_bound": 23
+  },
+  "correction": {
+    "algorithm": "maximum-cardinality maximum-score one-to-one bipartite min-cost flow",
+    "threshold_unchanged": 0.8,
+    "semantic_rules_changed": false,
+    "reference_changed": false,
+    "provider_outputs_changed": false
+  },
+  "preliminary_impact": {
+    "claude_probability_recall_before": 0.65625,
+    "claude_probability_recall_after": 0.65625,
+    "union_probability_recall_before": 0.6875,
+    "union_probability_recall_after": 0.6875,
+    "union_deduplicated_workload_before": 98,
+    "union_deduplicated_workload_after": 141,
+    "union_workload_ratio_before": 1.1951219512195121,
+    "union_workload_ratio_after": 1.7195121951219512,
+    "E3_after": "pass"
+  },
+  "verification": "Synthetic adversarial test confirms that one Model A statement cannot deduplicate two identical Model B statements and that augmenting paths preserve maximum cardinality."
+}

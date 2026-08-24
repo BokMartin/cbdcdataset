@@ -1,6 +1,7 @@
 import argparse
 import hashlib
 import json
+import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -61,41 +62,140 @@ def statement_paragraph_score(statement, paragraph):
     return best_score, best_method, best_field
 
 
+def one_to_one_pairs(left_count, right_count, edges):
+    """Maximum-cardinality, maximum-score bipartite matching.
+
+    Each edge is (left, right, score, metadata). Scores are converted to
+    integer micro-units and optimized with deterministic min-cost max-flow.
+    """
+    source = 0
+    left_offset = 1
+    right_offset = left_offset + left_count
+    sink = right_offset + right_count
+    graph = [[] for _ in range(sink + 1)]
+
+    def add_edge(start, end, capacity, cost, payload=None):
+        graph[start].append([end, len(graph[end]), capacity, cost, payload])
+        graph[end].append([start, len(graph[start]) - 1, 0, -cost, None])
+
+    for left in range(left_count):
+        add_edge(source, left_offset + left, 1, 0)
+    for right in range(right_count):
+        add_edge(right_offset + right, sink, 1, 0)
+    for left, right, score, metadata in sorted(
+        edges, key=lambda edge: (edge[0], edge[1], -edge[2])
+    ):
+        add_edge(
+            left_offset + left,
+            right_offset + right,
+            1,
+            -int(round(float(score) * 1_000_000)),
+            (left, right, float(score), metadata),
+        )
+
+    while True:
+        distance = [float("inf")] * len(graph)
+        previous = [None] * len(graph)
+        distance[source] = 0
+        for _ in range(len(graph) - 1):
+            changed = False
+            for start, outgoing in enumerate(graph):
+                if distance[start] == float("inf"):
+                    continue
+                for edge_index, edge in enumerate(outgoing):
+                    end, _, capacity, cost, _ = edge
+                    candidate = distance[start] + cost
+                    if capacity and candidate < distance[end]:
+                        distance[end] = candidate
+                        previous[end] = (start, edge_index)
+                        changed = True
+            if not changed:
+                break
+        if previous[sink] is None:
+            break
+        node = sink
+        while node != source:
+            start, edge_index = previous[node]
+            edge = graph[start][edge_index]
+            edge[2] -= 1
+            graph[node][edge[1]][2] += 1
+            node = start
+
+    pairs = []
+    for left in range(left_count):
+        for edge in graph[left_offset + left]:
+            end, _, capacity, _, payload = edge
+            if right_offset <= end < sink and payload is not None and capacity == 0:
+                pairs.append(payload)
+    return sorted(pairs, key=lambda pair: (pair[0], pair[1]))
+
+
 def assign(statements, reference, page_index, threshold):
     matches = defaultdict(list)
-    records = []
-    for statement in statements:
-        best = best_match(
-            statement,
-            page_index[(statement["doc_id"], int(statement["page"]))],
-        )
-        assigned = best["index"] is not None and best["score"] >= threshold
-        gold = reference.loc[best["index"]] if assigned else None
-        record = statement | {
-            "assignment_status": "assigned" if assigned else "unassigned",
-            "best_score": round(float(best["score"]), 6),
-            "match_method": best["method"],
-            "matched_field": best["field"],
-            "gold_id": gold["gold_id"] if assigned else "",
-            "paragraph_id": gold["paragraph_id"] if assigned else "",
-            "gold_truth": gold["reference_truth"] if assigned else "",
-            "reference_code": gold["reference_code"] if assigned else "",
-            "exact_code_match": bool(
-                assigned
-                and gold["reference_truth"] == "positive"
-                and gold["reference_code"]
-                and statement["code1"] == gold["reference_code"]
-            ),
+    records = [None] * len(statements)
+    statements_by_page = defaultdict(list)
+    for statement_index, statement in enumerate(statements):
+        statements_by_page[(statement["doc_id"], int(statement["page"]))].append(statement_index)
+
+    for page, statement_indices in statements_by_page.items():
+        paragraphs = page_index[page]
+        edges = []
+        for local_left, statement_index in enumerate(statement_indices):
+            statement = statements[statement_index]
+            for local_right, (reference_index, paragraph) in enumerate(paragraphs):
+                score, method, field = statement_paragraph_score(statement, paragraph)
+                if score >= threshold:
+                    edges.append((
+                        local_left,
+                        local_right,
+                        score,
+                        {"reference_index": reference_index, "method": method, "field": field},
+                    ))
+        paired = {
+            statement_indices[local_left]: (paragraphs[local_right][0], score, metadata)
+            for local_left, local_right, score, metadata in one_to_one_pairs(
+                len(statement_indices), len(paragraphs), edges
+            )
         }
-        records.append(record)
-        for index, paragraph in page_index[(statement["doc_id"], int(statement["page"]))]:
-            score, method, field = statement_paragraph_score(statement, paragraph)
-            if score >= threshold:
-                matches[index].append(record | {
-                    "paragraph_match_score": round(float(score), 6),
-                    "paragraph_match_method": method,
-                    "paragraph_matched_field": field,
+        for statement_index in statement_indices:
+            statement = statements[statement_index]
+            best = best_match(statement, paragraphs)
+            if statement_index in paired:
+                reference_index, score, metadata = paired[statement_index]
+                gold = reference.loc[reference_index]
+                record = statement | {
+                    "assignment_status": "assigned",
+                    "best_score": round(score, 6),
+                    "match_method": metadata["method"],
+                    "matched_field": metadata["field"],
+                    "gold_id": gold["gold_id"],
+                    "paragraph_id": gold["paragraph_id"],
+                    "gold_truth": gold["reference_truth"],
+                    "reference_code": gold["reference_code"],
+                    "exact_code_match": bool(
+                        gold["reference_truth"] == "positive"
+                        and gold["reference_code"]
+                        and statement["code1"] == gold["reference_code"]
+                    ),
+                }
+                matches[reference_index].append(record | {
+                    "paragraph_match_score": round(score, 6),
+                    "paragraph_match_method": metadata["method"],
+                    "paragraph_matched_field": metadata["field"],
                 })
+            else:
+                record = statement | {
+                    "assignment_status": "unassigned",
+                    "best_score": round(float(best["score"]), 6),
+                    "match_method": best["method"],
+                    "matched_field": best["field"],
+                    "gold_id": "",
+                    "paragraph_id": "",
+                    "gold_truth": "",
+                    "reference_code": "",
+                    "exact_code_match": False,
+                }
+            records[statement_index] = record
     return records, matches
 
 
@@ -132,7 +232,46 @@ def bootstrap_confusion(rows, prediction, draws=2_000, seed=20260821):
     return result
 
 
-def model_metrics(paragraphs, assignments, prediction, statement_count, workload_count):
+def normalized_span(value):
+    value = unicodedata.normalize("NFKC", str(value)).replace("\u00ad", "")
+    value = value.replace("-\n", "")
+    return "".join(value.split())
+
+
+def span_fidelity(statements, units):
+    supported = 0
+    unsupported = 0
+    render_review_required = 0
+    for statement in statements:
+        unit = units[statement["unit_id"]]
+        quote = normalized_span(statement["quote"])
+        source = normalized_span(unit.get("source_text", ""))
+        if quote and quote in source:
+            supported += 1
+        elif unit.get("render_file"):
+            render_review_required += 1
+        else:
+            unsupported += 1
+    denominator = supported + unsupported
+    fidelity = supported / denominator if denominator else None
+    if render_review_required:
+        gate = "pending_render_review"
+    elif fidelity is not None and fidelity >= 0.95:
+        gate = "pass"
+    else:
+        gate = "fail"
+    return {
+        "text_supported": supported,
+        "unsupported": unsupported,
+        "render_review_required": render_review_required,
+        "fidelity_excluding_pending_render": fidelity,
+        "gate": gate,
+    }
+
+
+def model_metrics(
+    paragraphs, assignments, prediction, statement_count, workload_count, span_report
+):
     probability = paragraphs[paragraphs["stratum"].eq("probability")]
     assigned_positive = sum(row["gold_truth"] == "positive" for row in assignments)
     assigned_negative = sum(row["gold_truth"] == "negative" for row in assignments)
@@ -206,11 +345,12 @@ def model_metrics(paragraphs, assignments, prediction, statement_count, workload
             "correctly_recovered_with_exact_code": classification_correct,
             "recall": classification_correct / classification_n if classification_n else None,
         },
+        "span_fidelity": span_report,
         "gates": {
             "E1_recall_point_and_ci": "pass" if e1 else "fail",
             "E2_stress_long_recall": "pass" if e2 else "fail",
             "E3_probability_precision_and_all_positive_workload": "pass" if e3 else "fail",
-            "S1_span_fidelity": "pass",
+            "S1_span_fidelity": span_report["gate"],
             "C1_exact_classification_recall": "pass" if c1 else "fail",
         },
     }
@@ -228,21 +368,37 @@ def span_overlap(left, right):
 
 def cross_model_overlap(model_a, model_b, threshold):
     a_by_page = defaultdict(list)
+    b_by_page = defaultdict(list)
     for row in model_a:
         a_by_page[(row["doc_id"], row["page"])].append(row)
+    for row in model_b:
+        b_by_page[(row["doc_id"], row["page"])].append(row)
     matched_b = []
     code_agreement = 0
-    for right in model_b:
-        best_score = 0.0
-        best_left = None
-        best_method = "none"
-        for left in a_by_page[(right["doc_id"], right["page"])]:
-            score, method = span_overlap(left, right)
-            if score > best_score:
-                best_score, best_method, best_left = score, method, left
-        if best_left is not None and best_score >= threshold:
+    pair_records = []
+    for page in sorted(set(a_by_page) | set(b_by_page)):
+        left_rows = a_by_page[page]
+        right_rows = b_by_page[page]
+        edges = []
+        for left_index, left in enumerate(left_rows):
+            for right_index, right in enumerate(right_rows):
+                score, method = span_overlap(left, right)
+                if score >= threshold:
+                    edges.append((left_index, right_index, score, {"method": method}))
+        for left_index, right_index, score, metadata in one_to_one_pairs(
+            len(left_rows), len(right_rows), edges
+        ):
+            left = left_rows[left_index]
+            right = right_rows[right_index]
             matched_b.append(right["statement_id"])
-            code_agreement += best_left["code1"] == right["code1"]
+            code_agreement += left["code1"] == right["code1"]
+            pair_records.append({
+                "model_a_statement_id": left["statement_id"],
+                "model_b_statement_id": right["statement_id"],
+                "score": round(score, 6),
+                "method": metadata["method"],
+                "exact_code_agreement": left["code1"] == right["code1"],
+            })
     matched = len(matched_b)
     return {
         "model_a_statements": len(model_a),
@@ -252,6 +408,7 @@ def cross_model_overlap(model_a, model_b, threshold):
         "exact_code_agreement_among_matches": code_agreement / matched if matched else None,
         "deduplicated_union_workload": len(model_a) + len(model_b) - matched,
         "matched_model_b_statement_ids": matched_b,
+        "one_to_one_pairs": pair_records,
     }
 
 
@@ -260,6 +417,8 @@ def main():
     parser.add_argument("--package", type=Path, required=True)
     parser.add_argument("--model-a", type=Path, required=True)
     parser.add_argument("--model-b", type=Path, required=True)
+    parser.add_argument("--model-a-run-status", default="protocol_exact")
+    parser.add_argument("--model-b-run-status", default="protocol_exact")
     parser.add_argument(
         "--reference",
         type=Path,
@@ -292,6 +451,8 @@ def main():
 
     model_a = flatten("codex", read_jsonl(args.model_a), units)
     model_b = flatten("claude", read_jsonl(args.model_b), units)
+    span_a = span_fidelity(model_a, units)
+    span_b = span_fidelity(model_b, units)
     assignments_a, matches_a = assign(model_a, reference, page_index, args.threshold)
     assignments_b, matches_b = assign(model_b, reference, page_index, args.threshold)
     overlap = cross_model_overlap(model_a, model_b, args.threshold)
@@ -321,23 +482,31 @@ def main():
 
     assignments_union = assignments_a + assignments_b
     results = {
-        "schema": "cbdc_extraction_v10_1_calibration_evaluation",
+        "schema": "cbdc_extraction_calibration_evaluation_one_to_one_v2",
         "status": "development_calibration_not_confirmatory",
+        "comparison_status": (
+            "complete"
+            if args.model_a_run_status == args.model_b_run_status == "protocol_exact"
+            else "preliminary_nonprotocol_run_present"
+        ),
         "reserve_status": "sealed",
         "inputs": {
             "package_inputs_sha256": sha256(args.package / "inputs.jsonl"),
             "model_a_codex_sha256": sha256(args.model_a),
             "model_b_claude_sha256": sha256(args.model_b),
+            "model_a_run_status": args.model_a_run_status,
+            "model_b_run_status": args.model_b_run_status,
             "reference_sha256": sha256(args.reference),
             "matching_threshold": args.threshold,
+            "matching_algorithm": "maximum-cardinality maximum-score one-to-one min-cost flow",
         },
         "reference_counts": dict(Counter(reference["reference_truth"])),
         "models": {
             "codex": model_metrics(
-                paragraphs, assignments_a, "matched_a", len(model_a), len(model_a)
+                paragraphs, assignments_a, "matched_a", len(model_a), len(model_a), span_a
             ),
             "claude": model_metrics(
-                paragraphs, assignments_b, "matched_b", len(model_b), len(model_b)
+                paragraphs, assignments_b, "matched_b", len(model_b), len(model_b), span_b
             ),
             "verified_union": model_metrics(
                 paragraphs,
@@ -345,6 +514,35 @@ def main():
                 "matched_union",
                 len(model_a) + len(model_b),
                 overlap["deduplicated_union_workload"],
+                {
+                    "text_supported": span_a["text_supported"] + span_b["text_supported"],
+                    "unsupported": span_a["unsupported"] + span_b["unsupported"],
+                    "render_review_required": (
+                        span_a["render_review_required"] + span_b["render_review_required"]
+                    ),
+                    "fidelity_excluding_pending_render": (
+                        (span_a["text_supported"] + span_b["text_supported"])
+                        / (
+                            span_a["text_supported"] + span_b["text_supported"]
+                            + span_a["unsupported"] + span_b["unsupported"]
+                        )
+                        if (
+                            span_a["text_supported"] + span_b["text_supported"]
+                            + span_a["unsupported"] + span_b["unsupported"]
+                        ) else None
+                    ),
+                    "gate": (
+                        "pending_render_review"
+                        if span_a["render_review_required"] + span_b["render_review_required"]
+                        else "pass"
+                        if span_a["unsupported"] + span_b["unsupported"]
+                        <= 0.05 * (
+                            span_a["text_supported"] + span_b["text_supported"]
+                            + span_a["unsupported"] + span_b["unsupported"]
+                        )
+                        else "fail"
+                    ),
+                },
             ),
         },
         "cross_model_overlap": overlap,
@@ -359,6 +557,7 @@ def main():
             "These are development-calibration results and are not confirmatory paper evidence.",
             "The union paragraph metric is the pre-specified logical OR of source-verified model detections.",
             "Union workload deduplicates cross-model spans at the frozen 0.80 overlap threshold; raw outputs remain archived.",
+            "Reference and cross-model matching use deterministic one-to-one bipartite assignment; this corrects the legacy many-to-one workload defect without changing the 0.80 threshold.",
             "Only reference-positive paragraphs with a non-empty adjudicated reference_code enter C1.",
             "stress_nonEN and OCR strata lack eligible positive human-reference rows, so E2 is estimable only for stress_long.",
         ],
