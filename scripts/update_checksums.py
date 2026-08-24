@@ -27,6 +27,7 @@ EXTRA = [
     "validation/extraction_v10_1/run_config.json",
     "validation/extraction_v10_2/PROMPT_CORE.md",
     "validation/extraction_v10_2/PROTOCOL.md",
+    "validation/extraction_v10_2/CLAUDE_AUDIT_HANDOVER_v10_2.md",
     "validation/extraction_v10_2/REFERENCE_REVIEW.md",
     "validation/extraction_v10_2/TASK_CLAUDE.md",
     "validation/extraction_v10_2/TASK_CODEX.md",
