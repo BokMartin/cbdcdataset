@@ -532,15 +532,15 @@ def main() -> None:
         "schema": "cbdc-v10.2e-ensemble-analysis-v1",
         "protocol": "validation/extraction_v10_2_exploratory/ENSEMBLE_ANALYSIS_PROTOCOL.md",
         "inputs": {
-            "mapping": {"path": str(args.mapping.relative_to(ROOT)), "sha256": sha256(args.mapping)},
-            "openai": {"path": str(args.openai.relative_to(ROOT)), "sha256": sha256(args.openai)},
-            "claude": {"path": str(args.claude.relative_to(ROOT)), "sha256": sha256(args.claude)},
-            "metadata": {"path": str(args.metadata.relative_to(ROOT)), "sha256": sha256(args.metadata)},
-            "macro": {"path": str(args.macro.relative_to(ROOT)), "sha256": sha256(args.macro)},
+            "mapping": {"path": args.mapping.relative_to(ROOT).as_posix(), "sha256": sha256(args.mapping)},
+            "openai": {"path": args.openai.relative_to(ROOT).as_posix(), "sha256": sha256(args.openai)},
+            "claude": {"path": args.claude.relative_to(ROOT).as_posix(), "sha256": sha256(args.claude)},
+            "metadata": {"path": args.metadata.relative_to(ROOT).as_posix(), "sha256": sha256(args.metadata)},
+            "macro": {"path": args.macro.relative_to(ROOT).as_posix(), "sha256": sha256(args.macro)},
         },
         "parameters": {"draws": args.draws, "variants": list(VARIANTS)},
-        "outputs": {str(path.relative_to(ROOT)): sha256(path) for path in outputs},
-        "figures": [str(composition_figure.relative_to(ROOT)), str(macro_figure.relative_to(ROOT))],
+        "outputs": {path.relative_to(ROOT).as_posix(): sha256(path) for path in outputs},
+        "figures": [composition_figure.relative_to(ROOT).as_posix(), macro_figure.relative_to(ROOT).as_posix()],
     }
     json_dump(manifest_path, manifest)
     print(json.dumps({"summary": summary, "manifest": str(manifest_path)}, ensure_ascii=False))

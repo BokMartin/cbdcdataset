@@ -1,36 +1,36 @@
 {
   "figures": [
-    "figures\\v10_2e_ensemble_composition.png",
-    "figures\\v10_2e_model_sensitivity.png"
+    "figures/v10_2e_ensemble_composition.png",
+    "figures/v10_2e_model_sensitivity.png"
   ],
   "inputs": {
     "claude": {
-      "path": "validation\\extraction_v10_2_exploratory\\runs\\2026-08-25_claude_production\\claude_extractions_v10_2e_canonical.jsonl",
+      "path": "validation/extraction_v10_2_exploratory/runs/2026-08-25_claude_production/claude_extractions_v10_2e_canonical.jsonl",
       "sha256": "2d8e31eee4a3592501b86e6c8d7902488873068b9b25d65c955e7c915023f32a"
     },
     "macro": {
-      "path": "data\\macro.xlsx",
+      "path": "data/macro.xlsx",
       "sha256": "0fba37e5c6383a94fa66d09c37b011b98ef524ccda5d8e3a2017be03c1fcb096"
     },
     "mapping": {
-      "path": "validation\\extraction_v10_2_exploratory\\human_review\\2026-08-25_final_adjudication\\candidate_machine_mapping.csv",
+      "path": "validation/extraction_v10_2_exploratory/human_review/2026-08-25_final_adjudication/candidate_machine_mapping.csv",
       "sha256": "c576dee4945df4c319ceb873c775a18e43e558a41955c51ef3e4b3ca08220ffa"
     },
     "metadata": {
-      "path": "data\\jurisdictions.csv",
+      "path": "data/jurisdictions.csv",
       "sha256": "d923e0ada9ad4f5a807da18b72fa03cd8c78fd8db5f99ca382eca5a7d9fe8217"
     },
     "openai": {
-      "path": "validation\\extraction_v10_2_exploratory\\runs\\2026-08-25_openai_production\\final\\openai_extractions_v10_2e_canonical.jsonl",
+      "path": "validation/extraction_v10_2_exploratory/runs/2026-08-25_openai_production/final/openai_extractions_v10_2e_canonical.jsonl",
       "sha256": "79edea9e409976867214ae7fadc3fc9f192f41ae1050a9fa5205d00b0868be69"
     }
   },
   "outputs": {
-    "results\\v10_2e_ensemble\\analysis_summary.json": "1a48af5d62a8a7c586ddc5f11e6b13e19126bd3c33fdfffff913970b89cd196b",
-    "results\\v10_2e_ensemble\\candidate_allocations.csv.gz": "14d033fa7b2877f9960fcf033eb383dbc144f968dcfed1fa0d6837228408d05e",
-    "results\\v10_2e_ensemble\\distributions.csv": "df924b9886e799ae626cc68faa4ec8a787ecf823706c27883295058377e4a7e5",
-    "results\\v10_2e_ensemble\\entity_scores.csv": "a41857ca14e3805875b79f7e9ee5888fb8de224b9b93068039140925abcabf83",
-    "results\\v10_2e_ensemble\\macro_results.json": "97689b0020d47c3731116c67fbeaaac70ec4cd864506fa9408cf5aacf3c12dac"
+    "results/v10_2e_ensemble/analysis_summary.json": "1a48af5d62a8a7c586ddc5f11e6b13e19126bd3c33fdfffff913970b89cd196b",
+    "results/v10_2e_ensemble/candidate_allocations.csv.gz": "14d033fa7b2877f9960fcf033eb383dbc144f968dcfed1fa0d6837228408d05e",
+    "results/v10_2e_ensemble/distributions.csv": "df924b9886e799ae626cc68faa4ec8a787ecf823706c27883295058377e4a7e5",
+    "results/v10_2e_ensemble/entity_scores.csv": "a41857ca14e3805875b79f7e9ee5888fb8de224b9b93068039140925abcabf83",
+    "results/v10_2e_ensemble/macro_results.json": "97689b0020d47c3731116c67fbeaaac70ec4cd864506fa9408cf5aacf3c12dac"
   },
   "parameters": {
     "draws": 10000,
