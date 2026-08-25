@@ -1,0 +1,54 @@
+{
+  "protocol_id": "cbdc_extraction_v10_2e_exploratory_assisted_production",
+  "status": "exploratory_full_corpus_authorized",
+  "claim": "llm_assisted_candidate_generation_with_human_final_inclusion_and_coding",
+  "calibration_gate_passed": false,
+  "reserve_status": "sealed_not_used",
+  "corpus": {
+    "documents": 113,
+    "pages": 3963,
+    "semantic_prefilter": false,
+    "reference_only_documents_excluded": true
+  },
+  "input": {
+    "target_text_tokens_per_unit": 6000,
+    "overlap_text_tokens": 400,
+    "max_units_per_request": 6,
+    "max_source_tokens_per_request": 42000,
+    "english_chars_per_token": 4.0,
+    "cjk_chars_per_token": 2.0,
+    "render_when_page_manifest_ocr_needed": true,
+    "render_scale": 2.0,
+    "render_format": "jpeg_grayscale_quality_85"
+  },
+  "models": {
+    "openai": {
+      "model": "gpt-5.6-terra",
+      "endpoint": "/v1/responses",
+      "processing": "batch",
+      "reasoning_effort": "medium",
+      "structured_outputs": true,
+      "temperature": null,
+      "max_output_tokens_per_request": 32000
+    },
+    "anthropic": {
+      "model": "claude-sonnet-5",
+      "endpoint": "/v1/messages/batches",
+      "processing": "batch",
+      "effort": "medium",
+      "structured_outputs": true,
+      "temperature": null,
+      "max_tokens_per_request": 12000,
+      "prompt_cache_if_available": true
+    }
+  },
+  "raw_output_rule": "archive_and_hash_before_source_check_or_cross_model_comparison",
+  "retry_rule": "one_source_only_retry_for_failed_units_then_reject_unsupported_statements",
+  "human_review": {
+    "candidate_coverage": "every_deduplicated_candidate_reviewed_by_at_least_one_author",
+    "independent_overlap_fraction": 0.20,
+    "dual_empty_unit_audit_fraction": 0.10,
+    "sampling_seed": 20260825,
+    "final_code_source": "human"
+  }
+}

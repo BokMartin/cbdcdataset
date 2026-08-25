@@ -12,10 +12,13 @@ EXTRA = [
     "scripts/finalize_provider_output.py",
     "scripts/freeze_reference_v10_2.py",
     "scripts/openai_batch_v10_2.py",
+    "scripts/openai_batch_production_v10_2e.py",
     "scripts/openai_span_retry_v10_2.py",
+    "scripts/prepare_exploratory_production_v10_2e.py",
     "scripts/prepare_scope_readjudication.py",
     "scripts/update_checksums.py",
     "scripts/verify_extraction_v10_2.py",
+    "scripts/verify_exploratory_production_v10_2e.py",
     "validation/calibration_v10/calibration_reference_v10_1.csv",
     "validation/calibration_v10/calibration_reference_v10_1.json",
     "validation/calibration_v10/source/CALIBRATION_AUDIT_v10_FINALIZED.xlsx",
@@ -43,11 +46,20 @@ EXTRA = [
     "validation/extraction_v10_2/reference/calibration_reference_v10_2.json",
     "validation/extraction_v10_2/reference/reference_changes_v10_2.csv",
     "validation/extraction_v10_2/run_config.json",
+    "validation/extraction_v10_2_exploratory/CLAUDE_HANDOFF_PROMPT.md",
+    "validation/extraction_v10_2_exploratory/PROTOCOL_AMENDMENT.md",
+    "validation/extraction_v10_2_exploratory/PACKAGE_FREEZE.json",
+    "validation/extraction_v10_2_exploratory/TASK_CLAUDE.md",
+    "validation/extraction_v10_2_exploratory/TASK_CODEX.md",
+    "validation/extraction_v10_2_exploratory/document_authority_overrides.json",
+    "validation/extraction_v10_2_exploratory/owner_by_jurisdiction.json",
+    "validation/extraction_v10_2_exploratory/run_config.production.json",
 ]
 EXTRA_DIRS = [
     "validation/extraction_v10_1/runs",
     "validation/extraction_v10_2/audits",
     "validation/extraction_v10_2/runs",
+    "validation/extraction_v10_2_exploratory/freeze",
 ]
 
 
@@ -63,6 +75,10 @@ def main():
     parser.add_argument("--write", action="store_true")
     args = parser.parse_args()
     names = [line.split(maxsplit=1)[1].strip() for line in CHECKSUMS.read_text(encoding="utf-8").splitlines()]
+    names = [
+        name for name in names
+        if "__pycache__" not in Path(name).parts and Path(name).suffix.lower() != ".pyc"
+    ]
     names += [name for name in EXTRA if name not in names]
     for directory in EXTRA_DIRS:
         names += [
@@ -70,6 +86,8 @@ def main():
             for path in sorted((ROOT / directory).rglob("*"))
             if path.is_file()
             and not path.name.startswith("~$")
+            and "__pycache__" not in path.parts
+            and path.suffix.lower() != ".pyc"
             and path.relative_to(ROOT).as_posix() not in names
         ]
     missing = [name for name in names if not (ROOT / name).is_file()]

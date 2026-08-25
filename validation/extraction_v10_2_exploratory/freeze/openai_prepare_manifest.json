@@ -1,0 +1,29 @@
+{
+  "schema": "openai-batch-v10.2e-prepare",
+  "created_utc": "2026-08-25T10:22:24.808044+00:00",
+  "package": "C:\\Users\\admin\\Documents\\Codex\\2026-08-17\\github-pat-11ckbieaq0kpjopes8vx2f-frxkkjx2phhbk25oqanxoitpcpywkhh3php9vf9e3jch4c\\outputs\\EXPLORATORY_PRODUCTION_PACKAGE_v10_2e",
+  "package_manifest_sha256": "b824d4e56431fd29320850b736504b1df787fc28af52b3660a610e58a64b8667",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "medium",
+  "temperature": null,
+  "structured_outputs": true,
+  "schema_unmodified": true,
+  "requests": 661,
+  "units": 3963,
+  "render_pages": 345,
+  "shards": [
+    {
+      "shard": 1,
+      "file": "batch_input_001.jsonl",
+      "requests": 661,
+      "bytes": 82417705,
+      "sha256": "c69961ef2aee4b6b6a0eb4be3df71e1c8717f634ab622e920ed1593273307346"
+    }
+  ],
+  "hashes": {
+    "inputs": "6435e0b8823968408ac1477528599dd2dc7aa2cd86ab9c5cae2969d832bb47e6",
+    "prompt": "01e3ce1e378df389f6a8de76afc2336b71a1e6f8ac1cea66da112e8cb9aa7d99",
+    "codebook": "cb041c5a27f28cc847ce43115e5f15849064cb119d3028249825dff232ec3a26",
+    "schema": "1b8d4e2871239296d1c2cdfa5301e46b91a8b1ab28003259bb216450e69f63bb"
+  }
+}
