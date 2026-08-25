@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CHECKSUMS = ROOT / "checksums.sha256"
 EXTRA = [
+    "scripts/build_ai_candidate_masters_v10_2e.mjs",
     "scripts/build_final_adjudication_workbooks_v10_2e.mjs",
     "scripts/create_backup_snapshot.py",
     "scripts/evaluate_extraction_v10_1.py",
@@ -17,15 +18,18 @@ EXTRA = [
     "scripts/openai_batch_production_v10_2e.py",
     "scripts/openai_production_retry_v10_2e.py",
     "scripts/openai_span_retry_v10_2.py",
+    "scripts/package_ai_candidate_masters_v10_2e.py",
     "scripts/package_final_adjudication_v10_2e.py",
     "scripts/package_sampled_validation_v10_2e.py",
     "scripts/prepare_exploratory_production_v10_2e.py",
     "scripts/prepare_production_adjudication_v10_2e.py",
+    "scripts/prepare_ai_candidate_masters_v10_2e.py",
     "scripts/prepare_sampled_validation_v10_2e.py",
     "scripts/prepare_scope_readjudication.py",
     "scripts/update_paper_sampled_validation_v10_2e.py",
     "scripts/update_checksums.py",
     "scripts/verify_extraction_v10_2.py",
+    "scripts/verify_ai_candidate_masters_v10_2e.mjs",
     "scripts/verify_final_adjudication_workbooks_v10_2e.mjs",
     "scripts/verify_exploratory_production_v10_2e.py",
     "scripts/verify_claude_production_v10_2e.py",
