@@ -1,0 +1,121 @@
+{
+  "schema": "cbdc-v10.2e-sampled-validation-workbook-verification-v1",
+  "created_utc": "2026-08-25T18:52:49.972Z",
+  "passed": true,
+  "workbooks": [
+    {
+      "reviewer": "MARTIN",
+      "file": "..\\outputs\\01a00faf-10b7-7591-b358-2fefa01f03c0\\VALIDATION_SAMPLE_v10_2e_MARTIN.xlsx",
+      "bytes": 711231,
+      "sha256": "4f1459bba43a4b5c4e7b17a5c04eea97edb8a6223a0aeee70a6a223c521cefd9",
+      "expected_candidate_rows": 365,
+      "required_sheets": [
+        "Instructions",
+        "Candidate Review",
+        "Dual Empty Audit",
+        "Empty Supplements",
+        "Contexts",
+        "Codebook",
+        "QC Summary",
+        "Lists",
+        "Metadata"
+      ],
+      "observed_sheets": [
+        "Instructions",
+        "Candidate Review",
+        "Dual Empty Audit",
+        "Empty Supplements",
+        "Contexts",
+        "Codebook",
+        "QC Summary",
+        "Lists",
+        "Metadata"
+      ],
+      "missing_sheets": [],
+      "formula_error_matches": [],
+      "candidate_boundary_passed": true,
+      "passed": true,
+      "inspections": {
+        "candidate_top": [
+          "{\"kind\":\"region\",\"sheet\":\"Candidate Review\",\"address\":\"A1:AB5\",\"rows\":5,\"cols\":28,\"nonEmpty\":54,\"blank\":86,\"text\":54,\"maxTextLength\":1512,\"preview\":[[\"Candidate Validation Sample — Martin\",null,null,null,null,null],[\"Každý řádek je kandidát z téhož zmrazeného pravděpodobnostního vzorku pro oba...\",null,null,null,null,null],[\"candidate_id\",\"candidate_span\",\"candidate_translation\",\"alternate_span\",\"alternate_translation\",\"source_excerpt\"],[\"SV-0001\",\"As the full -scale implementation of e -hryvnia in Ukraine’s \\npayment market ...\",null,null,null,\"… d to the Issuer’s \\nincome accounts. \\nAgents se rvicing e -hryvnia transacti...\"],[\"SV-0002\",\"The most important design decision for CBDC would be whether to remunerate, i...\",null,null,null,\"… tiering and structure \\nof that remuneration, and limits on the amount of CB...\"]],\"previewAddress\":\"A1:F5\",\"previewRows\":5,\"previewCols\":6}"
+        ],
+        "candidate_bottom": [
+          "{\"kind\":\"notice\",\"message\":\"No records matched the requested kinds.\"}"
+        ],
+        "candidate_after": [
+          "{\"kind\":\"notice\",\"message\":\"No records matched the requested kinds.\"}"
+        ],
+        "candidate_qc": [
+          "{\"kind\":\"region\",\"sheet\":\"Candidate Review\",\"address\":\"AA4:AB6\",\"rows\":3,\"cols\":2,\"nonEmpty\":6,\"text\":6,\"maxTextLength\":49,\"preview\":[[null,\"PENDING\"],[null,\"PENDING\"],[null,\"PENDING\"]],\"previewAddress\":\"AA4:AB6\",\"previewRows\":3,\"previewCols\":2}"
+        ],
+        "dual_empty_bottom": [
+          "{\"kind\":\"region\",\"sheet\":\"Dual Empty Audit\",\"address\":\"A39:H39\",\"rows\":1,\"cols\":8,\"nonEmpty\":8,\"text\":8,\"maxTextLength\":236,\"preview\":[[\"DE-0036\",\"PRD-0080-P0030-U01\",\"US_Fed_2022\",\"30\",\"en\",\"Board of Governors of the Federal Reserve System (potential US CBDC)\"]],\"previewAddress\":\"A39:F39\",\"previewRows\":1,\"previewCols\":6}"
+        ],
+        "supplement_bottom": [
+          "{\"kind\":\"notice\",\"message\":\"No records matched the requested kinds.\"}"
+        ],
+        "qc_summary": [
+          "{\"kind\":\"region\",\"sheet\":\"QC Summary\",\"address\":\"A10:D16\",\"rows\":7,\"cols\":4,\"nonEmpty\":27,\"blank\":1,\"text\":27,\"maxTextLength\":24,\"preview\":[[\"Dual-empty total\",\"36\",\"Expected\",\"36\"],[\"Dual-empty complete\",\"0\",\"Target\",\"36\"],[\"Dual-empty pending\",\"36\",\"Target\",\"0\"],[\"Dual-empty incomplete\",\"0\",\"Target\",\"0\"],[\"Dual-empty needs context\",\"0\",\"Target\",\"0\"]],\"previewAddress\":\"A10:D14\",\"previewRows\":5,\"previewCols\":4}",
+          "{\"kind\":\"region\",\"sheet\":\"QC Summary\",\"address\":\"A1:D8\",\"rows\":8,\"cols\":4,\"nonEmpty\":26,\"blank\":6,\"text\":26,\"maxTextLength\":82,\"preview\":[[\"QC Summary — Martin\",null,null,null],[\"Odevzdej až po odstranění všech pending/incomplete stavů a vyřešení needs_con...\",null,null,null],[\"Metric\",\"Current\",\"Reference\",\"Value\"],[\"Candidate total\",\"365\",\"Expected\",\"365\"],[\"Candidate complete\",\"0\",\"Target\",\"365\"]],\"previewAddress\":\"A1:D5\",\"previewRows\":5,\"previewCols\":4}"
+        ]
+      }
+    },
+    {
+      "reviewer": "DOMINIK",
+      "file": "..\\outputs\\01a00faf-10b7-7591-b358-2fefa01f03c0\\VALIDATION_SAMPLE_v10_2e_DOMINIK.xlsx",
+      "bytes": 711241,
+      "sha256": "b5e68846517aac1030c6e650da40ec23b1e13af5136b979282069aa828655468",
+      "expected_candidate_rows": 365,
+      "required_sheets": [
+        "Instructions",
+        "Candidate Review",
+        "Dual Empty Audit",
+        "Empty Supplements",
+        "Contexts",
+        "Codebook",
+        "QC Summary",
+        "Lists",
+        "Metadata"
+      ],
+      "observed_sheets": [
+        "Instructions",
+        "Candidate Review",
+        "Dual Empty Audit",
+        "Empty Supplements",
+        "Contexts",
+        "Codebook",
+        "QC Summary",
+        "Lists",
+        "Metadata"
+      ],
+      "missing_sheets": [],
+      "formula_error_matches": [],
+      "candidate_boundary_passed": true,
+      "passed": true,
+      "inspections": {
+        "candidate_top": [
+          "{\"kind\":\"region\",\"sheet\":\"Candidate Review\",\"address\":\"A1:AB5\",\"rows\":5,\"cols\":28,\"nonEmpty\":54,\"blank\":86,\"text\":54,\"maxTextLength\":1512,\"preview\":[[\"Candidate Validation Sample — Dominik\",null,null,null,null,null],[\"Každý řádek je kandidát z téhož zmrazeného pravděpodobnostního vzorku pro oba...\",null,null,null,null,null],[\"candidate_id\",\"candidate_span\",\"candidate_translation\",\"alternate_span\",\"alternate_translation\",\"source_excerpt\"],[\"SV-0001\",\"As the full -scale implementation of e -hryvnia in Ukraine’s \\npayment market ...\",null,null,null,\"… d to the Issuer’s \\nincome accounts. \\nAgents se rvicing e -hryvnia transacti...\"],[\"SV-0002\",\"The most important design decision for CBDC would be whether to remunerate, i...\",null,null,null,\"… tiering and structure \\nof that remuneration, and limits on the amount of CB...\"]],\"previewAddress\":\"A1:F5\",\"previewRows\":5,\"previewCols\":6}"
+        ],
+        "candidate_bottom": [
+          "{\"kind\":\"notice\",\"message\":\"No records matched the requested kinds.\"}"
+        ],
+        "candidate_after": [
+          "{\"kind\":\"notice\",\"message\":\"No records matched the requested kinds.\"}"
+        ],
+        "candidate_qc": [
+          "{\"kind\":\"region\",\"sheet\":\"Candidate Review\",\"address\":\"AA4:AB6\",\"rows\":3,\"cols\":2,\"nonEmpty\":6,\"text\":6,\"maxTextLength\":49,\"preview\":[[null,\"PENDING\"],[null,\"PENDING\"],[null,\"PENDING\"]],\"previewAddress\":\"AA4:AB6\",\"previewRows\":3,\"previewCols\":2}"
+        ],
+        "dual_empty_bottom": [
+          "{\"kind\":\"region\",\"sheet\":\"Dual Empty Audit\",\"address\":\"A39:H39\",\"rows\":1,\"cols\":8,\"nonEmpty\":8,\"text\":8,\"maxTextLength\":236,\"preview\":[[\"DE-0036\",\"PRD-0080-P0030-U01\",\"US_Fed_2022\",\"30\",\"en\",\"Board of Governors of the Federal Reserve System (potential US CBDC)\"]],\"previewAddress\":\"A39:F39\",\"previewRows\":1,\"previewCols\":6}"
+        ],
+        "supplement_bottom": [
+          "{\"kind\":\"notice\",\"message\":\"No records matched the requested kinds.\"}"
+        ],
+        "qc_summary": [
+          "{\"kind\":\"region\",\"sheet\":\"QC Summary\",\"address\":\"A10:D16\",\"rows\":7,\"cols\":4,\"nonEmpty\":27,\"blank\":1,\"text\":27,\"maxTextLength\":24,\"preview\":[[\"Dual-empty total\",\"36\",\"Expected\",\"36\"],[\"Dual-empty complete\",\"0\",\"Target\",\"36\"],[\"Dual-empty pending\",\"36\",\"Target\",\"0\"],[\"Dual-empty incomplete\",\"0\",\"Target\",\"0\"],[\"Dual-empty needs context\",\"0\",\"Target\",\"0\"]],\"previewAddress\":\"A10:D14\",\"previewRows\":5,\"previewCols\":4}",
+          "{\"kind\":\"region\",\"sheet\":\"QC Summary\",\"address\":\"A1:D8\",\"rows\":8,\"cols\":4,\"nonEmpty\":26,\"blank\":6,\"text\":26,\"maxTextLength\":82,\"preview\":[[\"QC Summary — Dominik\",null,null,null],[\"Odevzdej až po odstranění všech pending/incomplete stavů a vyřešení needs_con...\",null,null,null],[\"Metric\",\"Current\",\"Reference\",\"Value\"],[\"Candidate total\",\"365\",\"Expected\",\"365\"],[\"Candidate complete\",\"0\",\"Target\",\"365\"]],\"previewAddress\":\"A1:D5\",\"previewRows\":5,\"previewCols\":4}"
+        ]
+      }
+    }
+  ]
+}

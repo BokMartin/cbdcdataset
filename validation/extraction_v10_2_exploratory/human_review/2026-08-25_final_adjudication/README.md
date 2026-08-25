@@ -1,5 +1,7 @@
 # Final human adjudication v10.2e
 
+> **DEPRECATED BEFORE CODING. Do not use these workbooks.** The full-census plan was superseded by `../../PROTOCOL_AMENDMENT_2_SAMPLED_VALIDATION.md` and `../2026-08-25_sampled_validation/`. This directory is retained only for provenance.
+
 Frozen production review set created on 2026-08-25 under `PROTOCOL_AMENDMENT.md`.
 
 ## Design

@@ -1,0 +1,147 @@
+{
+  "schema": "cbdc-v10.2e-sampled-human-validation-freeze-v1",
+  "status": "frozen before human coding",
+  "rationale": "sample size calculated for a two-sided 95% normal-approximation interval with worst-case proportion 0.5, 5 percentage-point target margin, and finite-population correction",
+  "seed": "cbdc-v10.2e-sampled-validation-20260825-v1",
+  "population_candidates": 6949,
+  "sample_candidates": 365,
+  "sample_fraction": 0.05252554324363218,
+  "confidence_level": 0.95,
+  "target_margin": 0.05,
+  "achieved_worst_case_margin": 0.049933803705367555,
+  "sampled_documents": 78,
+  "sampled_languages": {
+    "en": 344,
+    "es": 5,
+    "fr": 3,
+    "ja": 3,
+    "ru/uk": 10
+  },
+  "dual_empty_population": 359,
+  "dual_empty_sample": 36,
+  "dual_empty_fraction": 0.10027855153203342,
+  "strata": [
+    {
+      "language": "en",
+      "origin_type": "both",
+      "population": 4119,
+      "sample": 216,
+      "inclusion_probability": 0.05243991260014567
+    },
+    {
+      "language": "en",
+      "origin_type": "claude_only",
+      "population": 1240,
+      "sample": 64,
+      "inclusion_probability": 0.05161290322580645
+    },
+    {
+      "language": "en",
+      "origin_type": "openai_only",
+      "population": 1230,
+      "sample": 64,
+      "inclusion_probability": 0.05203252032520325
+    },
+    {
+      "language": "es",
+      "origin_type": "both",
+      "population": 53,
+      "sample": 2,
+      "inclusion_probability": 0.03773584905660377
+    },
+    {
+      "language": "es",
+      "origin_type": "claude_only",
+      "population": 43,
+      "sample": 2,
+      "inclusion_probability": 0.046511627906976744
+    },
+    {
+      "language": "es",
+      "origin_type": "openai_only",
+      "population": 21,
+      "sample": 1,
+      "inclusion_probability": 0.047619047619047616
+    },
+    {
+      "language": "fr",
+      "origin_type": "both",
+      "population": 8,
+      "sample": 1,
+      "inclusion_probability": 0.125
+    },
+    {
+      "language": "fr",
+      "origin_type": "claude_only",
+      "population": 3,
+      "sample": 1,
+      "inclusion_probability": 0.3333333333333333
+    },
+    {
+      "language": "fr",
+      "origin_type": "openai_only",
+      "population": 1,
+      "sample": 1,
+      "inclusion_probability": 1.0
+    },
+    {
+      "language": "ja",
+      "origin_type": "both",
+      "population": 7,
+      "sample": 1,
+      "inclusion_probability": 0.14285714285714285
+    },
+    {
+      "language": "ja",
+      "origin_type": "claude_only",
+      "population": 4,
+      "sample": 1,
+      "inclusion_probability": 0.25
+    },
+    {
+      "language": "ja",
+      "origin_type": "openai_only",
+      "population": 2,
+      "sample": 1,
+      "inclusion_probability": 0.5
+    },
+    {
+      "language": "ru/uk",
+      "origin_type": "both",
+      "population": 120,
+      "sample": 6,
+      "inclusion_probability": 0.05
+    },
+    {
+      "language": "ru/uk",
+      "origin_type": "claude_only",
+      "population": 37,
+      "sample": 1,
+      "inclusion_probability": 0.02702702702702703
+    },
+    {
+      "language": "ru/uk",
+      "origin_type": "openai_only",
+      "population": 61,
+      "sample": 3,
+      "inclusion_probability": 0.04918032786885246
+    }
+  ],
+  "estimands": {
+    "candidate_acceptance": "inverse-probability weighted human keep rate in the 6,949-candidate union",
+    "provider_candidate_validity": "inverse-probability weighted keep rate among sampled candidates attributable to each provider after unblinding",
+    "code_agreement": "exact provider-to-consensus code agreement conditional on human keep",
+    "intercoder": "pre-consensus percent agreement, Krippendorff alpha, and Gwet AC1 on the common sample",
+    "dual_empty": "proportion of sampled both-empty units containing at least one missed eligible claim",
+    "production_recall": "not estimable from this claim sample; report frozen calibration recall separately"
+  },
+  "hashes": {
+    "candidate_mapping_input": "c576dee4945df4c319ceb873c775a18e43e558a41955c51ef3e4b3ca08220ffa",
+    "payload_martin_input": "b47d4d66bcd1b82f0cc388c5e23d1abab8a0c0c10efa688d36b1e8453ac3f0de",
+    "payload_dominik_input": "0ac0d7126d6031e3da7d3fd1c3e3e85c83879fb7da79027d7f4ae1a382e6811f",
+    "sample_machine_mapping": "37af055206edb5c4e6e65f7af06dcc84ff77801285155c166eb984c63391190e",
+    "payload_martin": "2a53ba9a1967569f48ebc7aa66932872315aef94cd3b0f1fa464c5a1b2b28b29",
+    "payload_dominik": "debbefe1ee218f8f2e20a5a211f05283c0cedff09814af073964bc618f92732e",
+    "render_files": "147197117a4794ebb706e4a936c27130cf7539d0dcd0af1f1c7db9703fc0c103"
+  }
+}

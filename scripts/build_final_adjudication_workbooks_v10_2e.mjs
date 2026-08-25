@@ -11,7 +11,18 @@ if (!dataDir || !outputDir || !previewDir) {
 
 await fs.mkdir(outputDir, { recursive: true });
 await fs.mkdir(previewDir, { recursive: true });
-const freeze = JSON.parse(await fs.readFile(path.join(dataDir, "HUMAN_REVIEW_FREEZE_MANIFEST.json"), "utf8"));
+async function readFreezeManifest() {
+  for (const name of ["SAMPLED_VALIDATION_FREEZE_MANIFEST.json", "HUMAN_REVIEW_FREEZE_MANIFEST.json"]) {
+    try {
+      return JSON.parse(await fs.readFile(path.join(dataDir, name), "utf8"));
+    } catch (error) {
+      if (error?.code !== "ENOENT") throw error;
+    }
+  }
+  throw new Error(`no supported freeze manifest found in ${dataDir}`);
+}
+const freeze = await readFreezeManifest();
+const sampled = freeze.schema === "cbdc-v10.2e-sampled-human-validation-freeze-v1";
 
 const COLORS = {
   navy: "#17365D",
@@ -114,9 +125,13 @@ function applyQcColors(range) {
 function makeInstructions(workbook, payload) {
   const sheet = workbook.worksheets.add("Instructions");
   sheet.showGridLines = false;
-  writeTitle(sheet, "A1:F1", `CBDC v10.2e — blind final adjudication — ${payload.reviewer}`);
+  writeTitle(sheet, "A1:F1", sampled
+    ? `CBDC v10.2e — blind probability validation sample — ${payload.reviewer}`
+    : `CBDC v10.2e — blind final adjudication — ${payload.reviewer}`);
   sheet.getRange("A2:F2").merge();
-  sheet.getRange("A2").values = [["Vyplňuj pouze žlutá pole. Identita modelu, jeho původní kód a členství v překryvu jsou záměrně skryté."]];
+  sheet.getRange("A2").values = [[sampled
+    ? "Vyplňuj pouze žlutá pole. Oba hodnotitelé kódují tentýž zmrazený pravděpodobnostní vzorek; identita modelu, jeho kód i výběrová vrstva jsou skryté."
+    : "Vyplňuj pouze žlutá pole. Identita modelu, jeho původní kód a členství v překryvu jsou záměrně skryté."]];
   sheet.getRange("A2:F2").format = subtitleFormat;
   sheet.getRange("A3").values = [["Reviewer initials"]];
   sheet.getRange("B3").values = [[""]];
@@ -139,12 +154,16 @@ function makeInstructions(workbook, payload) {
     ["2. Kódování keep", "Vyplň final_code1, final_odr, privacy_direction, privacy_relation, strength a confidence. final_span_override použij jen pokud je zobrazený span příliš široký nebo nepřesný; vlož přesný podřetězec zdroje."],
     ["3. Kódování exclude", "Vyplň exclusion_reason a confidence. Pole s kódy mohou zůstat prázdná."],
     ["4. needs_context", "Použij jen když nelze rozhodnout ani po otevření plného textu na listu Contexts nebo odpovídajícího obrázku stránky."],
-    ["5. Dual Empty Audit", "Jde o zaslepený vzorek jednotek, kde oba modely nevrátily kandidáta. Označ, zda v textu chybí relevantní tvrzení."],
+    ["5. Dual Empty Audit", "Jde o zvláštní zaslepený vzorek jednotek, kde oba modely nevrátily kandidáta. Odhaduje pouze výskyt přehlédnutých tvrzení mezi dual-empty jednotkami, nikoli recall celé produkce."],
     ["6. Empty Supplements", "Pokud v Dual Empty Audit zvolíš yes, přepiš každý chybějící přesný span do samostatného slotu a vyplň jeho finální kódování. Připraveno je pět slotů na jednotku."],
     ["7. Jazyk a obrázky", "U cizojazyčného zdroje kóduj jen tehdy, když mu rozumíš nebo máš spolehlivý překlad. render_file je relativní cesta v přiložené složce renders."],
     ["8. Dokončení", "QC Summary musí mít Candidate incomplete = 0, Candidate pending = 0, Empty incomplete = 0 a Empty pending = 0. needs_context musí být vyřešeno před konsensem."],
     ["9. Neotevírat rezervu", "Nepracuj s held-out reserve materiálem. Tento sešit patří jen k produkční kandidátní unii a předem zmrazenému dual-empty vzorku."],
   ];
+  if (sampled) {
+    rows.push(["10. Co vzorek měří", "Vzorek slouží k odhadu validity kandidátů a shody kódování. Produkční recall se z něj neodhaduje; v článku zůstává samostatný zmrazený kalibrační odhad."]);
+    rows.push(["11. Nezávislost", "S druhým hodnotitelem neporovnávej rozhodnutí, dokud oba neodevzdáte uzamčené kopie. Poté se konsensem řeší jen neshody."]);
+  }
   sheet.getRange(`A6:B${5 + rows.length}`).values = rows;
   sheet.getRange(`A6:A${5 + rows.length}`).format = { fill: COLORS.teal2, font: { bold: true, color: COLORS.navy }, wrapText: true, borders: thinGrid, verticalAlignment: "top" };
   sheet.getRange(`B6:B${5 + rows.length}`).format = { fill: COLORS.white, font: { color: COLORS.ink }, wrapText: true, borders: thinGrid, verticalAlignment: "top" };
@@ -157,8 +176,10 @@ function makeInstructions(workbook, payload) {
 function makeCandidateReview(workbook, payload) {
   const sheet = workbook.worksheets.add("Candidate Review");
   sheet.showGridLines = false;
-  writeTitle(sheet, "A1:AB1", `Candidate Review — ${payload.reviewer}`);
-  writeSubtitle(sheet, "A2:AB2", "Každý řádek je jeden deduplikovaný kandidát. Nejprve rozhodni P; žlutá pole Q–Z vyplň podle rozhodnutí. Zdroj a kontext neměň.");
+  writeTitle(sheet, "A1:AB1", sampled ? `Candidate Validation Sample — ${payload.reviewer}` : `Candidate Review — ${payload.reviewer}`);
+  writeSubtitle(sheet, "A2:AB2", sampled
+    ? "Každý řádek je kandidát z téhož zmrazeného pravděpodobnostního vzorku pro oba hodnotitele. Nejprve rozhodni P; žlutá pole Q–Z vyplň podle rozhodnutí. Zdroj a kontext neměň."
+    : "Každý řádek je jeden deduplikovaný kandidát. Nejprve rozhodni P; žlutá pole Q–Z vyplň podle rozhodnutí. Zdroj a kontext neměň.");
   const headers = [
     "candidate_id", "candidate_span", "candidate_translation", "alternate_span", "alternate_translation", "source_excerpt",
     "context_unit_id", "alternate_context_unit_id", "doc_id", "page", "language", "project_owner", "authority_note", "source_mode", "render_file",
@@ -401,15 +422,32 @@ function makeMetadata(workbook, payload) {
   const sheet = workbook.worksheets.add("Metadata");
   sheet.showGridLines = false;
   writeTitle(sheet, "A1:C1", "Frozen review metadata");
-  const rows = [
+  const commonRows = [
     ["schema", payload.schema, "Workbook payload schema"],
     ["reviewer", payload.reviewer, "Assigned reviewer"],
-    ["created_utc", new Date().toISOString(), "Workbook build time"],
+    ["created_utc", sampled ? "2026-08-25T00:00:00Z" : new Date().toISOString(), sampled ? "Protocol freeze date (normalized)" : "Workbook build time"],
     ["seed", freeze.seed, "Deterministic allocation/sample seed"],
     ["blinding", payload.blinding, "Fields excluded from coder view"],
     ["candidate_rows", payload.candidates.length, "Rows assigned to this reviewer"],
     ["dual_empty_rows", payload.dual_empty_units.length, "Common independently reviewed sample"],
     ["supplement_slots_per_unit", payload.supplement_slots_per_unit, "Maximum preallocated slots"],
+  ];
+  const rows = sampled ? [
+    ...commonRows,
+    ["population_candidates", freeze.population_candidates, "Deduplicated production candidate union"],
+    ["sample_candidates", freeze.sample_candidates, "Common probability sample coded by both reviewers"],
+    ["sample_fraction", freeze.sample_fraction, "Sample / candidate population"],
+    ["confidence_level", freeze.confidence_level, "Design confidence level"],
+    ["target_margin", freeze.target_margin, "Worst-case target half-width"],
+    ["achieved_worst_case_margin", freeze.achieved_worst_case_margin, "Finite-population corrected half-width at p=0.5"],
+    ["sampled_documents", freeze.sampled_documents, "Documents represented in sample"],
+    ["dual_empty_eligible", freeze.dual_empty_population, "Separate dual-empty sampling frame"],
+    ["dual_empty_sample", freeze.dual_empty_sample, "Common dual-empty sample"],
+    ["payload_sha256", freeze.hashes[`payload_${payload.reviewer.toLowerCase()}`], "Blind payload hash"],
+    ["selection_rule", "SHA-256 rank without replacement within language × provider-origin stratum", "Frozen probability selection"],
+    ["analysis_weight", "inverse inclusion probability", "Required for population point estimates"],
+  ] : [
+    ...commonRows,
     ["union_candidates", freeze.counts.deduplicated_union_candidates, "Frozen union before reviewer allocation"],
     ["independent_overlap_candidates", freeze.counts.independent_overlap_candidates, "Stored aggregate only; row membership remains blinded"],
     ["overlap_fraction", freeze.counts.overlap_fraction, "Frozen protocol proportion"],
@@ -428,7 +466,8 @@ function makeMetadata(workbook, payload) {
   sheet.getRange(`A4:C${3 + rows.length}`).values = rows;
   sheet.getRange(`A4:C${3 + rows.length}`).format = { fill: COLORS.paleBlue, wrapText: true, verticalAlignment: "top", borders: thinGrid };
   sheet.getRange(`A4:C${3 + rows.length}`).format.rowHeight = 42;
-  sheet.getRange("B14").format.numberFormat = "0.0%";
+  if (sampled) sheet.getRange("B14:B17").format.numberFormat = "0.0%";
+  else sheet.getRange("B14").format.numberFormat = "0.0%";
   setWidths(sheet, { A: 31, B: 92, C: 48 });
   sheet.freezePanes.freezeRows(3);
   return sheet;
@@ -448,9 +487,11 @@ async function build(payloadPath) {
   makeLists(workbook, payload);
   makeMetadata(workbook, payload);
 
-  const base = `FINAL_ADJUDICATION_v10_2e_${payload.reviewer.toUpperCase()}`;
+  const base = sampled
+    ? `VALIDATION_SAMPLE_v10_2e_${payload.reviewer.toUpperCase()}`
+    : `FINAL_ADJUDICATION_v10_2e_${payload.reviewer.toUpperCase()}`;
   const renderRanges = {
-    "Instructions": "A1:F15",
+    "Instructions": sampled ? "A1:F17" : "A1:F15",
     "Candidate Review": "A1:AB16",
     "Dual Empty Audit": "A1:O14",
     "Empty Supplements": "A1:M18",

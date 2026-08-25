@@ -18,9 +18,12 @@ EXTRA = [
     "scripts/openai_production_retry_v10_2e.py",
     "scripts/openai_span_retry_v10_2.py",
     "scripts/package_final_adjudication_v10_2e.py",
+    "scripts/package_sampled_validation_v10_2e.py",
     "scripts/prepare_exploratory_production_v10_2e.py",
     "scripts/prepare_production_adjudication_v10_2e.py",
+    "scripts/prepare_sampled_validation_v10_2e.py",
     "scripts/prepare_scope_readjudication.py",
+    "scripts/update_paper_sampled_validation_v10_2e.py",
     "scripts/update_checksums.py",
     "scripts/verify_extraction_v10_2.py",
     "scripts/verify_final_adjudication_workbooks_v10_2e.mjs",
@@ -56,6 +59,7 @@ EXTRA = [
     "validation/extraction_v10_2/run_config.json",
     "validation/extraction_v10_2_exploratory/CLAUDE_HANDOFF_PROMPT.md",
     "validation/extraction_v10_2_exploratory/PROTOCOL_AMENDMENT.md",
+    "validation/extraction_v10_2_exploratory/PROTOCOL_AMENDMENT_2_SAMPLED_VALIDATION.md",
     "validation/extraction_v10_2_exploratory/PACKAGE_FREEZE.json",
     "validation/extraction_v10_2_exploratory/TASK_CLAUDE.md",
     "validation/extraction_v10_2_exploratory/TASK_CODEX.md",
@@ -88,6 +92,7 @@ def main():
     names = [
         name for name in names
         if "__pycache__" not in Path(name).parts and Path(name).suffix.lower() != ".pyc"
+        and Path(name).name != "sample_machine_mapping.csv"
     ]
     names += [name for name in EXTRA if name not in names]
     for directory in EXTRA_DIRS:
@@ -96,6 +101,7 @@ def main():
             for path in sorted((ROOT / directory).rglob("*"))
             if path.is_file()
             and not path.name.startswith("~$")
+            and path.name != "sample_machine_mapping.csv"
             and "__pycache__" not in path.parts
             and path.suffix.lower() != ".pyc"
             and path.relative_to(ROOT).as_posix() not in names

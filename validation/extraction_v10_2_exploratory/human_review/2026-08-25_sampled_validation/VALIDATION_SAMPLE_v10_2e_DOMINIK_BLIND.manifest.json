@@ -1,0 +1,46 @@
+{
+  "schema": "cbdc-v10.2e-blind-sampled-validation-package-v1",
+  "reviewer": "Dominik",
+  "candidate_rows": 365,
+  "dual_empty_rows": 36,
+  "render_files": 4,
+  "blinding": "provider identity, provider code, origin type, and sampling stratum absent",
+  "payload_sha256": "debbefe1ee218f8f2e20a5a211f05283c0cedff09814af073964bc618f92732e",
+  "files": [
+    {
+      "path": "README_FOR_REVIEWER.md",
+      "bytes": 827,
+      "sha256": "da205dac154748ad6e5b29e0ec1e1704cc4a29f2882dc500a91039cb5b9bbb27"
+    },
+    {
+      "path": "renders/PRD-0007-P0046.jpg",
+      "bytes": 132899,
+      "sha256": "f33b954c692ca3142310a37885e500ada13555709998d397b9c54cd6ba1f3a41"
+    },
+    {
+      "path": "renders/PRD-0037-P0047.jpg",
+      "bytes": 115954,
+      "sha256": "195311b006f2d0a8d370d794488cc73c736fbc917903ac708df8b5cfbb3b24bd"
+    },
+    {
+      "path": "renders/PRD-0054-P0010.jpg",
+      "bytes": 169284,
+      "sha256": "bdbb67af64600a9fe679bc29b0f4d5cca30cd11a7397055770dcac2ffdbcc692"
+    },
+    {
+      "path": "renders/PRD-0061-P0018.jpg",
+      "bytes": 104353,
+      "sha256": "4e5f34e07372ab77f2f4d8dda95769730c106ed42e997ce64e87ded3c38eb48a"
+    },
+    {
+      "path": "VALIDATION_SAMPLE_v10_2e_DOMINIK.xlsx",
+      "bytes": 711241,
+      "sha256": "b5e68846517aac1030c6e650da40ec23b1e13af5136b979282069aa828655468"
+    }
+  ],
+  "archive": {
+    "path": "VALIDATION_SAMPLE_v10_2e_DOMINIK_BLIND.zip",
+    "bytes": 1146627,
+    "sha256": "828e031aa3ce3d21778f728d3b87227aef28f509d76b56e5c7f941c93ba52519"
+  }
+}

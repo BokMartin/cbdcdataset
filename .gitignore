@@ -1,4 +1,8 @@
 __pycache__/
 *.py[cod]
 .venv/
+node_modules/
+outputs/
+~$*.xlsx
+validation/extraction_v10_2_exploratory/human_review/2026-08-25_sampled_validation/sample_machine_mapping.csv
 .DS_Store
