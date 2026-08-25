@@ -60,6 +60,7 @@ EXTRA_DIRS = [
     "validation/extraction_v10_2/audits",
     "validation/extraction_v10_2/runs",
     "validation/extraction_v10_2_exploratory/freeze",
+    "validation/extraction_v10_2_exploratory/runs",
 ]
 
 
