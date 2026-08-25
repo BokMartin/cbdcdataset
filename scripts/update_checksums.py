@@ -11,6 +11,7 @@ EXTRA = [
     "scripts/build_final_adjudication_workbooks_v10_2e.mjs",
     "scripts/create_backup_snapshot.py",
     "scripts/evaluate_extraction_v10_1.py",
+    "scripts/ensemble_analysis_v10_2e.py",
     "scripts/extraction_v10_1.py",
     "scripts/extraction_v10_2.py",
     "scripts/finalize_provider_output.py",
@@ -31,6 +32,7 @@ EXTRA = [
     "scripts/update_paper_sampled_validation_v10_2e.py",
     "scripts/update_checksums.py",
     "scripts/verify_extraction_v10_2.py",
+    "scripts/verify_ensemble_analysis_v10_2e.py",
     "scripts/verify_ai_candidate_masters_v10_2e.mjs",
     "scripts/verify_ai_reviewer_workbooks_v10_2e.mjs",
     "scripts/verify_final_adjudication_workbooks_v10_2e.mjs",
@@ -67,6 +69,7 @@ EXTRA = [
     "validation/extraction_v10_2_exploratory/CLAUDE_HANDOFF_PROMPT.md",
     "validation/extraction_v10_2_exploratory/PROTOCOL_AMENDMENT.md",
     "validation/extraction_v10_2_exploratory/PROTOCOL_AMENDMENT_2_SAMPLED_VALIDATION.md",
+    "validation/extraction_v10_2_exploratory/ENSEMBLE_ANALYSIS_PROTOCOL.md",
     "validation/extraction_v10_2_exploratory/PACKAGE_FREEZE.json",
     "validation/extraction_v10_2_exploratory/TASK_CLAUDE.md",
     "validation/extraction_v10_2_exploratory/TASK_CODEX.md",
@@ -81,6 +84,7 @@ EXTRA_DIRS = [
     "validation/extraction_v10_2_exploratory/freeze",
     "validation/extraction_v10_2_exploratory/human_review",
     "validation/extraction_v10_2_exploratory/runs",
+    "results/v10_2e_ensemble",
 ]
 
 
