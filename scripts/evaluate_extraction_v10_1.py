@@ -25,11 +25,8 @@ def sha256(path):
 
 
 def read_jsonl(path):
-    return [
-        json.loads(line)
-        for line in Path(path).read_text(encoding="utf-8").splitlines()
-        if line
-    ]
+    with Path(path).open("r", encoding="utf-8") as handle:
+        return [json.loads(line) for line in handle if line.strip()]
 
 
 def flatten(label, responses, units):

@@ -1,0 +1,35 @@
+{
+  "schema": "cbdc_extraction_provider_finalization_v2",
+  "created_utc": "2026-08-25T12:07:34.791131+00:00",
+  "operation": "deterministic_contract_enforcement_after_provider_retry",
+  "semantic_or_classification_changes": 0,
+  "counts": {
+    "requests": 661,
+    "units": 3963,
+    "statements_before": 5683,
+    "statements_after": 5683,
+    "quote_en_set_null": 399,
+    "block_id_set_from_frozen_unit": 3,
+    "whitespace_restored_to_exact_source": 4369,
+    "normalized_ambiguous_retained": 10,
+    "unsupported_rejected": 0,
+    "render_review_required": 22,
+    "provider_reported_rejections_before_finalization": 78
+  },
+  "hashes": {
+    "package_inputs_sha256": "6435e0b8823968408ac1477528599dd2dc7aa2cd86ab9c5cae2969d832bb47e6",
+    "sealed_provider_responses_sha256": "60866da1c47d1adcfd1a77e8763e0a9370ac2a91c646e87a2dfb9db3c7c993fb",
+    "finalized_responses_sha256": "2d8e31eee4a3592501b86e6c8d7902488873068b9b25d65c955e7c915023f32a",
+    "audit_sha256": "88f1b3316af58611fff982e671335de432161324d4919e7f9b6e86a9c4debba3",
+    "provider_rejections_sha256": "95d70c79f111b22acc21ba07f653a586f29d23170398cc223401180aa39ea881"
+  },
+  "rules": {
+    "english_quote_en": "set null from frozen input language metadata",
+    "block_id": "set from frozen unit metadata when provider value differs",
+    "text_span": "exact source substring, else whitespace-stripped containment only",
+    "unique_whitespace_match": "restore exact source substring with offset map",
+    "ambiguous_whitespace_match": "retain provider quote and flag; do not choose an offset",
+    "unsupported_after_retry": "reject and count",
+    "render_only": "retain but require separate visual verification"
+  }
+}

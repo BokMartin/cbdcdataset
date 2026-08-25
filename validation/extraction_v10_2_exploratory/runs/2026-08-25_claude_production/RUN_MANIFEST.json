@@ -1,0 +1,60 @@
+{
+  "schema": "cbdc_extraction_v10_2e_claude_production_archive",
+  "status": "source_verified_pending_render_review_and_cross_model_comparison",
+  "provider": "anthropic",
+  "model": "claude-sonnet-5",
+  "protocol_id": "cbdc_extraction_v10_2e_exploratory_assisted_production",
+  "reserve_status": "sealed_not_present",
+  "blinding": "No calibration gold, reserve material, OpenAI output, or prior extraction results were used.",
+  "counts": {
+    "requests": 661,
+    "units": 3963,
+    "provider_accepted_statements": 5683,
+    "provider_rejected_spans_after_retry": 78,
+    "canonical_statements": 5683,
+    "canonical_unsupported_rejected": 0,
+    "render_statements_pending_visual_review": 22,
+    "normalized_ambiguous_spans_retained": 10,
+    "unresolved_max_token_units": 4,
+    "provider_source_unavailable_statuses": 5
+  },
+  "mechanical_canonicalization": {
+    "english_quote_en_set_null": 399,
+    "block_id_set_from_frozen_unit": 3,
+    "whitespace_restored_to_exact_source": 4369,
+    "semantic_or_classification_changes": 0
+  },
+  "recorded_deviations": [
+    "Four PRD-0017 units remained truncated after the single permitted retry and are not extracted.",
+    "PRD-0018-P0134-U01 is an all-white render labelled source_unavailable rather than structural_blank; it is not counted as a truncated unit.",
+    "Ten whitespace-normalized quotations have multiple identical source occurrences; no offset was chosen because downstream matching does not consume offsets.",
+    "Twenty-two render-supported statements require visual review before model merging."
+  ],
+  "files": [
+    {
+      "file": "CLAUDE_PRODUCTION_v10_2e_SEALED.zip",
+      "bytes": 6452965,
+      "sha256": "8836f195d69de60f4849d83545c1fef035859caede0ca3bdc73d8ca5f48eecdb"
+    },
+    {
+      "file": "INDEPENDENT_VERIFICATION_REPORT.json",
+      "bytes": 3732,
+      "sha256": "14220ba55171db6cb441ac87b1534bbebf4bfa3469d778b0930b00be466fbe94"
+    },
+    {
+      "file": "claude_extractions_v10_2e_canonical.jsonl",
+      "bytes": 2627012,
+      "sha256": "2d8e31eee4a3592501b86e6c8d7902488873068b9b25d65c955e7c915023f32a"
+    },
+    {
+      "file": "finalization_manifest.json",
+      "bytes": 1695,
+      "sha256": "ef55a117e6adcb31bc6eae8202ad3582636b5daa3864f3e6874e2ec83b4d506d"
+    },
+    {
+      "file": "source_verification_audit.csv",
+      "bytes": 2008924,
+      "sha256": "88f1b3316af58611fff982e671335de432161324d4919e7f9b6e86a9c4debba3"
+    }
+  ]
+}

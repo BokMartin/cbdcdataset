@@ -45,6 +45,11 @@ def sha256_bytes(content):
     return hashlib.sha256(content).hexdigest()
 
 
+def read_jsonl(path):
+    with Path(path).open("r", encoding="utf-8") as handle:
+        return [json.loads(line) for line in handle if line.strip()]
+
+
 def original_truth(label):
     if label in {"ANO", "ANO-částečně"}:
         return "positive"
@@ -361,7 +366,7 @@ def estimate_cost(args):
     codebook = CODEBOOK.read_text(encoding="utf-8")
     schema = (PROTOCOL_DIR / "output_schema.json").read_text(encoding="utf-8")
     static_tokens = math.ceil((len(prompt) + len(codebook) + len(schema)) / 4)
-    requests = [json.loads(line) for line in (package / "inputs.jsonl").read_text(encoding="utf-8").splitlines() if line]
+    requests = read_jsonl(package / "inputs.jsonl")
     source_tokens = sum(
         estimated_tokens(unit["source_text"], unit["language"])
         for request in requests for unit in request["units"]
@@ -400,18 +405,9 @@ def normalized_span(text):
 def validate_output(args):
     package = Path(args.package)
     input_requests = {
-        item["request_id"]: item
-        for item in (
-            json.loads(line)
-            for line in (package / "inputs.jsonl").read_text(encoding="utf-8").splitlines()
-            if line
-        )
+        item["request_id"]: item for item in read_jsonl(package / "inputs.jsonl")
     }
-    responses = [
-        json.loads(line)
-        for line in Path(args.responses).read_text(encoding="utf-8").splitlines()
-        if line
-    ]
+    responses = read_jsonl(args.responses)
     if len(responses) != len(input_requests):
         raise AssertionError("response count differs from request count")
     if len({item.get("request_id") for item in responses}) != len(responses):

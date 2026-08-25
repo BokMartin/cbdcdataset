@@ -58,10 +58,13 @@ def verify(package: Path, archive_path: Path) -> dict:
 
     requests = []
     units = []
-    for line in (package / "inputs.jsonl").read_text(encoding="utf-8").splitlines():
-        request = json.loads(line)
-        requests.append(request)
-        units.extend(request["units"])
+    with (package / "inputs.jsonl").open("r", encoding="utf-8") as handle:
+        for line in handle:
+            if not line.strip():
+                continue
+            request = json.loads(line)
+            requests.append(request)
+            units.extend(request["units"])
     assert len(requests) == 13 and len({r["request_id"] for r in requests}) == 13
     assert len(units) == len({u["unit_id"] for u in units}) == 78
     assert all(u.get("project_owner") and u.get("authority_note") for u in units)

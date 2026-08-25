@@ -1,0 +1,94 @@
+{
+  "valid": true,
+  "archive_sha256": "8836f195d69de60f4849d83545c1fef035859caede0ca3bdc73d8ca5f48eecdb",
+  "archive_bytes": 6452965,
+  "archive": {
+    "members": 15,
+    "uncompressed_bytes": 13663004
+  },
+  "source_hashes": {
+    "package_zip": "6874c8947f9a8578dcc36d17b1cbffa8f34703a70efb9d03044fbebcc013923f",
+    "inputs.jsonl": "6435e0b8823968408ac1477528599dd2dc7aa2cd86ab9c5cae2969d832bb47e6",
+    "PROMPT_CORE.md": "01e3ce1e378df389f6a8de76afc2336b71a1e6f8ac1cea66da112e8cb9aa7d99",
+    "codebook.csv": "cb041c5a27f28cc847ce43115e5f15849064cb119d3028249825dff232ec3a26",
+    "output_schema.json": "1b8d4e2871239296d1c2cdfa5301e46b91a8b1ab28003259bb216450e69f63bb",
+    "source_authority.csv": "d1de1ca16589b6ccf4c23590028d2da01de2c7145e78fd38029b15e3cda37f95",
+    "run_config.production.json": "87015ab0132096fb19b294a4c0f1d45a5c94c4489d2b40ac7a58af48fbafe9d1"
+  },
+  "raw_line_counts": {
+    "main_run": 661,
+    "single_permitted_source_only_retry": 183
+  },
+  "final": {
+    "requests": 661,
+    "units": 3963,
+    "statements_accepted": 5683,
+    "empty_units": 2385,
+    "units_unresolved_truncated": 4,
+    "status_counts": {
+      "ok": 2434,
+      "skip_language": 2,
+      "source_unavailable": 5,
+      "structural_blank": 1522
+    },
+    "source_support": {
+      "exact_text": 1282,
+      "render_review_required": 22,
+      "whitespace_normalized_text": 4379
+    },
+    "english_quote_en_nonnull": 399,
+    "block_id_deviations": [
+      {
+        "unit_id": "PRD-0003-P0003-U01",
+        "expected_block_id": "AE_UAE_003-P0003-B01",
+        "provider_block_id": "AM_UAE_003-P0003-B01",
+        "statements": 3,
+        "canonical_action": "replace with frozen unit block_id"
+      }
+    ],
+    "retry_units": 275,
+    "rejected_spans_after_retry": 78,
+    "unresolved_unit_ids": [
+      "PRD-0017-P0007-U01",
+      "PRD-0017-P0008-U01",
+      "PRD-0017-P0013-U01",
+      "PRD-0017-P0014-U01"
+    ],
+    "source_unavailable_unit_ids": [
+      "PRD-0017-P0007-U01",
+      "PRD-0017-P0008-U01",
+      "PRD-0017-P0013-U01",
+      "PRD-0017-P0014-U01",
+      "PRD-0018-P0134-U01"
+    ],
+    "nontruncated_source_unavailable": {
+      "PRD-0018-P0134-U01": {
+        "render_sha256": "6af5ae493dc5fb2edcfc7172d79c4b26da0c0972e93fa8bcae443a06a23225f3",
+        "note": "all-white render; provider used source_unavailable instead of structural_blank"
+      }
+    },
+    "final_output_sha256": "60866da1c47d1adcfd1a77e8763e0a9370ac2a91c646e87a2dfb9db3c7c993fb"
+  },
+  "model_requested": "claude-sonnet-5",
+  "model_returned": "claude-sonnet-5",
+  "usage_total": {
+    "input_tokens": 5640518,
+    "output_tokens": 2987573,
+    "cache_read": 2222531,
+    "cache_write": 4009371
+  },
+  "estimated_cost_usd_at_batch_rates": 25.81,
+  "deviations": [
+    {
+      "id": "D1",
+      "severity": "recorded",
+      "description": "4 units (PRD-0017 pages 7,8,13,14) exceeded the frozen max_tokens=12000 output cap in both the main run and the permitted retry (stop_reason=max_tokens). Retry budget spent; the units are carried as placeholder status 'source_unavailable' with zero statements and are listed in coverage_report.json as not extracted. No second retry was attempted and no truncated JSON was salvaged."
+    },
+    {
+      "id": "D2",
+      "severity": "note",
+      "description": "Retry regrouping: failed units were re-batched at max 2 units per request to avoid repeat output-cap truncation. Model, prompt, codebook, schema, effort, max_tokens and all substantive settings unchanged; units remained independently processed as required by PROMPT_CORE."
+    }
+  ],
+  "blinding_note": "No calibration gold, reserve material, OpenAI output, or prior extraction results were read or requested during this run."
+}

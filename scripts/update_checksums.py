@@ -19,6 +19,7 @@ EXTRA = [
     "scripts/update_checksums.py",
     "scripts/verify_extraction_v10_2.py",
     "scripts/verify_exploratory_production_v10_2e.py",
+    "scripts/verify_claude_production_v10_2e.py",
     "validation/calibration_v10/calibration_reference_v10_1.csv",
     "validation/calibration_v10/calibration_reference_v10_1.json",
     "validation/calibration_v10/source/CALIBRATION_AUDIT_v10_FINALIZED.xlsx",
