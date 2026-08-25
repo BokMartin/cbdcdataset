@@ -1,0 +1,48 @@
+# Final independent audit report — v10.2 calibration freeze and evaluation
+
+Auditor: Claude (claude.ai computer-use environment), 2026-08-25 UTC. Completion of the prior partial audit; sections previously `NOT REPRODUCIBLE FROM SUPPLIED MATERIALS` are now closed. No API batch was submitted; no API key was used; the sealed 40-page reserve was neither present nor requested; no provider output, reference, prompt, or codebook was edited.
+
+**Independence disclosure (unchanged):** this environment produced the Claude run-2 provider outputs. Section-4 conclusions rest on (a) an independent canonicalization reproduction performed before the author's script was available, and (b) verification of the author's script afterward.
+
+## 1. Hashes actually inspected (all recomputed)
+
+- Package payload: **all entries in `PAYLOAD_SHA256SUMS.txt` verified OK.**
+- Repo archive `cbdc-msed-v10_9adef19.zip` zip comment = commit `9adef19da9214c8b098896efeb9dc14f5a51b3bf` ✔
+- Calibration `inputs.jsonl` `4764ae7a…d8467` ✔; deterministic package ZIP `2358110e…858c` ✔
+- Workbook `557a4bf0…5f70` ✔; decisions JSON `e3f51a49…f1bb2` ✔
+- Regenerated reference CSV `a6dcd733…19a9` ✔ and change log `d5d2c723…5f83` ✔ (byte-identical to generator-recorded logical hashes)
+- Claude canonical JSONL `c06ce8c7…5bee5a` ✔ (three independent paths: committed file, author script rerun, auditor's independent reproduction)
+- Diagnostic Codex responses `0554a701…40d2d9` ✔
+- `calibration_results.json` `f0519671…12b825` ✔ after documented LF→CRLF normalization; `paragraph_audit.csv` and `statement_assignments.csv` byte-identical without any normalization
+- `batch_input.jsonl` `87dfabe2…98b7` ✔ after the same LF→CRLF normalization; regenerated LF hash `74d4d5e2…ccde0`
+
+## 2. Section verdicts
+
+| § | Verdict | Evidence |
+|---|---|---|
+| 1 Scope freeze | **PASS** | Workbook hash ✔; 6 sheets render via openpyxl; `Final checks!H9:H33` = 25 × `accept`; cached-value scan finds zero `#REF!/#DIV/0!/#VALUE!/#NAME?/#N/A`; decisions JSON: 69 unique `review_case_id`, 69 unique `(gold_id, paragraph_id)`, 24 keep / 45 exclude, 0 unresolved, all kept rows carry non-empty `final_code`. |
+| 2 Reference generation | **PASS** | `freeze_reference_v10_2.py` rerun in an empty dir reproduces both output files **byte-exactly** (hashes above). 351 rows / 78 pages; strata 82/209/60; probability 64/186/40; exactly 69 rows differ from the v10.1 base and the changed-row set equals the decision key set; transitions 23/8/22/16; all excluded rows have empty code **and** empty span; change log has 69 rows; reserve stays `sealed`. Note: the *committed* CSV in git is LF-normalized (`c9cb5a8c…`), the generator writes CRLF (`a6dcd733…`) — parsed content equal, exactly the CRLF caveat the handover documents. |
+| 3 One-to-one matcher | **PASS** | 7 property tests against the real `one_to_one_pairs` (min-cost max-flow, integer micro-unit costs): augmenting path (P1/P5), cardinality-over-score (P2), max score among max cardinality (P3), determinism across all edge-order permutations plus a 40×40 randomized instance (P4), duplicate dedup 1 match → union workload 2 (P6), regression bound matches ≤ \|A\| on the 23×141 instance (23 observed). Code reading confirms P7 (reference `assign()` and `cross_model_overlap()` both route through `one_to_one_pairs`) and P8 (threshold gate `score >= 0.80` applied before edges enter the graph; edges below never participate). All 7 tests: **passed in 0.58 s**. |
+| 4 Run-2 validation + canonicalization | **PASS** (carried + extended) | Package `claude_run2` archive byte-identical to the auditor-held sealed original (`a77cfd85…`). Author's `canonicalize_source_only.py` rerun regenerates `c06ce8c7…` and a transform log byte-identical to the committed one (`66be0edc…`); the script reads only the frozen package and the submitted output — no reference access (grep-verified). `validate_run.py` passes end-to-end: 13 main + 2 retry raw responses, all 15 manifest response SHA-256s re-verified against raw content, 0 rejected spans, final-output hash match. Transform: 100 quote restorations, 23 relabels, 1 unresolved — matching the auditor's independent counts exactly. |
+| 5 Preliminary evaluation | **PASS** | Evaluator rerun against the regenerated reference reproduces `calibration_results.json` **semantically byte-exactly** (identical after LF→CRLF; the only run-to-run field that can differ is `inputs.reference_sha256`, which tracks which line-ending variant of the semantically identical reference is passed). `paragraph_audit.csv` and `statement_assignments.csv` byte-identical as-is. Every §5 number confirmed: TP 42 / FP 1 / FN 22 / TN 185; precision 0.9767441860; recall 0.65625; F1 0.7850467290; bootstrap recall 95% CI [0.5319148936, 0.7592995169] with 2,000 finite draws; stress-long 10/17; workload 141/82 = 1.7195121951; span fidelity 141/141; classification 7/31; gates E1 fail, E2 fail, E3 pass, S1 pass, C1 fail. Cross-model: A=23, B=141, matches=23, dedup union workload 141, union recall 0.6875 — the erratum's before/after account (66→23 matches, 98→141 workload) verified. `comparison_status = preliminary_nonprotocol_run_present` correctly brands the Codex chat run non-paper-eligible. Stats implementations audited: cluster bootstrap (per-doc aggregation, fixed seed 20260821, percentile 2.5/97.5, finite-draw filter, observed reported) correct; `krippendorff_alpha` is algebraically identical to canonical nominal alpha with the 2n/(2n−1) small-sample factor (derivation checked); `gwet_ac1` matches Gwet's multi-category Pe = Σπ(1−π)/(K−1). |
+| 6 OpenAI batch input | **PASS** | `openai_batch_v10_2.py prepare` rerun in an empty dir: **all 13 request bodies semantically identical** to the committed file (sort-keys hash per line, 13/13). Byte difference is line endings only (13 bytes = 13 lines; LF here, CRLF on the author's platform; CRLF-normalized hash equals the frozen `87dfabe2…`). Body audit: 13 unique `custom_id`s in request order; 78/78 unit coverage; exactly 9 `input_image` attachments distributed to exactly the 9 render units (R0002:1, R0008:1, R0009:1, R0012:4, R0013:2); every body has model `gpt-5.6-terra`, `/v1/responses`, `reasoning.effort=medium`, **no** temperature key, `json_schema` format with the unmodified packaged schema, `store:false`, shared `prompt_cache_key`. Leakage scan: zero hits for reference/gold/reserve identifiers or key patterns; all 20 `reserve` string hits are benign source text ("Preserve", "FX reserves", "reserve requirement"). |
+| 7 Repository verification | **PASS** | All `scripts/*.py` compile; `verify.py` passes; `verify_extraction_v10_2.py --package --zip` passes (13 requests, 78 units, 9 renders, 35 codes, reserve sealed); secret scan over the whole completion package finds no provider key or PAT patterns; the uncommitted v10.1 workbook is absent from the `git archive` snapshot by construction and was not touched. |
+
+## 3. Clarification items
+
+- **M1 — closed.** The `source_mode=="text"` criterion is now stated in the README and matches both the author script and the auditor's independent count (23 of 28 non-empty `structural_blank` units; the 5 `text_and_render` units correctly untouched).
+- **M2 — closed, metric-invariant.** `score_pair` and `span_overlap` operate purely on raw/normalized text containment and token overlap; **no downstream step consumes character offsets**, so the two equivalent occurrences of the CAL-067-U01 quotation cannot affect any metric (fidelity counts it supported via normalized containment regardless of occurrence). Recommendation stands only prospectively: if any future step anchors offsets (e.g., highlighting), document "earliest occurrence" — no current change required, and demonstrably no metric changes.
+- **Q1 — confirmed.** `coded_positive_n = 31` = reference-positive rows (all strata) with non-empty adjudicated `reference_code`; independently recounted 31 from the regenerated CSV (26 of them in the probability stratum). Definition now documented.
+
+## 4. Findings
+
+- **Blockers:** none.
+- **Major:** none.
+- **Minor (m1):** `openai_batch_v10_2.py` and `freeze_reference_v10_2.py` write platform-dependent line endings (CRLF on Windows, LF on POSIX), which makes frozen byte hashes platform-relative and cost this audit three diagnosis rounds. Smallest fix: open output files with `newline="\n"` (and re-freeze the two affected hashes), or record both LF and CRLF hashes in manifests. Cosmetic; semantic determinism is proven on both platforms.
+- **Minor (m2, informational):** `calibration_results.json` reports `finite_draws: 2000` for all three bootstrap statistics here; the finite-draw filter only matters when a resample yields an empty denominator — behaviour verified correct.
+
+## 5. Verdict
+
+**SAFE TO SUBMIT OPENAI BATCH.**
+
+Grounds: every previously unverifiable gate is now recomputed from the supplied artifacts — the frozen reference regenerates byte-exactly from the frozen decisions; the corrected matcher satisfies all eight required properties in its real implementation; the preliminary metrics reproduce exactly with the documented line-ending caveat; and the prepared batch input is semantically byte-reproducible, covers all 78 units with correct frozen configuration, and contains no reference, reserve, or secret material. The two minor findings do not affect submission. Conditions already imposed by the protocol remain: submit with a fresh API key via environment variable (the key exposed earlier in this conversation must be rotated first and never reused), archive raw OpenAI responses before any comparison, and make no further tuning on development or reserve per the calibration stop rule.

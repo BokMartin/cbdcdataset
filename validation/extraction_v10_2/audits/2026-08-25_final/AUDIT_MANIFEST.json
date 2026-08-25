@@ -1,0 +1,29 @@
+{
+  "schema": "independent-audit-archive-v10.2",
+  "audit_date": "2026-08-25",
+  "auditor": "Claude",
+  "target_commit": "9adef19da9214c8b098896efeb9dc14f5a51b3bf",
+  "verdict": "SAFE_TO_SUBMIT_OPENAI_BATCH",
+  "reserve_status": "sealed_not_accessed",
+  "api_activity": "none",
+  "source_files_preserved_verbatim": true,
+  "files": {
+    "FINAL_AUDIT_REPORT_v10_2.md": {
+      "sha256": "8e350e8677f093747171b482719156c70e1ff9437e05f6959e28cf9d94de4847"
+    },
+    "test_matcher_real_implementation.py": {
+      "sha256": "f910d31b1c908ea24fac6e4b16ad630581a8444959675cc4744920e7b7c2938f",
+      "provenance_note": "Original auditor file preserved unchanged; its sys.path entry is specific to the auditor environment."
+    }
+  },
+  "local_independent_recheck": {
+    "implementation": "scripts/evaluate_extraction_v10_1.py::one_to_one_pairs",
+    "execution": "Original seven plain test functions loaded with the repository scripts directory on PYTHONPATH.",
+    "tests": 7,
+    "passed": 7,
+    "failed": 0,
+    "pytest_installed": false,
+    "result": "pass"
+  },
+  "batch_input_freeze": "../../BATCH_INPUT_FREEZE_v10_2.json"
+}

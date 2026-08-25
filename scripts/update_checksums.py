@@ -32,6 +32,7 @@ EXTRA = [
     "validation/extraction_v10_2/TASK_CLAUDE.md",
     "validation/extraction_v10_2/TASK_CODEX.md",
     "validation/extraction_v10_2/authority_overrides.json",
+    "validation/extraction_v10_2/BATCH_INPUT_FREEZE_v10_2.json",
     "validation/extraction_v10_2/codebook_overrides.json",
     "validation/extraction_v10_2/output_schema.json",
     "validation/extraction_v10_2/matching_erratum_v10_2.json",
@@ -44,6 +45,7 @@ EXTRA = [
 ]
 EXTRA_DIRS = [
     "validation/extraction_v10_1/runs",
+    "validation/extraction_v10_2/audits",
 ]
 
 
