@@ -1,0 +1,952 @@
+{
+  "method": "source-only deterministic canonicalization; no human reference or model comparison accessed",
+  "status_changes": [
+    {
+      "unit_id": "CAL-015-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-016-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-017-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-018-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-020-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-021-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-022-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-024-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-025-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-026-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-028-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-034-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-043-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-044-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-048-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-049-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-055-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-059-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-060-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-062-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-064-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-066-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    },
+    {
+      "unit_id": "CAL-075-U01",
+      "from": "structural_blank",
+      "to": "ok",
+      "reason": "non-empty text source was processed but yielded no eligible statement"
+    }
+  ],
+  "quote_changes": [
+    {
+      "label": "CAL-001-U01 statement 1",
+      "old_quote_sha256": "5e97f86d93555ad3a22e7353031d5104ee6df2b3caef081a4e9bb8b7bc41e613",
+      "new_quote_sha256": "5dc9a680a18d49cd5f8e5140f6b950d78e8ddef6a6048d55fc3621af47c33445",
+      "source_start": 2623,
+      "source_end": 2787,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-003-U01 statement 1",
+      "old_quote_sha256": "de8cc888aa4b849087941ac5ff6f4a69a3e1723c617f3b59bb984a5d10f2a799",
+      "new_quote_sha256": "ba78aa529d156136368e2174887e28c339dd09e284008516b84a0f2071a71596",
+      "source_start": 91,
+      "source_end": 289,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-003-U01 statement 2",
+      "old_quote_sha256": "b766a2b53b8b6c9af5fe580c3a148babfd2753bb0a94a4b0ab6c0afee177d142",
+      "new_quote_sha256": "9ae1ab8870d99ddf3c1297fba85a80b36f6662fb2ad0d609d32f5f7ad531883d",
+      "source_start": 290,
+      "source_end": 503,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-003-U01 statement 3",
+      "old_quote_sha256": "b3d71ad2be48591d66a33fe5fbd6bd4ba841b60eb4db9838947bc2509782672c",
+      "new_quote_sha256": "a95052005ebab3eff6eea9bb37c7c2a3c36d553eca58c563ec56c14e4a730759",
+      "source_start": 504,
+      "source_end": 924,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-003-U01 statement 4",
+      "old_quote_sha256": "ce3ec22566f3656ff44253710dd8c34b1df6369ac6f7e977289387b955bbcde8",
+      "new_quote_sha256": "77400b90ac336fbd935573741748a48082fa45b1a22f40433708b3ca029f7573",
+      "source_start": 1053,
+      "source_end": 1320,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-003-U01 statement 5",
+      "old_quote_sha256": "35b9b02bbc4f488c089545b53f92023ee46b53a9528317b0b138481b6f18c876",
+      "new_quote_sha256": "2e1db84f26a2be89266d68f81337de4e475679c0aad892713fee1c6db4fced27",
+      "source_start": 1321,
+      "source_end": 1472,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-003-U01 statement 6",
+      "old_quote_sha256": "18ec111d54a802f63599adbc40c655cb48feae2fd29b04ae6586017c11e94855",
+      "new_quote_sha256": "1b392a2a5718cd510aa24127a58f2702258ce7d7fc108c38616e6d24a95b8650",
+      "source_start": 1473,
+      "source_end": 1745,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-003-U01 statement 7",
+      "old_quote_sha256": "9c8657b7ca8ee0666e45e280f4ca522a84951f14dfa66ad213e09d5e59d3608b",
+      "new_quote_sha256": "afad59eeb70bb1f7288bff4ee14e5b87284ba12b825a5eacbcfe3ee4ec51fac1",
+      "source_start": 1849,
+      "source_end": 2163,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-003-U01 statement 8",
+      "old_quote_sha256": "58d24aa6529e4fcd450904baa6a2abe71c86e15a5b53587d5b577af09b652bc1",
+      "new_quote_sha256": "be5ac6042374e21e5b39c0e1e328e3555b5b0a8feeed36258853c916e3170cfa",
+      "source_start": 2164,
+      "source_end": 2390,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-005-U01 statement 1",
+      "old_quote_sha256": "9e5c2d0849418b93076a914a226bc052fd0437eaad1786605f3a5cab725a37b9",
+      "new_quote_sha256": "f70d292a26b457387450d0c9230cc72e0caeb616803365caf023ee1f13a737a2",
+      "source_start": 2240,
+      "source_end": 2428,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-005-U01 statement 2",
+      "old_quote_sha256": "9d424c1bbedabb3fdb9454fcf232dd3b65cc5a450c166ccb266e775ee35c850f",
+      "new_quote_sha256": "25345bd92186c7ef1719954ae3e260394590e76bc02d1aba7fa071a6e83f4007",
+      "source_start": 2583,
+      "source_end": 2913,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-005-U01 statement 3",
+      "old_quote_sha256": "09a6cdabe29dce1a7654ed48c0178045445ec644653e23b7dca51cb4a655ee4c",
+      "new_quote_sha256": "e50a853b07f152f0e6c6c09c4940b1e70459d81a0d11e89d724088b7a3d611c1",
+      "source_start": 2914,
+      "source_end": 3095,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-005-U01 statement 4",
+      "old_quote_sha256": "59f4d087abdedf482260060f0479fbdc70b54bc6a823ae40675c415af15d715c",
+      "new_quote_sha256": "bb82d08094ef134cad37e31486e474e12480a4d315e91e624a6c466c05203428",
+      "source_start": 3636,
+      "source_end": 3755,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-005-U01 statement 5",
+      "old_quote_sha256": "4efc68c88e371b648a726e65d1f00ff79b75cdb1922a72d94e3ea3503be8a6d7",
+      "new_quote_sha256": "f0becd3a967bbf759b46e1dedbe77b52a2af89c416f4246b245373ea355c5ee1",
+      "source_start": 545,
+      "source_end": 730,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-005-U01 statement 6",
+      "old_quote_sha256": "f5a9c1971f7966c494cd8b38b3e8a463867490f0a64b7b680cb7f6177e22f0d0",
+      "new_quote_sha256": "fa6f8ce6b6837a7cd7d0a4638be57a9b4e2766d83a6b68d369d42165e1bc4df6",
+      "source_start": 1310,
+      "source_end": 1424,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-009-U01 statement 1",
+      "old_quote_sha256": "80d0a1823134a9585c18848dfbf9c5aa725c060deb568b1ca1074e66635825ce",
+      "new_quote_sha256": "010bcc5be00aa8335f20858c71cd9c7268241922af9c92d6fe4fd3f8e40bc0f3",
+      "source_start": 949,
+      "source_end": 1126,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-009-U01 statement 2",
+      "old_quote_sha256": "54c00ddf7058751302c1699b7b1e087dc8d4a719de12443ae2e0342bd5070390",
+      "new_quote_sha256": "7167c6ff1d5356fac3f08bbf8b94953a93b5c70d8cb9a213b39bbcaa6d6a5922",
+      "source_start": 1127,
+      "source_end": 1264,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-009-U01 statement 3",
+      "old_quote_sha256": "c8d4a41e6b0bb0acc5dffda3951151fb375c958383e9337a23a30e38d1d8175a",
+      "new_quote_sha256": "e01e43df295b3f917e167ee75b891c61fbe636a32933b0a19fcfcd7efb3b23f9",
+      "source_start": 1265,
+      "source_end": 1492,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-009-U01 statement 4",
+      "old_quote_sha256": "9a4405fba49297220f2d5d0313a8bd0eae82c3bd74459346a0d683f50e2ee4ef",
+      "new_quote_sha256": "9c7af3216fa96fa7c5a4d4866d7f48c4c090e694f8ae299c63d605c2a93ed841",
+      "source_start": 1494,
+      "source_end": 1787,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-012-U01 statement 1",
+      "old_quote_sha256": "32eb6fbe016eca110f80208d98b1741c0fdefecee9535598b4622dce2d48e947",
+      "new_quote_sha256": "fb1d09a06ab5b4615b335147d1e8b41f98b5164d4a1965aff1cc319629d34356",
+      "source_start": 186,
+      "source_end": 411,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-012-U01 statement 2",
+      "old_quote_sha256": "24af401a0c7ae253aea37bcf41d0a20ce8598dfcaf0fee8b9ba36dd6ec165bcb",
+      "new_quote_sha256": "399954eb18851af005550eb7428184c6c1d202bfbfb225d7894ff6b5725cf131",
+      "source_start": 412,
+      "source_end": 618,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-012-U01 statement 4",
+      "old_quote_sha256": "ea1c5e5fb650fb78d050e41219a0c1eab80ff8b491a34ab31710b2c08d02ce4e",
+      "new_quote_sha256": "f2b370a963290142eebe87c31e17aa1c73f52e218add5c02107cd312ce0ba15e",
+      "source_start": 987,
+      "source_end": 1198,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-012-U01 statement 5",
+      "old_quote_sha256": "136b90cdb00c30d987fa40729d0a8329b87286b162a81aa1b9248f28cfe878f2",
+      "new_quote_sha256": "4c68450bfcc69de2685aa6558d0fa5a00967d05fd4ef1ce88f64f6f4c3f54532",
+      "source_start": 1199,
+      "source_end": 1357,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-013-U01 statement 1",
+      "old_quote_sha256": "96ac739e309383a3837025d46c7987d6d13c548d02807af89d6fe5b22814e2c6",
+      "new_quote_sha256": "5139d6a24f64a06142d5a71e5bad425dc275c95af9cdd7730641be45e69bd7d9",
+      "source_start": 704,
+      "source_end": 882,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-013-U01 statement 2",
+      "old_quote_sha256": "a82fbd9cd5166f916bfdae34620bd84da4473260c4d8cb12f612874e30236c3e",
+      "new_quote_sha256": "47608f2b7f33093c198738b8379437f7a214c7f3c85d54aa318560f91e31f068",
+      "source_start": 883,
+      "source_end": 1039,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-013-U01 statement 3",
+      "old_quote_sha256": "18ed5e196ad249e3fc3a09c5c103914bceb0806cfd142970e0f656400561107e",
+      "new_quote_sha256": "c2b9951ea281e12e1a7511145acab479e34ae68ea6daf1d55e4e8ccd11f25fb6",
+      "source_start": 1040,
+      "source_end": 1204,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-014-U01 statement 1",
+      "old_quote_sha256": "95f79f8c635a69416ec558877d94a3ee1095d95fe5b3c02beb4aa96b70b56071",
+      "new_quote_sha256": "2a55e64461c24bbe6c283e697d5a5d04bc28436b40a774d6a3850c02ad0d730b",
+      "source_start": 1058,
+      "source_end": 1274,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-019-U01 statement 1",
+      "old_quote_sha256": "ffe5474cb31415c9d1ab6e593eeff4a9ea256cb94872749df787dc1529a7b9bb",
+      "new_quote_sha256": "9875a9ad0672564138dd09c298ad2a9bc547ae3a21fec578d2903542e3eff2d9",
+      "source_start": 692,
+      "source_end": 872,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-019-U01 statement 2",
+      "old_quote_sha256": "aaa34dc0f17e8a05c51b02ba9722f7ff96f3339f9139801c0ceb2d5f4a6d7641",
+      "new_quote_sha256": "066205ac890b6a4793c198d0d8f1471f0525fc515d9be49f53f79180a355787b",
+      "source_start": 1102,
+      "source_end": 1359,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-019-U01 statement 3",
+      "old_quote_sha256": "9117e564cb14572afb30721e5e4201e0ab920d562699d51954c61e0add3e2c2a",
+      "new_quote_sha256": "cf1f3a514e2c87dea389218ad4b2b17b4eb2cea6a0d676cd8f874c76b425e394",
+      "source_start": 1622,
+      "source_end": 1835,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-019-U01 statement 4",
+      "old_quote_sha256": "9aa2b1af42def506f3236ffc3eba28a703809f9426293daa14f6119c2a0f9b04",
+      "new_quote_sha256": "4c58322303d5ef28490be45870a5cc6723ba15b4fe870cb60a36b711281d94f0",
+      "source_start": 1485,
+      "source_end": 1616,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-019-U01 statement 5",
+      "old_quote_sha256": "eaaa15e5394a0620e326d3262c90209375d3e6d886a238c835a7455d09978c19",
+      "new_quote_sha256": "b8a0d10414040c030d92144917ddda97687341d91a3f368cfbf8ecf189a050fc",
+      "source_start": 2318,
+      "source_end": 2436,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-019-U01 statement 6",
+      "old_quote_sha256": "4284e185ee15ed5a2199cf1fdf616cc6165468bd0bb6bccd881b883fcdd72324",
+      "new_quote_sha256": "2e5218bb3b18e9de69e6f366ab98933defcd18ec6c0f271da520bf68b6a0067d",
+      "source_start": 2437,
+      "source_end": 2605,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-023-U01 statement 1",
+      "old_quote_sha256": "e8beb36d6b2459acc167d6d2c40300cb1bf2113aaf5fe69aa5f0b202d406e6cb",
+      "new_quote_sha256": "84aff2074c58c09c0f746a61c71855f1f69af7fd7dba097be0b70ee477e10d3e",
+      "source_start": 669,
+      "source_end": 882,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-027-U01 statement 1",
+      "old_quote_sha256": "3ded3987802ee01f013f920a1cc6ad9a0fc38af667fe6736f4c3ba249edd2707",
+      "new_quote_sha256": "8334d6f622f5ffa8b2409503951e237dc773e1fd50ff97c4e06b6c26c499900d",
+      "source_start": 220,
+      "source_end": 380,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-027-U01 statement 2",
+      "old_quote_sha256": "b97e73c733cb304d58bcf174ac81b485428ddd5bb2b22f8e0bc73ca522292db6",
+      "new_quote_sha256": "e3021b1fd3bac1cfc03e42cfa9403ced61c26780ec793b64c553ffde4cbbaa16",
+      "source_start": 1250,
+      "source_end": 1514,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-027-U01 statement 3",
+      "old_quote_sha256": "4d29a21769a3dcb51c2dc3bf1df8a9567f744f68db2757590018ef170610dfa2",
+      "new_quote_sha256": "03fbc427ce70a8a326cf7be20dc391db7c45e02dd3e0d2bfea495ff9ca092ffc",
+      "source_start": 1645,
+      "source_end": 1733,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-027-U01 statement 4",
+      "old_quote_sha256": "79c0aefa90c49ad386c9ddba140f6d045dee4c507e57ca98edf358b98d51fa10",
+      "new_quote_sha256": "9b171d5f7c18a14d9d2576a69e80ffb0800d1e4e56d6c4de4b1a741e22972b0c",
+      "source_start": 2225,
+      "source_end": 2533,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-027-U01 statement 5",
+      "old_quote_sha256": "cd0a405ec2ced6831dbad2753c840cd3a23b6ecf0831b78aab3e40ab3c45bc8d",
+      "new_quote_sha256": "a72f426b7605fdc67151d5bc3dbbe25e9f3bf79caf8a6505ee1a3f468787face",
+      "source_start": 2553,
+      "source_end": 2975,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-029-U01 statement 1",
+      "old_quote_sha256": "e8a6bd01c5f3db3e1d5cc013e0418091e355ab3e5dd09e6139e97c44ee88ebdb",
+      "new_quote_sha256": "350a585124e5cc7bf33d506472b6a70c305ec3aea3f9a550c1b6d104e785fbd8",
+      "source_start": 1095,
+      "source_end": 1223,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-029-U01 statement 2",
+      "old_quote_sha256": "72768c601ba87607a387ee23914142a97c411794e8794f3063fe80291ced9f98",
+      "new_quote_sha256": "78cb02133e32dcc7ebfaeb8fa046ce35eaf0149550c53be852d062af96670201",
+      "source_start": 1224,
+      "source_end": 1382,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-029-U01 statement 3",
+      "old_quote_sha256": "f9df6045d1d03075e614e18362aecad13d0ed87f57ea9ecd595c0820e949a51e",
+      "new_quote_sha256": "0dffb46082b6681a2776859668693eb59d4af6c4cf33192fc3ed62c0d4b43b4a",
+      "source_start": 1753,
+      "source_end": 1997,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-029-U01 statement 4",
+      "old_quote_sha256": "e63a747555469304c61734e289470be1ba023428ea760abd624b5171dc6d72bb",
+      "new_quote_sha256": "2ae304a96035f19b7fbdbc13519f60b311a9fb8f96ce866d4334d099085b27a8",
+      "source_start": 2160,
+      "source_end": 2372,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-029-U01 statement 5",
+      "old_quote_sha256": "e292d71ca24ab5feebe09c69c91d3e42d5cde1af58b2b8b7eb64e8a87abf3d6c",
+      "new_quote_sha256": "8546dc39af3032765dd32ab16231bd31f97006dc585434e443da820c629478ac",
+      "source_start": 2641,
+      "source_end": 2827,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-029-U01 statement 6",
+      "old_quote_sha256": "7a692e561e5b1900acbf767ccbc55bd54ed5c37b06b07b071c6b63e5c39f1e3a",
+      "new_quote_sha256": "2971f1a3ad0d4a84ee9640c20e095dfa3880d8d0e137016dcacbd9509300443c",
+      "source_start": 2828,
+      "source_end": 3111,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-032-U01 statement 7",
+      "old_quote_sha256": "b5e0c740b997408a3c8a6c7164499a075f0e383d31d39c8739815622729bfb49",
+      "new_quote_sha256": "25208e97ee4e50dd435680e4c5f7c0a72f99058d51fc9b7e440bee677a70fe3b",
+      "source_start": 7738,
+      "source_end": 7908,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-033-U01 statement 1",
+      "old_quote_sha256": "4f0b1944627097f837aee3874b2a29274135688695333e4cc4591a3f00a02b44",
+      "new_quote_sha256": "b13f080bc2602c6abe31d7d33aae36e776eb217880015542179b7b40d8311a62",
+      "source_start": 859,
+      "source_end": 1025,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-033-U01 statement 2",
+      "old_quote_sha256": "ce5b3da194621d9c91e8ec3f11e23e3fef25cce6578b0168c8dcf32a9664bf90",
+      "new_quote_sha256": "c0cc359ada9926e595697c74f0f4cdc85a72f7cacc479a8bee74ccd897b66837",
+      "source_start": 1026,
+      "source_end": 1219,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-035-U01 statement 17",
+      "old_quote_sha256": "758c710ec997a14697b8691f852c43f86e09f55994d4bb963cbad7a0b59923d0",
+      "new_quote_sha256": "cbbbacfc6eef14a9fcd17ca6edbeb19c2e25570fef0a81150eaf057df858663a",
+      "source_start": 1206,
+      "source_end": 1322,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-035-U01 statement 18",
+      "old_quote_sha256": "9bea1a555e556923fc330c4cae2b0e4e4e3f856f360bb58a0cd7fa021f28ffd3",
+      "new_quote_sha256": "128e904f5deb9212dc80f07c5282f6263c9e00d23c3096d8a39be8c864daea34",
+      "source_start": 1957,
+      "source_end": 2120,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-035-U01 statement 19",
+      "old_quote_sha256": "f82b61d67d6a85d5ca4821a046ef8d774260c050d8887aff71ab2cb4aa31f6b0",
+      "new_quote_sha256": "39915a465665181950adb10676297f5c3a64ea0c1f758385ce9045884b1c65c4",
+      "source_start": 3312,
+      "source_end": 3470,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-036-U01 statement 1",
+      "old_quote_sha256": "806a7978325cd76858f61c866ea1dde0e9ba27f005aaca5870d364995ecbb7e9",
+      "new_quote_sha256": "a13e03431095fb7ae5a620fcd910c0e1d25c6506165cc49711b01c47ab392653",
+      "source_start": 1240,
+      "source_end": 1460,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-036-U01 statement 2",
+      "old_quote_sha256": "e59747a0cebbd672ba5496723194847b8a599b80e1f189e0745db2432fc0c42a",
+      "new_quote_sha256": "2839abf55bafd92ade31a8a939ab0f74d155f44e911a9926c4e229309170f056",
+      "source_start": 1739,
+      "source_end": 2061,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-036-U01 statement 3",
+      "old_quote_sha256": "9e53fed79407fecfb038f47dfe95edf7067dfd63b8d70a2d7546119e55512a60",
+      "new_quote_sha256": "d3cecdee82a179e6a759a75a832d1f83a64b3485705f7a4593fff14abd932d56",
+      "source_start": 2324,
+      "source_end": 2580,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-036-U01 statement 4",
+      "old_quote_sha256": "7dd405f9af111cc6f3016398eccd2c48c310e8c4e54feabb04bb9d399b28d977",
+      "new_quote_sha256": "dbe8e6652e17a4ee2fc07de4b95319e49535d7c1dd6c3b2fa32d3562c96d09ae",
+      "source_start": 2840,
+      "source_end": 3000,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-036-U01 statement 5",
+      "old_quote_sha256": "f065794a540b413d1896bf8b89b49e2dfa95e86aa9d026fd99046725d0bdf1e3",
+      "new_quote_sha256": "95b08e88a2ac217f2c1c1060a92fc45a1f6d2efd50405ff040bff738a96eb38b",
+      "source_start": 3105,
+      "source_end": 3367,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-038-U01 statement 1",
+      "old_quote_sha256": "94f48bd516ffca7ae9f0a0e48e45624f28696f6fb6dcf8a4be3266559513220b",
+      "new_quote_sha256": "f30bd1f945400a174e23c910946094c3c37384dbaf6e3f6ad2e1a88bfe2ee08c",
+      "source_start": 56,
+      "source_end": 239,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-038-U01 statement 2",
+      "old_quote_sha256": "b162b8a8800676fd7ed6993edb43c9fd07b06f67ca57301329dab0530a3993d7",
+      "new_quote_sha256": "5a94a9cff58bab8ce86e79ddc5672a6b8d4037e4694d6732456212937cc42ebc",
+      "source_start": 266,
+      "source_end": 452,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-038-U01 statement 3",
+      "old_quote_sha256": "05f301e4a693d3bb8990d8643dbea9cc4015b3cd20de283e484166d35c048a33",
+      "new_quote_sha256": "c7a70df6f6fdb03c38740db1a6259c35248003786fae97e2b1c559b158362a2d",
+      "source_start": 455,
+      "source_end": 700,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-038-U01 statement 4",
+      "old_quote_sha256": "820a90d13813d893aee2b7fceae87d6503de746735cb01e6ebafebca03f7144a",
+      "new_quote_sha256": "9680992e2c6d53f503f472e54927bd056ae26c8f346414501d000dcee705f9e4",
+      "source_start": 711,
+      "source_end": 934,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-046-U01 statement 2",
+      "old_quote_sha256": "13cd984266bc0eb752f853293879ea1c31178e1186380e72cc62cbb8c7596434",
+      "new_quote_sha256": "8a33bd5403c50eb1fb2ef9a7540b34090a8f19a89050ebc71d9961b54a74a7ab",
+      "source_start": 71,
+      "source_end": 154,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-046-U01 statement 3",
+      "old_quote_sha256": "fdab442bb3d775a46764af381347e526237324eb636aec7bb101457cd2f0d9a1",
+      "new_quote_sha256": "b49a4379ba59dde2f2a8208f194ef47c9698ffbc4fb73e2fb5238b13c0fc1396",
+      "source_start": 255,
+      "source_end": 372,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-047-U01 statement 1",
+      "old_quote_sha256": "a0058c3f6a9ce9d639e8a137f2ee894c4eb63940251d05ce0655fdb94f8f3e3e",
+      "new_quote_sha256": "7418a45b6930327b95d88dd362a0b4b147bbfa42c0ca28fa3c4579d240f537ae",
+      "source_start": 582,
+      "source_end": 758,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-047-U01 statement 2",
+      "old_quote_sha256": "41ab764921b135821966db27fd7c9a5bc06e5ab33c4f2e26f0e4aee8bc15684e",
+      "new_quote_sha256": "f89c1045096431fda9db4f05dffef794b65faf4f6e54e6be5c21c6db007a7d20",
+      "source_start": 1084,
+      "source_end": 1390,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-047-U01 statement 3",
+      "old_quote_sha256": "8119dd1dcbcf549eaddb8358ce0dc7ffa89bb9d308afdcf5d2817abfc3582ee9",
+      "new_quote_sha256": "27fc3a644e36c92f93b2e65c1e4315079446d677415fec0831c219fd81dc0a9d",
+      "source_start": 1585,
+      "source_end": 1780,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-047-U01 statement 4",
+      "old_quote_sha256": "c4e56a2ed6700204358d1b8618b7df27928de6056754f4e56e8b07619ffccf9a",
+      "new_quote_sha256": "34cf8849bdf91594945d72c1417a558fb0390e6d0ae36d36a6353dadbde34a26",
+      "source_start": 3061,
+      "source_end": 3523,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-047-U01 statement 5",
+      "old_quote_sha256": "d94f78bdb7b62a6b25d5d4eca4a2cc9bf4d2a22fb797070bfbc27b6392c6ab5d",
+      "new_quote_sha256": "74730c76c940a80b6c084277a338e45c940686e2b7dc8775afc6f9f593740751",
+      "source_start": 3851,
+      "source_end": 4009,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-047-U01 statement 6",
+      "old_quote_sha256": "3700ae7e7bf8482b122af7448ad6fd063df76b1495f01b010ce1ac820f0cb452",
+      "new_quote_sha256": "0ccce2ee1cceff0cf0c49e0f1d1efac0b7749e3f7e74c5b7a343b80b4e274213",
+      "source_start": 2357,
+      "source_end": 2694,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-050-U01 statement 1",
+      "old_quote_sha256": "bebd9869e14a7e9676351df34c1c4e92bd387d1eb2d4a9ae74f5132d6587eef3",
+      "new_quote_sha256": "deed5f320404e5136ac4eee4260bc891e12c81abcb58a7022062afa69d658d71",
+      "source_start": 924,
+      "source_end": 1158,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-050-U01 statement 2",
+      "old_quote_sha256": "c185a0c2043df0f4c96748e4deeab3e760fa8018d4e4564bcf755c3ce1510f92",
+      "new_quote_sha256": "c17df216bc86dd54bb36b6a9b6bafa7ef39ed5561dca48ab6d3631d67819d919",
+      "source_start": 1362,
+      "source_end": 1498,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-051-U01 statement 4",
+      "old_quote_sha256": "75b552ba992c8ba731e15546d80c1e288ed743cb6cc294f9fbf21fd239dc7d69",
+      "new_quote_sha256": "302735b1fd6983124a4d504116891932b05a25e31404be2bbe52064ed5b8e6c4",
+      "source_start": 2136,
+      "source_end": 2452,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-051-U01 statement 7",
+      "old_quote_sha256": "dcc94f328d6387271d932e48baa1abb5cba355e755a8aa5aace0138efd7cdf22",
+      "new_quote_sha256": "378a928cab89ca0bc32ef6b1df39fa9e39562d80ba72845a472640561f36b29d",
+      "source_start": 3572,
+      "source_end": 3939,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-051-U01 statement 9",
+      "old_quote_sha256": "c683c11b335b5717e2c9dd3d558dcdc53a088afd72d5887dd4db1d4906682d86",
+      "new_quote_sha256": "b16a7a9c18a377f66fecea99a409707892599921f4038b90a34613e98d75da16",
+      "source_start": 4277,
+      "source_end": 4812,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-052-U01 statement 1",
+      "old_quote_sha256": "e55409791e488ed2ce258c2e3cb19c1e90df897d1088dd53c3043d38279893d8",
+      "new_quote_sha256": "ba323e337aa27cac17986e92d0530291171ca64bb9bae376225a69aed1608d8b",
+      "source_start": 1124,
+      "source_end": 1222,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-052-U01 statement 2",
+      "old_quote_sha256": "311f257dff24a5288b97316fa253d8dc029e612b2e5243fd3fba8add2a0d5e79",
+      "new_quote_sha256": "ce1695fec427c9945ce3eddabaa68fbc0542de6b6a5cf4af18bee04c7620d91e",
+      "source_start": 1224,
+      "source_end": 1390,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-056-U01 statement 1",
+      "old_quote_sha256": "d0e94922a1a338c33f085317a103dacbf5a5a2e3d3eae316c48e4ec237d30a14",
+      "new_quote_sha256": "da3d1e0612e8f655cea9084035605976830af54dcc52ec192994aa38c2e1054a",
+      "source_start": 1215,
+      "source_end": 1407,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-061-U01 statement 1",
+      "old_quote_sha256": "b78c7943fbf28201419de329726cb08e4b79f127c66e7e8d4a90bd72981811d5",
+      "new_quote_sha256": "a72648eb8f9d389e1f1adcdb01149cd1ad4a4c01da8d127e32af24f6fa06d8e3",
+      "source_start": 3271,
+      "source_end": 3482,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-061-U01 statement 2",
+      "old_quote_sha256": "7927428282f613254934cc150d1cf9b43c45bfef4acab569f89cfc7d13ec5392",
+      "new_quote_sha256": "f84d7b70b86c1008c36d5336cd70d5e10b7eec1f09b729a51e354701d63dae1a",
+      "source_start": 3483,
+      "source_end": 3954,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-063-U01 statement 1",
+      "old_quote_sha256": "52a27eea5cb297c5d6f6adf08d13e8fd44c2966a3950c6958d7aa4d6d72d14b7",
+      "new_quote_sha256": "d8cf58093eac474cab01bd1172407f7ab92540ad21c302f8f5c32747246377e9",
+      "source_start": 1435,
+      "source_end": 1686,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-063-U01 statement 2",
+      "old_quote_sha256": "427e0b81449e4652c18f14477e22bb2de4a986b67974900af3aaae74ee10e0e1",
+      "new_quote_sha256": "7c6b158d682ae4e87bd7e434287dbc86ebddd529ecc0c329ed84f20d81475ac0",
+      "source_start": 1878,
+      "source_end": 1953,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-063-U01 statement 3",
+      "old_quote_sha256": "fbe9e37f00f5772ac2925b27036d459e6fae6a74fdd332ebcb06e3b5307b818f",
+      "new_quote_sha256": "799b026e174a8972d15972994f6eb5c977d1213e4d687fc21835e9db99772f66",
+      "source_start": 1957,
+      "source_end": 2101,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-063-U01 statement 4",
+      "old_quote_sha256": "8d07420476cd3e2d8488f4340689cf71ee3ff98e5139891ed39f371b034272d2",
+      "new_quote_sha256": "aa79d532eb397d5ab3f1788bb7fd5cafcf6d3b1422f9e0ba5890ec72b5d18551",
+      "source_start": 2102,
+      "source_end": 2373,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-063-U01 statement 5",
+      "old_quote_sha256": "4791c388f72d76b3e5b22ba8148b9df687c76e53e55ecccc7d3a38085168869b",
+      "new_quote_sha256": "cd6e2e01d51372efcd967d938845a88bad2a49c0e34b3024a11b58f387c6880f",
+      "source_start": 2467,
+      "source_end": 2600,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-076-U01 statement 1",
+      "old_quote_sha256": "247905b8019f32dfe25321607db4c858f13a64c5ce888fc01def5f2c93111fe2",
+      "new_quote_sha256": "c0bf17019cdfd114c2eab061901bfb8d477ae3c6fb0aaeb9906b5b6abfee61dd",
+      "source_start": 3985,
+      "source_end": 4201,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-076-U01 statement 2",
+      "old_quote_sha256": "b4e182538b7115a8e337d343699578fea86ac839dde5f8522e71cefb83a31ea2",
+      "new_quote_sha256": "094316495f4d14421cb2178b678e10b1000d8e9c2c88c3f2657c47c4ba4b9ce4",
+      "source_start": 4333,
+      "source_end": 4514,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-076-U01 statement 3",
+      "old_quote_sha256": "94e3666c3e064ef88c0e6a65f3db777842a02f6bdf42ec23e5c9a74884007119",
+      "new_quote_sha256": "b187970fd21cfc4076dab356b373931412a3802f5e2cd37fb87c2d755718ef65",
+      "source_start": 4519,
+      "source_end": 4686,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-076-U01 statement 4",
+      "old_quote_sha256": "e7a0d0a1c29d85e9eb1a1a9268dba74662b3b607f5980d8c103edf62b0f2a0ed",
+      "new_quote_sha256": "9765f0c6e01d8f8b9a8775e90c4605764d4c721463a452ce62be542ca7decdc1",
+      "source_start": 3278,
+      "source_end": 3513,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-077-U01 statement 1",
+      "old_quote_sha256": "fade6f223fc60cac905dbf9f7be9a5f0371f9f04c5fe889a81f3e127428370ab",
+      "new_quote_sha256": "038dda8f5631854c936ea3445094dcb5bbbcd22d08b372eb473adc668a6d4ae6",
+      "source_start": 178,
+      "source_end": 374,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-077-U01 statement 2",
+      "old_quote_sha256": "b8678df0ac0811fffa40e4381f960c507682d2881ec278bf6b058cc5fe4ea1f0",
+      "new_quote_sha256": "3cf9797dcc0c5b172204939f17e888ca5b091ada6bbc559232d850eb7620eb8c",
+      "source_start": 375,
+      "source_end": 587,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-077-U01 statement 3",
+      "old_quote_sha256": "1fe548c74e4c105bce7c4511f2e77d9860f240e6938679294b73fa132189d338",
+      "new_quote_sha256": "a493b86698dc787aa374c30eb6d5b1b0903a7428119817ce1ed89b9e6fcd30d9",
+      "source_start": 588,
+      "source_end": 758,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-077-U01 statement 4",
+      "old_quote_sha256": "7ee89c29b193e08726d26fa5fe39a780c2a417ed8a85b87a4ad490fc724a15c9",
+      "new_quote_sha256": "40fbbeee21734fe17df5a2d4691e4c1fb40fcdcfa3392eb890b280afc9c1640a",
+      "source_start": 759,
+      "source_end": 977,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-077-U01 statement 5",
+      "old_quote_sha256": "74023a22beb8f9f6f240237cdee9eed87a0ef03ee6b2379deaa61c873a1a0da5",
+      "new_quote_sha256": "e9655fc859e701b2c01818e88e2eca6351529793c8185aa138c2b1a1d1d28134",
+      "source_start": 1248,
+      "source_end": 1584,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-078-U01 statement 1",
+      "old_quote_sha256": "70851465da3fe9e086e1b14bd710c3f8b9f918edc5c95812e6aaa9893a645d55",
+      "new_quote_sha256": "a5f559123d14780ee1eb2ef8bb1a7a790bba6410a0e498b084e097733a28672a",
+      "source_start": 383,
+      "source_end": 599,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-078-U01 statement 2",
+      "old_quote_sha256": "698010b87e891430a48c0a6ae2691476ce4d49952addde2cee9c70ee0d8dfb21",
+      "new_quote_sha256": "d0b672c28d24e3e34fbb52153539fde44ccc37373bde5cf69a7e691c3078a078",
+      "source_start": 600,
+      "source_end": 787,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-078-U01 statement 3",
+      "old_quote_sha256": "ea769d97a7d2b92ac8c1538b8de2ff9f228f4136f597b8052dcb823cb0f5f158",
+      "new_quote_sha256": "1d28c8d9b97f1c3c546c04a17617e231ab4629a1cf9172a65873ca3c13e9b9ce",
+      "source_start": 789,
+      "source_end": 1166,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-078-U01 statement 4",
+      "old_quote_sha256": "d51d304421fce0b114e9ac8ffb8a8b3b189cce8834d4a4d83c3de8045acb2f9f",
+      "new_quote_sha256": "932f6c41e8f3c33afaa742f2bd66cc2d5f5d1009d429a0033234407d2eeadde9",
+      "source_start": 1168,
+      "source_end": 1414,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-078-U01 statement 5",
+      "old_quote_sha256": "3e3d719a82b96600ee70b11f24c911a0f8079e691a42fb04f791613b4c349380",
+      "new_quote_sha256": "e279b51850155589bb97730841b67d3f1eedff17e87f26bee5d8f5d4834b2f51",
+      "source_start": 1918,
+      "source_end": 2029,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-078-U01 statement 6",
+      "old_quote_sha256": "beca9c4a942b364b8d5cf4bcc3196ab4acbee42a1b2844aa93dd5a07c1d0d3ce",
+      "new_quote_sha256": "96320da34a8678a0cb1c974d68caaa3c973eb8673ea1aab4c73985084f519a0c",
+      "source_start": 2750,
+      "source_end": 3017,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-078-U01 statement 7",
+      "old_quote_sha256": "a7c6f129f2433962d786fa3d7b593925c8189a546d85e7331ea965f80899b3f2",
+      "new_quote_sha256": "b86ad2693d15edb8dbd40afdf62e633c941e798867d80eb9fe0547f8c09f5979",
+      "source_start": 4465,
+      "source_end": 4607,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    },
+    {
+      "label": "CAL-078-U01 statement 8",
+      "old_quote_sha256": "c1de9004e1824f440eaf111e93077f80be6f54f2ed30522be93996eb0ed6b4f4",
+      "new_quote_sha256": "abb7ce54a34b8126f3435364cd4ec48e050f965da92c29d464017fe6362a8d86",
+      "source_start": 4959,
+      "source_end": 5219,
+      "reason": "restore exact source whitespace without changing non-whitespace characters"
+    }
+  ],
+  "unresolved": [
+    {
+      "label": "CAL-067-U01 statement 1",
+      "normalized_occurrences": 2,
+      "quote": "Anonymous, partially \nanonymous or \nidentifiable"
+    }
+  ]
+}

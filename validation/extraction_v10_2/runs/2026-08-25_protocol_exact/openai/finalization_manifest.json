@@ -1,0 +1,27 @@
+{
+  "schema": "openai-batch-v10.2-final-source-canonical",
+  "created_utc": "2026-08-25T08:57:24.850579+00:00",
+  "requests": 13,
+  "units": 78,
+  "statements_accepted": 116,
+  "empty_units": 46,
+  "retry_units_replaced": 5,
+  "source_support": {
+    "exact_text": 24,
+    "rejected_unsupported": 1,
+    "whitespace_restored": 92
+  },
+  "status_changes": 21,
+  "quotes_restored_to_exact_source": 92,
+  "normalized_ambiguous": 0,
+  "render_review_required": 0,
+  "rejected_spans_after_retry": 1,
+  "hashes": {
+    "main_provider_parsed": "52eff80c9736b7154a39eac3270e6903ede9e9cc304b63e8b7fac1d95570a5de",
+    "retry_provider_parsed": "8c84ebdfc329ae632f3ef6ad173eee7885b67bf58218a657fc8910ab57cb2a2d",
+    "package_inputs": "4764ae7a0b3d0c6c07a03adecffc1c2df1b61f7495c744175185a257724d8467",
+    "final_source_canonical": "b12bf821be7afb8315709a573a40423d6319f29e4112d5d83b627e1f51ff3e25",
+    "transform_log": "b9c000761514bf8404f867e7a2ea90322b155f68a56e53cd9951d98fcf278323",
+    "rejected_spans": "9fc6ec7fb4d1b49a7c460ff0f98f682131315b943db03c87ecff56e7e9b7f5e7"
+  }
+}

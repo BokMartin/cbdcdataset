@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-08-24T19:19:23.984187Z",
+  "source_output": "outputs/CLAUDE_v10_2_CALIBRATION_RUN2/submitted/claude_extractions_v10_2.jsonl",
+  "source_output_sha256": "a77cfd85ab992a69af3b53dc02bab6a2d9214c193f097da2a6141b29bfa56829",
+  "input_sha256": "4764ae7a0b3d0c6c07a03adecffc1c2df1b61f7495c744175185a257724d8467",
+  "transform": {
+    "status_changes": 23,
+    "quotes_restored_to_exact_source": 100,
+    "unresolved_normalized_quotes": 1
+  },
+  "files": {
+    "claude_extractions_v10_2_source_canonical.jsonl": "c06ce8c71d0eefbbdd19b5f0c6ac6dcf2c89908b25647fecf3ec3f7ede5bee5a",
+    "source_only_transform_log.json": "b13fb7002e230cf7d2ab63680b8f0d26dc16413c9580056ba9fc41b947135dbc"
+  }
+}

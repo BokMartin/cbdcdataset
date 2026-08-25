@@ -1,0 +1,1297 @@
+{
+  "schema": "cbdc_extraction_calibration_evaluation_one_to_one_v2",
+  "status": "development_calibration_not_confirmatory",
+  "comparison_status": "complete",
+  "reserve_status": "sealed",
+  "inputs": {
+    "package_inputs_sha256": "4764ae7a0b3d0c6c07a03adecffc1c2df1b61f7495c744175185a257724d8467",
+    "model_a_codex_sha256": "b12bf821be7afb8315709a573a40423d6319f29e4112d5d83b627e1f51ff3e25",
+    "model_b_claude_sha256": "c06ce8c71d0eefbbdd19b5f0c6ac6dcf2c89908b25647fecf3ec3f7ede5bee5a",
+    "model_a_run_status": "protocol_exact",
+    "model_b_run_status": "protocol_exact",
+    "reference_sha256": "a6dcd733b2d3175b34a20785f9ce19e9928bd70d5fc4005d24285421be90e1a9",
+    "matching_threshold": 0.8,
+    "matching_algorithm": "maximum-cardinality maximum-score one-to-one min-cost flow"
+  },
+  "reference_counts": {
+    "negative": 209,
+    "excluded": 60,
+    "positive": 82
+  },
+  "models": {
+    "codex": {
+      "statements_raw": 116,
+      "statements_workload_after_cross_model_dedup": 116,
+      "workload_per_positive_gold": 1.4146341463414633,
+      "statement_alignment": {
+        "assigned_positive": 51,
+        "assigned_negative": 0,
+        "assigned_excluded": 11,
+        "unassigned": 54,
+        "conservative_precision_unassigned_as_false_positive": 0.4857142857142857
+      },
+      "paragraph_metrics": {
+        "probability": {
+          "n": 250,
+          "tp": 40,
+          "fp": 0,
+          "fn": 24,
+          "tn": 186,
+          "precision": 1.0,
+          "recall": 0.625,
+          "f1": 0.7692307692307693
+        },
+        "all_strata": {
+          "n": 291,
+          "tp": 51,
+          "fp": 0,
+          "fn": 31,
+          "tn": 209,
+          "precision": 1.0,
+          "recall": 0.6219512195121951,
+          "f1": 0.7669172932330827
+        },
+        "by_stratum": {
+          "probability": {
+            "n": 250,
+            "tp": 40,
+            "fp": 0,
+            "fn": 24,
+            "tn": 186,
+            "precision": 1.0,
+            "recall": 0.625,
+            "f1": 0.7692307692307693
+          },
+          "stress_long": {
+            "n": 31,
+            "tp": 10,
+            "fp": 0,
+            "fn": 7,
+            "tn": 14,
+            "precision": 1.0,
+            "recall": 0.5882352941176471,
+            "f1": 0.7407407407407407
+          },
+          "stress_nonEN": {
+            "n": 7,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "tn": 6,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "stress_ocr_lowtext": {
+            "n": 3,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision": null,
+            "recall": null,
+            "f1": 0.0
+          },
+          "stress_ocr_zerotext": {
+            "n": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 0,
+            "precision": null,
+            "recall": null,
+            "f1": 0.0
+          }
+        },
+        "probability_document_cluster_bootstrap_95": {
+          "precision": {
+            "observed": 1.0,
+            "low_95": 1.0,
+            "high_95": 1.0,
+            "finite_draws": 2000
+          },
+          "recall": {
+            "observed": 0.625,
+            "low_95": 0.5222101449275363,
+            "high_95": 0.7307926829268291,
+            "finite_draws": 2000
+          },
+          "f1": {
+            "observed": 0.7692307692307693,
+            "low_95": 0.6861209593326382,
+            "high_95": 0.8444600938967134,
+            "finite_draws": 2000
+          }
+        }
+      },
+      "page_metrics": {
+        "probability": {
+          "n": 55,
+          "tp": 16,
+          "fp": 0,
+          "fn": 6,
+          "tn": 33,
+          "precision": 1.0,
+          "recall": 0.7272727272727273,
+          "f1": 0.8421052631578948
+        },
+        "all_strata": {
+          "n": 63,
+          "tp": 20,
+          "fp": 0,
+          "fn": 6,
+          "tn": 37,
+          "precision": 1.0,
+          "recall": 0.7692307692307693,
+          "f1": 0.8695652173913044
+        }
+      },
+      "classification": {
+        "coded_positive_n": 31,
+        "correctly_recovered_with_exact_code": 6,
+        "recall": 0.1935483870967742
+      },
+      "span_fidelity": {
+        "text_supported": 116,
+        "unsupported": 0,
+        "render_review_required": 0,
+        "fidelity_excluding_pending_render": 1.0,
+        "gate": "pass"
+      },
+      "gates": {
+        "E1_recall_point_and_ci": "fail",
+        "E2_stress_long_recall": "fail",
+        "E3_probability_precision_and_all_positive_workload": "pass",
+        "S1_span_fidelity": "pass",
+        "C1_exact_classification_recall": "fail"
+      }
+    },
+    "claude": {
+      "statements_raw": 141,
+      "statements_workload_after_cross_model_dedup": 141,
+      "workload_per_positive_gold": 1.7195121951219512,
+      "statement_alignment": {
+        "assigned_positive": 53,
+        "assigned_negative": 2,
+        "assigned_excluded": 18,
+        "unassigned": 68,
+        "conservative_precision_unassigned_as_false_positive": 0.43089430894308944
+      },
+      "paragraph_metrics": {
+        "probability": {
+          "n": 250,
+          "tp": 42,
+          "fp": 1,
+          "fn": 22,
+          "tn": 185,
+          "precision": 0.9767441860465116,
+          "recall": 0.65625,
+          "f1": 0.7850467289719625
+        },
+        "all_strata": {
+          "n": 291,
+          "tp": 53,
+          "fp": 2,
+          "fn": 29,
+          "tn": 207,
+          "precision": 0.9636363636363636,
+          "recall": 0.6463414634146342,
+          "f1": 0.7737226277372263
+        },
+        "by_stratum": {
+          "probability": {
+            "n": 250,
+            "tp": 42,
+            "fp": 1,
+            "fn": 22,
+            "tn": 185,
+            "precision": 0.9767441860465116,
+            "recall": 0.65625,
+            "f1": 0.7850467289719625
+          },
+          "stress_long": {
+            "n": 31,
+            "tp": 10,
+            "fp": 1,
+            "fn": 7,
+            "tn": 13,
+            "precision": 0.9090909090909091,
+            "recall": 0.5882352941176471,
+            "f1": 0.7142857142857143
+          },
+          "stress_nonEN": {
+            "n": 7,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "tn": 6,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "stress_ocr_lowtext": {
+            "n": 3,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision": null,
+            "recall": null,
+            "f1": 0.0
+          },
+          "stress_ocr_zerotext": {
+            "n": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 0,
+            "precision": null,
+            "recall": null,
+            "f1": 0.0
+          }
+        },
+        "probability_document_cluster_bootstrap_95": {
+          "precision": {
+            "observed": 0.9767441860465116,
+            "low_95": 0.9069767441860465,
+            "high_95": 1.0,
+            "finite_draws": 2000
+          },
+          "recall": {
+            "observed": 0.65625,
+            "low_95": 0.5319148936170213,
+            "high_95": 0.7592995169082124,
+            "finite_draws": 2000
+          },
+          "f1": {
+            "observed": 0.7850467289719625,
+            "low_95": 0.6835145197319434,
+            "high_95": 0.859075120687625,
+            "finite_draws": 2000
+          }
+        }
+      },
+      "page_metrics": {
+        "probability": {
+          "n": 55,
+          "tp": 16,
+          "fp": 1,
+          "fn": 6,
+          "tn": 32,
+          "precision": 0.9411764705882353,
+          "recall": 0.7272727272727273,
+          "f1": 0.8205128205128205
+        },
+        "all_strata": {
+          "n": 63,
+          "tp": 20,
+          "fp": 1,
+          "fn": 6,
+          "tn": 36,
+          "precision": 0.9523809523809523,
+          "recall": 0.7692307692307693,
+          "f1": 0.8510638297872339
+        }
+      },
+      "classification": {
+        "coded_positive_n": 31,
+        "correctly_recovered_with_exact_code": 7,
+        "recall": 0.22580645161290322
+      },
+      "span_fidelity": {
+        "text_supported": 141,
+        "unsupported": 0,
+        "render_review_required": 0,
+        "fidelity_excluding_pending_render": 1.0,
+        "gate": "pass"
+      },
+      "gates": {
+        "E1_recall_point_and_ci": "fail",
+        "E2_stress_long_recall": "fail",
+        "E3_probability_precision_and_all_positive_workload": "pass",
+        "S1_span_fidelity": "pass",
+        "C1_exact_classification_recall": "fail"
+      }
+    },
+    "verified_union": {
+      "statements_raw": 257,
+      "statements_workload_after_cross_model_dedup": 156,
+      "workload_per_positive_gold": 1.9024390243902438,
+      "statement_alignment": {
+        "assigned_positive": 104,
+        "assigned_negative": 2,
+        "assigned_excluded": 29,
+        "unassigned": 122,
+        "conservative_precision_unassigned_as_false_positive": 0.45614035087719296
+      },
+      "paragraph_metrics": {
+        "probability": {
+          "n": 250,
+          "tp": 49,
+          "fp": 1,
+          "fn": 15,
+          "tn": 185,
+          "precision": 0.98,
+          "recall": 0.765625,
+          "f1": 0.8596491228070174
+        },
+        "all_strata": {
+          "n": 291,
+          "tp": 62,
+          "fp": 2,
+          "fn": 20,
+          "tn": 207,
+          "precision": 0.96875,
+          "recall": 0.7560975609756098,
+          "f1": 0.8493150684931506
+        },
+        "by_stratum": {
+          "probability": {
+            "n": 250,
+            "tp": 49,
+            "fp": 1,
+            "fn": 15,
+            "tn": 185,
+            "precision": 0.98,
+            "recall": 0.765625,
+            "f1": 0.8596491228070174
+          },
+          "stress_long": {
+            "n": 31,
+            "tp": 12,
+            "fp": 1,
+            "fn": 5,
+            "tn": 13,
+            "precision": 0.9230769230769231,
+            "recall": 0.7058823529411765,
+            "f1": 0.8000000000000002
+          },
+          "stress_nonEN": {
+            "n": 7,
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "tn": 6,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "stress_ocr_lowtext": {
+            "n": 3,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 3,
+            "precision": null,
+            "recall": null,
+            "f1": 0.0
+          },
+          "stress_ocr_zerotext": {
+            "n": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 0,
+            "precision": null,
+            "recall": null,
+            "f1": 0.0
+          }
+        },
+        "probability_document_cluster_bootstrap_95": {
+          "precision": {
+            "observed": 0.98,
+            "low_95": 0.926806684733514,
+            "high_95": 1.0,
+            "finite_draws": 2000
+          },
+          "recall": {
+            "observed": 0.765625,
+            "low_95": 0.6326530612244898,
+            "high_95": 0.8813808574277167,
+            "finite_draws": 2000
+          },
+          "f1": {
+            "observed": 0.8596491228070174,
+            "low_95": 0.7636363636363634,
+            "high_95": 0.9298245614035088,
+            "finite_draws": 2000
+          }
+        }
+      },
+      "page_metrics": {
+        "probability": {
+          "n": 55,
+          "tp": 18,
+          "fp": 1,
+          "fn": 4,
+          "tn": 32,
+          "precision": 0.9473684210526315,
+          "recall": 0.8181818181818182,
+          "f1": 0.8780487804878049
+        },
+        "all_strata": {
+          "n": 63,
+          "tp": 22,
+          "fp": 1,
+          "fn": 4,
+          "tn": 36,
+          "precision": 0.9565217391304348,
+          "recall": 0.8461538461538461,
+          "f1": 0.8979591836734695
+        }
+      },
+      "classification": {
+        "coded_positive_n": 31,
+        "correctly_recovered_with_exact_code": 9,
+        "recall": 0.2903225806451613
+      },
+      "span_fidelity": {
+        "text_supported": 257,
+        "unsupported": 0,
+        "render_review_required": 0,
+        "fidelity_excluding_pending_render": 1.0,
+        "gate": "pass"
+      },
+      "gates": {
+        "E1_recall_point_and_ci": "fail",
+        "E2_stress_long_recall": "fail",
+        "E3_probability_precision_and_all_positive_workload": "pass",
+        "S1_span_fidelity": "pass",
+        "C1_exact_classification_recall": "fail"
+      }
+    }
+  },
+  "cross_model_overlap": {
+    "model_a_statements": 116,
+    "model_b_statements": 141,
+    "model_b_matched_to_model_a": 101,
+    "model_b_match_rate": 0.7163120567375887,
+    "exact_code_agreement_among_matches": 0.45544554455445546,
+    "deduplicated_union_workload": 156,
+    "matched_model_b_statement_ids": [
+      "claude:CAL-051-U01:S002",
+      "claude:CAL-051-U01:S003",
+      "claude:CAL-051-U01:S004",
+      "claude:CAL-051-U01:S005",
+      "claude:CAL-051-U01:S006",
+      "claude:CAL-051-U01:S008",
+      "claude:CAL-037-U01:S001",
+      "claude:CAL-050-U01:S001",
+      "claude:CAL-036-U01:S001",
+      "claude:CAL-036-U01:S002",
+      "claude:CAL-036-U01:S003",
+      "claude:CAL-036-U01:S004",
+      "claude:CAL-036-U01:S005",
+      "claude:CAL-029-U01:S001",
+      "claude:CAL-029-U01:S002",
+      "claude:CAL-033-U01:S001",
+      "claude:CAL-014-U01:S001",
+      "claude:CAL-061-U01:S001",
+      "claude:CAL-061-U01:S002",
+      "claude:CAL-077-U01:S002",
+      "claude:CAL-077-U01:S003",
+      "claude:CAL-077-U01:S004",
+      "claude:CAL-077-U01:S005",
+      "claude:CAL-035-U01:S001",
+      "claude:CAL-035-U01:S002",
+      "claude:CAL-035-U01:S003",
+      "claude:CAL-035-U01:S004",
+      "claude:CAL-035-U01:S005",
+      "claude:CAL-035-U01:S006",
+      "claude:CAL-035-U01:S007",
+      "claude:CAL-035-U01:S008",
+      "claude:CAL-035-U01:S009",
+      "claude:CAL-035-U01:S010",
+      "claude:CAL-035-U01:S011",
+      "claude:CAL-056-U01:S001",
+      "claude:CAL-005-U01:S001",
+      "claude:CAL-005-U01:S002",
+      "claude:CAL-005-U01:S003",
+      "claude:CAL-005-U01:S004",
+      "claude:CAL-005-U01:S005",
+      "claude:CAL-013-U01:S001",
+      "claude:CAL-013-U01:S002",
+      "claude:CAL-013-U01:S003",
+      "claude:CAL-009-U01:S001",
+      "claude:CAL-009-U01:S002",
+      "claude:CAL-009-U01:S003",
+      "claude:CAL-012-U01:S001",
+      "claude:CAL-012-U01:S002",
+      "claude:CAL-012-U01:S003",
+      "claude:CAL-012-U01:S004",
+      "claude:CAL-019-U01:S001",
+      "claude:CAL-019-U01:S002",
+      "claude:CAL-019-U01:S003",
+      "claude:CAL-019-U01:S004",
+      "claude:CAL-019-U01:S005",
+      "claude:CAL-019-U01:S006",
+      "claude:CAL-038-U01:S001",
+      "claude:CAL-038-U01:S002",
+      "claude:CAL-038-U01:S003",
+      "claude:CAL-052-U01:S001",
+      "claude:CAL-052-U01:S002",
+      "claude:CAL-030-U01:S001",
+      "claude:CAL-030-U01:S002",
+      "claude:CAL-047-U01:S001",
+      "claude:CAL-047-U01:S002",
+      "claude:CAL-047-U01:S003",
+      "claude:CAL-047-U01:S004",
+      "claude:CAL-047-U01:S005",
+      "claude:CAL-047-U01:S006",
+      "claude:CAL-063-U01:S001",
+      "claude:CAL-063-U01:S002",
+      "claude:CAL-063-U01:S003",
+      "claude:CAL-063-U01:S005",
+      "claude:CAL-003-U01:S001",
+      "claude:CAL-003-U01:S003",
+      "claude:CAL-003-U01:S004",
+      "claude:CAL-003-U01:S005",
+      "claude:CAL-003-U01:S006",
+      "claude:CAL-076-U01:S001",
+      "claude:CAL-076-U01:S002",
+      "claude:CAL-076-U01:S003",
+      "claude:CAL-076-U01:S004",
+      "claude:CAL-027-U01:S001",
+      "claude:CAL-027-U01:S002",
+      "claude:CAL-027-U01:S003",
+      "claude:CAL-027-U01:S004",
+      "claude:CAL-027-U01:S005",
+      "claude:CAL-078-U01:S001",
+      "claude:CAL-078-U01:S002",
+      "claude:CAL-078-U01:S003",
+      "claude:CAL-078-U01:S004",
+      "claude:CAL-078-U01:S005",
+      "claude:CAL-078-U01:S006",
+      "claude:CAL-067-U01:S001",
+      "claude:CAL-067-U01:S002",
+      "claude:CAL-046-U01:S001",
+      "claude:CAL-032-U01:S001",
+      "claude:CAL-032-U01:S002",
+      "claude:CAL-032-U01:S003",
+      "claude:CAL-032-U01:S004",
+      "claude:CAL-032-U01:S005"
+    ],
+    "one_to_one_pairs": [
+      {
+        "model_a_statement_id": "codex:CAL-051-U01:S001",
+        "model_b_statement_id": "claude:CAL-051-U01:S002",
+        "score": 1.0,
+        "method": "raw_contains",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-051-U01:S002",
+        "model_b_statement_id": "claude:CAL-051-U01:S003",
+        "score": 1.0,
+        "method": "raw_contains",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-051-U01:S004",
+        "model_b_statement_id": "claude:CAL-051-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-051-U01:S005",
+        "model_b_statement_id": "claude:CAL-051-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-051-U01:S006",
+        "model_b_statement_id": "claude:CAL-051-U01:S006",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-051-U01:S007",
+        "model_b_statement_id": "claude:CAL-051-U01:S008",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-037-U01:S001",
+        "model_b_statement_id": "claude:CAL-037-U01:S001",
+        "score": 1.0,
+        "method": "normalized_container",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-050-U01:S001",
+        "model_b_statement_id": "claude:CAL-050-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-036-U01:S001",
+        "model_b_statement_id": "claude:CAL-036-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-036-U01:S002",
+        "model_b_statement_id": "claude:CAL-036-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-036-U01:S003",
+        "model_b_statement_id": "claude:CAL-036-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-036-U01:S004",
+        "model_b_statement_id": "claude:CAL-036-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-036-U01:S005",
+        "model_b_statement_id": "claude:CAL-036-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-029-U01:S001",
+        "model_b_statement_id": "claude:CAL-029-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-029-U01:S002",
+        "model_b_statement_id": "claude:CAL-029-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-033-U01:S001",
+        "model_b_statement_id": "claude:CAL-033-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-014-U01:S001",
+        "model_b_statement_id": "claude:CAL-014-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-061-U01:S001",
+        "model_b_statement_id": "claude:CAL-061-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-061-U01:S002",
+        "model_b_statement_id": "claude:CAL-061-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-077-U01:S001",
+        "model_b_statement_id": "claude:CAL-077-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-077-U01:S002",
+        "model_b_statement_id": "claude:CAL-077-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-077-U01:S003",
+        "model_b_statement_id": "claude:CAL-077-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-077-U01:S004",
+        "model_b_statement_id": "claude:CAL-077-U01:S005",
+        "score": 1.0,
+        "method": "normalized_container",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S001",
+        "model_b_statement_id": "claude:CAL-035-U01:S001",
+        "score": 1.0,
+        "method": "normalized_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S002",
+        "model_b_statement_id": "claude:CAL-035-U01:S002",
+        "score": 1.0,
+        "method": "normalized_container",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S003",
+        "model_b_statement_id": "claude:CAL-035-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S004",
+        "model_b_statement_id": "claude:CAL-035-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S005",
+        "model_b_statement_id": "claude:CAL-035-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S006",
+        "model_b_statement_id": "claude:CAL-035-U01:S006",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S007",
+        "model_b_statement_id": "claude:CAL-035-U01:S007",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S008",
+        "model_b_statement_id": "claude:CAL-035-U01:S008",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S009",
+        "model_b_statement_id": "claude:CAL-035-U01:S009",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S010",
+        "model_b_statement_id": "claude:CAL-035-U01:S010",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-035-U01:S011",
+        "model_b_statement_id": "claude:CAL-035-U01:S011",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-056-U01:S001",
+        "model_b_statement_id": "claude:CAL-056-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-005-U01:S001",
+        "model_b_statement_id": "claude:CAL-005-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-005-U01:S002",
+        "model_b_statement_id": "claude:CAL-005-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-005-U01:S003",
+        "model_b_statement_id": "claude:CAL-005-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-005-U01:S004",
+        "model_b_statement_id": "claude:CAL-005-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-005-U01:S005",
+        "model_b_statement_id": "claude:CAL-005-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-013-U01:S001",
+        "model_b_statement_id": "claude:CAL-013-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-013-U01:S002",
+        "model_b_statement_id": "claude:CAL-013-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-013-U01:S003",
+        "model_b_statement_id": "claude:CAL-013-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-009-U01:S001",
+        "model_b_statement_id": "claude:CAL-009-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-009-U01:S002",
+        "model_b_statement_id": "claude:CAL-009-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-009-U01:S003",
+        "model_b_statement_id": "claude:CAL-009-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-012-U01:S001",
+        "model_b_statement_id": "claude:CAL-012-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-012-U01:S002",
+        "model_b_statement_id": "claude:CAL-012-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-012-U01:S003",
+        "model_b_statement_id": "claude:CAL-012-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-012-U01:S004",
+        "model_b_statement_id": "claude:CAL-012-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-019-U01:S001",
+        "model_b_statement_id": "claude:CAL-019-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-019-U01:S002",
+        "model_b_statement_id": "claude:CAL-019-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-019-U01:S003",
+        "model_b_statement_id": "claude:CAL-019-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-019-U01:S004",
+        "model_b_statement_id": "claude:CAL-019-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-019-U01:S005",
+        "model_b_statement_id": "claude:CAL-019-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-019-U01:S006",
+        "model_b_statement_id": "claude:CAL-019-U01:S006",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-038-U01:S001",
+        "model_b_statement_id": "claude:CAL-038-U01:S001",
+        "score": 1.0,
+        "method": "normalized_container",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-038-U01:S002",
+        "model_b_statement_id": "claude:CAL-038-U01:S002",
+        "score": 1.0,
+        "method": "normalized_container",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-038-U01:S003",
+        "model_b_statement_id": "claude:CAL-038-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-052-U01:S001",
+        "model_b_statement_id": "claude:CAL-052-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-052-U01:S002",
+        "model_b_statement_id": "claude:CAL-052-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-030-U01:S001",
+        "model_b_statement_id": "claude:CAL-030-U01:S001",
+        "score": 1.0,
+        "method": "normalized_container",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-030-U01:S002",
+        "model_b_statement_id": "claude:CAL-030-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-047-U01:S001",
+        "model_b_statement_id": "claude:CAL-047-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-047-U01:S002",
+        "model_b_statement_id": "claude:CAL-047-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-047-U01:S003",
+        "model_b_statement_id": "claude:CAL-047-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-047-U01:S004",
+        "model_b_statement_id": "claude:CAL-047-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-047-U01:S005",
+        "model_b_statement_id": "claude:CAL-047-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-047-U01:S006",
+        "model_b_statement_id": "claude:CAL-047-U01:S006",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-063-U01:S001",
+        "model_b_statement_id": "claude:CAL-063-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-063-U01:S003",
+        "model_b_statement_id": "claude:CAL-063-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-063-U01:S004",
+        "model_b_statement_id": "claude:CAL-063-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-063-U01:S005",
+        "model_b_statement_id": "claude:CAL-063-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-003-U01:S001",
+        "model_b_statement_id": "claude:CAL-003-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-003-U01:S002",
+        "model_b_statement_id": "claude:CAL-003-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-003-U01:S003",
+        "model_b_statement_id": "claude:CAL-003-U01:S004",
+        "score": 1.0,
+        "method": "normalized_container",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-003-U01:S004",
+        "model_b_statement_id": "claude:CAL-003-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-003-U01:S005",
+        "model_b_statement_id": "claude:CAL-003-U01:S006",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-076-U01:S001",
+        "model_b_statement_id": "claude:CAL-076-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-076-U01:S002",
+        "model_b_statement_id": "claude:CAL-076-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-076-U01:S003",
+        "model_b_statement_id": "claude:CAL-076-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-076-U01:S004",
+        "model_b_statement_id": "claude:CAL-076-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-027-U01:S001",
+        "model_b_statement_id": "claude:CAL-027-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-027-U01:S002",
+        "model_b_statement_id": "claude:CAL-027-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-027-U01:S003",
+        "model_b_statement_id": "claude:CAL-027-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-027-U01:S004",
+        "model_b_statement_id": "claude:CAL-027-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-027-U01:S005",
+        "model_b_statement_id": "claude:CAL-027-U01:S005",
+        "score": 1.0,
+        "method": "raw_contains",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-078-U01:S001",
+        "model_b_statement_id": "claude:CAL-078-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-078-U01:S002",
+        "model_b_statement_id": "claude:CAL-078-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-078-U01:S003",
+        "model_b_statement_id": "claude:CAL-078-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-078-U01:S004",
+        "model_b_statement_id": "claude:CAL-078-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-078-U01:S005",
+        "model_b_statement_id": "claude:CAL-078-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-078-U01:S006",
+        "model_b_statement_id": "claude:CAL-078-U01:S006",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-067-U01:S001",
+        "model_b_statement_id": "claude:CAL-067-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-067-U01:S002",
+        "model_b_statement_id": "claude:CAL-067-U01:S002",
+        "score": 1.0,
+        "method": "normalized_container",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-046-U01:S001",
+        "model_b_statement_id": "claude:CAL-046-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-032-U01:S001",
+        "model_b_statement_id": "claude:CAL-032-U01:S001",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-032-U01:S002",
+        "model_b_statement_id": "claude:CAL-032-U01:S002",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": true
+      },
+      {
+        "model_a_statement_id": "codex:CAL-032-U01:S003",
+        "model_b_statement_id": "claude:CAL-032-U01:S003",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-032-U01:S004",
+        "model_b_statement_id": "claude:CAL-032-U01:S004",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      },
+      {
+        "model_a_statement_id": "codex:CAL-032-U01:S005",
+        "model_b_statement_id": "claude:CAL-032-U01:S005",
+        "score": 1.0,
+        "method": "raw_equal",
+        "exact_code_agreement": false
+      }
+    ]
+  },
+  "binary_paragraph_agreement": {
+    "krippendorff_alpha": 0.6794695930498398,
+    "gwet_ac1": 0.8553489111429026,
+    "n": 351
+  },
+  "limitations": [
+    "These are development-calibration results and are not confirmatory paper evidence.",
+    "The union paragraph metric is the pre-specified logical OR of source-verified model detections.",
+    "Union workload deduplicates cross-model spans at the frozen 0.80 overlap threshold; raw outputs remain archived.",
+    "Reference and cross-model matching use deterministic one-to-one bipartite assignment; this corrects the legacy many-to-one workload defect without changing the 0.80 threshold.",
+    "Only reference-positive paragraphs with a non-empty adjudicated reference_code enter C1.",
+    "stress_nonEN and OCR strata lack eligible positive human-reference rows, so E2 is estimable only for stress_long."
+  ]
+}

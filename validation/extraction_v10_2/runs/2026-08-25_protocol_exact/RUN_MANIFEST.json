@@ -1,0 +1,91 @@
+{
+  "schema": "cbdc-extraction-v10.2-protocol-exact-run-record",
+  "date": "2026-08-25",
+  "status": "calibration_complete_gates_failed",
+  "comparison_status": "complete",
+  "reserve_status": "sealed",
+  "production_decision": "do_not_open_reserve_or_run_full_corpus",
+  "models": {
+    "openai": {
+      "model": "gpt-5.6-terra",
+      "processing": "batch",
+      "reasoning_effort": "medium",
+      "main_batch_id": "batch_6a8d556a5c048190bb53588cad13eb59",
+      "main_requests": 13,
+      "main_requests_completed": 13,
+      "main_requests_failed": 0,
+      "main_input_tokens": 196690,
+      "main_cached_input_tokens": 107892,
+      "main_output_tokens": 27581,
+      "main_reasoning_tokens": 14416,
+      "source_only_retry_batch_id": "batch_6a8d57b3bf3c8190934ec32c81bd3b41",
+      "source_only_retry_requests": 5,
+      "source_only_retry_completed": 5,
+      "source_only_retry_failed": 0,
+      "retry_input_tokens": 49235,
+      "retry_cached_input_tokens": 35972,
+      "retry_output_tokens": 6702,
+      "retry_reasoning_tokens": 4102,
+      "statements_accepted": 116,
+      "statements_rejected_after_retry": 1,
+      "source_span_fidelity": 1.0
+    },
+    "claude": {
+      "model": "claude-sonnet-5",
+      "processing": "batch",
+      "effort": "medium",
+      "statements_accepted": 141,
+      "source_span_fidelity": 1.0
+    }
+  },
+  "gates": {
+    "openai": {
+      "E1": "fail",
+      "E2": "fail",
+      "E3": "pass",
+      "S1": "pass",
+      "C1": "fail"
+    },
+    "claude": {
+      "E1": "fail",
+      "E2": "fail",
+      "E3": "pass",
+      "S1": "pass",
+      "C1": "fail"
+    },
+    "verified_union": {
+      "E1": "fail",
+      "E2": "fail",
+      "E3": "pass",
+      "S1": "pass",
+      "C1": "fail"
+    }
+  },
+  "external_raw_archives": {
+    "openai_main_sealed_provider_raw_zip_sha256": "cacbe83929a843199c60c6431269d79e7c901848b10aeba3543280484b3cfbf0",
+    "openai_retry_sealed_provider_raw_zip_sha256": "ecdac64b023185cc0f52a5afa61164ec9007182e5c66d77d76bfa3394377d4dc",
+    "claude_provider_archive_sha256": "a77cfd85ab992a69af3b53dc02bab6a2d9214c193f097da2a6141b29bfa56829"
+  },
+  "file_hash_mode": "repository-canonical bytes; CRLF and CR are normalized to LF for CSV and JSON files, matching checksums.sha256",
+  "files": {
+    "claude/claude_extractions_v10_2_source_canonical.jsonl": "c06ce8c71d0eefbbdd19b5f0c6ac6dcf2c89908b25647fecf3ec3f7ede5bee5a",
+    "claude/source_canonical_manifest.json": "c5660b58fc7f1338fba9a2d458d6b97c6f43012887854bf9a2e086c49e8e99a2",
+    "claude/source_only_transform_log.json": "66be0edce7af0f190244b2531b026ae65694f290f395ec371902fd26b3625fe6",
+    "evaluation/calibration_results.json": "3fe6020d9e58fd8f7489e32c8dcecadfa6cc545f87a20722de27bb99a6c1aba8",
+    "evaluation/paragraph_audit.csv": "ea1469d2488d6933d3f17a1353e5c86a5a19fa03b1442de6fc9196078b71609b",
+    "evaluation/statement_assignments.csv": "3b67563952379241d57dd8fad63c2ef85b6601dcbc019cfb64edf736c24b50bc",
+    "openai/finalization_manifest.json": "415709977d268bd7407130976d9b389e3b930d3d75ff446f7b2cb27adc456ca0",
+    "openai/main_run_manifest.json": "64ebe5a32ae82492cc320b14677e5789b86bc00aae1adc3748c94c430ee3467f",
+    "openai/openai_extractions_v10_2_source_canonical.jsonl": "b12bf821be7afb8315709a573a40423d6319f29e4112d5d83b627e1f51ff3e25",
+    "openai/rejected_spans.csv": "9fc6ec7fb4d1b49a7c460ff0f98f682131315b943db03c87ecff56e7e9b7f5e7",
+    "openai/retry_run_manifest.json": "de0094c69aca7c2519eca4c984163ef4e8e4e679a2526d029b489a4250180bda",
+    "openai/source_only_transform_log.json": "b9c000761514bf8404f867e7a2ea90322b155f68a56e53cd9951d98fcf278323"
+  },
+  "evaluation_reproduction": {
+    "independent_clean_rerun": true,
+    "byte_exact_for_all_three_outputs": true,
+    "matching_threshold": 0.8
+  },
+  "estimated_openai_batch_cost_usd": 0.3221454,
+  "cost_note": "Estimate from recorded token usage, current GPT-5.6 Terra token prices, and the documented 50% Batch API discount; provider billing is authoritative."
+}

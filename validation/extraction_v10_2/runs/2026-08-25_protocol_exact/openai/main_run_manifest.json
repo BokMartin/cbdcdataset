@@ -1,0 +1,31 @@
+{
+  "schema": "openai-batch-v10.2-collected",
+  "collected_utc": "2026-08-25T08:45:56.605732+00:00",
+  "batch_id": "batch_6a8d556a5c048190bb53588cad13eb59",
+  "batch_status": "completed",
+  "returned_model": "gpt-5.6-terra",
+  "request_counts": {
+    "total": 13,
+    "completed": 13,
+    "failed": 0
+  },
+  "usage": {
+    "input_tokens": 196690,
+    "output_tokens": 27581,
+    "total_tokens": 224271,
+    "input_tokens_details": {
+      "cached_tokens": 107892
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 14416
+    }
+  },
+  "parsed_requests": 13,
+  "parsed_units": 78,
+  "parsed_statements": 116,
+  "parse_failures": [],
+  "hashes": {
+    "sealed_provider_raw_zip": "cacbe83929a843199c60c6431269d79e7c901848b10aeba3543280484b3cfbf0",
+    "provider_parsed_jsonl": "52eff80c9736b7154a39eac3270e6903ede9e9cc304b63e8b7fac1d95570a5de"
+  }
+}

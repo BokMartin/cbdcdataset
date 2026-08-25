@@ -12,6 +12,7 @@ EXTRA = [
     "scripts/finalize_provider_output.py",
     "scripts/freeze_reference_v10_2.py",
     "scripts/openai_batch_v10_2.py",
+    "scripts/openai_span_retry_v10_2.py",
     "scripts/prepare_scope_readjudication.py",
     "scripts/update_checksums.py",
     "scripts/verify_extraction_v10_2.py",
@@ -46,6 +47,7 @@ EXTRA = [
 EXTRA_DIRS = [
     "validation/extraction_v10_1/runs",
     "validation/extraction_v10_2/audits",
+    "validation/extraction_v10_2/runs",
 ]
 
 
