@@ -1,0 +1,129 @@
+{
+  "valid": true,
+  "main": {
+    "seal": {
+      "sha256": "021179851cef539cf955a4d5890ea93bf13e4a5317b0cae7f722ae084a6c6e34",
+      "members": 8,
+      "sealed_schema": "openai-batch-v10.2e-raw-seal"
+    },
+    "manifest": {
+      "schema": "openai-batch-v10.2e-collected",
+      "collected_utc": "2026-08-25T12:37:53.770349+00:00",
+      "jobs": [
+        {
+          "shard": 1,
+          "batch_id": "batch_6a8d74ba29c48190ae045dc70aa19213",
+          "input_file_id": "file-PbAUgqAZYyvpUxLadi6h9Z",
+          "batch_input_sha256": "c69961ef2aee4b6b6a0eb4be3df71e1c8717f634ab622e920ed1593273307346",
+          "status": "completed",
+          "last_checked_utc": "2026-08-25T12:37:44.204196+00:00"
+        }
+      ],
+      "returned_models": {
+        "gpt-5.6-terra": 661
+      },
+      "usage": {
+        "input_tokens": 6079117,
+        "output_tokens": 1091615,
+        "total_tokens": 7170732
+      },
+      "parsed_requests": 661,
+      "parsed_units": 3963,
+      "parsed_statements": 5564,
+      "parse_failures": [],
+      "hashes": {
+        "sealed_provider_raw_zip": "021179851cef539cf955a4d5890ea93bf13e4a5317b0cae7f722ae084a6c6e34",
+        "provider_parsed_jsonl": "a9d796798788d7a76a9f302c439407888705f82c7c7ada56b74aea287877ef67"
+      }
+    }
+  },
+  "retry": {
+    "seal": {
+      "sha256": "ecea84942618d9417d4e118d52b483baa4ea267d312bf71db84466f2bb93cdbd",
+      "members": 8,
+      "sealed_schema": "openai-batch-v10.2e-source-only-retry-raw-seal"
+    },
+    "manifest": {
+      "schema": "openai-batch-v10.2e-source-only-retry-collected",
+      "collected_utc": "2026-08-25T16:19:50.517592+00:00",
+      "batch_id": "batch_6a8d8f86649c8190bbd72991e594d1e0",
+      "batch_status": "completed",
+      "request_counts": {
+        "total": 176,
+        "completed": 176,
+        "failed": 0
+      },
+      "returned_models": {
+        "gpt-5.6-terra": 176
+      },
+      "usage": {
+        "input_tokens": 1026627,
+        "output_tokens": 443622,
+        "total_tokens": 1470249
+      },
+      "parsed_requests": 176,
+      "parsed_units": 352,
+      "parsed_statements": 1741,
+      "parse_failures": [],
+      "hashes": {
+        "sealed_provider_raw_zip": "ecea84942618d9417d4e118d52b483baa4ea267d312bf71db84466f2bb93cdbd",
+        "retry_provider_parsed_jsonl": "2e4bba398bb99e82950c2164371263f02a5b6d2a963700bf5dc419d42541f550"
+      }
+    },
+    "expected_units": 352,
+    "returned_units": 352,
+    "main_source_support": {
+      "exact_text": 458,
+      "render_review_required": 47,
+      "unsupported": 540,
+      "whitespace_normalized_text": 4519
+    }
+  },
+  "merge": {
+    "schema": "openai-batch-v10.2e-source-only-retry-merge",
+    "created_utc": "2026-08-25T16:20:09.840943+00:00",
+    "replacement_rule": "successful retry unit replaces its complete main-run unit",
+    "failed_retry_rule": "retain main-run unit; deterministic finalizer rejects unsupported spans",
+    "expected_retry_units": 352,
+    "replaced_retry_units": 352,
+    "missing_retry_units": [],
+    "requests": 661,
+    "units": 3963,
+    "statements": 5727,
+    "hashes": {
+      "package_inputs": "6435e0b8823968408ac1477528599dd2dc7aa2cd86ab9c5cae2969d832bb47e6",
+      "main_provider_parsed": "a9d796798788d7a76a9f302c439407888705f82c7c7ada56b74aea287877ef67",
+      "retry_provider_parsed": "2e4bba398bb99e82950c2164371263f02a5b6d2a963700bf5dc419d42541f550",
+      "merged_provider_responses": "3c46bbf6f5b7973f114baa1b3057dea5c77de6f70bf6b9c40106d4452ece5cef"
+    }
+  },
+  "final": {
+    "hash": "79edea9e409976867214ae7fadc3fc9f192f41ae1050a9fa5205d00b0868be69",
+    "requests": 661,
+    "units": 3963,
+    "statements": 5675,
+    "unit_status": {
+      "ok": 2361,
+      "skip_language": 13,
+      "structural_blank": 1589
+    },
+    "source_support": {
+      "exact_text": 5618,
+      "render_review_required": 47,
+      "whitespace_normalized_text": 10
+    },
+    "finalization_counts": {
+      "requests": 661,
+      "units": 3963,
+      "statements_before": 5727,
+      "statements_after": 5675,
+      "quote_en_set_null": 405,
+      "block_id_set_from_frozen_unit": 2,
+      "whitespace_restored_to_exact_source": 3597,
+      "normalized_ambiguous_retained": 10,
+      "unsupported_rejected": 52,
+      "render_review_required": 47,
+      "provider_reported_rejections_before_finalization": null
+    }
+  }
+}

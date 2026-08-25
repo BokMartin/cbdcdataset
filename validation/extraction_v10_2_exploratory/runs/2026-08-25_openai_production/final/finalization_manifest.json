@@ -1,0 +1,35 @@
+{
+  "schema": "cbdc_extraction_provider_finalization_v2",
+  "created_utc": "2026-08-25T16:20:19.196048+00:00",
+  "operation": "deterministic_contract_enforcement_after_provider_retry",
+  "semantic_or_classification_changes": 0,
+  "counts": {
+    "requests": 661,
+    "units": 3963,
+    "statements_before": 5727,
+    "statements_after": 5675,
+    "quote_en_set_null": 405,
+    "block_id_set_from_frozen_unit": 2,
+    "whitespace_restored_to_exact_source": 3597,
+    "normalized_ambiguous_retained": 10,
+    "unsupported_rejected": 52,
+    "render_review_required": 47,
+    "provider_reported_rejections_before_finalization": null
+  },
+  "hashes": {
+    "package_inputs_sha256": "6435e0b8823968408ac1477528599dd2dc7aa2cd86ab9c5cae2969d832bb47e6",
+    "sealed_provider_responses_sha256": "3c46bbf6f5b7973f114baa1b3057dea5c77de6f70bf6b9c40106d4452ece5cef",
+    "finalized_responses_sha256": "79edea9e409976867214ae7fadc3fc9f192f41ae1050a9fa5205d00b0868be69",
+    "audit_sha256": "3250c0ab769245d8c6028ddcaa089e3a06df6a2721fe4c57a4db88c2ad1f558d",
+    "provider_rejections_sha256": null
+  },
+  "rules": {
+    "english_quote_en": "set null from frozen input language metadata",
+    "block_id": "set from frozen unit metadata when provider value differs",
+    "text_span": "exact source substring, else whitespace-stripped containment only",
+    "unique_whitespace_match": "restore exact source substring with offset map",
+    "ambiguous_whitespace_match": "retain provider quote and flag; do not choose an offset",
+    "unsupported_after_retry": "reject and count",
+    "render_only": "retain but require separate visual verification"
+  }
+}

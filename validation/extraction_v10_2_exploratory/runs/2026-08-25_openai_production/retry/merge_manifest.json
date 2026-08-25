@@ -1,0 +1,18 @@
+{
+  "schema": "openai-batch-v10.2e-source-only-retry-merge",
+  "created_utc": "2026-08-25T16:20:09.840943+00:00",
+  "replacement_rule": "successful retry unit replaces its complete main-run unit",
+  "failed_retry_rule": "retain main-run unit; deterministic finalizer rejects unsupported spans",
+  "expected_retry_units": 352,
+  "replaced_retry_units": 352,
+  "missing_retry_units": [],
+  "requests": 661,
+  "units": 3963,
+  "statements": 5727,
+  "hashes": {
+    "package_inputs": "6435e0b8823968408ac1477528599dd2dc7aa2cd86ab9c5cae2969d832bb47e6",
+    "main_provider_parsed": "a9d796798788d7a76a9f302c439407888705f82c7c7ada56b74aea287877ef67",
+    "retry_provider_parsed": "2e4bba398bb99e82950c2164371263f02a5b6d2a963700bf5dc419d42541f550",
+    "merged_provider_responses": "3c46bbf6f5b7973f114baa1b3057dea5c77de6f70bf6b9c40106d4452ece5cef"
+  }
+}

@@ -6,6 +6,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CHECKSUMS = ROOT / "checksums.sha256"
 EXTRA = [
+    "scripts/build_final_adjudication_workbooks_v10_2e.mjs",
+    "scripts/create_backup_snapshot.py",
     "scripts/evaluate_extraction_v10_1.py",
     "scripts/extraction_v10_1.py",
     "scripts/extraction_v10_2.py",
@@ -13,13 +15,18 @@ EXTRA = [
     "scripts/freeze_reference_v10_2.py",
     "scripts/openai_batch_v10_2.py",
     "scripts/openai_batch_production_v10_2e.py",
+    "scripts/openai_production_retry_v10_2e.py",
     "scripts/openai_span_retry_v10_2.py",
+    "scripts/package_final_adjudication_v10_2e.py",
     "scripts/prepare_exploratory_production_v10_2e.py",
+    "scripts/prepare_production_adjudication_v10_2e.py",
     "scripts/prepare_scope_readjudication.py",
     "scripts/update_checksums.py",
     "scripts/verify_extraction_v10_2.py",
+    "scripts/verify_final_adjudication_workbooks_v10_2e.mjs",
     "scripts/verify_exploratory_production_v10_2e.py",
     "scripts/verify_claude_production_v10_2e.py",
+    "scripts/verify_openai_production_v10_2e.py",
     "validation/calibration_v10/calibration_reference_v10_1.csv",
     "validation/calibration_v10/calibration_reference_v10_1.json",
     "validation/calibration_v10/source/CALIBRATION_AUDIT_v10_FINALIZED.xlsx",
@@ -61,13 +68,14 @@ EXTRA_DIRS = [
     "validation/extraction_v10_2/audits",
     "validation/extraction_v10_2/runs",
     "validation/extraction_v10_2_exploratory/freeze",
+    "validation/extraction_v10_2_exploratory/human_review",
     "validation/extraction_v10_2_exploratory/runs",
 ]
 
 
 def digest(path):
     content = path.read_bytes()
-    if path.suffix.lower() in {".csv", ".json", ".sha256"}:
+    if path.suffix.lower() in {".csv", ".json", ".jsonl", ".sha256"}:
         content = content.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
     return hashlib.sha256(content).hexdigest()
 
