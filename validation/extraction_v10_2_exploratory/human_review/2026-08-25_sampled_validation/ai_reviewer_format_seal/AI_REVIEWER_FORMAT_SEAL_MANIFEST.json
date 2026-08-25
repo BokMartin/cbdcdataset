@@ -1,0 +1,58 @@
+{
+  "schema": "cbdc-v10.2e-ai-reviewer-format-public-seal-v1",
+  "status": "plaintext withheld until both blind human-review workbooks are returned and hash-locked",
+  "verification_passed": true,
+  "semantics": {
+    "keep": "provider emitted the candidate; not a human validity judgment",
+    "exclude": "provider did not emit the candidate; exclusion_reason=not_extracted_by_provider",
+    "confidence": "not reported by either provider",
+    "dual_empty_no": "no candidate emitted; not a source-content judgment"
+  },
+  "disagreement_counts": {
+    "sample": {
+      "candidates": 365,
+      "both": 226,
+      "openai_only": 70,
+      "claude_only": 69,
+      "exact_code_set": 87,
+      "same_family_set": 92,
+      "exact_odr_set": 138
+    },
+    "full": {
+      "candidates": 6949,
+      "both": 4307,
+      "openai_only": 1315,
+      "claude_only": 1327,
+      "exact_code_set": 1788,
+      "same_family_set": 1933,
+      "exact_odr_set": 2703
+    }
+  },
+  "files": [
+    {
+      "name": "VALIDATION_SAMPLE_v10_2e_OPENAI_PREFILLED_SEALED.xlsx",
+      "bytes": 730530,
+      "sha256": "6e46ef7412ba9165f60e946e68a02d1be124f2206b7eb2cd3a986f16ed5a9dcd"
+    },
+    {
+      "name": "VALIDATION_SAMPLE_v10_2e_CLAUDE_PREFILLED_SEALED.xlsx",
+      "bytes": 730681,
+      "sha256": "05aa14f008a4385e86d7dec4fce7ae900321e459dbbf71edd96419c42f61bc2e"
+    },
+    {
+      "name": "AI_REVIEWER_WORKBOOK_MANIFEST.json",
+      "bytes": 2585,
+      "sha256": "1bb1c083146dd4e9a069003ddb1166c4725140ab722f11e2febd45ceb34717e3"
+    },
+    {
+      "name": "AI_REVIEWER_WORKBOOK_INDEPENDENT_VERIFICATION.json",
+      "bytes": 3867,
+      "sha256": "96d732343cb1cdc34becf0966ebd324b5bd847dbbb2ca97f345bfddcdb834a91"
+    }
+  ],
+  "archive": {
+    "name": "AI_REVIEWER_FORMAT_v10_2e_SEALED.zip",
+    "bytes": 1444119,
+    "sha256": "23b1aaa1d75579fec789e8faccbb3f109f43af762ab06d5cdca15688e16a3095"
+  }
+}
