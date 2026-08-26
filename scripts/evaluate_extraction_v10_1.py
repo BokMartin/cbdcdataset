@@ -419,7 +419,7 @@ def main():
     parser.add_argument(
         "--reference",
         type=Path,
-        default=ROOT / "validation/calibration_v10/calibration_reference_v10_1.csv",
+        default=ROOT / "data/calibration/reference.csv",
     )
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--threshold", type=float, default=0.80)

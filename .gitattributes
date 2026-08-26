@@ -1,7 +1,4 @@
 * text=auto eol=lf
-*.docx binary
 *.xlsx binary
-*.pdf binary
 *.png binary
-*.zip binary
-validation/extraction_v10_1/runs/** -text -whitespace
+*.gz binary

@@ -5,7 +5,7 @@
   ],
   "inputs": {
     "claude": {
-      "path": "validation/extraction_v10_2_exploratory/runs/2026-08-25_claude_production/claude_extractions_v10_2e_canonical.jsonl",
+      "path": "data/ensemble/claude_extractions.jsonl",
       "sha256": "2d8e31eee4a3592501b86e6c8d7902488873068b9b25d65c955e7c915023f32a"
     },
     "macro": {
@@ -13,7 +13,7 @@
       "sha256": "0fba37e5c6383a94fa66d09c37b011b98ef524ccda5d8e3a2017be03c1fcb096"
     },
     "mapping": {
-      "path": "validation/extraction_v10_2_exploratory/human_review/2026-08-25_final_adjudication/candidate_machine_mapping.csv",
+      "path": "data/ensemble/candidate_machine_mapping.csv",
       "sha256": "c576dee4945df4c319ceb873c775a18e43e558a41955c51ef3e4b3ca08220ffa"
     },
     "metadata": {
@@ -21,7 +21,7 @@
       "sha256": "d923e0ada9ad4f5a807da18b72fa03cd8c78fd8db5f99ca382eca5a7d9fe8217"
     },
     "openai": {
-      "path": "validation/extraction_v10_2_exploratory/runs/2026-08-25_openai_production/final/openai_extractions_v10_2e_canonical.jsonl",
+      "path": "data/ensemble/openai_extractions.jsonl",
       "sha256": "79edea9e409976867214ae7fadc3fc9f192f41ae1050a9fa5205d00b0868be69"
     }
   },
@@ -41,6 +41,6 @@
       "consensus"
     ]
   },
-  "protocol": "validation/extraction_v10_2_exploratory/ENSEMBLE_ANALYSIS_PROTOCOL.md",
+  "protocol": "validation/ENSEMBLE_ANALYSIS_PROTOCOL.md",
   "schema": "cbdc-v10.2e-ensemble-analysis-v1"
 }

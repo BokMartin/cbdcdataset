@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+"""Write or verify hashes for the complete reproducibility bundle."""
+
+from __future__ import annotations
+
 import argparse
 import hashlib
 from pathlib import Path
@@ -5,154 +10,52 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CHECKSUMS = ROOT / "checksums.sha256"
-EXTRA = [
-    "scripts/build_ai_candidate_masters_v10_2e.mjs",
-    "scripts/build_ai_reviewer_workbooks_v10_2e.mjs",
-    "scripts/build_final_adjudication_workbooks_v10_2e.mjs",
-    "scripts/build_website.py",
-    "scripts/create_backup_snapshot.py",
-    "scripts/evaluate_extraction_v10_1.py",
-    "scripts/ensemble_analysis_v10_2e.py",
-    "scripts/extraction_v10_1.py",
-    "scripts/extraction_v10_2.py",
-    "scripts/finalize_provider_output.py",
-    "scripts/freeze_reference_v10_2.py",
-    "scripts/ftp_site_sync.py",
-    "scripts/openai_batch_v10_2.py",
-    "scripts/openai_batch_production_v10_2e.py",
-    "scripts/openai_production_retry_v10_2e.py",
-    "scripts/openai_span_retry_v10_2.py",
-    "scripts/package_ai_candidate_masters_v10_2e.py",
-    "scripts/package_ai_reviewer_workbooks_v10_2e.py",
-    "scripts/package_final_adjudication_v10_2e.py",
-    "scripts/package_sampled_validation_v10_2e.py",
-    "scripts/prepare_exploratory_production_v10_2e.py",
-    "scripts/prepare_production_adjudication_v10_2e.py",
-    "scripts/prepare_ai_candidate_masters_v10_2e.py",
-    "scripts/prepare_sampled_validation_v10_2e.py",
-    "scripts/prepare_scope_readjudication.py",
-    "scripts/update_paper_sampled_validation_v10_2e.py",
-    "scripts/update_checksums.py",
-    "scripts/verify_extraction_v10_2.py",
-    "scripts/verify_ensemble_analysis_v10_2e.py",
-    "scripts/verify_ai_candidate_masters_v10_2e.mjs",
-    "scripts/verify_ai_reviewer_workbooks_v10_2e.mjs",
-    "scripts/verify_final_adjudication_workbooks_v10_2e.mjs",
-    "scripts/verify_exploratory_production_v10_2e.py",
-    "scripts/verify_claude_production_v10_2e.py",
-    "scripts/verify_openai_production_v10_2e.py",
-    "scripts/verify_website_http.py",
-    "validation/calibration_v10/calibration_reference_v10_1.csv",
-    "validation/calibration_v10/calibration_reference_v10_1.json",
-    "validation/calibration_v10/source/CALIBRATION_AUDIT_v10_FINALIZED.xlsx",
-    "validation/extraction_v10_1/PROMPT_CORE.md",
-    "validation/extraction_v10_1/PROTOCOL.md",
-    "validation/extraction_v10_1/TASK_CODEX.md",
-    "validation/extraction_v10_1/TASK_CLAUDE.md",
-    "validation/extraction_v10_1/output_schema.json",
-    "validation/extraction_v10_1/pricing.json",
-    "validation/extraction_v10_1/run_config.json",
-    "validation/extraction_v10_2/PROMPT_CORE.md",
-    "validation/extraction_v10_2/PROTOCOL.md",
-    "validation/extraction_v10_2/CLAUDE_AUDIT_HANDOVER_v10_2.md",
-    "validation/extraction_v10_2/REFERENCE_REVIEW.md",
-    "validation/extraction_v10_2/TASK_CLAUDE.md",
-    "validation/extraction_v10_2/TASK_CODEX.md",
-    "validation/extraction_v10_2/authority_overrides.json",
-    "validation/extraction_v10_2/BATCH_INPUT_FREEZE_v10_2.json",
-    "validation/extraction_v10_2/codebook_overrides.json",
-    "validation/extraction_v10_2/output_schema.json",
-    "validation/extraction_v10_2/matching_erratum_v10_2.json",
-    "validation/extraction_v10_2/reference/SCOPE_READJUDICATION_v10_2_FROZEN.xlsx",
-    "validation/extraction_v10_2/reference/author_decisions_v10_2.json",
-    "validation/extraction_v10_2/reference/calibration_reference_v10_2.csv",
-    "validation/extraction_v10_2/reference/calibration_reference_v10_2.json",
-    "validation/extraction_v10_2/reference/reference_changes_v10_2.csv",
-    "validation/extraction_v10_2/run_config.json",
-    "validation/extraction_v10_2_exploratory/CLAUDE_HANDOFF_PROMPT.md",
-    "validation/extraction_v10_2_exploratory/PROTOCOL_AMENDMENT.md",
-    "validation/extraction_v10_2_exploratory/PROTOCOL_AMENDMENT_2_SAMPLED_VALIDATION.md",
-    "validation/extraction_v10_2_exploratory/ENSEMBLE_ANALYSIS_PROTOCOL.md",
-    "validation/extraction_v10_2_exploratory/PACKAGE_FREEZE.json",
-    "validation/extraction_v10_2_exploratory/TASK_CLAUDE.md",
-    "validation/extraction_v10_2_exploratory/TASK_CODEX.md",
-    "validation/extraction_v10_2_exploratory/document_authority_overrides.json",
-    "validation/extraction_v10_2_exploratory/owner_by_jurisdiction.json",
-    "validation/extraction_v10_2_exploratory/run_config.production.json",
-]
-EXTRA_DIRS = [
-    "validation/extraction_v10_1/runs",
-    "validation/extraction_v10_2/audits",
-    "validation/extraction_v10_2/runs",
-    "validation/extraction_v10_2_exploratory/freeze",
-    "validation/extraction_v10_2_exploratory/human_review",
-    "validation/extraction_v10_2_exploratory/runs",
-    "results/v10_2e_ensemble",
-    "website",
-    "website_src",
-]
-PRUNABLE_GENERATED_PREFIXES = ("website/", "website_src/")
+ROOT_FILES = ("run.py", "requirements.txt")
+INCLUDED_DIRS = ("data", "validation", "results", "figures", "scripts")
+TEXT_SUFFIXES = {
+    ".csv", ".css", ".html", ".js", ".json", ".jsonl", ".md", ".py",
+    ".sha256", ".txt", ".yaml", ".yml",
+}
 
 
-def digest(path):
+def digest(path: Path) -> str:
     content = path.read_bytes()
-    if path.suffix.lower() in {".csv", ".json", ".jsonl", ".js", ".sha256"}:
+    if path.suffix.lower() in TEXT_SUFFIXES:
         content = content.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
     return hashlib.sha256(content).hexdigest()
 
 
-def main():
+def discover_files() -> list[str]:
+    paths = [ROOT / name for name in ROOT_FILES]
+    for directory in INCLUDED_DIRS:
+        paths.extend((ROOT / directory).rglob("*"))
+    return sorted(
+        path.relative_to(ROOT).as_posix()
+        for path in paths
+        if path.is_file()
+        and "__pycache__" not in path.parts
+        and path.suffix.lower() != ".pyc"
+        and not path.name.startswith("~$")
+    )
+
+
+def rendered_checksums() -> str:
+    return "".join(f"{digest(ROOT / name)}  {name}\n" for name in discover_files())
+
+
+def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--write", action="store_true")
-    parser.add_argument(
-        "--preserve",
-        action="append",
-        default=[],
-        help="retain the existing checksum for a deliberately modified working file",
-    )
+    parser.add_argument("--write", action="store_true", help="replace checksums.sha256")
     args = parser.parse_args()
-    existing = {
-        line.split(maxsplit=1)[1].strip(): line.split(maxsplit=1)[0]
-        for line in CHECKSUMS.read_text(encoding="utf-8").splitlines()
-    }
-    names = list(existing)
-    names = [
-        name for name in names
-        if "__pycache__" not in Path(name).parts and Path(name).suffix.lower() != ".pyc"
-        and Path(name).name != "sample_machine_mapping.csv"
-    ]
-    names += [name for name in EXTRA if name not in names]
-    for directory in EXTRA_DIRS:
-        names += [
-            path.relative_to(ROOT).as_posix()
-            for path in sorted((ROOT / directory).rglob("*"))
-            if path.is_file()
-            and not path.name.startswith("~$")
-            and path.name != "sample_machine_mapping.csv"
-            and "__pycache__" not in path.parts
-            and path.suffix.lower() != ".pyc"
-            and path.relative_to(ROOT).as_posix() not in names
-        ]
-    missing = [name for name in names if not (ROOT / name).is_file()]
-    unexpected_missing = [
-        name for name in missing
-        if not name.startswith(PRUNABLE_GENERATED_PREFIXES)
-    ]
-    if unexpected_missing:
-        raise FileNotFoundError(", ".join(unexpected_missing))
-    names = [name for name in names if name not in missing]
-    preserve = set(args.preserve)
-    unknown_preserve = preserve - set(existing)
-    if unknown_preserve:
-        raise ValueError(f"Cannot preserve unknown checksum entries: {sorted(unknown_preserve)}")
-    text = "".join(
-        f"{existing[name] if name in preserve else digest(ROOT / name)}  {name}\n"
-        for name in names
-    )
+    rendered = rendered_checksums()
     if args.write:
-        CHECKSUMS.write_text(text, encoding="utf-8", newline="\n")
-    else:
-        print(text, end="")
+        CHECKSUMS.write_text(rendered, encoding="utf-8", newline="\n")
+        print(f"wrote {len(discover_files())} checksums")
+        return
+    current = CHECKSUMS.read_text(encoding="utf-8")
+    if current != rendered:
+        raise SystemExit("checksums.sha256 is stale; run with --write after reviewing changes")
+    print(f"checksums: {len(discover_files())} files verified")
 
 
 if __name__ == "__main__":

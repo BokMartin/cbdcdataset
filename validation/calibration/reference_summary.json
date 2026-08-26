@@ -1,0 +1,38 @@
+{
+  "schema_version": "calibration-reference-v10.2",
+  "frozen": true,
+  "reserve_status": "sealed",
+  "row_count": 351,
+  "page_count": 78,
+  "truth_counts": {
+    "excluded": 60,
+    "negative": 209,
+    "positive": 82
+  },
+  "probability_truth_counts": {
+    "excluded": 40,
+    "negative": 186,
+    "positive": 64
+  },
+  "scope_decision_counts": {
+    "exclude": 45,
+    "keep": 24
+  },
+  "transition_counts": {
+    "negative->excluded": 23,
+    "negative->positive": 8,
+    "positive->excluded": 22,
+    "positive->positive": 16
+  },
+  "accepted_final_checks": 25,
+  "single_author_readjudication": true,
+  "base_reference": "superseded v10.1 reference (not distributed)",
+  "base_reference_sha256": "3e9b318b8de25ccfc682c07db263c668d111fc63ad22e52e34bc8c5db86fbadc",
+  "decisions": "validation/calibration/author_decisions.json",
+  "decisions_sha256": "e3f51a491ef94e3a1588be24cb7628cf3ce96fd1db24c430e640ac77c20f1bb2",
+  "source_workbook_sha256": "557a4bf0d8d13f923df4d64b59565937a2e3c2348a0f36d34584882f6a455f70",
+  "reference_csv": "data/calibration/reference.csv",
+  "reference_csv_sha256": "c9cb5a8c6b92e2e917854908c68125384bc783b4ae7b62c9347ab97753775e96",
+  "change_log_csv": "validation/calibration/reference_changes.csv",
+  "change_log_csv_sha256": "076e1c8ca6495575ec09936b6f19d6c89ca1a3bd8156695ca41eb92c9c7587e7"
+}

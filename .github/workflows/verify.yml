@@ -13,4 +13,4 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python run.py
-      - run: git diff --exit-code -- results validation/split.csv validation/sample.csv
+      - run: git diff --exit-code -- results figures

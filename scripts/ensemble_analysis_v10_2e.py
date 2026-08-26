@@ -455,17 +455,17 @@ def main() -> None:
     parser.add_argument(
         "--mapping",
         type=Path,
-        default=ROOT / "validation/extraction_v10_2_exploratory/human_review/2026-08-25_final_adjudication/candidate_machine_mapping.csv",
+        default=ROOT / "data/ensemble/candidate_machine_mapping.csv",
     )
     parser.add_argument(
         "--openai",
         type=Path,
-        default=ROOT / "validation/extraction_v10_2_exploratory/runs/2026-08-25_openai_production/final/openai_extractions_v10_2e_canonical.jsonl",
+        default=ROOT / "data/ensemble/openai_extractions.jsonl",
     )
     parser.add_argument(
         "--claude",
         type=Path,
-        default=ROOT / "validation/extraction_v10_2_exploratory/runs/2026-08-25_claude_production/claude_extractions_v10_2e_canonical.jsonl",
+        default=ROOT / "data/ensemble/claude_extractions.jsonl",
     )
     parser.add_argument("--metadata", type=Path, default=ROOT / "data/jurisdictions.csv")
     parser.add_argument("--macro", type=Path, default=ROOT / "data/macro.xlsx")
@@ -530,7 +530,7 @@ def main() -> None:
     outputs = [allocations_path, scores_path, distributions_path, summary_path, macro_path]
     manifest = {
         "schema": "cbdc-v10.2e-ensemble-analysis-v1",
-        "protocol": "validation/extraction_v10_2_exploratory/ENSEMBLE_ANALYSIS_PROTOCOL.md",
+        "protocol": "validation/ENSEMBLE_ANALYSIS_PROTOCOL.md",
         "inputs": {
             "mapping": {"path": args.mapping.relative_to(ROOT).as_posix(), "sha256": sha256(args.mapping)},
             "openai": {"path": args.openai.relative_to(ROOT).as_posix(), "sha256": sha256(args.openai)},
