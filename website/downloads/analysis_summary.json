@@ -1,0 +1,111 @@
+{
+  "agreement_among_both": {
+    "both": 4307,
+    "exact_code_set": 1788,
+    "exact_code_set_rate": 0.4151381472022289,
+    "exact_family_set": 1933,
+    "exact_family_set_rate": 0.4488042721151614,
+    "exact_odr_set": 2703,
+    "exact_odr_set_rate": 0.6275830044114232
+  },
+  "analytic_candidate_mass": {
+    "claude": 4094.0,
+    "consensus": 1371.5,
+    "ensemble": 5306.5,
+    "openai": 4511.0
+  },
+  "candidate_population": 6949,
+  "dominant_centres": {
+    "claude": {
+      "cash_substitution": 4,
+      "financial_inclusion": 6,
+      "monetary_transmission": 4,
+      "payment_modernization": 5,
+      "sovereignty_competition": 12,
+      "state_control": 16
+    },
+    "consensus": {
+      "cash_substitution": 3,
+      "financial_inclusion": 10,
+      "monetary_transmission": 5,
+      "payment_modernization": 13,
+      "sovereignty_competition": 7,
+      "state_control": 9
+    },
+    "ensemble": {
+      "cash_substitution": 4,
+      "financial_inclusion": 4,
+      "monetary_transmission": 6,
+      "payment_modernization": 12,
+      "sovereignty_competition": 7,
+      "state_control": 14
+    },
+    "openai": {
+      "cash_substitution": 3,
+      "financial_inclusion": 8,
+      "monetary_transmission": 6,
+      "payment_modernization": 12,
+      "sovereignty_competition": 9,
+      "state_control": 9
+    }
+  },
+  "human_validation": {
+    "candidate_population": 6949,
+    "candidate_sample": 365,
+    "dual_empty_population": 359,
+    "dual_empty_sample": 36,
+    "status": "pending_blind_double_review"
+  },
+  "origin_type": {
+    "both": 4307,
+    "claude_only": 1327,
+    "openai_only": 1315
+  },
+  "provider_candidate_population": {
+    "claude": 5634,
+    "openai": 5622
+  },
+  "purpose_calibration_thresholds": {
+    "cash_substitution": [
+      0.0,
+      0.10344827586206896,
+      0.3559007252215953
+    ],
+    "financial_inclusion": [
+      0.0,
+      0.06026058631921824,
+      0.32259313413858826
+    ],
+    "monetary_transmission": [
+      0.01093368700265252,
+      0.09713993871297243,
+      0.43298248015329865
+    ],
+    "payment_modernization": [
+      0.0536842105263158,
+      0.3119211822660099,
+      0.46628434868311724
+    ],
+    "sovereignty_competition": [
+      0.0,
+      0.03800904977375566,
+      0.1552450090744101
+    ],
+    "state_control": [
+      0.0,
+      0.1234798877455566,
+      0.2864358543417367
+    ]
+  },
+  "state_privacy_calibration_threshold": [
+    -0.756639566395664,
+    0.20625,
+    1.0
+  ],
+  "variant_candidate_population": {
+    "claude": 5634,
+    "consensus": 1788,
+    "ensemble": 6949,
+    "openai": 5622
+  }
+}

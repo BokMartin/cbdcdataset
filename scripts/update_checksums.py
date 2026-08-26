@@ -9,6 +9,7 @@ EXTRA = [
     "scripts/build_ai_candidate_masters_v10_2e.mjs",
     "scripts/build_ai_reviewer_workbooks_v10_2e.mjs",
     "scripts/build_final_adjudication_workbooks_v10_2e.mjs",
+    "scripts/build_website.py",
     "scripts/create_backup_snapshot.py",
     "scripts/evaluate_extraction_v10_1.py",
     "scripts/ensemble_analysis_v10_2e.py",
@@ -16,6 +17,7 @@ EXTRA = [
     "scripts/extraction_v10_2.py",
     "scripts/finalize_provider_output.py",
     "scripts/freeze_reference_v10_2.py",
+    "scripts/ftp_site_sync.py",
     "scripts/openai_batch_v10_2.py",
     "scripts/openai_batch_production_v10_2e.py",
     "scripts/openai_production_retry_v10_2e.py",
@@ -39,6 +41,7 @@ EXTRA = [
     "scripts/verify_exploratory_production_v10_2e.py",
     "scripts/verify_claude_production_v10_2e.py",
     "scripts/verify_openai_production_v10_2e.py",
+    "scripts/verify_website_http.py",
     "validation/calibration_v10/calibration_reference_v10_1.csv",
     "validation/calibration_v10/calibration_reference_v10_1.json",
     "validation/calibration_v10/source/CALIBRATION_AUDIT_v10_FINALIZED.xlsx",
@@ -85,6 +88,8 @@ EXTRA_DIRS = [
     "validation/extraction_v10_2_exploratory/human_review",
     "validation/extraction_v10_2_exploratory/runs",
     "results/v10_2e_ensemble",
+    "website",
+    "website_src",
 ]
 
 
@@ -98,8 +103,18 @@ def digest(path):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--write", action="store_true")
+    parser.add_argument(
+        "--preserve",
+        action="append",
+        default=[],
+        help="retain the existing checksum for a deliberately modified working file",
+    )
     args = parser.parse_args()
-    names = [line.split(maxsplit=1)[1].strip() for line in CHECKSUMS.read_text(encoding="utf-8").splitlines()]
+    existing = {
+        line.split(maxsplit=1)[1].strip(): line.split(maxsplit=1)[0]
+        for line in CHECKSUMS.read_text(encoding="utf-8").splitlines()
+    }
+    names = list(existing)
     names = [
         name for name in names
         if "__pycache__" not in Path(name).parts and Path(name).suffix.lower() != ".pyc"
@@ -120,7 +135,14 @@ def main():
     missing = [name for name in names if not (ROOT / name).is_file()]
     if missing:
         raise FileNotFoundError(", ".join(missing))
-    text = "".join(f"{digest(ROOT / name)}  {name}\n" for name in names)
+    preserve = set(args.preserve)
+    unknown_preserve = preserve - set(existing)
+    if unknown_preserve:
+        raise ValueError(f"Cannot preserve unknown checksum entries: {sorted(unknown_preserve)}")
+    text = "".join(
+        f"{existing[name] if name in preserve else digest(ROOT / name)}  {name}\n"
+        for name in names
+    )
     if args.write:
         CHECKSUMS.write_text(text, encoding="utf-8", newline="\n")
     else:

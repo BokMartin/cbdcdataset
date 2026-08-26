@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CBDC Dataset — Institutional determinants of privacy design</title>
+  <meta name="description" content="A reproducible, multilingual analysis of privacy design in 113 official CBDC documents using independent OpenAI and Claude extraction.">
+  <meta property="og:title" content="CBDC Dataset — Privacy design in central bank digital currencies">
+  <meta property="og:description" content="113 documents, 3,963 pages, two independent LLM extractors, source-verified evidence and an explicit human-validation boundary.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cbdcdataset.org/">
+  <meta property="og:image" content="https://cbdcdataset.org/assets/ensemble-composition.png">
+  <link rel="canonical" href="https://cbdcdataset.org/">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="CBDC Dataset home">
+      <span class="brand-mark">C</span>
+      <span>CBDC Dataset</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#findings">Findings</a>
+      <a href="#method">Method</a>
+      <a href="#data">Data</a>
+      <a href="#paper">Paper</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow">CBDC research · version 10.2e</div>
+        <h1>Institutional determinants of privacy design in central bank digital currencies</h1>
+        <p class="lede">We separate how often central banks <em>talk</em> about privacy from what their documents actually <em>commit</em> to. The evidence comes from a frozen multilingual corpus, two independent LLM extractors and exact source-span verification.</p>
+        <div class="actions">
+          <a class="button primary" href="#findings">See the findings</a>
+          <a class="button" href="downloads/cbdc-msed-v10-paper.pdf">Download the paper</a>
+          <a class="button" href="https://github.com/BokMartin/cbdc-msed-v10">View the repository</a>
+        </div>
+        <div class="status-note" role="note">
+          <strong>Research status:</strong> exploratory production results. The pre-frozen double-blind human audit is in progress and will be inserted before submission.
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Corpus at a glance">
+        <div class="metric"><strong>113</strong><span>official or authority-attributed documents</span></div>
+        <div class="metric"><strong>3,963</strong><span>source pages in the frozen corpus</span></div>
+        <div class="metric"><strong>11,358</strong><span>source-verified provider statements</span></div>
+        <div class="metric"><strong>6,949</strong><span>deduplicated evidence candidates</span></div>
+      </aside>
+    </section>
+
+    <section class="section" id="findings">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">What the current data say</div>
+          <h2>Three results, with the uncertainty left visible</h2>
+        </div>
+        <p>These are descriptive associations, not causal estimates. The paper reports provider-specific variants and the full ensemble.</p>
+      </div>
+      <div class="cards findings-grid">
+        <article class="card">
+          <div class="card-number">01</div>
+          <h3>Privacy vocabulary is a weak proxy for commitment</h3>
+          <p>The correlation between privacy-family frequency and documented privacy posture is <strong>r = 0.219</strong>. The two measures share only <strong>4.8%</strong> of their variance.</p>
+          <p class="small">95% bootstrap CI [−0.102, 0.525]; n = 39.</p>
+        </article>
+        <article class="card">
+          <div class="card-number">02</div>
+          <h3>No institutional correlate survives correction</h3>
+          <p>The largest commitment-side association is with the informal economy: <strong>r = −0.286</strong>. Its interval touches zero and the Holm-adjusted p-value is 0.651, so this is a research lead, not a confirmed finding.</p>
+          <p class="small">95% bootstrap CI [−0.532, 0.007]; n = 38.</p>
+        </article>
+        <article class="card">
+          <div class="card-number">03</div>
+          <h3>Model choice materially changes the evidence map</h3>
+          <p>Among candidates found by both providers, exact code-set agreement is <strong>41.5%</strong>. Single-provider candidates make up <strong>38.0%</strong> of the union.</p>
+          <p class="small">The primary analysis retains disagreements as fractional votes rather than deleting or averaging them.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="method">
+      <div>
+        <div class="eyebrow">Method</div>
+        <h2>A reproducible boundary around LLM-assisted extraction</h2>
+        <p>OpenAI and Claude processed byte-identical, frozen source packages and codebooks independently. Every accepted statement required an exact source quote, a substantive code, observation/decision/recommendation status, and privacy fields where applicable. Raw provider outputs were archived before deterministic parsing.</p>
+        <ol class="pipeline" aria-label="Research pipeline">
+          <li><span>1</span><div><strong>Freeze the corpus</strong><p>113 documents, 3,963 page units, SHA-256 manifests.</p></div></li>
+          <li><span>2</span><div><strong>Extract independently</strong><p>OpenAI and Claude see the same source units but not each other.</p></div></li>
+          <li><span>3</span><div><strong>Verify source spans</strong><p>Unsupported quotations are rejected; at most one source-only retry is permitted.</p></div></li>
+          <li><span>4</span><div><strong>Build the ensemble</strong><p>One candidate has unit mass; provider and code disagreements remain explicit.</p></div></li>
+          <li><span>5</span><div><strong>Audit a probability sample</strong><p>Both authors independently review 365 candidates and 36 dual-empty units.</p></div></li>
+        </ol>
+      </div>
+      <div class="method-side">
+        <h3>Controlled calibration</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Extractor</th><th>Precision</th><th>Recall</th><th>Span fidelity</th></tr></thead>
+            <tbody>
+              <tr><td>OpenAI</td><td>1.000</td><td>0.625</td><td>1.000</td></tr>
+              <tr><td>Claude</td><td>0.977</td><td>0.656</td><td>1.000</td></tr>
+              <tr><td>Verified union</td><td>0.980</td><td>0.766</td><td>1.000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="warning">
+          <strong>Why the results are labelled exploratory</strong>
+          <p>The verified union passed precision and span-fidelity gates but failed the predeclared recall threshold. It is analysed as a source-verified candidate dataset, not automated gold.</p>
+        </div>
+        <h3>Human validation boundary</h3>
+        <ul class="clean-list">
+          <li>365 of 6,949 candidates (5.2526%)</li>
+          <li>36 of 359 dual-empty units</li>
+          <li>independent, blinded coding by both authors</li>
+          <li>disagreements adjudicated only after both files are hash-locked</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Provider sensitivity</div>
+          <h2>The ensemble is primary; each model remains visible</h2>
+        </div>
+        <p>Consensus-only evidence is a selected high-overlap subset, not a neutral adjudicator. Provider variants show how much interpretation changes with model selection.</p>
+      </div>
+      <div class="figure-grid">
+        <figure>
+          <img src="assets/ensemble-composition.png" alt="Dominant CBDC purpose counts for the ensemble, OpenAI, and Claude">
+          <figcaption><strong>Figure 1.</strong> Dominant purpose centres for 47 entities with decision or proposal evidence.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/model-sensitivity.png" alt="Institutional correlation estimates for the ensemble, OpenAI, and Claude">
+          <figcaption><strong>Figure 2.</strong> Provider sensitivity of institutional correlations. Grey lines show the provider range.</figcaption>
+        </figure>
+      </div>
+      <div class="interpretation">
+        <strong>Plain-language interpretation</strong>
+        <p>Central banks can discuss privacy frequently without documenting privacy-preserving design choices. Economies with larger informal sectors show a tendency toward less privacy-preserving commitments in this sample, but the statistical uncertainty is too large to call that a settled result. It is a justified hypothesis for a larger follow-up study.</p>
+      </div>
+    </section>
+
+    <section class="section" id="data">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Derived data</div>
+          <h2>Inspect the entity-level ensemble</h2>
+        </div>
+        <p>Search the primary ensemble below. Scores are exploratory until the sampled human audit is complete.</p>
+      </div>
+      <div class="data-tools">
+        <label for="entity-search">Search country or jurisdiction</label>
+        <input id="entity-search" type="search" placeholder="e.g. Canada" autocomplete="off">
+      </div>
+      <div class="table-wrap tall">
+        <table id="entity-table">
+          <thead>
+            <tr>
+              <th data-sort="country">Country</th>
+              <th data-sort="dominant_centre">Dominant purpose</th>
+              <th data-sort="privacy_family_share">Privacy-family share</th>
+              <th data-sort="privacy_posture">Privacy posture</th>
+              <th data-sort="analytic_candidate_mass">Candidate mass</th>
+            </tr>
+          </thead>
+          <tbody><tr><td colspan="5">Loading data…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="small">Privacy posture is a signed, source-anchored aggregate. Positive values indicate more privacy-increasing than privacy-decreasing documented choices after weighting; zero is not proof of privacy neutrality.</p>
+      <div class="downloads">
+        <a href="downloads/entity_scores.csv" download><strong>Entity scores</strong><span>CSV · all analysis variants</span></a>
+        <a href="downloads/distributions.csv" download><strong>Code distributions</strong><span>CSV · weighted category shares</span></a>
+        <a href="downloads/candidate_allocations.csv.gz" download><strong>Candidate allocations</strong><span>GZIP CSV · source-verified evidence map</span></a>
+        <a href="downloads/analysis_summary.json" download><strong>Analysis summary</strong><span>JSON · counts and agreement</span></a>
+        <a href="downloads/macro_results.json" download><strong>Statistical results</strong><span>JSON · estimates, intervals and tests</span></a>
+        <a href="downloads/checksums.sha256" download><strong>Checksums</strong><span>SHA-256 · verify every download</span></a>
+      </div>
+    </section>
+
+    <section class="section paper-section" id="paper">
+      <div>
+        <div class="eyebrow">MSED 2026 paper</div>
+        <h2>Read the current nine-page manuscript</h2>
+        <p>The manuscript contains the complete frozen method, calibration results, ensemble analysis, provider sensitivity and explicit placeholders for the ongoing human audit. It should not be cited as final until those fields are replaced.</p>
+        <div class="actions">
+          <a class="button primary" href="downloads/cbdc-msed-v10-paper.pdf">Download PDF</a>
+          <a class="button" href="https://github.com/BokMartin/cbdc-msed-v10">Reproduce from GitHub</a>
+        </div>
+      </div>
+      <div class="citation">
+        <h3>Working citation</h3>
+        <p>Bok, Martin &amp; Stroukal, Dominik (2026). “Institutional Determinants of Privacy Design in Central Bank Digital Currencies.” Working paper prepared for MSED 2026.</p>
+        <button class="copy-button" type="button" data-copy="Bok, Martin & Stroukal, Dominik (2026). Institutional Determinants of Privacy Design in Central Bank Digital Currencies. Working paper prepared for MSED 2026.">Copy citation</button>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">About</div>
+          <h2>Authors and availability</h2>
+        </div>
+      </div>
+      <div class="author-grid">
+        <article class="card">
+          <h3>Martin Bok</h3>
+          <p>Prague University of Economics and Business<br>Faculty of International Relations</p>
+          <a href="mailto:bokm00@vse.cz">bokm00@vse.cz</a>
+        </article>
+        <article class="card">
+          <h3>Dominik Stroukal</h3>
+          <p>Metropolitan University Prague</p>
+          <a href="mailto:dominik.stroukal@mup.cz">dominik.stroukal@mup.cz</a>
+        </article>
+        <article class="card release-card">
+          <h3>Reproducibility</h3>
+          <p>Code, manifests, frozen protocols, provider archives and derived outputs are versioned in the project repository. Source documents remain subject to their publishers’ terms.</p>
+          <a href="https://github.com/BokMartin/cbdc-msed-v10">github.com/BokMartin/cbdc-msed-v10</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>CBDC Dataset</strong><span>Version 10.2e · updated 26 August 2026</span></div>
+    <div><a href="downloads/deployment_manifest.json">Build manifest</a><a href="https://github.com/BokMartin/cbdc-msed-v10">GitHub</a><a href="mailto:bokm00@vse.cz">Contact</a></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "schema": "cbdc-v10.2e-website-build-v1",
+  "research_status": "exploratory; sampled double-blind human validation pending",
+  "build_date": "2026-08-26",
+  "site_url": "https://cbdcdataset.org/",
+  "entity_rows": 47,
+  "headline_values": {
+    "counts": {
+      "documents": 113,
+      "pages": 3963,
+      "units": 3963,
+      "requests": 661,
+      "render_pages": 345,
+      "empty_text_render_pages": 74,
+      "codes": 35
+    },
+    "provider_statements": 11358,
+    "DOCUMENTS": "113",
+    "PAGES": "3,963",
+    "STATEMENTS": "11,358",
+    "CANDIDATES": "6,949",
+    "MEASUREMENT_R": "0.219",
+    "MEASUREMENT_VARIANCE": "4.8",
+    "MEASUREMENT_CI": "[−0.102, 0.525]",
+    "MEASUREMENT_N": 39,
+    "SHADOW_R": "−0.286",
+    "SHADOW_CI": "[−0.532, 0.007]",
+    "SHADOW_N": 38,
+    "SHADOW_PHOLM": "0.651",
+    "EXACT_CODE_RATE": "41.5",
+    "SINGLE_PROVIDER_RATE": "38.0",
+    "UPDATED": "26 August 2026"
+  },
+  "sources": {
+    "results/v10_2e_ensemble/analysis_summary.json": "1a48af5d62a8a7c586ddc5f11e6b13e19126bd3c33fdfffff913970b89cd196b",
+    "results/v10_2e_ensemble/macro_results.json": "97689b0020d47c3731116c67fbeaaac70ec4cd864506fa9408cf5aacf3c12dac",
+    "results/v10_2e_ensemble/entity_scores.csv": "a41857ca14e3805875b79f7e9ee5888fb8de224b9b93068039140925abcabf83",
+    "results/v10_2e_ensemble/distributions.csv": "df924b9886e799ae626cc68faa4ec8a787ecf823706c27883295058377e4a7e5",
+    "results/v10_2e_ensemble/candidate_allocations.csv.gz": "14d033fa7b2877f9960fcf033eb383dbc144f968dcfed1fa0d6837228408d05e",
+    "paper/current.pdf": "a004cea4d8be50ff855e6532bf7df4b1e48fbb65bb7014b3c2fef51900b931fa",
+    "figures/v10_2e_ensemble_composition.png": "21d893c4856902de8c5022aabc70f82f5bb06694744556ddba3b2c84bd51fe5b",
+    "figures/v10_2e_model_sensitivity.png": "784059556ac3757a6045ba09724204ae1ce6e386b0a466e94f36cf72cb59b568"
+  }
+}
