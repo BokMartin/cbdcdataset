@@ -108,7 +108,7 @@ def main() -> None:
             for name in ("Date", "Last-Modified", "ETag", "Age", "Cache-Control", "Server", "Via", "X-Cache")
             if response.headers.get(name) is not None
         }
-    markers = [b"113 documents", b"3,963 page units", b"6,949", b"human audit is in progress"]
+    markers = [b"113 documents", b"3,963 page units", b"6,949", b"human audit is still in progress"]
     missing_markers = [value.decode("ascii") for value in markers if value not in root_body]
 
     report = {
