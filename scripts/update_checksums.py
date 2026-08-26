@@ -91,11 +91,12 @@ EXTRA_DIRS = [
     "website",
     "website_src",
 ]
+PRUNABLE_GENERATED_PREFIXES = ("website/", "website_src/")
 
 
 def digest(path):
     content = path.read_bytes()
-    if path.suffix.lower() in {".csv", ".json", ".jsonl", ".sha256"}:
+    if path.suffix.lower() in {".csv", ".json", ".jsonl", ".js", ".sha256"}:
         content = content.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
     return hashlib.sha256(content).hexdigest()
 
@@ -133,8 +134,13 @@ def main():
             and path.relative_to(ROOT).as_posix() not in names
         ]
     missing = [name for name in names if not (ROOT / name).is_file()]
-    if missing:
-        raise FileNotFoundError(", ".join(missing))
+    unexpected_missing = [
+        name for name in missing
+        if not name.startswith(PRUNABLE_GENERATED_PREFIXES)
+    ]
+    if unexpected_missing:
+        raise FileNotFoundError(", ".join(unexpected_missing))
+    names = [name for name in names if name not in missing]
     preserve = set(args.preserve)
     unknown_preserve = preserve - set(existing)
     if unknown_preserve:

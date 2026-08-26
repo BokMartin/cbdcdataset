@@ -1,0 +1,2092 @@
+{
+  "schema": "cbdc-v10.2e-map-v1",
+  "generated_from": "data/stages.csv + data/documents.csv + results/v10_2e_ensemble/entity_scores.csv",
+  "status": "exploratory; sampled double-blind human validation pending",
+  "stage_counts": {
+    "not_applicable": 2,
+    "paused_research": 22,
+    "active_research": 13,
+    "pilot": 10,
+    "cancelled": 1,
+    "live": 1
+  },
+  "countries": {
+    "28": {
+      "jur": "ECCU",
+      "via": "member of ECCU"
+    },
+    "36": {
+      "jur": "AU",
+      "via": null
+    },
+    "40": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "44": {
+      "jur": "BS",
+      "via": null
+    },
+    "51": {
+      "jur": "AM",
+      "via": null
+    },
+    "56": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "68": {
+      "jur": "BO",
+      "via": null
+    },
+    "76": {
+      "jur": "BR",
+      "via": null
+    },
+    "124": {
+      "jur": "CA",
+      "via": null
+    },
+    "156": {
+      "jur": "CN",
+      "via": null
+    },
+    "170": {
+      "jur": "CO",
+      "via": null
+    },
+    "191": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "196": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "203": {
+      "jur": "CZ",
+      "via": null
+    },
+    "208": {
+      "jur": "DK",
+      "via": null
+    },
+    "212": {
+      "jur": "ECCU",
+      "via": "member of ECCU"
+    },
+    "233": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "246": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "250": {
+      "jur": "FR",
+      "via": null
+    },
+    "276": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "288": {
+      "jur": "GH",
+      "via": null
+    },
+    "300": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "308": {
+      "jur": "ECCU",
+      "via": "member of ECCU"
+    },
+    "344": {
+      "jur": "HK",
+      "via": null
+    },
+    "348": {
+      "jur": "HU",
+      "via": null
+    },
+    "352": {
+      "jur": "IS",
+      "via": null
+    },
+    "356": {
+      "jur": "IN",
+      "via": null
+    },
+    "360": {
+      "jur": "ID",
+      "via": null
+    },
+    "372": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "376": {
+      "jur": "IL",
+      "via": null
+    },
+    "380": {
+      "jur": "IT",
+      "via": null
+    },
+    "392": {
+      "jur": "JP",
+      "via": null
+    },
+    "428": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "440": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "442": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "446": {
+      "jur": "MO",
+      "via": null
+    },
+    "450": {
+      "jur": "MG",
+      "via": null
+    },
+    "470": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "516": {
+      "jur": "NA",
+      "via": null
+    },
+    "528": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "533": {
+      "jur": "AW",
+      "via": null
+    },
+    "554": {
+      "jur": "NZ",
+      "via": null
+    },
+    "578": {
+      "jur": "NO",
+      "via": null
+    },
+    "585": {
+      "jur": "PW",
+      "via": null
+    },
+    "600": {
+      "jur": "PY",
+      "via": null
+    },
+    "604": {
+      "jur": "PE",
+      "via": null
+    },
+    "608": {
+      "jur": "PH",
+      "via": null
+    },
+    "620": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "643": {
+      "jur": "RU",
+      "via": null
+    },
+    "646": {
+      "jur": "RW",
+      "via": null
+    },
+    "659": {
+      "jur": "ECCU",
+      "via": "member of ECCU"
+    },
+    "662": {
+      "jur": "ECCU",
+      "via": "member of ECCU"
+    },
+    "670": {
+      "jur": "ECCU",
+      "via": "member of ECCU"
+    },
+    "702": {
+      "jur": "SG",
+      "via": null
+    },
+    "703": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "705": {
+      "jur": "EU",
+      "via": "euro-area member (Euro Area entity)"
+    },
+    "710": {
+      "jur": "ZA",
+      "via": null
+    },
+    "724": {
+      "jur": "ES",
+      "via": null
+    },
+    "748": {
+      "jur": "SZ",
+      "via": null
+    },
+    "752": {
+      "jur": "SE",
+      "via": null
+    },
+    "764": {
+      "jur": "TH",
+      "via": null
+    },
+    "780": {
+      "jur": "TT",
+      "via": null
+    },
+    "784": {
+      "jur": "AE",
+      "via": null
+    },
+    "792": {
+      "jur": "TR",
+      "via": null
+    },
+    "804": {
+      "jur": "UA",
+      "via": null
+    },
+    "826": {
+      "jur": "UK",
+      "via": null
+    },
+    "840": {
+      "jur": "US",
+      "via": null
+    },
+    "858": {
+      "jur": "UY",
+      "via": null
+    }
+  },
+  "jurisdictions": {
+    "BIS": {
+      "name": "International standard-setters (BIS / IMF / FSB)",
+      "stage": "not_applicable",
+      "stage_label": "Institutional composite",
+      "docs": [
+        {
+          "file": "BIS_r220206m.pdf",
+          "label": "BIS_Pakistan_2022",
+          "year": 2022,
+          "pages": 13,
+          "stage_only": false
+        }
+      ],
+      "privacy": null,
+      "centres": null
+    },
+    "CA": {
+      "name": "Canada",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "CA_BoC_Retail_CBDC_Feasibility_SDP2025-9.pdf",
+          "label": "CA_BoC_RetailFeasibility_SDP2025_9",
+          "year": 2025,
+          "pages": 47,
+          "stage_only": false
+        },
+        {
+          "file": "CA_BoC_PETs_for_CBDC_SDP2025-1.pdf",
+          "label": "CA_BoC_PETs_SDP2025_1",
+          "year": 2025,
+          "pages": 35,
+          "stage_only": false
+        },
+        {
+          "file": "CA_BoC_DigitalDollar_ScaleDown_page_2024.pdf",
+          "label": "CA_BoC_ScaleDown_page_2024",
+          "year": 2024,
+          "pages": 16,
+          "stage_only": false
+        },
+        {
+          "file": "CA_BoC_Role_of_Public_Money_SDP2024-11.pdf",
+          "label": "CA_BoC_PublicMoney_SDP2024_11",
+          "year": 2024,
+          "pages": 25,
+          "stage_only": false
+        },
+        {
+          "file": "CA_BoC_Digital_Dollar_Consultation_Report_2023.pdf",
+          "label": "CA_BoC_Consultation_Report_2023",
+          "year": 2023,
+          "pages": 55,
+          "stage_only": false
+        },
+        {
+          "file": "CA_Payments_jasper_phase_iii_whitepaper_EN.pdf",
+          "label": "CA_Jasper_III_2018",
+          "year": 2018,
+          "pages": 40,
+          "stage_only": false
+        },
+        {
+          "file": "CA_Payments_project_jasper_primer_EN.pdf",
+          "label": "CA_Jasper_Primer_2017",
+          "year": 2017,
+          "pages": 5,
+          "stage_only": false
+        },
+        {
+          "file": "CA_Payments_jasper_report_eng.pdf",
+          "label": "CA_Jasper_Phase12_2017",
+          "year": 2017,
+          "pages": 70,
+          "stage_only": false
+        },
+        {
+          "file": "CA_BoC_sdp2017-16.pdf",
+          "label": "CA_BoC_2017",
+          "year": 2017,
+          "pages": 30,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0965266558966,
+        "rank": 10,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "sovereignty_competition",
+        "dominant_label": "Sovereignty & competition",
+        "dominant_score": 0.516107608291,
+        "second": "payment_modernization",
+        "second_label": "Payment modernisation",
+        "second_score": 0.496437895016,
+        "mixed": true
+      }
+    },
+    "IT": {
+      "name": "Italy",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "IT_Italy_N.10-MISP.pdf",
+          "label": "IT_BdI_MISP_2021",
+          "year": 2021,
+          "pages": 70,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.159090909091,
+        "rank": 3,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "monetary_transmission",
+        "dominant_label": "Monetary transmission",
+        "dominant_score": 0.78485280843,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.756396433826,
+        "mixed": true
+      }
+    },
+    "IS": {
+      "name": "Iceland",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "IS_Iceland_Special_Publication_12.pdf",
+          "label": "IS_CBI_2018",
+          "year": 2018,
+          "pages": 36,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.00684931506849,
+        "rank": 25,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "monetary_transmission",
+        "dominant_label": "Monetary transmission",
+        "dominant_score": 0.95,
+        "second": "cash_substitution",
+        "second_label": "Cash substitution",
+        "second_score": 0.629826863709,
+        "mixed": false
+      }
+    },
+    "MO": {
+      "name": "Macau",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "MO_Macao_e-MOP_en.pdf",
+          "label": "MO_AMCM_eMOP_WP",
+          "year": null,
+          "pages": 62,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.118834080717,
+        "rank": 7,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "cash_substitution",
+        "dominant_label": "Cash substitution",
+        "dominant_score": 0.711585130954,
+        "second": "state_control",
+        "second_label": "State control",
+        "second_score": 0.693533869604,
+        "mixed": true
+      }
+    },
+    "PY": {
+      "name": "Banco Central del Paraguay (2024 design paper) — composite",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "PY_BCP_Informe_CBDC.pdf",
+          "label": "PY_BCP_Informe_CBDC",
+          "year": null,
+          "pages": 14,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0,
+        "rank": 34,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "cash_substitution",
+        "dominant_label": "Cash substitution",
+        "dominant_score": 0.542543208082,
+        "second": "state_control",
+        "second_label": "State control",
+        "second_score": 0.414431818182,
+        "mixed": false
+      }
+    },
+    "DK": {
+      "name": "Denmark",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "DK_Denmark_analysis-no-8-new-types-of-digital-money.pdf",
+          "label": "DK_Denmark_2022",
+          "year": 2022,
+          "pages": 29,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0,
+        "rank": 30,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.723451044948,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.683112385494,
+        "mixed": true
+      }
+    },
+    "UY": {
+      "name": "Uruguay",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "UY_BCU_Seven_Lessons_from_e-Peso_Sarmiento_2022.pdf",
+          "label": "UY_BCU_Seven_Lessons_2022",
+          "year": 2022,
+          "pages": 13,
+          "stage_only": false
+        },
+        {
+          "file": "UY_Uruguay_BCU_Billete_Digital_2017.pdf",
+          "label": "UY_Uruguay_BCU_BilleteDigital_2017",
+          "year": 2017,
+          "pages": 11,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.0800970873786,
+        "rank": 44,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.696710783646,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.630572752304,
+        "mixed": true
+      }
+    },
+    "CZ": {
+      "name": "Czech Republic",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "CZ_CNB_digitalni-penize-centralnich-bank-CBDC.pdf",
+          "label": "CZ_CzechRepublic_2022",
+          "year": 2022,
+          "pages": 21,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0,
+        "rank": 29,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.619259520964,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.56735073137,
+        "mixed": true
+      }
+    },
+    "CO": {
+      "name": "Colombia",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "CO_Colombia_btaboada-congreso-derecho-financiero-asobancaria-sept-2022.pdf",
+          "label": "CO_Colombia_2022",
+          "year": 2022,
+          "pages": 25,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0,
+        "rank": 28,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "monetary_transmission",
+        "dominant_label": "Monetary transmission",
+        "dominant_score": 0.95,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.05,
+        "mixed": false
+      }
+    },
+    "AM": {
+      "name": "Armenia",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "AM_Armenia_archived_CBDC_26.06.2023.pdf",
+          "label": "AM_ARM_001",
+          "year": 2023,
+          "pages": 26,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0,
+        "rank": 27,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "monetary_transmission",
+        "dominant_label": "Monetary transmission",
+        "dominant_score": 0.595510536354,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.541083247535,
+        "mixed": true
+      }
+    },
+    "ZA": {
+      "name": "South Africa",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "ZA_SARB_Project_Khokha_2_Report_media_release_6_April_2022.pdf",
+          "label": "ZA_SARB_Project_Khokha_2_Report_media_release_6_April_2022",
+          "year": 2022,
+          "pages": 3,
+          "stage_only": false
+        },
+        {
+          "file": "ZA_SARB_Project_Khokha_2_Full_Report_6_April_2022.pdf",
+          "label": "ZA_SARB_Project_Khokha_2_Full_Report_6_April_2022",
+          "year": 2022,
+          "pages": 60,
+          "stage_only": false
+        },
+        {
+          "file": "ZA_SARB_SARB_ProjectKhokha-20180605.pdf",
+          "label": "ZA_SARB_SARB_ProjectKhokha-20180605",
+          "year": 2018,
+          "pages": 80,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.00416666666667,
+        "rank": 36,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "sovereignty_competition",
+        "dominant_label": "Sovereignty & competition",
+        "dominant_score": 0.767640234826,
+        "second": "payment_modernization",
+        "second_label": "Payment modernisation",
+        "second_score": 0.659685885538,
+        "mixed": false
+      }
+    },
+    "TR": {
+      "name": "Turkey",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "Digital_Turkish_Lira_Second_Phase_Progress_Report.pdf",
+          "label": "TR_DigitalLira_Phase2_2025",
+          "year": 2025,
+          "pages": 13,
+          "stage_only": false
+        },
+        {
+          "file": "TR_Turkey_Digital_Turkish_Lira_First_Phase_Evaluation_Report.pdf",
+          "label": "TR_Turkey_Digital_Turkish_Lira_First_Phase_Evaluation_Report",
+          "year": null,
+          "pages": 64,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.127751572327,
+        "rank": 6,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.570479057095,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.528550515848,
+        "mixed": true
+      }
+    },
+    "PW": {
+      "name": "Republic of Palau",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "PW_Palau_Republic-of-Palau-Stablecoin-Program-Phase-1-Report.pdf",
+          "label": "PW_Palau_Phase1_Report",
+          "year": null,
+          "pages": 25,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.135802469136,
+        "rank": 47,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "sovereignty_competition",
+        "dominant_label": "Sovereignty & competition",
+        "dominant_score": 0.95,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.659886488149,
+        "mixed": false
+      }
+    },
+    "MG": {
+      "name": "Madagascar",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "MG_Madagascar_projet-eAriary-One-pager.pdf",
+          "label": "MG_BFM_OP_2023",
+          "year": 2023,
+          "pages": 1,
+          "stage_only": false
+        },
+        {
+          "file": "MG_Madagascar_BFM-eAriary-project-651d75b89c1a3.pdf",
+          "label": "MG_BFM_2023",
+          "year": 2023,
+          "pages": 17,
+          "stage_only": false
+        },
+        {
+          "file": "MG_Madagascar_BFM_e-Ariary_RFI-RFQ_VF-BFM.pdf",
+          "label": "MG_BFM_RFI_2021",
+          "year": 2021,
+          "pages": 10,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0,
+        "rank": 31,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.95,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.704047652481,
+        "mixed": false
+      }
+    },
+    "BR": {
+      "name": "Brazil",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "BR_Brazil_Digital_Brazilian_Real_Press_Conference_Guidelines_Pilot_RD_Mar2023.pdf",
+          "label": "BR_Brazil_2023",
+          "year": 2023,
+          "pages": 19,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.111111111111,
+        "rank": 8,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.95,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.637663997815,
+        "mixed": false
+      }
+    },
+    "PH": {
+      "name": "Philippines",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "PH_Philippines_EFLP2024_1_2c.pdf",
+          "label": "PH_Philippines_EFLP2024_1_2c",
+          "year": 2024,
+          "pages": 12,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0,
+        "rank": 33,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.95,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.919766404174,
+        "mixed": true
+      }
+    },
+    "AU": {
+      "name": "Australia",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "AU_RBA_project-acacia-consultation-paper-2024-11.pdf",
+          "label": "AU_RBA_003",
+          "year": 2024,
+          "pages": 46,
+          "stage_only": false
+        },
+        {
+          "file": "AU_RBA_australian-cbdc-pilot-for-digital-finance-innovation-white-paper.pdf",
+          "label": "AU_RBA_002",
+          "year": null,
+          "pages": 15,
+          "stage_only": false
+        },
+        {
+          "file": "AU_RBA_australian-cbdc-pilot-for-digital-finance-innovation-project-report.pdf",
+          "label": "AU_RBA_001",
+          "year": null,
+          "pages": 44,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0533707865169,
+        "rank": 16,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.431564695671,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.413714733542,
+        "mixed": true
+      }
+    },
+    "PE": {
+      "name": "Peru",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "PE_Peru_nota-informativa-2024-07-17.pdf",
+          "label": "PE_BCRP_NotaInformativa_2024",
+          "year": 2024,
+          "pages": 1,
+          "stage_only": false
+        },
+        {
+          "file": "PE_Peru_cbdc-presentation.pdf",
+          "label": "PE_Peru_cbdc-presentation",
+          "year": null,
+          "pages": 35,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.0104838709677,
+        "rank": 38,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "financial_inclusion",
+        "dominant_label": "Financial inclusion",
+        "dominant_score": 0.95,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.522973858448,
+        "mixed": false
+      }
+    },
+    "ES": {
+      "name": "Spain",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "ES_Spain_Nota_de_prensa_EN_Continuacion_trabajos_tokens_digitales.pdf",
+          "label": "ES_Spain_2024c",
+          "year": 2024,
+          "pages": 2,
+          "stage_only": false
+        },
+        {
+          "file": "ES_Spain_BOE-A-2024-206.pdf",
+          "label": "ES_Spain_2024b",
+          "year": 2024,
+          "pages": 10,
+          "stage_only": false
+        },
+        {
+          "file": "ES_Spain_BOE-A-2024-205.pdf",
+          "label": "ES_Spain_2024a",
+          "year": 2024,
+          "pages": 10,
+          "stage_only": false
+        },
+        {
+          "file": "ES_Spain_notabe051222.pdf",
+          "label": "ES_Spain_2022",
+          "year": 2022,
+          "pages": 2,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.236842105263,
+        "rank": 1,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "sovereignty_competition",
+        "dominant_label": "Sovereignty & competition",
+        "dominant_score": 0.95,
+        "second": "state_control",
+        "second_label": "State control",
+        "second_score": 0.825577156074,
+        "mixed": false
+      }
+    },
+    "GH": {
+      "name": "Ghana",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "GH_Ghana_The-eCedi-Report-221024.pdf",
+          "label": "GH_Ghana_2023",
+          "year": 2023,
+          "pages": 56,
+          "stage_only": false
+        },
+        {
+          "file": "GH_Ghana_eCedi-Design-Paper.pdf",
+          "label": "GH_Ghana_2021",
+          "year": 2021,
+          "pages": 32,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0513980263158,
+        "rank": 18,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.933140389514,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.824908123427,
+        "mixed": false
+      }
+    },
+    "TH": {
+      "name": "Thailand",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "TH_Thailand_rCBDC_Conclusion_Report.pdf",
+          "label": "TH_Thailand_rCBDC_Conclusion_Report",
+          "year": null,
+          "pages": 36,
+          "stage_only": false
+        },
+        {
+          "file": "TH_Thailand_n3063e.pdf",
+          "label": "TH_Thailand_n3063e",
+          "year": null,
+          "pages": 2,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0986842105263,
+        "rank": 9,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.722918762443,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.612071504608,
+        "mixed": false
+      }
+    },
+    "ID": {
+      "name": "Indonesia",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "ID_Indonesia_Laporan_POC_Proyek_Garuda_EN.pdf",
+          "label": "ID_Indonesia_2024",
+          "year": 2024,
+          "pages": 50,
+          "stage_only": false
+        },
+        {
+          "file": "ID_Indonesia_Consultative-Paper-Rupiah-Digital-BI.pdf",
+          "label": "ID_Indonesia_2023a",
+          "year": 2023,
+          "pages": 21,
+          "stage_only": false
+        },
+        {
+          "file": "ID_Indonesia_White-Paper-CBDC-2022_en.pdf",
+          "label": "ID_Indonesia_2022",
+          "year": 2022,
+          "pages": 65,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.0285860655738,
+        "rank": 41,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.68212313903,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.568077007433,
+        "mixed": false
+      }
+    },
+    "SZ": {
+      "name": "Eswatini",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "SZ_Eswatini_2024-Fintech-Digital-Lilangeni-Design-Paper.pdf",
+          "label": "SZ_Eswatini_2024-Fintech-Digital-Lilangeni-Design-Paper",
+          "year": 2024,
+          "pages": 42,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0421195652174,
+        "rank": 21,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.685591971174,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.617431211679,
+        "mixed": true
+      }
+    },
+    "AW": {
+      "name": "Aruba",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "AW_Aruba_readBlob.do_5decead7.pdf",
+          "label": "AW_ARU_001",
+          "year": null,
+          "pages": 250,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0413647342995,
+        "rank": 22,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.95,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.941459105131,
+        "mixed": true
+      }
+    },
+    "JP": {
+      "name": "Japan",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "JP_BoJ_rel220526a.pdf",
+          "label": "JP_BoJ_2022",
+          "year": 2052,
+          "pages": 21,
+          "stage_only": false
+        },
+        {
+          "file": "JP_BoJ_dig230529a.pdf",
+          "label": "JP_BoJ_PoC2",
+          "year": null,
+          "pages": 31,
+          "stage_only": false
+        },
+        {
+          "file": "JP_BoJ_archived_dig240422a.pdf",
+          "label": "JP_BoJ_Pilot_JP",
+          "year": null,
+          "pages": 27,
+          "stage_only": false
+        },
+        {
+          "file": "JP_BoJ_dig240531a.pdf",
+          "label": "JP_BoJ_Pilot_EN",
+          "year": null,
+          "pages": 29,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0193370165746,
+        "rank": 24,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "monetary_transmission",
+        "dominant_label": "Monetary transmission",
+        "dominant_score": 0.618232803463,
+        "second": "payment_modernization",
+        "second_label": "Payment modernisation",
+        "second_score": 0.447771709019,
+        "mixed": false
+      }
+    },
+    "IN": {
+      "name": "India",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "IN_India_DigitalRupee09012025.pdf",
+          "label": "IN_RBI_2025",
+          "year": 2025,
+          "pages": 6,
+          "stage_only": false
+        },
+        {
+          "file": "IN_India_CONCEPTNOTEACB531172E0B4DFC9A6E506C2C24FFB6.PDF",
+          "label": "IN_RBI_ConceptNote_2022",
+          "year": 2022,
+          "pages": 51,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0369318181818,
+        "rank": 23,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.594531233025,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.552048178417,
+        "mixed": true
+      }
+    },
+    "BO": {
+      "name": "Bolivia",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "BO_Bolivia_BCB_Primer_Informe_Boliviano_Digital_2025.pdf",
+          "label": "BO_BCB_Boliviano_Digital_2025",
+          "year": 2025,
+          "pages": 63,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.0802631578947,
+        "rank": 45,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.95,
+        "second": "payment_modernization",
+        "second_label": "Payment modernisation",
+        "second_score": 0.79502145112,
+        "mixed": false
+      }
+    },
+    "IL": {
+      "name": "Israel",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "IL_Israel_initial-design-for-the-digital-shekel-system.pdf",
+          "label": "IL_BoI_2024",
+          "year": 2024,
+          "pages": 136,
+          "stage_only": false
+        },
+        {
+          "file": "IL_Israel_#U05d0#U05e8#U05db#U05d9#U05d8#U05e7#U05d8#U05d5#U05e8#U05d4-#U05dc#U05d5#U05d2#U05d9#U05ea-#U05d0#U05e0#U05d2#U05dc#U05d9#U05ea.pdf",
+          "label": "IL_Israel_#U05d0#U05e8#U05db#U05d9#U05d8#U05e7#U05d8#U05d5#U05e8#U05d4-#U05dc#U05d5#U05d2#U05d9#U05ea-#U05d0#U05e0#U05d2#U05dc#U05d9#U05ea.pdf",
+          "year": null,
+          "pages": 41,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.13247558991,
+        "rank": 5,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.868323523226,
+        "second": "state_control",
+        "second_label": "State control",
+        "second_score": 0.822551231335,
+        "mixed": true
+      }
+    },
+    "HU": {
+      "name": "Hungary",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "HU_Hungary_student-safe-white-paper-final-20250303-en.pdf",
+          "label": "HU_Hungary_2025",
+          "year": 2025,
+          "pages": 39,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.0384615384615,
+        "rank": 42,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.75635438161,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.751060953389,
+        "mixed": true
+      }
+    },
+    "UN": {
+      "name": "International / cross-border bodies (UN-system)",
+      "stage": "not_applicable",
+      "stage_label": "Institutional composite",
+      "docs": [
+        {
+          "file": "UN_ESCAP_content_9919dd3a.pdf",
+          "label": "UN_ESCAP_9919dd3a_2023",
+          "year": 2023,
+          "pages": 23,
+          "stage_only": false
+        },
+        {
+          "file": "UN_ESCAP_content_4e8e7145.pdf",
+          "label": "UN_ESCAP_4e8e7145_2023",
+          "year": 2023,
+          "pages": 54,
+          "stage_only": false
+        },
+        {
+          "file": "UN_ESCAP_ESCAP-2022-RP-National-study-central-bank-digital-currency-stablecoin-Maldives.pdf",
+          "label": "UN_ESCAP_ESCAP-2022-RP-National-study-central-bank-digital-currency-stablecoin-Maldives",
+          "year": 2022,
+          "pages": 68,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.0175438596491,
+        "rank": 39,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.715930654917,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.672099605362,
+        "mixed": true
+      }
+    },
+    "RU": {
+      "name": "Russian Federation",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "RU_Russia_digital_ruble_30062025.pdf",
+          "label": "RU_Russia_digital_ruble_30062025",
+          "year": 2025,
+          "pages": 25,
+          "stage_only": false
+        },
+        {
+          "file": "RU_Russia_concept_08042021.pdf",
+          "label": "RU_Russia_concept_08042021",
+          "year": 2021,
+          "pages": 31,
+          "stage_only": false
+        },
+        {
+          "file": "RU_Russia_consultation_paper_201013_eng.pdf",
+          "label": "RU_Russia_consultation_paper_201013",
+          "year": 2010,
+          "pages": 45,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.0250410509031,
+        "rank": 40,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.612956630573,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.530734040358,
+        "mixed": true
+      }
+    },
+    "TT": {
+      "name": "Trinidad and Tobago",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "TT_CBTT_WP02_2025_Digital_Money.pdf",
+          "label": "TT_CBTT_WP02_2025",
+          "year": 2025,
+          "pages": 26,
+          "stage_only": false
+        }
+      ],
+      "privacy": null,
+      "centres": null
+    },
+    "RW": {
+      "name": "Rwanda",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "RW_Rwanda_CBDC_Ideathon.pdf",
+          "label": "RW_Rwanda_CBDC_Ideathon",
+          "year": null,
+          "pages": 8,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0,
+        "rank": 35,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.948007401084,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.56125710512,
+        "mixed": false
+      }
+    },
+    "NZ": {
+      "name": "New Zealand",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "WAYBACK_da81215e_cbdc-issues-paper.pdf",
+          "label": "NZ_RBNZ_CBDCIssuesPaper_2021",
+          "year": 2021,
+          "pages": 47,
+          "stage_only": false
+        },
+        {
+          "file": "NZ_RBNZ_cbdc-insights-dossier-for-public-1.pdf",
+          "label": "NZ_RBNZ_cbdc-insights-dossier-for-public-1",
+          "year": null,
+          "pages": 84,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0424528301887,
+        "rank": 20,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "financial_inclusion",
+        "dominant_label": "Financial inclusion",
+        "dominant_score": 0.715690872622,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.603990779219,
+        "mixed": false
+      }
+    },
+    "SE": {
+      "name": "Sweden",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "SE_Riksbank_Payments_Report_2026.pdf",
+          "label": "SE_Riksbank_PaymentsReport_2026",
+          "year": 2026,
+          "pages": 80,
+          "stage_only": false
+        },
+        {
+          "file": "SE_Riksbank_Payments_Report_2025.pdf",
+          "label": "SE_Riksbank_PaymentsReport_2025",
+          "year": 2025,
+          "pages": 73,
+          "stage_only": false
+        },
+        {
+          "file": "SE_Riksbank_StaffMemo_DigitalEuro_Sweden_2024.pdf",
+          "label": "SE_Riksbank_StaffMemo_DigitalEuro_2024",
+          "year": 2024,
+          "pages": 24,
+          "stage_only": false
+        },
+        {
+          "file": "SE_Riksbank_rapport_ekrona_uppdaterad_170920_eng.pdf",
+          "label": "SE_Riksbank_2017",
+          "year": 2017,
+          "pages": 44,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.00480769230769,
+        "rank": 26,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "cash_substitution",
+        "dominant_label": "Cash substitution",
+        "dominant_score": 0.589745683741,
+        "second": "financial_inclusion",
+        "second_label": "Financial inclusion",
+        "second_score": 0.542336590181,
+        "mixed": true
+      }
+    },
+    "AE": {
+      "name": "United Arab Emirates",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "AE_UAE_cbuae-unveils-new-dirham-symbol-en.pdf",
+          "label": "AE_UAE_003",
+          "year": null,
+          "pages": 3,
+          "stage_only": false
+        },
+        {
+          "file": "AE_UAE_cbuae-launches-the-central-bank-digital-currency-strategy-the-digital-dirham-en.pdf",
+          "label": "AE_UAE_002",
+          "year": null,
+          "pages": 2,
+          "stage_only": false
+        },
+        {
+          "file": "AE_UAE_cbdc-short-report_july.pdf",
+          "label": "AE_UAE_001",
+          "year": null,
+          "pages": 15,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0842696629213,
+        "rank": 11,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.733933163208,
+        "second": "state_control",
+        "second_label": "State control",
+        "second_score": 0.692562573085,
+        "mixed": true
+      }
+    },
+    "UK": {
+      "name": "United Kingdom",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "UK_BoE_the-digital-pound-technology-working-paper.pdf",
+          "label": "UK_BoE_2023_TechWP",
+          "year": 2023,
+          "pages": 86,
+          "stage_only": false
+        },
+        {
+          "file": "UK_BoE_central-bank-digital-currency-opportunities-challenges-and-design.pdf",
+          "label": "UK_BoE_2020_OpportChall",
+          "year": 2020,
+          "pages": 57,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0705971659919,
+        "rank": 12,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.687643454002,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.589486801817,
+        "mixed": true
+      }
+    },
+    "US": {
+      "name": "United States",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "US_Fed_FEDSNote_Stablecoins_CrossBorder_2026.pdf",
+          "label": "US_Fed_FEDSNote_Stablecoins_XB_2026",
+          "year": 2026,
+          "pages": 15,
+          "stage_only": false
+        },
+        {
+          "file": "US_WhiteHouse_EO14178_FR_2025.pdf",
+          "label": "US_WhiteHouse_EO14178_2025",
+          "year": 2025,
+          "pages": 4,
+          "stage_only": false
+        },
+        {
+          "file": "US_Congress_HR1919_AntiCBDC_OnePager_2025.pdf",
+          "label": "US_Congress_AntiCBDC_HR1919_2025",
+          "year": 2025,
+          "pages": 1,
+          "stage_only": false
+        },
+        {
+          "file": "US_WhiteHouse_archived_09-2022-Technical-Evaluation-US-CBDC-System.pdf",
+          "label": "US_WhiteHouse_TechEval_2022",
+          "year": 2022,
+          "pages": 58,
+          "stage_only": false
+        },
+        {
+          "file": "US_NYFed_project-cedar-phase-one-report.pdf",
+          "label": "US_NYFed_CedarPhaseOne_2022",
+          "year": 2022,
+          "pages": 12,
+          "stage_only": false
+        },
+        {
+          "file": "US_Fed_money-and-payments-20220120.pdf",
+          "label": "US_Fed_2022",
+          "year": 2022,
+          "pages": 40,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0563829787234,
+        "rank": 15,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.867761502155,
+        "second": "sovereignty_competition",
+        "second_label": "Sovereignty & competition",
+        "second_score": 0.590436520558,
+        "mixed": false
+      }
+    },
+    "NA": {
+      "name": "Namibia",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "NA_Namibia_dc7fb7a3-aaab-4f23-babb-2a1a86f71e5a.pdf",
+          "label": "NA_BoN_2022",
+          "year": 2022,
+          "pages": 8,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0,
+        "rank": 32,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "financial_inclusion",
+        "dominant_label": "Financial inclusion",
+        "dominant_score": 0.95,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.95,
+        "mixed": true
+      }
+    },
+    "ECCU": {
+      "name": "Eastern Caribbean (OECS / ECCU)",
+      "stage": "cancelled",
+      "stage_label": "Cancelled",
+      "docs": [
+        {
+          "file": "",
+          "label": "ECCU_ECCB_MonetaryCouncil_112_2026",
+          "year": 2026,
+          "pages": 0,
+          "stage_only": true
+        },
+        {
+          "file": "ECCU_ECCB_DCash2_Public_Survey_2024.pdf",
+          "label": "ECCU_ECCB_DCash2_Survey_2024",
+          "year": 2024,
+          "pages": 4,
+          "stage_only": false
+        },
+        {
+          "file": "ECCU_ECCB_DCash_2.0_RFP_2023.pdf",
+          "label": "ECCU_ECCB_DCash_2_RFP_2023",
+          "year": 2023,
+          "pages": 6,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.157894736842,
+        "rank": 4,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "financial_inclusion",
+        "dominant_label": "Financial inclusion",
+        "dominant_score": 0.95,
+        "second": "state_control",
+        "second_label": "State control",
+        "second_score": 0.753793268829,
+        "mixed": false
+      }
+    },
+    "CN": {
+      "name": "China",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "CN_PBOC_LuLei_ActionPlan_FinancialNews_2025.pdf",
+          "label": "CN_PBOC_LuLei_ActionPlan_2025",
+          "year": 2025,
+          "pages": 6,
+          "stage_only": false
+        },
+        {
+          "file": "CN_PBOC_eCNY_International_Operation_Center_2025.pdf",
+          "label": "CN_PBOC_IntlOpsCenter_2025",
+          "year": 2025,
+          "pages": 2,
+          "stage_only": false
+        },
+        {
+          "file": "CN_China_PBoC_e-CNY_BIS_bispap123.pdf",
+          "label": "CN_China_BIS_2022",
+          "year": 2022,
+          "pages": 214,
+          "stage_only": false
+        },
+        {
+          "file": "CN_China_PBoC_e-CNY_white_paper_2021.pdf",
+          "label": "CN_China_2021",
+          "year": 2021,
+          "pages": 16,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0650826446281,
+        "rank": 13,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "sovereignty_competition",
+        "dominant_label": "Sovereignty & competition",
+        "dominant_score": 0.685092135379,
+        "second": "payment_modernization",
+        "second_label": "Payment modernisation",
+        "second_score": 0.584939553998,
+        "mixed": false
+      }
+    },
+    "UA": {
+      "name": "Ukraine",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "UA_NBU_eHryvnia_official_page_2025.pdf",
+          "label": "UA_NBU_eHryvnia_page_2025",
+          "year": 2025,
+          "pages": 3,
+          "stage_only": false
+        },
+        {
+          "file": "UA_NBU_Analytical_Report_E-hryvnia.pdf",
+          "label": "UA_NBU_E-hryvnia_2019",
+          "year": 2019,
+          "pages": 42,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.0566298342541,
+        "rank": 43,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "sovereignty_competition",
+        "dominant_label": "Sovereignty & competition",
+        "dominant_score": 0.540399878242,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.536784508509,
+        "mixed": true
+      }
+    },
+    "SG": {
+      "name": "Singapore",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "SG_MAS_Project_Orchid_page_2025.pdf",
+          "label": "SG_MAS_Orchid_page_2025",
+          "year": 2025,
+          "pages": 4,
+          "stage_only": false
+        },
+        {
+          "file": "SG_MAS_mas-project-orchid-report.pdf",
+          "label": "SG_MAS_mas-project-orchid-report",
+          "year": null,
+          "pages": 55,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.00434782608696,
+        "rank": 37,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.902607135182,
+        "second": "payment_modernization",
+        "second_label": "Payment modernisation",
+        "second_score": 0.384065576806,
+        "mixed": false
+      }
+    },
+    "HK": {
+      "name": "Hong Kong",
+      "stage": "pilot",
+      "stage_label": "Pilot",
+      "docs": [
+        {
+          "file": "HK_HKMA_eHKD_Pilot_Programme_Phase2_Report_2025.pdf",
+          "label": "HK_HKMA_eHKD_Phase2_2025",
+          "year": 2025,
+          "pages": 44,
+          "stage_only": false
+        },
+        {
+          "file": "HK_HKMA_20220920e4a1.pdf",
+          "label": "HK_HKMA_2022",
+          "year": 2022,
+          "pages": 39,
+          "stage_only": false
+        },
+        {
+          "file": "HK_HKMA_e-HKD_A_technical_perspective.pdf",
+          "label": "HK_HKMA_2021",
+          "year": 2021,
+          "pages": 50,
+          "stage_only": false
+        },
+        {
+          "file": "HK_HKMA_e-HKD_A_Policy_and_Design_Perspective.pdf",
+          "label": "HK_HKMA_eHKD_PolicyDesign",
+          "year": null,
+          "pages": 42,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0525107991361,
+        "rank": 17,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "payment_modernization",
+        "dominant_label": "Payment modernisation",
+        "dominant_score": 0.622237088508,
+        "second": "state_control",
+        "second_label": "State control",
+        "second_score": 0.612167887186,
+        "mixed": true
+      }
+    },
+    "NO": {
+      "name": "Norway",
+      "stage": "paused_research",
+      "stage_label": "Research (paused)",
+      "docs": [
+        {
+          "file": "NO_NorgesBank_Financial_Infrastructure_2024_CBDC_chapter.pdf",
+          "label": "NO_NB_FI2024_CBDC",
+          "year": 2024,
+          "pages": 78,
+          "stage_only": false
+        },
+        {
+          "file": "NO_Norway_norges-bank-memo-1-2021.pdf",
+          "label": "NO_Norway_norges-bank-memo-1-2021",
+          "year": 2021,
+          "pages": 71,
+          "stage_only": false
+        },
+        {
+          "file": "NO_Norway_norges-bank-memo-2_2020-eng.pdf",
+          "label": "NO_Norway_norges-bank-memo-2_2020-eng",
+          "year": 2020,
+          "pages": 9,
+          "stage_only": false
+        },
+        {
+          "file": "NO_Norway_nbmemo-1-2018-digitalesentralbankpenger.pdf",
+          "label": "NO_Norway_nbmemo-1-2018",
+          "year": 2018,
+          "pages": 55,
+          "stage_only": false
+        },
+        {
+          "file": "NO_Norway_norges-bank-papers-2---phase-4---final-report.pdf",
+          "label": "NO_Norway_norges-bank-papers-2---phase-4---final-report",
+          "year": null,
+          "pages": 20,
+          "stage_only": false
+        },
+        {
+          "file": "NO_Norway_nb_memo_2_19_dsp.pdf",
+          "label": "NO_Norway_nb_memo_2_19_dsp",
+          "year": null,
+          "pages": 34,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.044335399449,
+        "rank": 19,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "monetary_transmission",
+        "dominant_label": "Monetary transmission",
+        "dominant_score": 0.562865903227,
+        "second": "payment_modernization",
+        "second_label": "Payment modernisation",
+        "second_score": 0.391070898471,
+        "mixed": false
+      }
+    },
+    "FR": {
+      "name": "France",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "FR_BdF_DigitalEuro_page_2025.pdf",
+          "label": "FR_BdF_DigitalEuro_page_2025",
+          "year": 2025,
+          "pages": 1,
+          "stage_only": false
+        },
+        {
+          "file": "FR_BanqueDeFrance_Tunisia_CBDC_Trial_2021.pdf",
+          "label": "FR_BdF_2022",
+          "year": 2022,
+          "pages": 17,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.0576923076923,
+        "rank": 14,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "sovereignty_competition",
+        "dominant_label": "Sovereignty & competition",
+        "dominant_score": 0.95,
+        "second": "cash_substitution",
+        "second_label": "Cash substitution",
+        "second_score": 0.872330873138,
+        "mixed": true
+      }
+    },
+    "EU": {
+      "name": "Euro Area",
+      "stage": "active_research",
+      "stage_label": "Active research",
+      "docs": [
+        {
+          "file": "EU_ECB_DigitalEuro_Third_Progress_Report_2025.pdf",
+          "label": "EU_ECB_ThirdProgress_2025",
+          "year": 2025,
+          "pages": 14,
+          "stage_only": false
+        },
+        {
+          "file": "EU_ECB_DigitalEuro_Closing_Report_Preparation_Phase_2025.pdf",
+          "label": "EU_ECB_ClosingReport_2025",
+          "year": 2025,
+          "pages": 42,
+          "stage_only": false
+        },
+        {
+          "file": "EU_ECB_ecb.deprp202412.en.pdf",
+          "label": "EU_ECB_2024",
+          "year": 2024,
+          "pages": 13,
+          "stage_only": false
+        },
+        {
+          "file": "EU_ECB_ecb.other191204_f6a84c14a7.en.pdf",
+          "label": "EU_ECB_2019",
+          "year": 2019,
+          "pages": 3,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": 0.227663230241,
+        "rank": 2,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "cash_substitution",
+        "dominant_label": "Cash substitution",
+        "dominant_score": 0.828909530563,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.695801915211,
+        "mixed": false
+      }
+    },
+    "BS": {
+      "name": "Bahamas",
+      "stage": "live",
+      "stage_label": "Live",
+      "docs": [
+        {
+          "file": "BS_CBOB_SandDollar_Public_Updates_2025.pdf",
+          "label": "BS_CBOB_SandDollar_Updates_2025",
+          "year": 2025,
+          "pages": 3,
+          "stage_only": false
+        },
+        {
+          "file": "BS_Bahamas_Project_Sanddollar_2019.pdf",
+          "label": "BS_Bahamas_SandDollar_2019",
+          "year": 2019,
+          "pages": 33,
+          "stage_only": false
+        }
+      ],
+      "privacy": {
+        "score": -0.0931677018634,
+        "rank": 46,
+        "of": 47
+      },
+      "centres": {
+        "dominant": "state_control",
+        "dominant_label": "State control",
+        "dominant_score": 0.95,
+        "second": "monetary_transmission",
+        "second_label": "Monetary transmission",
+        "second_score": 0.705502373368,
+        "mixed": false
+      }
+    }
+  }
+}

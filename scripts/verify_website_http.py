@@ -52,7 +52,12 @@ def main() -> None:
 
     mismatches = []
     verified = []
-    for path in sorted(item for item in source.rglob("*") if item.is_file()):
+    dynamic_paths = sorted(item for item in source.rglob("*.php") if item.is_file())
+    static_paths = sorted(
+        item for item in source.rglob("*")
+        if item.is_file() and item.suffix.lower() != ".php"
+    )
+    for path in static_paths:
         relative = path.relative_to(source).as_posix()
         url = urllib.parse.urljoin(base_url, relative)
         try:
@@ -73,6 +78,26 @@ def main() -> None:
             })
         else:
             verified.append({"path": relative, "bytes": len(body), "content_type": content_type})
+
+    dynamic_routes = []
+    for path in dynamic_paths:
+        relative = path.relative_to(source).as_posix()
+        url = urllib.parse.urljoin(base_url, relative)
+        try:
+            with opener.open(request(url), timeout=30) as response:
+                dynamic_routes.append({
+                    "path": relative,
+                    "status": response.status,
+                    "final_url": response.geturl(),
+                    "redirect_ok": response.status == 200 and response.geturl().endswith("contribute.html"),
+                })
+        except urllib.error.HTTPError as exc:
+            dynamic_routes.append({
+                "path": relative,
+                "status": exc.code,
+                "final_url": exc.geturl(),
+                "redirect_ok": False,
+            })
 
     with opener.open(request(base_url), timeout=30) as response:
         root_body = response.read()
@@ -97,13 +122,19 @@ def main() -> None:
             "protected": unauthenticated_status == 401 and root_status == 200,
         },
         "verified_files": len(verified),
+        "dynamic_routes": dynamic_routes,
         "mismatches": mismatches,
         "missing_headline_markers": missing_markers,
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"report": str(report_path), **report}, indent=2))
-    if not report["basic_auth"]["protected"] or mismatches or missing_markers:
+    if (
+        not report["basic_auth"]["protected"]
+        or mismatches
+        or missing_markers
+        or any(not item["redirect_ok"] for item in dynamic_routes)
+    ):
         raise SystemExit(1)
 
 

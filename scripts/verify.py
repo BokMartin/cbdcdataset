@@ -19,7 +19,7 @@ def main():
         expected, name = line.split(maxsplit=1)
         path = ROOT / name.strip()
         content = path.read_bytes()
-        if path.suffix.lower() in {".csv", ".json", ".jsonl", ".sha256"}:
+        if path.suffix.lower() in {".csv", ".json", ".jsonl", ".js", ".sha256"}:
             content = content.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
         require(hashlib.sha256(content).hexdigest() == expected, f"checksum: {name}")
     schema = json.loads((ROOT / "validation/provenance_schema.json").read_text(encoding="utf-8"))

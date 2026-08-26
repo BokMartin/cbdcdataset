@@ -1,0 +1,48 @@
+﻿rank,jur,country,iso3,privacy_posture,privacy_family_share,dominant_centre,analytic_candidate_mass,documents,is_composite
+1,ES,Spain,ESP,0.236842105263,0.210526315789,sovereignty_competition,19.0,4,False
+2,EU,Euro Area,EMU,0.227663230241,0.48031496063,cash_substitution,145.5,4,False
+3,IT,Italy,ITA,0.159090909091,0.466367713004,monetary_transmission,143.0,1,False
+4,ECCU,Eastern Caribbean (OECS / ECCU),ECCU,0.157894736842,1.0,financial_inclusion,9.5,2,False
+5,IL,Israel,ISR,0.13247558991,0.465659340659,payment_modernization,614.5,2,False
+6,TR,Turkey,TUR,0.127751572327,0.48,payment_modernization,159.0,2,False
+7,MO,Macau,MAC,0.118834080717,0.377952755906,cash_substitution,111.5,1,False
+8,BR,Brazil,BRA,0.111111111111,0.137931034483,state_control,27.0,1,False
+9,TH,Thailand,THA,0.0986842105263,0.125,state_control,38.0,2,False
+10,CA,Canada,CAN,0.0965266558966,0.40671641791,sovereignty_competition,309.5,9,False
+11,AE,United Arab Emirates,ARE,0.0842696629213,0.214285714286,payment_modernization,89.0,3,False
+12,UK,United Kingdom,GBR,0.0705971659919,0.641104294479,payment_modernization,370.5,2,False
+13,CN,China,CHN,0.0650826446281,0.414414414414,sovereignty_competition,121.0,4,False
+14,FR,France,FRA,0.0576923076923,0.4,sovereignty_competition,13.0,2,False
+15,US,United States,USA,0.0563829787234,0.396946564885,state_control,117.5,5,False
+16,AU,Australia,AUS,0.0533707865169,0.344262295082,payment_modernization,133.5,3,False
+17,HK,Hong Kong,HKG,0.0525107991361,0.565737051793,payment_modernization,231.5,4,False
+18,GH,Ghana,GHA,0.0513980263158,0.353846153846,state_control,152.0,2,False
+19,NO,Norway,NOR,0.044335399449,0.372013651877,monetary_transmission,363.0,6,False
+20,NZ,New Zealand,NZL,0.0424528301887,0.75,financial_inclusion,79.5,2,False
+21,SZ,Eswatini,SWZ,0.0421195652174,0.436974789916,payment_modernization,161.0,1,False
+22,AW,Aruba,ABW,0.0413647342995,0.209459459459,payment_modernization,69.0,1,False
+23,IN,India,IND,0.0369318181818,0.333333333333,state_control,154.0,2,False
+24,JP,Japan,JPN,0.0193370165746,0.215053763441,monetary_transmission,90.5,4,False
+25,IS,Iceland,ISL,0.00684931506849,0.260869565217,monetary_transmission,36.5,1,False
+26,SE,Sweden,SWE,0.00480769230769,0.416666666667,cash_substitution,84.5,4,False
+27,AM,Armenia,ARM,0.0,,monetary_transmission,3.5,1,False
+28,CO,Colombia,COL,0.0,,monetary_transmission,1.0,1,False
+29,CZ,Czech Republic,CZE,0.0,0.833333333333,state_control,7.5,1,False
+30,DK,Denmark,DNK,0.0,,payment_modernization,4.5,1,False
+31,MG,Madagascar,MDG,0.0,,payment_modernization,46.0,3,False
+32,NA,Namibia,NAM,0.0,,financial_inclusion,7.0,1,False
+33,PH,Philippines,PHL,0.0,0.0,payment_modernization,7.0,1,False
+34,PY,Banco Central del Paraguay (2024 design paper) — composite,PRY,0.0,,cash_substitution,3.0,1,False
+35,RW,Rwanda,RWA,0.0,,state_control,4.0,1,False
+36,ZA,South Africa,ZAF,-0.00416666666667,0.214689265537,sovereignty_competition,120.0,3,False
+37,SG,Singapore,SGP,-0.00434782608696,0.216216216216,state_control,115.0,2,False
+38,PE,Peru,PER,-0.0104838709677,0.325581395349,financial_inclusion,77.5,2,False
+39,UN,International / cross-border bodies (UN-system),UNI,-0.0175438596491,0.111111111111,state_control,57.0,2,True
+40,RU,Russian Federation,RUS,-0.0250410509031,0.301204819277,state_control,304.5,3,False
+41,ID,Indonesia,IDN,-0.0285860655738,0.248,payment_modernization,305.0,3,False
+42,HU,Hungary,HUN,-0.0384615384615,0.100917431193,state_control,91.0,1,False
+43,UA,Ukraine,UKR,-0.0566298342541,0.1875,sovereignty_competition,90.5,2,False
+44,UY,Uruguay,URY,-0.0800970873786,0.228571428571,state_control,51.5,2,False
+45,BO,Bolivia,BOL,-0.0802631578947,0.588235294118,state_control,47.5,1,False
+46,BS,Bahamas,BHS,-0.0931677018634,0.13698630137,state_control,80.5,1,False
+47,PW,Republic of Palau,PLW,-0.135802469136,0.5,sovereignty_competition,40.5,1,False

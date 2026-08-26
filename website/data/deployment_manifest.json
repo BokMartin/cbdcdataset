@@ -1,20 +1,10 @@
 {
-  "schema": "cbdc-v10.2e-website-build-v1",
+  "schema": "cbdc-v10.2e-legacy-layout-website-build-v1",
   "research_status": "exploratory; sampled double-blind human validation pending",
   "build_date": "2026-08-26",
   "site_url": "https://cbdcdataset.org/",
-  "entity_rows": 47,
+  "privacy_rows": 47,
   "headline_values": {
-    "counts": {
-      "documents": 113,
-      "pages": 3963,
-      "units": 3963,
-      "requests": 661,
-      "render_pages": 345,
-      "empty_text_render_pages": 74,
-      "codes": 35
-    },
-    "provider_statements": 11358,
     "DOCUMENTS": "113",
     "PAGES": "3,963",
     "STATEMENTS": "11,358",
@@ -37,6 +27,9 @@
     "results/v10_2e_ensemble/entity_scores.csv": "a41857ca14e3805875b79f7e9ee5888fb8de224b9b93068039140925abcabf83",
     "results/v10_2e_ensemble/distributions.csv": "df924b9886e799ae626cc68faa4ec8a787ecf823706c27883295058377e4a7e5",
     "results/v10_2e_ensemble/candidate_allocations.csv.gz": "14d033fa7b2877f9960fcf033eb383dbc144f968dcfed1fa0d6837228408d05e",
+    "validation/extraction_v10_2_exploratory/freeze/corpus_manifest.csv": "1d87c79763b7c761a1f3e646a2c3dd8a0f623dc951c7081a2ea49aea5da0e116",
+    "data/stages.csv": "fe4252de95111fcde2270b6db3441f81f33b6d3c21c87f43fb102af3bfcfe771",
+    "data/codebook.csv": "b85715998af3f63d57c7f6bf42aa6df770151d48df7908242986d58fe29a6d14",
     "paper/current.pdf": "a004cea4d8be50ff855e6532bf7df4b1e48fbb65bb7014b3c2fef51900b931fa",
     "figures/v10_2e_ensemble_composition.png": "21d893c4856902de8c5022aabc70f82f5bb06694744556ddba3b2c84bd51fe5b",
     "figures/v10_2e_model_sensitivity.png": "784059556ac3757a6045ba09724204ae1ce6e386b0a466e94f36cf72cb59b568"
