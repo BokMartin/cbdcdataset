@@ -14,6 +14,8 @@ python run.py
 
 `run.py` regenerates the frozen calibration outputs, the four ensemble/provider variants, both paper figures, and the blind human-audit summary. It then verifies hashes, population counts, probability metrics, allocation mass, and the human-validation release boundary. A successful run ends with `Reproduction complete.` and leaves `results/` and `figures/` unchanged.
 
+Automated Linux verification uses `python run.py --skip-figures`: it reproduces and compares all numerical artifacts while retaining the released PNGs, whose rasterized pixels can vary by operating-system font renderer. The default command above still regenerates both figures; their source data and the released images' hashes, dimensions, and color modes are verified.
+
 ## What is included
 
 - `data/calibration/`: frozen 78-unit package, adjudicated reference, and source-verified OpenAI/Claude outputs.

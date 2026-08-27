@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import subprocess
 import sys
 from pathlib import Path
@@ -11,7 +12,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 PYTHON = sys.executable
 
-STEPS = [
+def steps(*, skip_figures: bool) -> list[tuple[str, list[str]]]:
+    ensemble_command = [PYTHON, str(ROOT / "scripts/ensemble_analysis_v10_2e.py")]
+    if skip_figures:
+        ensemble_command.append("--skip-figures")
+    return [
     (
         "calibration",
         [
@@ -37,7 +42,7 @@ STEPS = [
     ),
     (
         "ensemble analysis and figures",
-        [PYTHON, str(ROOT / "scripts/ensemble_analysis_v10_2e.py")],
+        ensemble_command,
     ),
     (
         "ensemble verification",
@@ -55,11 +60,18 @@ STEPS = [
         "repository verification",
         [PYTHON, str(ROOT / "scripts/verify.py")],
     ),
-]
+    ]
 
 
 def main() -> None:
-    for label, command in STEPS:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--skip-figures",
+        action="store_true",
+        help="reproduce numerical outputs while retaining the released PNGs (useful for cross-platform CI)",
+    )
+    args = parser.parse_args()
+    for label, command in steps(skip_figures=args.skip_figures):
         print(f"\n[{label}]", flush=True)
         try:
             subprocess.run(command, check=True, cwd=ROOT)
