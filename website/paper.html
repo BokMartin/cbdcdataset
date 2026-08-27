@@ -25,8 +25,8 @@
 <section class="block"><div class="wrap">
   <h2>Abstract</h2>
   <div class="card">
-    <p>Central bank digital currencies (CBDCs) make transaction privacy an explicit institutional design choice. We ask whether political and economic conditions predict the privacy posture documented by central banks, while separating privacy vocabulary from design commitments. A frozen multilingual corpus contains 113 official or authority-attributed documents (3,963 pages) across forty-seven jurisdictions and two institutional composites. Two independently run large-language-model extractors produced 11,358 source-verified statements, deduplicated into 6,949 candidates. We aggregate them with a predeclared equal-vote ensemble in which every candidate has unit mass and provider disagreements are retained rather than averaged away. On a separate calibration set, the verified union attained precision 0.980, recall 0.766 and span fidelity 1.000; it failed the preregistered recall gate and is therefore treated as exploratory, not automated gold. In the production union, the privacy-family share and documented privacy posture correlate only <em>r</em> = 0.219. No tested institutional condition survives family-wise correction; the largest commitment-side association is with the informal economy (<em>r</em> = −0.286). A pre-frozen 5.25% double-blind human audit remains to be inserted before submission. The design demonstrates both the value and the limits of reproducible multi-model qualitative extraction.</p>
-    <p><strong>Keywords:</strong> central bank digital currency; privacy; content analysis; large language models; reproducibility<br><strong>JEL:</strong> E42, E58, C83</p>
+    <p>Central bank digital currencies (CBDCs) make transaction privacy an explicit institutional design choice. We ask whether political and economic conditions predict the privacy posture documented by central banks, while separating privacy vocabulary from design commitments. A frozen multilingual corpus contains 113 official or authority-attributed documents (3,963 pages) across forty-seven jurisdictions and two institutional composites. Two independently run large-language-model extractors produced 11,358 source-verified statements, deduplicated into 6,949 candidates. We aggregate them with a predeclared equal-vote ensemble in which every candidate has unit mass and provider disagreements are retained rather than averaged away. On a separate calibration set, the verified union attained precision 0.980, recall 0.766 and span fidelity 1.000; it failed the preregistered recall gate and is therefore treated as exploratory, not automated gold. In the blind probability sample, reviewer-specific design-weighted validity was 0.786 and 0.761; inclusion agreement was 62.6% (Gwet’s AC1 = 0.426; Krippendorff’s alpha = −0.069), and exact-code agreement among the 214 jointly retained candidates was 46.7%. In the production union, the privacy-family share and documented privacy posture correlate only <em>r</em> = 0.219. No tested institutional condition survives family-wise correction; the largest commitment-side association is with the informal economy (<em>r</em> = −0.286). The design demonstrates both the value and the current limits of reproducible multi-model qualitative extraction.</p>
+    <p><strong>Keywords:</strong> central bank digital currency; privacy; institutional design; csQCA; financial infrastructure<br><strong>JEL:</strong> E42, E58, C83</p>
   </div>
 </div></section>
 
@@ -36,7 +36,7 @@
     <div class="finding-card"><div class="n">1</div><p>How often privacy appears in official documents is a poor proxy for actual documented privacy design: the two measures share only 4.8% of their variance.</p></div>
     <div class="finding-card"><div class="n">2</div><p>No tested political or economic condition is a statistically robust predictor after correcting for multiple tests.</p></div>
     <div class="finding-card"><div class="n">3</div><p>The informal economy supplies the strongest posture-side lead (<em>r</em> = −0.286), but its interval reaches zero; it supports follow-up research, not a settled claim that high-informality economies “stomp on” privacy.</p></div>
-    <div class="finding-card"><div class="n">4</div><p>Two-model extraction improves coverage, but substantial provider disagreement and failed calibrated recall require explicit sensitivity analysis and sampled human validation.</p></div>
+    <div class="finding-card"><div class="n">4</div><p>The blind audit estimates candidate validity at 78.6% and 76.1% by reviewer, but 62.6% inclusion agreement and 46.7% exact-code agreement show that similar aggregate validity does not imply strong item-level reproducibility.</p></div>
   </div>
 </div></section>
 
@@ -48,13 +48,18 @@
 
 <section class="block alt"><div class="wrap">
   <h2>Submission status</h2>
-  <div class="card" style="border-left:4px solid var(--brick)">
-    <p><strong>Not yet the final submitted version.</strong> The paper is nine pages and has the conference formatting corrections applied, but the results table still needs the locked double-blind human validation: design-weighted keep rate and interval, author agreement, Krippendorff’s α, Gwet’s AC1, provider-to-consensus agreement and dual-empty missed-claim yield.</p>
-    <p style="margin-bottom:0">The substantive analysis will continue to use the full ensemble, with OpenAI, Claude and exact-consensus variants reported as sensitivity checks. Human review estimates measurement quality; it does not replace the full production corpus with a 5% sample.</p>
+  <div class="card" style="border-left:4px solid var(--amber)">
+    <p><strong>Independent blind coding is complete; consensus adjudication remains open.</strong> Of 365 sampled candidates, 364 are analyzable after excluding one item without a usable translation. The reviewers agree on inclusion for 228 cases (62.6%); Gwet’s AC1 is 0.426 and Krippendorff’s nominal alpha is −0.069. Reviewer-specific design-weighted validity is 78.6% and 76.1%, with a descriptive pre-adjudication midpoint of 77.3%.</p>
+    <p style="margin-bottom:0">The joint dual-empty audit found one missed unit among 31 analyzable controls and recovered two eligible claims. The substantive analysis continues to use the full ensemble, with provider variants as sensitivity checks; the human audit estimates measurement quality and does not replace the production corpus with a 5% sample.</p>
   </div>
 </div></section>
 
 <section class="block"><div class="wrap">
+  <h2>Work in progress and future research</h2>
+  <p>This paper and dataset remain work in progress. Future releases will test whether improving LLMs, a larger and better-balanced sample of official documents, and a more precisely operationalized family structure can improve recall, cross-provider stability and human coding agreement. The 77.3% midpoint will remain explicitly pre-adjudication until a human consensus phase is completed.</p>
+</div></section>
+
+<section class="block alt"><div class="wrap">
   <h2>Data and code</h2>
   <p>The frozen code, canonical provider outputs, provenance manifests and derived results are maintained at <a href="https://github.com/BokMartin/cbdc-msed-v10">github.com/BokMartin/cbdc-msed-v10</a>. Website-ready derived tables are available on the <a href="data.html">data page</a>.</p>
 </div></section>

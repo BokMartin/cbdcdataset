@@ -1,7 +1,7 @@
 {
   "schema": "cbdc-v10.2e-legacy-layout-website-build-v1",
-  "research_status": "exploratory; sampled double-blind human validation pending",
-  "build_date": "2026-08-26",
+  "research_status": "exploratory; independent blind human audit complete, consensus adjudication work in progress",
+  "build_date": "2026-08-27",
   "site_url": "https://cbdcdataset.org/",
   "privacy_rows": 47,
   "headline_values": {
@@ -19,16 +19,25 @@
     "SHADOW_PHOLM": "0.651",
     "EXACT_CODE_RATE": "41.5",
     "SINGLE_PROVIDER_RATE": "38.0",
-    "UPDATED": "26 August 2026"
+    "HUMAN_ANALYZABLE": 364,
+    "HUMAN_VALIDITY_MARTIN": "78.6",
+    "HUMAN_VALIDITY_DOMINIK": "76.1",
+    "HUMAN_MIDPOINT": "77.3",
+    "HUMAN_INCLUSION_AGREEMENT": "62.6",
+    "HUMAN_GWET_AC1": "0.426",
+    "HUMAN_ALPHA": "-0.069",
+    "DUAL_EMPTY_MISSED": "1/31",
+    "UPDATED": "27 August 2026"
   },
   "sources": {
-    "results/v10_2e_ensemble/analysis_summary.json": "1a48af5d62a8a7c586ddc5f11e6b13e19126bd3c33fdfffff913970b89cd196b",
+    "results/v10_2e_ensemble/analysis_summary.json": "9e35fb4c6c814ed71580025c78924706e8e3285f76a23d9105c68431bda2ee44",
     "results/v10_2e_ensemble/macro_results.json": "97689b0020d47c3731116c67fbeaaac70ec4cd864506fa9408cf5aacf3c12dac",
     "results/v10_2e_ensemble/entity_scores.csv": "a41857ca14e3805875b79f7e9ee5888fb8de224b9b93068039140925abcabf83",
     "results/v10_2e_ensemble/distributions.csv": "df924b9886e799ae626cc68faa4ec8a787ecf823706c27883295058377e4a7e5",
     "results/v10_2e_ensemble/candidate_allocations.csv.gz": "14d033fa7b2877f9960fcf033eb383dbc144f968dcfed1fa0d6837228408d05e",
     "data/ensemble/provenance/corpus_manifest.csv": "1d87c79763b7c761a1f3e646a2c3dd8a0f623dc951c7081a2ea49aea5da0e116",
     "figures/v10_2e_ensemble_composition.png": "21d893c4856902de8c5022aabc70f82f5bb06694744556ddba3b2c84bd51fe5b",
-    "figures/v10_2e_model_sensitivity.png": "784059556ac3757a6045ba09724204ae1ce6e386b0a466e94f36cf72cb59b568"
+    "figures/v10_2e_model_sensitivity.png": "784059556ac3757a6045ba09724204ae1ce6e386b0a466e94f36cf72cb59b568",
+    "results/human_validation/human_validation_results.json": "6b503069a79e5acdd838692529d7f12d37493803dc7d28a1f2be609092c75c86"
   }
 }

@@ -1,7 +1,7 @@
 {
   "schema": "cbdc-v10.2e-privacy-posture-website-v1",
   "meta": {
-    "status": "exploratory; sampled double-blind human validation pending",
+    "status": "exploratory; independent blind human validation complete, consensus adjudication pending",
     "scale": [
       -1,
       1

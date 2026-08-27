@@ -36,7 +36,7 @@ table.pci{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:
 
 <section class="block alt"><div class="wrap">
   <h2>Exploratory ranking</h2>
-  <p class="subtle">Posture is shown on its native −1 to +1 scale. A zero is neutral or balanced, not missing. Rows are sorted by the current ensemble point estimate; the ranking is descriptive and will be revisited after the blinded human audit.</p>
+  <p class="subtle">Posture is shown on its native −1 to +1 scale. A zero is neutral or balanced, not missing. Rows are sorted by the current ensemble point estimate; the ranking is descriptive and will be revisited after consensus adjudication of the completed blind human audit.</p>
   <div style="overflow-x:auto"><table class="pci">
     <thead><tr><th class="num">#</th><th>Entity</th><th class="num">Posture</th><th class="bar-cell"></th><th class="num">Privacy share</th><th>Dominant purpose</th><th class="num">Candidate mass</th><th class="num">Docs</th></tr></thead>
     <tbody id="pci-body"><tr><td colspan="8">Loading…</td></tr></tbody>
@@ -50,7 +50,7 @@ table.pci{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:
     <p><strong>Exact evidence first.</strong> Every accepted statement has a source-verifiable span. Unsupported spans are rejected; source-only retry is allowed once.</p>
     <p><strong>One candidate, one vote.</strong> Each deduplicated candidate contributes total mass 1. Shared candidates split that mass across providers and distinct codes, so duplicate model output cannot increase weight.</p>
     <p><strong>Signed posture.</strong> Privacy direction is combined with whether the design affects visibility from the state or from intermediaries, its observation/decision/recommendation status and evidence strength. Decisions receive full ODR weight and proposals half weight.</p>
-    <p><strong>Important limit.</strong> Calibration precision was 0.980 and span fidelity 1.000, but union recall was 0.766 and failed the frozen recall gate. These production values are therefore exploratory machine-assisted measures, not automated human gold.</p>
+    <p><strong>Important limit.</strong> Calibration precision was 0.980 and span fidelity 1.000, but union recall was 0.766 and failed the frozen recall gate. The blind audit produced reviewer-specific validity estimates of 78.6% and 76.1%, yet inclusion agreement was 62.6%. These production values are therefore exploratory machine-assisted measures, not automated human gold.</p>
   </div>
 </div></section>
 

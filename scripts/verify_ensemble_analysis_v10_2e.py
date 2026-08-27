@@ -48,13 +48,13 @@ def main() -> None:
         raise AssertionError("origin counts changed")
     if summary["agreement_among_both"]["exact_code_set"] != 1788:
         raise AssertionError("exact-code agreement changed")
-    if summary["human_validation"]["status"] != "pending_blind_double_review":
+    if summary["human_validation"]["status"] != "independent_blind_review_complete_pre_adjudication":
         raise AssertionError("human-validation status changed unexpectedly")
 
     scores = pd.read_csv(OUT / "entity_scores.csv", keep_default_na=False)
     if scores.groupby("variant")["jur"].nunique().to_dict() != {"claude": 47, "consensus": 47, "ensemble": 47, "openai": 47}:
         raise AssertionError("entity coverage changed")
-    print("ensemble v10.2e: hashes, mass, populations and pending-human boundary verified")
+    print("ensemble v10.2e: hashes, mass, populations and human pre-adjudication boundary verified")
 
 
 if __name__ == "__main__":

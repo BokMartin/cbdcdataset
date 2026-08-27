@@ -1,7 +1,7 @@
 {
   "schema": "cbdc-v10.2e-map-v1",
   "generated_from": "website/data/jurisdiction_stage.csv + website/data/corpus_manifest.csv + results/v10_2e_ensemble/entity_scores.csv",
-  "status": "exploratory; sampled double-blind human validation pending",
+  "status": "exploratory; independent blind human validation complete, consensus adjudication pending",
   "stage_counts": {
     "not_applicable": 2,
     "paused_research": 22,

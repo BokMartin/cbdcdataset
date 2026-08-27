@@ -17,13 +17,13 @@
 
 <section class="hero"><div class="wrap">
   <h1>Data &amp; reproducibility</h1>
-  <p class="lead">Current v10.2e derived outputs for 113 documents, 3,963 page units and 6,949 source-verified union candidates. Public files contain analytical outputs and provenance—not API keys, private human answers or source PDFs whose redistribution rights are unclear.</p>
+  <p class="lead">Current v10.2e derived outputs for 113 documents, 3,963 page units and 6,949 source-verified union candidates. Public files contain analytical outputs, paired blind human-review data and provenance—not API keys or source PDFs whose redistribution rights are unclear.</p>
 </div></section>
 
 <section class="block"><div class="wrap">
   <h2>Current release — v10.2e</h2>
   <p>The two sealed provider runs contain 11,358 source-verified statements (OpenAI 5,675; Claude 5,683). Deterministic source-span matching and deduplication produce 6,949 candidates. The primary equal-vote ensemble retains provider disagreements and is accompanied by OpenAI-only, Claude-only and exact-code-consensus variants.</p>
-  <div class="card" style="border-left:4px solid var(--amber)"><p style="margin:0"><strong>Validation status:</strong> calibration precision 0.980, recall 0.766 and span fidelity 1.000. Recall failed the frozen threshold. A 365-candidate double-blind human sample and 36 dual-empty units are pending, so current production results are exploratory.</p></div>
+  <div class="card" style="border-left:4px solid var(--amber)"><p style="margin:0"><strong>Validation status:</strong> calibration precision 0.980, recall 0.766 and span fidelity 1.000; recall failed the frozen threshold. Independent blind coding is complete for 365 candidates and 36 dual-empty units. Reviewer-specific design-weighted validity is 78.6% and 76.1%, inclusion agreement is 62.6% (AC1 = 0.426), and consensus adjudication remains work in progress.</p></div>
 </div></section>
 
 <section class="block alt"><div class="wrap">
@@ -34,6 +34,7 @@
     <tr><td><code>distributions.csv</code></td><td>Weighted code, family and ODR distributions by provider variant.</td><td><a class="btn btn-primary" href="data/distributions.csv" download>Download</a></td></tr>
     <tr><td><code>candidate_allocations.csv.gz</code></td><td>Compressed candidate-level ensemble allocations, including provider origin and fractional code votes.</td><td><a class="btn btn-primary" href="data/candidate_allocations.csv.gz" download>Download</a></td></tr>
     <tr><td><code>analysis_summary.json</code></td><td>Candidate populations, provider overlap, exact-code/family/ODR agreement and dominant-centre counts.</td><td><a class="btn btn-primary" href="data/analysis_summary.json" download>Download</a></td></tr>
+    <tr><td><code>human_validation_results.json</code></td><td>Blind pre-adjudication sample counts, design-weighted validity, intercoder metrics and dual-empty missed-claim yield.</td><td><a class="btn btn-primary" href="data/human_validation_results.json" download>Download</a></td></tr>
     <tr><td><code>macro_results.json</code></td><td>Measurement relation and institutional correlations for ensemble, provider and consensus variants with bootstrap intervals and permutation tests.</td><td><a class="btn btn-primary" href="data/macro_results.json" download>Download</a></td></tr>
     <tr><td><code>corpus_manifest.csv</code></td><td>Frozen 113-document inventory with filenames, archive members, page counts, source type and SHA-256 hashes.</td><td><a class="btn btn-primary" href="data/corpus_manifest.csv" download>Download</a></td></tr>
     <tr><td><code>jurisdiction_stage.csv</code></td><td>Current jurisdiction stages and verbatim evidence, including DCash 2.0 as cancelled after the February 2026 ECCB suspension.</td><td><a class="btn btn-primary" href="data/jurisdiction_stage.csv" download>Download</a></td></tr>
@@ -42,7 +43,7 @@
     <tr><td><code>deployment_manifest.json</code></td><td>Build provenance linking website headlines and downloads to exact local source hashes.</td><td><a class="btn btn-primary" href="data/deployment_manifest.json" download>Download</a></td></tr>
     <tr><td><code>checksums.sha256</code></td><td>SHA-256 checksums for every deployed file except the checksum file itself.</td><td><a class="btn btn-primary" href="data/checksums.sha256" download>Download</a></td></tr>
   </tbody></table></div>
-  <p class="subtle">Canonical provider outputs, frozen prompts, provenance manifests, validation workbooks and executable scripts live in the <a href="https://github.com/BokMartin/cbdc-msed-v10">GitHub repository</a>. The website deliberately does not publish unfinished human answers.</p>
+  <p class="subtle">Canonical provider outputs, frozen prompts, provenance manifests, the completed pre-adjudication workbook, case-level human data and executable scripts live in the <a href="https://github.com/BokMartin/cbdc-msed-v10">GitHub repository</a>.</p>
 </div></section>
 
 <section class="block"><div class="wrap">
@@ -50,7 +51,7 @@
   <div class="card">
     <p><strong>Deterministic:</strong> source verification, canonicalisation, candidate matching, ensemble allocation, scoring, figures and statistical outputs replay from frozen artifacts.</p>
     <p><strong>Provider-dependent:</strong> the original extraction requires the named model APIs. Raw responses are sealed before parsing so the published run can be audited without rerunning a model.</p>
-    <p><strong>Human-dependent:</strong> final validity and coding agreement estimates require both blinded author workbooks to be returned and hash-locked. Those results are not imputed on this site.</p>
+    <p><strong>Human-dependent:</strong> the independent blind phase is complete and its reviewer-specific estimates are released. A single final consensus-validity estimate and provider-to-consensus agreement remain unavailable until the 319-case adjudication queue is resolved.</p>
   </div>
 </div></section>
 

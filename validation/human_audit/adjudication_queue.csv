@@ -1,0 +1,1564 @@
+candidate_id,candidate_id_machine,sample_stratum,survey_weight,project_owner,candidate_span,inclusion_decision_martin,inclusion_decision_dominik,final_code1_martin,final_code1_dominik,family_martin,family_dominik,final_odr_martin,final_odr_dominik,privacy_direction_martin,privacy_direction_dominik,privacy_relation_martin,privacy_relation_dominik,strength_martin,strength_dominik,notes_martin,notes_dominik,confidence_martin_assumed,confidence_dominik_assumed
+SV-0002,PC-06104,en|claude_only,19.375,Bank of England and HM Treasury (digital pound),"The most important design decision for CBDC would be whether to remunerate, ie pay interest on CBDC balances.",keep,keep,PROG.remuneration_considered,PROG.remuneration_considered,PROG,PROG,finding,finding,neutral,neutral,not_applicable,not_applicable,1.0,3.0,,x,high,high
+SV-0003,PC-02107,en|claude_only,19.375,Hong Kong Monetary Authority (e-HKD),"our 
+assessment is that run risk for banks in Hong Kong would be very low given depositors ’ 
+confidence in the Deposit Protection Scheme and the HKMA ’s prudential regulations 
+and oversight, and e-HKD would not change the picture.",exclude,keep,,STAB.disintermediation,,STAB,,finding,,neutral,,not_applicable,,3.0,,,high,high
+SV-0005,PC-05552,en|both,19.069444444444443,Central Bank of Eswatini (Digital Lilangeni),"The CBE keeps 
+in mind the importance of a resilient CBDC solution, thereby focussing on both 
+online and offline solutions.",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,x,high,high
+SV-0006,PC-02398,en|both,19.069444444444443,Bank Indonesia (Digital Rupiah),"These	risks	would	be	tackled	through 	
+stronger capital provisioning. Measures 
+ranging from minimum capital 
+requirements, systemic capital surcharge, 
+to the establishment of a more prudent 
+liquidity cushion will be taken as an integral 
+part of Digital Rupiah design.",keep,keep,STAB.disintermediation,STAB.disintermediation,STAB,STAB,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0007,PC-06396,en|claude_only,19.375,Maldives Monetary Authority / Maldives CBDC policy study,"There will need 
+to be a unit within MMA (possibly two or three people) to deal with customer 
+complaints and disputes.",exclude,keep,,INST.mandate,,INST,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0008,PC-03790,en|both,19.069444444444443,Bank of Japan,"After the orchestration system calculates the amount in excess of the holding limit s and 
+identifies user attributes, such as corporate or individual, it sends an automatic acceptance 
+instruction to convert the subject amount to bank deposits, etc., to the ledger and the 
+intermediary mockup.",keep,keep,INTEROP.domestic,SYS.design,INTEROP,SYS,decision,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0010,PC-02545,en|both,19.069444444444443,Bank Indonesia (Digital Rupiah),"In the 
+wRD technology architecture, Bank Indonesia can 
+manage 2 (two) types of digital assets: the Rupiah 
+Digital and the digital securities.",keep,exclude,SYS.design,PRIV.BAL,SYS,PRIV,decision,finding,neutral,conditional,not_applicable,from_state,3.0,3.0,,x,high,high
+SV-0011,PC-01383,en|claude_only,19.375,European Central Bank / Eurosystem (digital euro),"Payment service providers 
+(PSPs) would be able to use the digital euro infrastructure to create new payment 
+services, which would in turn increase innovation and competition in the European 
+payments sector.",exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,1.0,,,high,high
+SV-0012,PC-06084,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"the Bank and relevant regulators would need to set standards to ensure that Payment Interface 
+Providers build systems that support inclusion and avoid barriers that arise as a result of technical literacy, 
+disabilities or reliance on more expensive hardware (such as smartphones).",keep,keep,INTEROP.domestic,ACCESS.universal,INTEROP,ACCESS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0013,PC-04571,en|both,19.069444444444443,Reserve Bank of New Zealand,"Managed issuance: A CBDC should be issued and governed by the Reserve Bank in a manner that 
+avoids unnecessary disruption to the cash system, the wider financial system and monetary policy 
+settings",keep,keep,OPS.resilience,INST.mandate,OPS,INST,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0014,PC-00927,en|both,19.069444444444443,Bank of Canada and Payments Canada (Project Jasper),"The Phase 1 solution was also not integrated with any 
+external systems (including collateral management 
+capabilities) and relied on a prefunded account, which 
+is very inefficient and, if adopted, would substantially 
+increase settlement costs for FI participants.",keep,keep,SYS.design,PROC.pilot_learning,SYS,PROC,decision,finding,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0015,PC-04546,en|openai_only,19.21875,Reserve Bank of New Zealand,"The Reserve Bank has high requirements for the reliability, scalability, 
+throughput and resilience of its existing systemically important payments and settlement systems, 
+and these would also apply to a CBDC.",keep,exclude,OPS.resilience,,OPS,,proposal,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0016,PC-06786,en|claude_only,19.375,South African Reserve Bank,"The wCBDC and wToken implemented in the PK2 PoC, 
+for example, could be limited in their usage to selected participants (e.g. only 
+licensed banks) who had been placed on an approved participant list, that is 
+white listed, by the SARB.",keep,keep,INTEROP.domestic,SYS.design,INTEROP,SYS,proposal,finding,decreases,neutral,from_intermediary,not_applicable,2.0,3.0,,,high,high
+SV-0018,PC-04693,en|claude_only,19.375,Bangko Sentral ng Pilipinas,Potential legal concern on retail CBDC issuance,exclude,keep,,LEGAL.basis,,LEGAL,,finding,,neutral,,not_applicable,,1.0,,,high,high
+SV-0020,PC-04952,en|openai_only,19.21875,Bank of Russia (digital ruble),"the introduction of a limit on the amount of funds to be transferred between an online wallet and 
+an offline device;",keep,exclude,AML.LIMIT,,AML,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0021,PC-04091,en|both,19.069444444444443,Norges Bank (Norwegian CBDC work),"Det vurderes ikke som nødvendig at DSP skal 
+gi samme grad av anonymitet som kontanter.",keep,keep,PRIV.ANON,PRIV.ANON,PRIV,PRIV,proposal,decision,decreases,decreases,from_state,not_applicable,2.0,3.0,,,high,high
+SV-0022,PC-00402,en|both,19.069444444444443,Aruba policy study / Central Bank of Aruba,"This policy paper advises central banks 
+to decentralize the customer-facing duties (retail payments 
+clearing, KYC checks) to foster competition in the payments 
+system.",keep,exclude,KYC.INTERMED,AML.LIMIT,KYC,AML,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,x,high,high
+SV-0023,PC-03711,en|both,19.069444444444443,Bank of Japan,"we also looked at resistance to security risks 
+and availability, but did not see any significant differences arising from the variation in the 
+designs.",keep,keep,PROC.pilot_learning,OPS.resilience,PROC,OPS,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0024,PC-02783,en|both,19.069444444444443,Bank of Israel (digital shekel),"The digital shekel system will also suppor t a model of an indirect PSP – an entity that 
+provides end users with all the services that a PSP provides but is not directly connected 
+technologically to the system , rather it  provides the services based on the technological 
+connection of another PSP.",keep,keep,SYS.design,SYS.design,SYS,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0025,PC-00709,en|both,19.069444444444443,Bank of Canada research on retail CBDC feasibility,"Macro-partitioned systems are less flexible than micro-partitioned systems 
+because they do not support custody by end users.",keep,keep,SYS.design,SYS.design,SYS,SYS,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0028,PC-05447,en|both,19.069444444444443,Central Bank of Eswatini (Digital Lilangeni),"As with the online use case, people are granted convertibility to physical Lilangeni at any 
+time",keep,keep,CASH.relation,CASH.relation,CASH,CASH,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0029,PC-00267,en|openai_only,19.21875,Reserve Bank of Australia and Digital Finance CRC (Australian CBDC pilot),"This will be a stand-alone 
+platform solely for the issuance and transactional operation of the pilot CBDC.",keep,exclude,SYS.design,,SYS,,decision,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0030,PC-03943,en|both,19.069444444444443,Monetary Authority of Macao (e-MOP),"as a 
+fully convertible currency, the design of e-MOP respects the policies 
+and legal frameworks, as well as the monetary sovereignty, exchange 
+rate regimes, and relevant exchange and remittance rules of other 
+jurisdictions, in an endeavour to fulfill their regulatory and compliance 
+requirements.",keep,keep,INTEROP.domestic,INTEROP.crossborder,INTEROP,INTEROP,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0031,PC-03970,en|claude_only,19.375,Monetary Authority of Macao (e-MOP),"On the premise of preserving 
+the functions of currency, smart contracts with tamper-proof features 
+and mechanisms to guarantee execution will be embedded into the 
+system.",keep,keep,PROG.generic,SYS.design,PROG,SYS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0032,PC-01013,en|both,19.069444444444443,Bank of Canada and Payments Canada (Project Jasper),"The exhale process in the Jasper LSM option involves 
+the Bank of Canada paying out the pooled DDR  
+balance that it accumulated during the inhale step to 
+each participant in accordance with the outcome of 
+the offsetting process.",keep,keep,SYS.design,SYS.design,SYS,SYS,finding,decision,neutral,neutral,not_applicable,not_applicable,1.0,2.0,,,high,high
+SV-0034,PC-06666,en|both,19.069444444444443,Banco Central del Uruguay (e-Peso pilot),"The design decision of a token -based CBDC that involves the transfer of a token directly 
+between wallets has worked properly in many ways",keep,keep,TECH.TOKEN.considered,TECH.TOKEN.decided_yes,TECH,TECH,finding,decision,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0036,PC-06197,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"Not everyone has a smart device or finds it easy to use one, so 
+users could also have physical card options for CBDC payments.",keep,keep,ACCESS.universal,SYS.design,ACCESS,SYS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0037,PC-00575,en|both,19.069444444444443,Central Bank of The Bahamas (Sand Dollar),"The Central Bank will vary these limits over time as may be necessary to satisfy the robustness of 
+the AML/CFT regime, under the p rinciple that the more elevated due -diligence would always 
+enable accounts to operate with higher transactions limits.",keep,keep,KYC.INTERMED,KYC.TIER,KYC,KYC,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0038,PC-01438,en|both,19.069444444444443,European Central Bank / Eurosystem (digital euro),"It
+would ensure that PSPs deliver consistent basic digital euro services, enabling a uniform user
+experience regardless of the country or PSP involved.",keep,keep,INTEROP.crossborder,INTEROP.domestic,INTEROP,INTEROP,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0039,PC-04717,en|both,19.069444444444443,Republic of Palau (Palau Stablecoin programme),"Once created, those wallets were then registered in the CBDC Platform (i.e. 
+the PSC issuer & distribution system) with both user registration and PSC distribution managed by the 
+MOF staff.",keep,keep,INST.mandate,SYS.design,INST,SYS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0040,PC-06262,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"The introduction of offline payments for payment resilience in the event of 
+network disruption introduces the double spend risk (Section 4.8).",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0042,PC-03432,en|openai_only,19.21875,Reserve Bank of India (digital rupee),"The customer protection 
+framework for CBDC must consider the 
+variations in the digital l iteracy of consumers 
+and ways to increase consumer understanding 
+and transparency so that an informed choice is 
+made by them while adopting the CBDC.",keep,exclude,ADOPT.experience,,ADOPT,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0043,PC-01682,en|both,19.069444444444443,Bank of Ghana (eCedi),"One 
+of the eCedi’s technical solutions addressing cyber-
+attack prevention is the separation of the issuance 
+and distribution modules of the core infrastructure.",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,decision,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0044,PC-01665,en|both,19.069444444444443,Bank of Ghana (eCedi),"The KYC regime for eCedi will be risk-based and 
+therefore provide for tiered KYC access criteria 
+to meet the needs of diverse user groups. In this 
+regard, eCedi wallets with different requirements 
+for the identification checks depending on the 
+thresholds and daily/aggregate transaction limits, 
+and maximum account balances will be available.",keep,keep,KYC.TIER,KYC.TIER,KYC,KYC,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0045,PC-01204,en|both,19.069444444444443,People's Bank of China (e-CNY),"a
+s
+e
+-
+C
+N
+Y
+i
+s
+s
+e
+t
+t
+l
+e
+d
+upon
+pa
+y
+m
+e
+nt
+,
+bus
+i
+ne
+s
+s
+e
+s
+a
+nd
+r
+e
+l
+a
+t
+e
+d
+pa
+r
+t
+i
+e
+s
+c
+a
+n
+i
+m
+pr
+ove
+c
+a
+s
+h
+f
+l
+ow
+w
+hi
+l
+e
+e
+nj
+oy
+i
+ng
+m
+or
+e
+c
+onve
+ni
+e
+nt
+pa
+y
+m
+e
+nt
+s
+e
+r
+vi
+c
+e
+s
+.",keep,keep,LEGAL.basis,ADOPT.experience,LEGAL,ADOPT,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0046,PC-02886,en|both,19.069444444444443,Bank of Israel (digital shekel),"In the described mechanism, the Bank of Israel acts as an intermediary between the end user 
+and the FI operating the ATM.",keep,keep,SYS.design,SYS.design,SYS,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0047,PC-01596,en|both,19.069444444444443,Bank of Ghana (eCedi),"increase the speed and convenience 
+of cashless payments",keep,keep,ADOPT.experience,ADOPT.experience,ADOPT,ADOPT,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0048,PC-01217,en|openai_only,19.21875,People's Bank of China (e-CNY),"C
+ons
+i
+s
+t
+e
+nt
+w
+i
+t
+h
+t
+he
+m
+a
+na
+ge
+m
+e
+nt
+of
+phy
+s
+i
+c
+a
+l
+R
+M
+B
+,
+t
+he
+P
+B
+O
+C
+doe
+s
+not
+c
+ha
+r
+g
+e
+a
+ut
+hor
+i
+z
+e
+d
+ope
+r
+a
+t
+or
+s
+f
+or
+e
+x
+c
+ha
+nge
+a
+nd
+c
+i
+r
+c
+ul
+a
+t
+i
+on
+s
+e
+r
+vi
+c
+e
+s
+,
+a
+nd
+t
+he
+ope
+r
+a
+t
+or
+s
+do
+not
+c
+ha
+r
+g
+e
+i
+ndi
+vi
+dua
+l
+c
+l
+i
+e
+nt
+s
+f
+or
+t
+he
+e
+xc
+ha
+nge
+of
+e
+-
+C
+N
+Y
+e
+i
+t
+he
+r
+.",keep,exclude,ADOPT.experience,,ADOPT,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0050,PC-03820,en|both,19.069444444444443,Bank of Japan,"To prevent a situation where only one transfer succeeds 
+and the other fails, the following is implemented:
+(1) Only the amount of A’s CBDC and B’s other asset to be 
+transferred should be set aside to avoid transfer failures 
+due to insufficient balances, etc.
+(2)
+・ Transfer the reserved portion only if the process in (1) is 
+successful for both CBDC and the other asset.
+・ If either CBDC or the other asset fails to process in (1), return 
+to the original state (release reserved amount).",keep,keep,INTEROP.domestic,SYS.design,INTEROP,SYS,decision,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0052,PC-05864,en|both,19.069444444444443,National Bank of Ukraine (e-hryvnia pilot),"the e-hryvnia is not a  yield bearing instrument, and 
+therefore, it works as a medium of exchange, not as 
+a store of value.",keep,keep,PROG.remuneration_no,PROG.remuneration_no,PROG,PROG,proposal,decision,neutral,neutral,not_applicable,not_applicable,1.0,3.0,,,high,high
+SV-0053,PC-06178,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"The Bank will not pursue central bank-initiated programmable functions. 
+This means that the Bank will not program CBDC to restrict its use.",keep,exclude,PROG.generic,PROG.restriction,PROG,PROG,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,x,high,high
+SV-0054,PC-02424,en|claude_only,19.375,Bank Indonesia (Digital Rupiah),"This CP provides an overview of the Digital Rupiah design for the
+first stage of its development (immediate stage), namely the wholesale
+Digital Rupiah cash ledger which includes the introduction of the
+technology and basic functionalities constituting the issuance, redemption,
+and transference of funds.",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0057,PC-00637,en|openai_only,19.21875,Bank of Canada,"I-CBDC would not be anonymous (as noted above), which would impair its appeal for 
+some retail transactions.",keep,exclude,PRIV.ANON,,PRIV,,finding,,decreases,,from_state,,2.0,,,,high,high
+SV-0058,PC-04445,en|claude_only,19.375,Norges Bank (Norwegian CBDC work),"Da Norges Bank startet arbeidet med DSP, var hovedmotivasjonen 
+sentralbankens formål med å legge til rette for et sikkert og effektivt 
+betalingssystem, uten å virke negativt for de andre formålene i 
+sentralbankloven.",exclude,keep,,INST.mandate,,INST,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0059,PC-00792,en|both,19.069444444444443,Bank of Canada research on retail CBDC feasibility,"Our assessment of two variants of OpenCBDC 2PC for auditability 
+indicates that mechanisms similar to either of them would be feasible functionally to audit the 
+supply and detect a discrepancy , i.e., furnish a binary yes/no answer to the question “ Did 
+tampering occur?”",keep,keep,PRIV.MIN,SYS.design,PRIV,SYS,proposal,finding,increases,neutral,from_state,not_applicable,2.0,2.0,,,high,high
+SV-0060,PC-05581,en|both,19.069444444444443,Bank of Thailand (retail CBDC pilot),"Retail CBDC Pilot Program
+Real-value CBDC pilot testing with 
+retail users and merchants, as well 
+as exploration for feasibility of 
+innovative use cases",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0062,PC-02059,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD Phase 2 pilots),"It was found that ZKPs improved privacy 
+with similar settlement times but significantly 
+increased gas fees37, making them up to 320 
+times more expensive than transactions which 
+do not use any PETs, due to their computational 
+intensity.",keep,keep,PRIV.BAL,SYS.design,PRIV,SYS,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,1.0,,,high,high
+SV-0063,PC-00719,en|openai_only,19.21875,Bank of Canada research on retail CBDC feasibility,"Hence, a type-U receiver must be present to receive 
+payment.",keep,exclude,SYS.design,,SYS,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0064,PC-06791,en|both,19.069444444444443,South African Reserve Bank,"Additionally, the 
+wToken was redeemable for wCBDC, which 
+increased participants’ options and further 
+reduced (liquidity) risk.",keep,keep,INTEROP.domestic,SYS.design,INTEROP,SYS,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0065,PC-05464,en|both,19.069444444444443,Central Bank of Eswatini (Digital Lilangeni),"Only if universal access to digital central bank money is ensured 
+would it be seen as a true complement to cash and be accepted as such.",keep,keep,CASH.relation,CASH.relation,CASH,CASH,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0066,PC-06434,en|claude_only,19.375,Maldives Monetary Authority / Maldives CBDC policy study,"3. Reduction in costs (cash supply, cash handling, transaction costs etc) 
+by identifying functions that would create public benefits from 
+reduction in the use of cash.",exclude,keep,,CASH.relation,,CASH,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0067,PC-01564,fr|openai_only,1.0,Banque de France (wholesale CBDC programme),"They 
+also confirmed that central banks can retain 
+control of the CBDC over these different 
+types of DLTs, in particular by exploiting 
+the programmability features of central bank 
+money provided by this technology.",keep,exclude,PROG.generic,,PROG,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0068,PC-03487,en|openai_only,19.21875,Banca d'Italia research context,"should the D€ be made 
+available for cross-border and cross-currency operations, one should keep in 
+mind that this could affect financial stability in various ways, which would 
+need to be properly investigated in order to prevent undesired spillovers and 
+additional international linkages.",keep,exclude,INTEROP.crossborder,,INTEROP,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0069,PC-02597,en|both,19.069444444444443,Bank Indonesia (Digital Rupiah),"In R3 Corda, which utilizes the Unspent Transaction 
+Output (UTXO) model, the creation process involves 
+a transaction that produces the Rupiah Digital 
+token. This transaction is executed by invoking the 
+issuance flow on the Rupiah Digital CorDapps.",keep,keep,SYS.design,TECH.TOKEN.considered,SYS,TECH,decision,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0070,PC-03967,en|both,19.069444444444443,Monetary Authority of Macao (e-MOP),"it is necessary for both the AMCM and 
+designated authorised operators to establish personal information 
+protection regimes and internal control management mechanisms 
+that comply with the legal requirements.",keep,keep,PRIV.MIN,PRIV.MIN,PRIV,PRIV,proposal,decision,increases,increases,from_intermediary,from_state,2.0,2.0,,,high,high
+SV-0071,PC-02579,en|claude_only,19.375,Bank Indonesia (Digital Rupiah),"R3 Corda’s Token SDK supports the 
+issuance and management of digital tokens, 
+while Kaleido Hyperledger Besu uses the ERC20 
+standard for the Rupiah Digital token base and 
+ERC1400 for digital securities tokens.",keep,keep,TECH.TOKEN.considered,TECH.TOKEN.decided_yes,TECH,TECH,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0074,PC-00516,en|both,19.069444444444443,Banco Central do Brasil (Drex / Digital Real),"Technological and business directives
+✓ To be defined exclusively by the BCB",keep,exclude,INST.mandate,SYS.design,INST,SYS,decision,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,x,high,high
+SV-0075,PC-04631,en|both,19.069444444444443,Banco Central de Reserva del Peru,"The CBDC issuance is not intended to compete with existing digital payment services, but to 
+expand unbanked people’s access to payment services .",keep,keep,ACCESS.universal,ACCESS.universal,ACCESS,ACCESS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0076,PC-04367,en|claude_only,19.375,Norges Bank (Norwegian CBDC work),Vi ser for oss at kontosystemet kombineres med en modul for lokal lagring.,exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0079,PC-02056,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD Phase 2 pilots),"It was found that ZKPs improved privacy 
+with similar settlement times but significantly 
+increased gas fees37, making them up to 320 
+times more expensive than transactions which 
+do not use any PETs, due to their computational 
+intensity.",keep,keep,ADOPT.experience,PRIV.PET,ADOPT,PRIV,finding,finding,neutral,increases,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0080,PC-02565,en|claude_only,19.375,Bank Indonesia (Digital Rupiah),"The security aspects in the implementation of 
+the wRD PoC have been tested and follow the 
+applicable security standards at Bank Indonesia.",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,decision,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0081,PC-06319,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"A well-designed API layer would allow PIPs to integrate their current and future payment 
+services with a CBDC.",keep,keep,INTEROP.domestic,SYS.design,INTEROP,SYS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0082,PC-03755,ja|both,7.0,Bank of Japan (CBDC pilot),"⑦逆引送金 
+送金先のユーザーが、送金元のユーザーの事前承諾を前提に、逆引送金を行うための取
+引指示を送金元の CBDC 口座に対して送付し、当該指示とおりの逆引送金を実行",keep,keep,PROG.generic,SYS.design,PROG,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0083,PC-05695,en|both,19.069444444444443,Central Bank of the Republic of Turkiye (Digital Turkish Lira),"Foreign exchange transactions are executed by the services in the 
+common platform. When foreign exchange orders are submitted to the platform, these 
+services use the available orders to determine the least-cost and most efficient path from 
+the source currency to the target currency.",keep,keep,INTEROP.crossborder,INTEROP.crossborder,INTEROP,INTEROP,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0084,PC-03297,en|both,19.069444444444443,Reserve Bank of India (digital rupee),"Creation and issuance of retail e₹ is identical to the arrangement for issuance of 
+paper currency i.e. , RBI creates e₹ and issues them to banks  and non- banks 
+electronically.",keep,keep,SYS.design,SYS.design,SYS,SYS,decision,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0085,PC-00162,en|both,19.069444444444443,Reserve Bank of Australia and Digital Finance CRC (Australian CBDC pilot),"The GST amount on the invoice was automatically 
+calculated and paid in pilot CBDC to a holding account to be paid to the ATO, with the 
+remainder automatically (and simultaneously) paid to the merchant.",keep,exclude,PROG.generic,PROG.generic,PROG,PROG,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,x,high,high
+SV-0086,PC-02564,en|claude_only,19.375,Bank Indonesia (Digital Rupiah),"In the PoC, the chosen 
+network access is permissioned network.",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,3.0,,,high,high
+SV-0087,PC-06806,en|both,19.069444444444443,South African Reserve Bank,"It has been established that it is feasible 
+to port – export and import – the wCBDC to 
+other (non-native) DLT-based platforms while 
+maintaining a link back to its own (native) DLT.",keep,keep,TECH.TOKEN.considered,TECH.DLT,TECH,TECH,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0088,PC-02571,en|claude_only,19.375,Bank Indonesia (Digital Rupiah),"The Kaleido 
+Hyperledger Besu-based solution guarantees 
+confidentiality through encryption methods, while 
+R3 Corda applies the need-to-know principle for 
+every transaction.",exclude,keep,,PRIV.PET,,PRIV,,decision,,increases,,from_intermediary,,2.0,,,high,high
+SV-0089,PC-06641,en|both,19.069444444444443,Banco Central del Uruguay (e-Peso pilot),"All the operations have i nstant settlement, 
+and d o not require internet connection (just a mobile phone line) .",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0090,PC-02651,en|both,19.069444444444443,Bank of Israel (digital shekel),"Payment 
+with the DS is immediate and final, and the DS will also support offline payments, allowing 
+smooth payment transactions even in situations without network connectivity.",keep,keep,CASH.relation,OPS.resilience,CASH,OPS,proposal,decision,conditional,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0091,PC-05332,en|both,19.069444444444443,Monetary Authority of Singapore (Project Orchid / purpose-bound money),"Hence, it is prudent for PBM technology to 
+be designed at the onset to be interoperable 
+across different platforms, wallets, payment 
+systems and rails.",keep,keep,INTEROP.domestic,INTEROP.domestic,INTEROP,INTEROP,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0092,PC-06686,es|both,26.5,Banco Central del Uruguay (e-Peso pilot),"Se suscribe un convenio entre BCU-ANTEL- RGC (The 
+Roberto Giori Company Ltd.) para realizar un plan piloto 
+por 6 meses con el objetivo de emitir, manejar y transferir 
+billetes digitales.",keep,keep,SYS.design,INST.mandate,SYS,INST,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0093,PC-01782,en|both,19.069444444444443,Bank of Ghana (eCedi),"These types of eCedi 
+transactions made up 3 % o f the total transactions 
+while “cash to eCedi” which is depositing cash into 
+the eCedi account, made up 2  %.",keep,exclude,CASH.relation,ADOPT.experience,CASH,ADOPT,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,x,high,high
+SV-0095,PC-04464,en|both,19.069444444444443,Norges Bank,"Can provide the desired degree of data 
+protection (beyond requirements under 
+EEA law)",keep,keep,PRIV.MIN,LEGAL.basis,PRIV,LEGAL,proposal,decision,increases,neutral,from_state,not_applicable,2.0,3.0,,,high,high
+SV-0096,PC-06232,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"Therefore, it is important that security is designed into the CBDC system to account for and 
+minimise the likelihood and impact of these risks, while balancing system usability.",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,proposal,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0097,PC-01565,fr|both,8.0,Banque de France (wholesale CBDC programme),"They 
+also confirmed that central banks can retain 
+control of the CBDC over these different 
+types of DLTs, in particular by exploiting 
+the programmability features of central bank 
+money provided by this technology.",keep,keep,PROG.generic,PROG.generic,PROG,PROG,finding,finding,decreases,neutral,from_state,not_applicable,2.0,2.0,,,high,high
+SV-0098,PC-03448,en|both,19.069444444444443,Central Bank of Iceland,"This report discusses two different ways of issuing a rafkróna: 
+a), as base money; b) as a registered, traceable deposit to a payment 
+account with the Central Bank, hereinafter referred to as a rafkróna 
+account.",keep,keep,TECH.TOKEN.considered,SYS.design,TECH,SYS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0100,PC-00930,en|both,19.069444444444443,Bank of Canada and Payments Canada (Project Jasper),"The use of a proof-of-work consensus mech-
+anism raised concerns from the perspective of oper-
+ational efficiency, since it was demonstrated that this  
+consensus method could not provide the throughput  
+required as volumes increased.",keep,keep,TECH.DLT,SYS.design,TECH,SYS,finding,decision,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0101,PC-05690,en|claude_only,19.375,Central Bank of the Republic of Turkiye (Digital Turkish Lira),"The use of 
+digital monies in cross-border payments aims to resolve these issues through utilizing 
+flows conducted via central banks and implementing distributed architectures, in contrast 
+to the correspondent banking model.",exclude,keep,,INTEROP.crossborder,,INTEROP,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0102,PC-06656,en|both,19.069444444444443,Banco Central del Uruguay (e-Peso pilot),"The results of e -Peso pilo t shows that no connections or transmission of operations 
+problems were reported, so the network supported pretty good the pilot",keep,exclude,OPS.resilience,PRIV.ANON,OPS,PRIV,finding,finding,neutral,increases,not_applicable,from_counterparty,2.0,3.0,,x,high,high
+SV-0103,PC-06500,en|both,19.069444444444443,Federal Reserve Bank of New York (Project Cedar Phase I),"Under simulated test scenarios based on market throughput estimates, FX spot 
+trades were atomically settled in under ten seconds, validating the project 
+objectives of enabling instant and atomic settlement using DLT while also 
+revealing promising applications for blockchain in wholesale payments and 
+presenting questions for future research.",keep,keep,PROC.pilot_learning,INTEROP.crossborder,PROC,INTEROP,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0104,PC-05653,en|openai_only,19.21875,Central Bank of the Republic of Turkiye (Digital Turkish Lira),"Users will be able to access their digital Turkish lira accounts through any 
+financial intermediary. In this way, similar to banknotes, the digital Turkish lira will be 
+usable in an intermediary-agnostic manner.",keep,exclude,INTEROP.domestic,,INTEROP,,decision,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0105,PC-00949,en|both,19.069444444444443,Bank of Canada and Payments Canada (Project Jasper),"A DLT-based wholesale 
+settlement solution in Canada must be able to  
+process, at a minimum, over 50,000 payment items 
+per day, and at least 14 items per second, based on 
+observation of the LVTS today.",keep,keep,OPS.resilience,SYS.design,OPS,SYS,finding,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0106,PC-05075,ru/uk|openai_only,20.33333333333333,Bank of Russia (digital ruble),"Использование инфраструктуры АО «НСПК» для платежей по QR-коду в магазине 
+или в интернете позволяет сделать платеж безопасным и привычным для пользователей.",keep,exclude,ADOPT.experience,,ADOPT,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0107,PC-06448,en|claude_only,19.375,Maldives Monetary Authority / Maldives CBDC policy study,"Address Consumer issues such as privacy - in particular  the potential loss 
+of anonymity through traceability of digital transactions under certain 
+circumstances or above threshold  values.",exclude,keep,,PRIV.BAL,,PRIV,,finding,,conditional,,from_state,,2.0,,,high,high
+SV-0108,PC-06465,en|both,19.069444444444443,Board of Governors of the Federal Reserve System (potential US CBDC),"The Federal Reserve Act does not authorize direct Federal Reserve accounts forindividuals, and such accounts would represent a significant expansion of the Federal Reserve’srole in the financial system and the economy.",keep,keep,SYS.design,KYC.INTERMED,SYS,KYC,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0109,PC-00743,en|both,19.069444444444443,Bank of Canada research on retail CBDC feasibility,"The baseline throughput scales 
+linearly as capacity is increased from one to eight shards, without significant degradation 
+of latency.",keep,keep,OPS.resilience,PROC.pilot_learning,OPS,PROC,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0110,PC-04890,ru/uk|both,20.0,Bank of Russia (digital ruble),"Влияние цифрового рубля на денежно-кредитную политику Банка России в среднесроч -
+ной перспективе будет незначительным.",keep,keep,STAB.disintermediation,STAB.disintermediation,STAB,STAB,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0111,PC-03200,en|both,19.069444444444443,Bank of Israel (digital shekel),"we have chosen at this stage to assume the 
+existence of this participant as part of the architecture, including its direct integration into the core system 
+of the digital shekel, with the goal of ensuring architectural flexibility.",keep,keep,SYS.design,SYS.design,SYS,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0112,PC-00748,en|claude_only,19.375,Bank of Canada research on retail CBDC feasibility,"In ou r two-tier design, PII is managed 
+exclusively by the MSBs (acting as wallet custodians) or the end user in the case of a self-
+custody wallet.",keep,keep,TECH.TOKEN.considered,KYC.INTERMED,TECH,KYC,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0113,PC-04183,en|both,19.069444444444443,Norges Bank,"For et kontobasert system vil Norges Bank trolig måtte ha 
+det endelige ansvaret for den sentrale infrastrukturen, men ikke nødvendigvis for 
+betalingstjenestene som kan bygges på toppen av den.",keep,keep,INST.mandate,INST.mandate,INST,INST,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0114,PC-04156,en|claude_only,19.375,Norges Bank (Norwegian CBDC work),"Tilbudet av DSP må være i samsvar med personvernregelverket. Ansvaret kan ikke 
+utkontrakteres.",exclude,keep,,PRIV.MIN,,PRIV,,proposal,,neutral,,from_state,,2.0,,,high,high
+SV-0115,PC-05699,en|both,19.069444444444443,Central Bank of the Republic of Turkiye (Digital Turkish Lira),"Following the 
+successful completion of the proof-of-concept study, which included tests 
+of the applicability of various distributed ledger technologies to the Central 
+Bank Digital Currency, the Central Bank Digital Turkish Lira Research and 
+Development Project was launched.",keep,keep,PROC.pilot_learning,INST.mandate,PROC,INST,finding,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0116,PC-02119,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD),"the mobile wallet apps provided by financial institutions are also 
+subject to cyber risks faced by existing e-wallets (e.g. fake QR codes).",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0117,PC-01071,en|both,19.069444444444443,Bank of Canada and Payments Canada (Project Jasper),"Specifically, the project team has had the opportuni-
+ty to explore and compare the capabilities of two  
+distinct DLT platforms—the Ethereum and Corda 
+platforms—to build out this settlement functionality, 
+and to build and implement an LSM in the form of a 
+central queue on the Corda platform.",keep,keep,SYS.design,TECH.DLT,SYS,TECH,decision,finding,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0118,PC-00811,en|both,19.069444444444443,Bank of Canada research on retail CBDC feasibility,"However, in later testing, after the compiler had been upgraded along with some libraries, 
+the rate of scaling dropped to lower than two times, even though these upgrades were 
+unrelated to the core logic .",keep,keep,OPS.resilience,PROC.pilot_learning,OPS,PROC,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0119,PC-02895,en|both,19.069444444444443,Bank of Israel (digital shekel),"the alias will be presented to the payer to ensure the payment is being 
+transferred to the correct payee (confirmation of payee)",keep,exclude,SYS.design,PROG.generic,SYS,PROG,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,x,high,high
+SV-0121,PC-06680,en|openai_only,19.21875,Banco Central del Uruguay (e-Peso pilot),"the main use o f e-Pesos is the same as  
+cash, to do small payments and not to compete with other means of payments or at 
+least, no to compete in a different way than cash does",keep,exclude,CASH.relation,,CASH,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0122,PC-06123,en|openai_only,19.21875,Bank of England and HM Treasury (digital pound),"Resilient: because CBDC would likely serve as a critical piece of national infrastructure, it would need to be 
+able to handle hardware and software failures in parts of the CBDC system, or telecom network failures, while 
+sustaining continuity of operations and without having a single point of failure that could break the system. It 
+must also be resilient to, and able to adapt to, peaks in demand.",keep,exclude,OPS.resilience,,OPS,,proposal,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0123,PC-04658,en|both,19.069444444444443,Banco Central de Reserva del Peru,"By offering a 
+payment instrument that is accepted in the same places that cash is accepted, a CBDC can help keep 
+money flows received in money transfers primarily in the financial system.",keep,keep,ADOPT.experience,ACCESS.universal,ADOPT,ACCESS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0124,PC-04203,en|openai_only,19.21875,Norges Bank,"Det trengs trolig en form for nettbank for regningsbetalinger og andre større betalinger 
+konto-til-konto.",keep,exclude,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0125,PC-01720,en|claude_only,19.375,Bank of Ghana (eCedi),"The eCedi solution was tested in the field in online and offline scenarios with the overarching 
+objective of assessing the feasibility of introducing a user-centered and inclusive digital version of 
+the Ghana Cedi.",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0127,PC-04226,en|openai_only,19.21875,Norges Bank,"Løsningen skal være tilgjengelig 24 timer i døgnet, 365 dager i 
+året.",keep,exclude,OPS.resilience,,OPS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0129,PC-01487,en|both,19.069444444444443,European Central Bank / Eurosystem (digital euro),"Overall, the analysis confirmed that holding limits can effectively restrict deposit outflows from
+the banking sector, safeguarding financial stability and supporting the effective formulation and
+implementation of monetary policy.",keep,keep,AML.LIMIT,AML.LIMIT,AML,AML,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0130,PC-03635,en|claude_only,19.375,Banca d'Italia research context,"having a component that can be remunerated and whose 
+individual holdings can be controlled, coupled with a more cash-like one and 
+also offering innovative features, such as the programmability of the money.",exclude,keep,,PROG.remuneration_considered,,PROG,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0131,PC-06217,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"Personal data collected during user  
+on-boarding and payment transactions 
+should, by default, be limited to that required 
+for those purposes.",keep,keep,PRIV.MIN,PRIV.MIN,PRIV,PRIV,proposal,proposal,increases,increases,from_intermediary,from_intermediary,3.0,2.0,,,high,high
+SV-0132,PC-06567,en|both,19.069444444444443,United States federal executive policy on CBDC,"(v) taking measures to protect Americans from the risks of Central Bank 
+Digital Currencies (CBDCs), which threaten the stability of the financial 
+system, individual privacy, and the sovereignty of the United States, in-
+cluding by prohibiting the establishment, issuance, circulation, and use 
+of a CBDC within the jurisdiction of the United States.",keep,keep,OTHER.keep,LEGAL.basis,OTHER,LEGAL,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0133,PC-01001,en|openai_only,19.21875,Bank of Canada and Payments Canada (Project Jasper),"The Bank will perform the  
+review of the DDR LSM Object, add its signature and 
+return the DDR LSM Object back to the sending  
+participant.",keep,exclude,INST.mandate,,INST,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0134,PC-03750,ja|claude_only,4.0,Bank of Japan (CBDC pilot),"性能・事務量については、概念実証より高負荷に対応可能なシステム 5の構
+築を目指し、仮に将来、社会実装することとなった場合の性能要件実現に向けた技術
+的な留意点や解決策の洗い出し・評価を行う予定である。",exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0135,PC-04480,en|claude_only,19.375,Norges Bank,"The impression is that DLT requires more detailed specification of 
+characteristics than account-based solutions, in part because there may be 
+cases of doubt as to whether the characteristics have been fulfilled.",exclude,keep,,TECH.DLT,,TECH,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0136,PC-00621,en|openai_only,19.21875,Bank of Canada,"The central bank would exchange reserves, bank notes and CBDC at par with financial 
+institutions that have an account at the central bank, just as reserves and bank notes are 
+exchanged at par today. This would lead to par exchange of bank notes and CBDC 
+among the general public.",keep,exclude,INTEROP.domestic,,INTEROP,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0137,PC-04959,en|both,19.069444444444443,Bank of Russia (digital ruble),"The interfaces for digital ruble devices and apps must support simple and user-friendly complaint 
+procedures.",keep,keep,ADOPT.experience,INTEROP.domestic,ADOPT,INTEROP,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0138,PC-04701,en|both,19.069444444444443,Bangko Sentral ng Pilipinas,"CBDC shall be designed taking into account 
+the risks, challenges and opportunities for 
+payments innovation in a manner that 
+serves the evolving needs of the national 
+payment system",keep,keep,SYS.design,INST.mandate,SYS,INST,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0139,PC-01656,en|openai_only,19.21875,Bank of Ghana (eCedi),"Transactions for offline payments 
+are therefore instantly settled without accessing a 
+backend system3.",keep,exclude,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0140,PC-03400,en|both,19.069444444444443,Reserve Bank of India (digital rupee),"User Held Model – The responsibility of key 
+holding is with User and its device. Wallet is 
+not recoverable in case of loss of user held 
+device.",keep,keep,OPS.resilience,SYS.design,OPS,SYS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0141,PC-02239,en|claude_only,19.375,Magyar Nemzeti Bank (Student Safe / retail CBDC pilot context),"In the light of experience, “unusual 
+transactions” were regularly redefined and daily monitoring was carried out on this basis.",exclude,keep,,AML.MON,,AML,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0143,PC-02027,en|openai_only,19.21875,Hong Kong Monetary Authority (e-HKD Phase 2 pilots),"These factors reduce the applicability 
+of introducing an offline e-HKD for the purpose 
+of inclusion or resilience.",keep,exclude,OTHER.keep,,OTHER,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0144,PC-01760,en|both,19.069444444444443,Bank of Ghana (eCedi),"The demand for digital 
+payment solutions such as 
+the eCedi was endorsed by 
+the pilot. Also, individuals, 
+businesses and FSPs 
+indicated their willingness 
+to use the eCedi when 
+rolled out.",keep,keep,PROC.pilot_learning,ADOPT.experience,PROC,ADOPT,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0145,PC-03917,en|both,19.069444444444443,Monetary Authority of Macao (e-MOP),"e-MOP may draw on the acceptance 
+basis of “Simple Pay” by leveraging wallet application software (apps) 
+and physical carriers (such as cards or smart devices), rendering 
+efficient, convenient and cost-effective payment services to residents 
+and tourists.",keep,keep,ADOPT.experience,ADOPT.experience,ADOPT,ADOPT,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0146,PC-04907,en|both,19.069444444444443,Bank of Russia (digital ruble),"Depending on their needs, individuals and companies will 
+be able to exchange their money from one form to another, i.e. from the digital form to cash or non-
+cash funds in their bank accounts, and back.",keep,keep,SYS.design,INTEROP.domestic,SYS,INTEROP,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0147,PC-01542,en|both,19.069444444444443,European Central Bank / Eurosystem (digital euro),"the
+draft Regulation requires the distribution of the digital euro in non-euro area countries to be based
+on arrangements or agreements with local authorities, without which it would not be possible for
+citizens of those countries to have digital euro holdings.",keep,keep,INTEROP.crossborder,KYC.INTERMED,INTEROP,KYC,proposal,decision,neutral,neutral,not_applicable,from_intermediary,3.0,3.0,,,high,high
+SV-0148,PC-06108,en|claude_only,19.375,Bank of England and HM Treasury (digital pound),"the central bank may also wish to impose some limits on the amount that could be held by each individual 
+or business",exclude,keep,,AML.LIMIT,,AML,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0149,PC-02383,en|openai_only,19.21875,Bank Indonesia (Digital Rupiah),"W-Digital 
+Rupiah is comparable with reserves in 
+central bank. With this quality, w-Digital 
+Rupiah held by banks could be included in 
+statutory reserve compliance.",keep,exclude,STAB.disintermediation,,STAB,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0150,PC-00620,en|openai_only,19.21875,Bank of Canada,"The digital wallet would be provided by designated private service providers that are 
+certified or licensed by the central bank.",keep,exclude,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0151,PC-03543,en|claude_only,19.375,Banca d'Italia research context,"An intermediary organization 
+can play the role of an access point for the CBDC: it may own a private 
+registry of identities that maps positions in the TIPS+ system or provide a  
+value-added service for the storage of private keys on users’ behalf.",exclude,keep,,KYC.INTERMED,,KYC,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0152,PC-05554,en|both,19.069444444444443,Central Bank of Eswatini (Digital Lilangeni),"The 
+outcome of the pilot projects has not changed the position of the CBE in this 
+regard, meaning that the CBE still aims to design a potential Digital Lilangeni as 
+a non-interest bearing CBDC with legal tender status.",keep,keep,PROG.remuneration_no,PROG.remuneration_no,PROG,PROG,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,1.0,,x,high,high
+SV-0153,PC-00343,en|both,19.069444444444443,Reserve Bank of Australia and Digital Finance CRC (Project Acacia),"Fewer inter -system 
+interactions may result in 
+better settlement throughput 
+and latency (no on - or off -
+ramping into or out of 
+tokenised money, and no 
+interchange between different 
+money tokens – interchange of 
+commercial bank money 
+occurs through existing highly 
+performant infrastructure )",keep,keep,OPS.resilience,STAB.disintermediation,OPS,STAB,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0154,PC-04574,en|both,19.069444444444443,Reserve Bank of New Zealand,"Uniform: A CBDC should be exchanged 1:1 with cash and support the NZD as our single unit of 
+account.",keep,keep,CASH.relation,CASH.relation,CASH,CASH,proposal,proposal,increases,neutral,from_state,not_applicable,2.0,2.0,,,high,high
+SV-0156,PC-03280,en|openai_only,19.21875,Bank of Israel (digital shekel),"The system will support the participation of various types of FIs, whether or not they are connected 
+to the RTGS system.",keep,exclude,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0157,PC-05425,en|both,19.069444444444443,Central Bank of Eswatini (Digital Lilangeni),"The ability to utilise the analytics on aggregate retail payment data opens up new 
+opportunities for the CBE in financial stability and monetary policy.",keep,keep,PRIV.CB.visibility.transparent,STAB.disintermediation,PRIV,STAB,proposal,proposal,decreases,neutral,from_state,not_applicable,2.0,1.0,,,high,high
+SV-0158,PC-05002,en|claude_only,19.375,Bank of Russia (digital ruble),"When clients make payments on the CBDC platform, confidentiality restrictions may be established 
+which imply that banks / financial intermediaries (models C and D) only have access to identification 
+information about customers’ wallets and not about the purpose and destination of payments made 
+by customers using their CBDC wallets.",exclude,keep,,PRIV.MIN,,PRIV,,proposal,,increases,,from_intermediary,,2.0,,,high,high
+SV-0159,PC-01867,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD),"To improve the user friendliness of this model, 
+users would only see account balances at intermediaries serving them, and the intermediaries would 
+manage UTXO transactions for the users.",keep,keep,ADOPT.experience,TECH.TOKEN.considered,ADOPT,TECH,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0160,PC-01808,en|openai_only,19.21875,Hong Kong Monetary Authority (e-HKD),"A robust design is necessary to guard against the po ssibility of over -issuance and doub le 
+spending by an intermediary.",keep,exclude,OPS.resilience,,OPS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0161,PC-06183,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"CBDC would be interoperable, allowing conversion between CBDC and 
+other forms of money, particularly cash and bank deposits.",keep,keep,INTEROP.domestic,INTEROP.domestic,INTEROP,INTEROP,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0162,PC-05247,en|claude_only,19.375,Sveriges Riksbank,"Such an e-krona could, by agreement with the ECB, use the euro digital platform. This 
+would enable a major cost advantage and compatibility between Swedish and 
+European payments.",exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0163,PC-02123,en|claude_only,19.375,Hong Kong Monetary Authority (e-HKD),"It should be noted that no cyber security study of the e-HKD distribution infrastructure 
+has been conducted so far.",exclude,keep,,OPS.resilience,,OPS,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0164,PC-02128,en|claude_only,19.375,Hong Kong Monetary Authority (e-HKD),"designated banks 
+would be required to submit US$1 to the HKMA to purchase HK$7.80 of CIs 
+before issuing HK$7.80 e-HKD to the depositors (Figure 7). Under this approach, 
+e-HKD would be issued by the designated banks and hence would become the 
+liabilities of the designated banks instead of the Government, but with full backing 
+by the USD via CIs.",exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0165,PC-02824,en|both,19.069444444444443,Bank of Israel (digital shekel),"As such, they can also operate as end users and perform transactions for themselves, 
+make payments between them and other financial institutions, and between them and the 
+Bank of Israel, including payments requiring final s ettlement (currently done in the RTGS 
+system).",keep,keep,INTEROP.domestic,SYS.design,INTEROP,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0166,PC-06429,en|openai_only,19.21875,Maldives Monetary Authority / Maldives CBDC policy study,"It is an aim of th is project to ensure that Maldivian FinTech companies are involved in 
+the development of the CBDC and stablecoin / asset tokenization initiatives .",keep,exclude,INTEROP.domestic,,INTEROP,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0167,PC-04375,en|both,19.069444444444443,Norges Bank (Norwegian CBDC work),"Dersom det tilbys omfattende programmerings-
+alternativer på toppen av DSP, som for eksempel legger til rette for 
+tokenisering av aktiva på toppen av DSP-registeret, vil det i praksis kunne gi 
+Norges Bank ansvar utover oppgavene etter sentralbankloven.",keep,keep,PROG.generic,PROG.generic,PROG,PROG,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0169,PC-05770,en|both,19.069444444444443,Central Bank of the Republic of Turkiye (Digital Turkish Lira),"in the digital currency system, the 
+central bank does not know which account belongs to which user since 
+it does not have the identity information of the end users.",keep,keep,SYS.design,PRIV.CB.visibility.opaque,SYS,PRIV,decision,decision,neutral,increases,not_applicable,from_state,3.0,3.0,,,high,high
+SV-0170,PC-04387,en|openai_only,19.21875,Norges Bank (Norwegian CBDC work),"Hvis brukeren mister tilgangen til koden 
+eller blir utsatt for ondsinnet programvare, vil brukeren kunne miste eller bli 
+frastjålet midlene sine.",keep,exclude,OPS.resilience,,OPS,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0171,PC-05521,en|both,19.069444444444443,Central Bank of Eswatini (Digital Lilangeni),"A retail CBDC is designed to provide the citizens of Eswatini with an additional means of 
+payment. As such, it offers them the possibility of making digital payments between one 
+another (P2P), paying at the merchant checkout with Digital Lilangeni (P2B) as  well as 
+making transactions with governmental institutions (e.g., receive or pay funds, tax bills, 
+G2P, P2G).",keep,keep,SYS.design,SYS.design,SYS,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0172,PC-06327,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"The governance of the API layer should be clearly defined from the beginning to 
+ensure minimal impact in the CBDC ecosystem when changes are implemented in the 
+API layer.",keep,keep,SYS.design,SYS.design,SYS,SYS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0173,PC-04838,ru/uk|openai_only,20.33333333333333,Bank of Russia (digital ruble),"При переводе средств между кошельками клиентов – физических лиц на пассивной сторо-
+не баланса Банка России средства перемещаются с цифрового кошелька клиента А на циф -
+ровой кошелек клиента Б.",keep,exclude,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0174,PC-03349,en|both,19.069444444444443,Reserve Bank of India (digital rupee),"It appears as a liability on the central bank’s 
+balance sheet",keep,keep,STAB.disintermediation,INTEROP.domestic,STAB,INTEROP,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0175,PC-05230,en|openai_only,19.21875,Sveriges Riksbank (e-krona),"The Riksbank will be responsible at the very least for the issue, 
+redemption and settlement of the e-krona.",keep,exclude,INST.mandate,,INST,,proposal,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0176,PC-03682,en|claude_only,19.375,Bank of Japan,"The main 
+factor behind this is that for each transaction instruction, holder ID updates were processed for 
+multiple tokens, and because exchange processes happen for a constant fraction, the number 
+of processes ballooned compared with the other designs. These resource constraints 
+decreased throughput and increased latency.",exclude,keep,,PROC.pilot_learning,,PROC,,finding,,neutral,,not_applicable,,3.0,,,high,high
+SV-0178,PC-05512,en|claude_only,19.375,Central Bank of Eswatini (Digital Lilangeni),"This two -tier hybrid approach was also tested during the FSP Pilot Project, where 
+Swaziland Building Society (SBS) was the intermediary to take over the integration of a 
+Digital Lilangeni into their system and to offer the CBDC payment option as a service to 
+its employees including selected CBE staff members with accounts at SBS. The CBE took 
+on the role of minting, while SBS handled the distribution to and onboarding of end users 
+in the pilot ecosystem.",keep,keep,TECH.TOKEN.considered,PROC.pilot_learning,TECH,PROC,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0179,PC-02952,en|both,19.069444444444443,Bank of Israel (digital shekel),"The user should be able to see the exchange rate and the total fees that wil l be 
+charged for the payment transaction before approving the transaction.",keep,keep,ADOPT.experience,INTEROP.crossborder,ADOPT,INTEROP,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0180,PC-04376,en|openai_only,19.21875,Norges Bank (Norwegian CBDC work),"Selv om et DSP-register i seg selv ikke er basert på desentralisert teknologi, 
+utelukker ikke dette at DSP kan utnytte fordeler ved DLT.",keep,exclude,TECH.DLT,,TECH,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0181,PC-04984,en|claude_only,19.375,Bank of Russia (digital ruble),"This will influence banks’ 
+needs with regard to transactions with the central bank, which will have to be taken into account 
+when tuning the operational procedure of monetary policy and in order to ensure financial stability.",exclude,keep,,STAB.disintermediation,,STAB,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0182,PC-00964,en|claude_only,19.375,Bank of Canada and Payments Canada (Project Jasper),"Two options for meeting user privacy requirements are currently under 
+development. One is for the sender to perform the validation themselves 
+and then convince the receiver beyond doubt that they have done so, 
+without providing additional transaction information. This is the idea 
+behind zero knowledge proofs, and Corda is designed to adopt this 
+technology as it matures. The other option is to send the necessary data 
+to the recipient’s computer for verification, but to do so in such a way 
+that the recipient cannot see it, even though they have full control of 
+their computer . This is what homomorphic encryption will allow as it 
+matures and is what secure enclave technology, such as that provided  
+by Intel’s SGX, offers today. Corda is designed to take full advantage  
+of Intel SGX.",keep,keep,PRIV.ANON,PRIV.PET,PRIV,PRIV,proposal,proposal,increases,increases,from_state,not_applicable,2.0,2.0,,,high,high
+SV-0183,PC-03213,en|both,19.069444444444443,Bank of Israel (digital shekel),"Access technology recovery Support the end user’s ability to recover the access 
+technology (for example, the loss of a card or the 
+erasure of the cellular device).",keep,keep,OPS.resilience,AML.FATF,OPS,AML,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0184,PC-06052,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"This account could be pseudonymous on the core 
+ledger, meaning that the core ledger would not need to record identity information. However, the Payment 
+Interface Provider would record the identity of the user on its own systems, and would know which 
+pseudonymous account(s) the user holds at the Bank.",keep,keep,PRIV.ANON,PRIV.CB.visibility.opaque,PRIV,PRIV,proposal,proposal,decreases,increases,from_intermediary,from_state,3.0,3.0,,,high,high
+SV-0185,PC-04031,en|both,19.069444444444443,Norges Bank (Norwegian CBDC work),"the CBDC system must function
+independently of banks’ payment systems.",keep,keep,SYS.design,SYS.design,SYS,SYS,decision,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0186,PC-02547,en|openai_only,19.21875,Bank Indonesia (Digital Rupiah),"The use of a unified 
+ledger optimizes automation and customization of 
+asset (programmability)",keep,exclude,PROG.generic,,PROG,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0187,PC-02308,en|both,19.069444444444443,Bank Indonesia (Digital Rupiah),"The development will commence with 
+w-Digital Rupiah at the initial stage serving 
+as the overall foundation of Digital Rupiah.",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0188,PC-04637,en|claude_only,19.375,Banco Central de Reserva del Peru,• Multiple use cases for allowing person-to-person (P2P) and person-to-business (P2B) transfers.,exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0189,PC-01546,en|claude_only,19.375,European Central Bank / Eurosystem (digital euro),"the ECB will delegate
+certain DESP tasks to external providers of support services, which will further contribute to data",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0190,PC-04408,en|both,19.069444444444443,Norges Bank (Norwegian CBDC work),"En tokenbasert registerløsning er i utgangspunktet basert på at det er tilgang 
+til kryptografiske koder og ikke identifisering som benyttes for å disponere over 
+penger.",keep,keep,SYS.design,PRIV.ANON,SYS,PRIV,finding,finding,neutral,increases,not_applicable,from_state,3.0,2.0,,,high,high
+SV-0191,PC-06204,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"PIPs undertake know your customer checks and anti-money 
+laundering (AML) compliance",keep,keep,KYC.INTERMED,KYC.TIER,KYC,KYC,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0192,PC-01264,en|both,19.069444444444443,People's Bank of China (e-CNY),"The e-CNY system will make 
+financial services more accessible, providing fiat money for a large population in 
+various scenarios.",keep,keep,ACCESS.universal,LEGAL.basis,ACCESS,LEGAL,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0193,PC-01740,en|both,19.069444444444443,Bank of Ghana (eCedi),"Besides the 173 users onboarded to 
+participate in the test, a number of 
+persons and businesses, estimated to 
+be fifty per cent (50  %) of the users, 
+also expressed interest in joining the pilot to carry 
+out transactions in the eCedi offline scenario.",keep,keep,PROC.pilot_learning,ADOPT.experience,PROC,ADOPT,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0194,PC-02624,en|openai_only,19.21875,Bank Indonesia (Digital Rupiah),"Transaction validation ensures that all 
+conditions required for a transaction are met 
+(e.g., sufficient balance, participants acting 
+within their authority). This process is performed 
+by smart contracts (when executed) and the 
+transaction participants.",keep,exclude,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0195,PC-04132,en|claude_only,19.375,Norges Bank (Norwegian CBDC work),"I 
+praksis kan dette gjøres ved at Norges Bank selger tokenpenger til banker, som kan 
+opprette registeradresser for pengene til sine kunder.",exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0196,PC-04035,en|claude_only,19.375,Norges Bank (Norwegian CBDC work),"Wholesale CBDC has been given greater focus in the study than in previous
+phases.",exclude,keep,,SYS.design,,SYS,,finding,,neutral,,not_applicable,,1.0,,,high,high
+SV-0197,PC-06829,en|both,19.069444444444443,South African Reserve Bank,"A significant contribution to the global DLT body 
+of knowledge was made, as it is thought that this was 
+the first time that the Istanbul Byzantine Fault Tolerance 
+consensus mechanism and Pedersen commitments  
+for confidentiality had been used with Quorum.",exclude,keep,,TECH.DLT,,TECH,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0198,PC-04424,en|claude_only,19.375,Norges Bank (Norwegian CBDC work),"Men 
+sentralbankens balanse kan forberedes slik at utlånene til bankene ikke 
+nødvendigvis øker. Sentralbanken kan kjøpe aktiva slik at bankenes reserver 
+er større enn det de trenger å være i forkant.",exclude,keep,,STAB.disintermediation,,STAB,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0199,PC-03650,en|both,19.069444444444443,Banca d'Italia research context,"integration with other DLTs or interactions with technical 
+components outside the Eurosystem’s control, pose other challenges from 
+a cyber-security standpoint at the platform level and require an increase of 
+defence mechanisms and protection of the D€ with ad hoc policies.",keep,keep,OPS.resilience,TECH.DLT,OPS,TECH,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,x,high,high
+SV-0201,PC-01218,en|openai_only,19.21875,People's Bank of China (e-CNY),"U
+nde
+r
+t
+he
+pr
+e
+m
+i
+s
+e
+of
+s
+e
+c
+ur
+i
+t
+y
+a
+nd
+c
+om
+pl
+i
+a
+nc
+e
+,
+t
+hi
+s
+f
+e
+a
+t
+ur
+e
+e
+na
+bl
+e
+s
+s
+e
+l
+f
+-
+e
+xe
+c
+ut
+i
+ng
+pa
+y
+m
+e
+nt
+s
+a
+c
+c
+or
+di
+ng
+t
+o
+pr
+e
+de
+f
+i
+ne
+d
+c
+ondi
+t
+i
+ons
+or
+t
+e
+r
+m
+s
+a
+gr
+e
+e
+d
+be
+t
+w
+e
+e
+n
+t
+w
+o
+s
+i
+de
+s
+,
+s
+o
+a
+s
+t
+o
+f
+a
+c
+i
+l
+i
+t
+a
+t
+e
+bus
+i
+ne
+s
+s
+m
+ode
+l
+i
+nnova
+t
+i
+on.",keep,exclude,PROG.generic,,PROG,,finding,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0202,PC-03621,en|claude_only,19.375,Banca d'Italia research context,"The integrated solution is based on two models that rely on distributed 
+technologies that can be configured to implement a resilient solution. 
+For instance, the adoption of geographical distribution is a powerful 
+mitigation measure for a cyber incident or natural disaster.",exclude,keep,,OPS.resilience,,OPS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0203,PC-00346,en|openai_only,19.21875,Reserve Bank of Australia and Digital Finance CRC (Project Acacia),"Makes greater use of existing 
+infrastructure (e.g. FSS, ESAs)",keep,exclude,INTEROP.domestic,,INTEROP,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0204,PC-03465,en|openai_only,19.21875,Central Bank of Iceland,"On 
+the other hand, it would be possible to impose a cap on individuals’ 
+rafkróna account balances (a maximum balance). Such a provision 
+could reduce the risk of a run on the banks, thereby mitigating the 
+risk to financial stability, but it would also mean deviating from the 
+custom of always satisfying demand for banknotes and coin.",keep,exclude,AML.LIMIT,,AML,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0205,PC-01672,en|both,19.069444444444443,Bank of Ghana (eCedi),"One of the pillars of the eCedi interoperability is its 
+interconnection with the GhIPSS",keep,keep,ADOPT.experience,INTEROP.domestic,ADOPT,INTEROP,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0206,PC-01557,fr|claude_only,3.0,Banque de France (wholesale CBDC programme),"The programme showed how an interbank 
+CBDC could help secure the development 
+of tokenised financial markets by providing 
+stakeholders with the benefits of distributed 
+ledger technology, in particular distributed 
+ledger-based end-to-end processing of 
+tokenised securities settlement and 
+payment-versus-payment transactions, 
+including cross-border transactions, while 
+benefiting from secure central bank money 
+settlement for the transactions made in this 
+manner.",keep,keep,TECH.DLT,TECH.DLT,TECH,TECH,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0207,PC-02020,en|openai_only,19.21875,Hong Kong Monetary Authority (e-HKD Phase 2 pilots),"This mechanism ensures that 
+funds are only released if merchants deliver on 
+their obligations, thereby mitigating risks such as 
+bankruptcy or malpractice.",keep,exclude,PROG.generic,,PROG,,finding,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0208,PC-01722,en|claude_only,19.375,Bank of Ghana (eCedi),"Over sight of the eCedi implementation is the 
+responsibility of a Steering Committee chaired 
+by the First Deputy Governor.",keep,keep,INST.mandate,INST.mandate,INST,INST,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0209,PC-04989,en|both,19.069444444444443,Bank of Russia (digital ruble),"The Bank of Russia will take these changes into account when determining 
+the parameters of its monetary policy operational procedure so that they do not interfere with the 
+achievement of the Bank of Russia’s operational objective of maintaining overnight money market 
+rates close to the Bank of Russia’s key rate.",keep,keep,STAB.disintermediation,STAB.disintermediation,STAB,STAB,finding,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0210,PC-03403,en|both,19.069444444444443,Reserve Bank of India (digital rupee),"In offline mode, the risk of “double-spending” 
+will exist because it will be technically possible 
+to use a  CBDC unit more than once without 
+updating the common ledger of CBDC, 
+however, the same can be mitigated to a larger 
+extent by technical solutions  and appropriate 
+business rules including monetary limi t on 
+offline transactions.",keep,keep,AML.LIMIT,OPS.resilience,AML,OPS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0211,PC-00983,en|openai_only,19.21875,Bank of Canada and Payments Canada (Project Jasper),"This has been dubbed the  
+“inhale/exhale” procedure and represents a major  
+innovation in thinking about how to enable an inher-
+ently centralized process like queue operation on an  
+inherently decentralized DLT platform.",keep,exclude,TECH.DLT,,TECH,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0212,PC-02296,en|claude_only,19.375,Bank Indonesia (Digital Rupiah),"these capabilities 
+must also be present in the context 
+of cross-border transactions through 
+utilization of technology and simplification 
+of distribution channels.",exclude,keep,,INTEROP.crossborder,,INTEROP,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0213,PC-03553,en|both,19.069444444444443,Banca d'Italia research context,"(iii) ownership of the funds is 
+attested by means of knowledge of some secret cryptographic information 
+(e.g. private keys); in order to transfer ownership, it is necessary and 
+sufficient to prove this knowledge to the ledger",exclude,keep,,TECH.TOKEN.decided_yes,,TECH,,decision,,neutral,,not_applicable,,3.0,,,high,high
+SV-0214,PC-02963,en|claude_only,19.375,Bank of Israel (digital shekel),"the digital shekel system will also offer advanced functionality at its core as a basis 
+for supporting participants' ability to offer complex and advanced use cases, as detailed 
+further below.",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,3.0,,,high,high
+SV-0215,PC-00076,en|both,19.069444444444443,Central Bank of the United Arab Emirates (Digital Dirham),"Domestically, the CBUAE will be launching the Digital Dirham for retail and wholesale use, including 
+fully implementing the four digital economy use cases.",exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0216,PC-04434,en|both,19.069444444444443,Norges Bank (Norwegian CBDC work),"Denne økte faren for løp mot bankene kan tilsi at bankene bør holde høyere 
+likviditetsbuffere enn i dag.",keep,keep,STAB.disintermediation,STAB.disintermediation,STAB,STAB,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0217,PC-05920,en|both,19.069444444444443,National Bank of Ukraine (e-hryvnia pilot),"Since e-hryvnia is deemed to be the third form of the hryvnia, 
+it should be exchanged for cash and noncash domestic 
+currency without any restrictions.",keep,keep,CASH.relation,CASH.relation,CASH,CASH,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,x,high,high
+SV-0218,PC-00817,en|both,19.069444444444443,Bank of Canada and Payments Canada (Project Jasper),"independent rules and conditions of token issuers were 
+enforced on the ledger, allowing the DDR to be transferred “freely” in a shared 
+ledger environment",keep,exclude,PROG.generic,PROG.generic,PROG,PROG,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,x,high,high
+SV-0219,PC-05872,en|both,19.069444444444443,National Bank of Ukraine (e-hryvnia pilot),"From the technical point of view, the Platform’s  functioning 
+was regular . After certain improvement based on identified  
+bugs and features , it could  be used to service the issuance 
+and circulation of the e-hryvnia, in case of proper monitoring 
+and technical administration.",keep,keep,ADOPT.experience,OPS.resilience,ADOPT,OPS,decision,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0220,PC-06821,en|both,19.069444444444443,South African Reserve Bank,"PK2 built on the SARB’s experimentation with distributed ledger technology (DLT) , 
+trialling DLT for interbank payments settlement.",keep,keep,TECH.DLT,TECH.DLT,TECH,TECH,decision,finding,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0221,PC-03115,en|both,19.069444444444443,Bank of Israel (digital shekel),"PSPs will b ear the primary responsibility for consumer protection in the digital shekel  
+system. They will be responsible for identifying and preventing fraud, as well as 
+compensating users who have been harmed by misuse events.",keep,keep,INST.mandate,OPS.resilience,INST,OPS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0223,PC-05073,ru/uk|both,20.0,Bank of Russia (digital ruble),"В 2024 г. совместно с Федеральным казначейством были успешно проведены тестовые 
+операции в цифровых рублях по выплате стипендий из федерального бюджета и оплате штрафов 
+в федеральный бюджет, для переводов использовались тестовые цифровые рубли.",keep,keep,PROC.pilot_learning,PROC.pilot_learning,PROC,PROC,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0224,PC-06941,en|both,19.069444444444443,South African Reserve Bank,"in a distributed system, there are elements of control that  
+a regulator like the SARB may have to consider 
+relinquishing in order to achieve some of the other benefits 
+(such as distributed consensus), which would improve 
+resilience by removing the single point of failure.",keep,keep,TECH.DLT,OPS.resilience,TECH,OPS,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0225,PC-05962,en|both,19.069444444444443,National Bank of Ukraine (e-hryvnia pilot),"Considering that the Pilot Project had a limited list of transaction types and a limited range of users, as well as the minor 
+quantity and volumes of executed transactions, the project did not fully uncover the instrument’s attractiveness and the 
+potential level of involvement of Ukraine's population in using it.",keep,keep,PROC.pilot_learning,ADOPT.experience,PROC,ADOPT,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0226,PC-02873,en|both,19.069444444444443,Bank of Israel (digital shekel),"In a case where, following a payment received into the wallet, 
+the balance exceeds the allowed balance according to the holding limit39 (or a balance set by 
+the user according to their preference), the waterfall mechanism will be activated, and an 
+automatic defunding will be performed to bring the wallet balance back to the allowed 
+balance.",keep,keep,AML.LIMIT,SYS.design,AML,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0227,PC-03502,en|both,19.069444444444443,Banca d'Italia research context,"The design of the D€ should strike the right 
+balance between privacy and AML/CFT compliance.",keep,keep,PRIV.BAL,PRIV.BAL,PRIV,PRIV,proposal,proposal,conditional,neutral,from_state,not_applicable,3.0,2.0,,x,high,high
+SV-0228,PC-04789,ru/uk|both,20.0,Bank of Russia (digital ruble),"Повышение уровня безопасности за счет наличия уникальных номеров цифровых рублей, 
+позволяющих отследить их движение и упростить восстановление нарушенных прав вла -
+дельца в случае их утраты или хищения.",keep,keep,OPS.resilience,PRIV.ANON,OPS,PRIV,proposal,decision,neutral,decreases,not_applicable,from_state,2.0,2.0,,,high,high
+SV-0229,PC-05479,en|claude_only,19.375,Central Bank of Eswatini (Digital Lilangeni),"Therefore, partial pseudo-anonymity is a preferred design choice which enables a 
+level of privacy between cash and e -money.",keep,keep,PRIV.ANON,PRIV.ANON,PRIV,PRIV,decision,proposal,increases,increases,from_state,not_applicable,2.0,3.0,,x,high,high
+SV-0230,PC-06611,en|openai_only,19.21875,United States federal interagency CBDC technical evaluation,"Of particular note, there are cybersecurity and privacy risks related to the collection, storage, and 
+transmission of payment information and associated business identifiable and personally 
+identifiable information.",keep,exclude,OPS.resilience,,OPS,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0231,PC-05710,en|both,19.069444444444443,Central Bank of the Republic of Turkiye (Digital Turkish Lira),"Once circulated, the digital Turkish lira is expected to make various 
+contributions such as enhanced financial inclusion, development 
+of a complementary payment channel in line with the principle of 
+uninterrupted and continuous operation of payments",exclude,keep,,CASH.relation,,CASH,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0232,PC-03369,en|both,19.069444444444443,Reserve Bank of India (digital rupee),"Under a token-
+based CBDC-R regime, users would be able to 
+withdraw digital tokens from banks in the same 
+way they can withdraw physical cash.",keep,keep,CASH.relation,ACCESS.universal,CASH,ACCESS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0234,PC-04010,en|both,19.069444444444443,Monetary Authority of Macao (e-MOP),"a study on wholesale e-MOP will be launched to investigate extending 
+its adoption to cross-border payments.",keep,keep,SYS.design,INTEROP.crossborder,SYS,INTEROP,finding,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0235,PC-00535,en|both,19.069444444444443,Central Bank of The Bahamas (Sand Dollar),"The anonymity feature of cash is not being replicated,  although the Sand 
+Dollar infrastructure would incorporate strict attention to confidentiality and data protection.",keep,keep,PRIV.BAL,PRIV.ANON,PRIV,PRIV,proposal,decision,increases,decreases,from_state,from_state,1.0,3.0,,,high,high
+SV-0236,PC-00113,en|claude_only,19.375,Central Bank of Armenia / Armenian CBDC study,"it was concluded that, given the current level
+of payment infrastructure development in Armenia, the introduction of a CBDC as an
+alternative payment instrument would have limited implication for Armenian society.",exclude,keep,,SYS.design,,SYS,,finding,,neutral,,not_applicable,,3.0,,,high,high
+SV-0237,PC-05139,en|both,19.069444444444443,Sveriges Riksbank (e-krona),"Like cash, an e-krona is a direct claim on the Riksbank, and both a means of payment and a 
+form of savings.",keep,keep,STAB.disintermediation,CASH.relation,STAB,CASH,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0238,PC-01369,es|claude_only,21.5,Banco de Espana,"la experimentación a desarrollar se centre, principalmente, en dos dimensiones: (i) 
+probar la integración de una CBDC mayorista con la liquidación de activos financieros, y 
+(ii) proporcionar evidencias prácticas acerca de las posibles ventajas y desventajas de la 
+introducción de una CBDC mayorista respecto a procesos, procedimientos e 
+infraestructuras tradicionales;",exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,3.0,,,high,high
+SV-0239,PC-01402,en|both,19.069444444444443,European Central Bank / Eurosystem (digital euro),"consumers would have access to public 
+money in digital form, which would provide a high level of privacy in their everyday 
+payments and ultimately increase competition in the payments market",exclude,keep,,PRIV.ANON,,PRIV,,finding,,increases,,not_applicable,,2.0,,,high,high
+SV-0240,PC-03687,en|openai_only,19.21875,Bank of Japan,"One possible strategy for mitigating the impact of record locking is “record splitting,” where 
+the account -balance data recorded in the CBDC ledger are split into multiple parts.",keep,exclude,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0241,PC-00606,en|both,19.069444444444443,Central Bank of The Bahamas (Sand Dollar),"Deposits can be made 
+by account holder and 
+3rd parties, but 
+withdrawals must be 
+made by account holder 
+only.",keep,keep,SYS.design,SYS.design,SYS,SYS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0242,PC-00859,en|both,19.069444444444443,Bank of Canada and Payments Canada (Project Jasper),"The positions are 
+ordered by the International Securities Identification Number (ISIN) and then by 
+decreasing value. The process tries to settle each of these positions in order, 
+skipping any position where a counterparty has insufficient cash or equity DDR 
+for that ISIN on-ledger.",keep,keep,SYS.design,SYS.design,SYS,SYS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0243,PC-05453,en|both,19.069444444444443,Central Bank of Eswatini (Digital Lilangeni),"An important insight that the CBE gained from this test process was an understanding 
+of the requirements as well as limitations of consecutive offline payments. While 
+multiple offline transactions can be completed with a smart card, it was realised that at 
+some point the smart card needs to go online to reconcile the transaction history and 
+“clean up” the card.",keep,keep,OPS.resilience,PROC.pilot_learning,OPS,PROC,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0244,PC-02134,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD),"In comparing the Banknote approach with the Coins approach, the HKMA is inclined 
+towards the Coins approach under which e-HKD would be solely issued by one single 
+authority, but would still have the advantage of tasking agent banks to handle all 
+customer-facing activities relating to the distribution of e-HKD.",keep,keep,SYS.design,INTEROP.domestic,SYS,INTEROP,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0245,PC-05465,en|claude_only,19.375,Central Bank of Eswatini (Digital Lilangeni),"The integration of Digital Lilangeni into the USS D system can also serve 
+as a significant driver for financial inclusion.",exclude,keep,,ACCESS.universal,,ACCESS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0246,PC-02381,en|both,19.069444444444443,Bank Indonesia (Digital Rupiah),"Digital Rupiah will be designed 
+to have the quality in mitigating 
+those unique risks, including 
+cybersecurity. Assessment and 
+identification of risks will be 
+done accordingly to produce 
+safe, reliable, and resilient Digital 
+Rupiah technology design.",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,finding,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0248,PC-06040,en|openai_only,19.21875,Bank of England and HM Treasury (digital pound),"Inclusive: CBDC payment systems should be designed to minimise barriers to use from (a) technical literacy, 
+(b) disabilities, and (c) access to hardware (eg avoiding reliance on latest smartphones) or (d) access to mobile 
+data networks (eg in rural areas).",keep,exclude,ACCESS.universal,,ACCESS,,proposal,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0251,PC-02595,en|both,19.069444444444443,Bank Indonesia (Digital Rupiah),"R3 Corda uses a unique consensus method 
+called ‘Notary,’ which acts as a central authority to 
+verify the uniqueness of transactions (uniqueness 
+consensus). Kaleido Hyperledger Besu uses a 
+proof of authority (PoA) consensus method, where 
+several validators pre-determined by participants are 
+authorized to validate transactions.",keep,keep,TECH.TOKEN.considered,SYS.design,TECH,SYS,decision,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0252,PC-05103,ru/uk|both,20.0,Bank of Russia (digital ruble),"Для подготовки инфраструктуры участников платформы к обеспечению защиты информации 
+при совершении операций с цифровыми рублями Банк России издал Положение № 833-П2, 
+исполнение которого проверяется при подключении участника к платформе цифрового рубля 
+в соответствии с Условиями по защите информации для участников платформы цифрового рубля, 
+опубликованными на официальном сайте Банка России.",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0253,PC-02996,en|both,19.069444444444443,Bank of Israel (digital shekel),"Expanding accessibility to these areas increases the usability and certainty of using 
+the digital shekel  for the entire potential user population, enhancing its 
+attractiveness.",keep,keep,ADOPT.experience,ADOPT.experience,ADOPT,ADOPT,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,x,high,high
+SV-0256,PC-00461,es|both,26.5,Banco Central de Bolivia (Boliviano Digital),"Esta arquitectura deberá 
+garantizar la continuidad operativa a toda hora, todos los días con latencias mínimas y 
+tolerancia a ataques de denegación de servicio o accesos no autorizados.",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0257,PC-04015,en|both,19.069444444444443,Monetary Authority of Macao (e-MOP),"the AMCM will prioritise initiating trials of cross-
+border payments between Macao and the Mainland in the In-Depth 
+Cooperation Zone.  This endeavour aims to explore the use of e-MOP 
+in Hengqin, creating a financial environment facilitating Macao 
+residents to live and work in the In-Depth Cooperation Zone.",keep,keep,INTEROP.crossborder,INTEROP.crossborder,INTEROP,INTEROP,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0259,PC-02158,en|claude_only,19.375,Magyar Nemzeti Bank (Student Safe / retail CBDC pilot context),"The MNB learns and gathers experience through fully fledged tests, involving real consumers.",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0260,PC-05233,en|claude_only,19.375,Sveriges Riksbank,"By the Riksbank requiring participants in RIX-INST to accept more 
+types of instant payments from the autumn of 2024, users in Sweden can have 
+greater choice.",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0261,PC-05720,en|both,19.069444444444443,Central Bank of the Republic of Turkiye (Digital Turkish Lira),End user should be able to use the system safely and with ease.,keep,keep,ADOPT.experience,ADOPT.experience,ADOPT,ADOPT,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0262,PC-06629,en|both,19.069444444444443,Banco Central del Uruguay (e-Peso pilot),"digital money was used for small payments and transfers as a 
+complement to existing means of payment.",keep,keep,CASH.relation,OPS.resilience,CASH,OPS,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0263,PC-05289,en|openai_only,19.21875,Monetary Authority of Singapore (Project Orchid / purpose-bound money),"PBM smart contracts, if deployed onto public 
+ledgers, offer greater transparency for government 
+social programmes.",keep,exclude,PRIV.CB.visibility.transparent,,PRIV,,proposal,,decreases,,from_state,,3.0,,,,high,high
+SV-0264,PC-04610,en|both,19.069444444444443,Reserve Bank of New Zealand (digital cash/CBDC),RBNZ’s initial preference is for CBDC users to use proxy identities to protect their privacy in the system.A balance between strong data control of proxy identities whilst allowing the option for the user to manage their proxy identities themselves.,keep,keep,PRIV.ANON,PRIV.PET,PRIV,PRIV,proposal,proposal,increases,increases,from_state,from_state,2.0,3.0,,,high,high
+SV-0265,PC-04885,ru/uk|claude_only,37.0,Bank of Russia (digital ruble),"Однако возможное влияние на  ликвидность банков будет постепенным и  растянутым 
+во времени по мере распространения в обращении цифрового рубля.",exclude,keep,,STAB.disintermediation,,STAB,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0267,PC-06945,en|both,19.069444444444443,South African Reserve Bank,"The amounts and balances were shielded, with the network only seeing the Pedersen commitment  
+for each transaction. The SARB still approved the transfer.",keep,keep,PRIV.PET,PRIV.PET,PRIV,PRIV,finding,finding,increases,increases,from_counterparty,from_counterparty,2.0,3.0,,,high,high
+SV-0268,PC-01242,en|openai_only,19.21875,People's Bank of China (e-CNY),"A
+ddi
+t
+i
+ona
+l
+l
+y
+,
+t
+he
+P
+B
+O
+C
+ha
+s
+s
+e
+t
+up
+a
+f
+r
+a
+m
+e
+w
+or
+k
+of
+bi
+g
+da
+t
+a
+a
+na
+l
+y
+s
+i
+s
+,
+r
+i
+s
+k
+m
+oni
+t
+or
+i
+ng
+a
+nd
+e
+a
+r
+l
+y
+w
+a
+r
+ni
+ng
+f
+or
+e
+-
+C
+N
+Y
+t
+o
+e
+nha
+nc
+e
+t
+he
+f
+or
+e
+s
+i
+ght
+e
+dne
+s
+s
+,
+a
+c
+c
+ur
+a
+c
+y
+a
+nd
+e
+f
+f
+e
+c
+t
+i
+ve
+ne
+s
+s
+of
+e
+-
+C
+N
+Y
+m
+a
+na
+ge
+m
+e
+nt
+.",keep,exclude,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0269,PC-02054,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD Phase 2 pilots),"The pilots demonstrated the feasibility of these 
+mechanisms, showing that interoperability 
+can enhance the security and integrity of 
+asset transfers while positioning an e-HKD as 
+a versatile settlement instrument within the 
+expanding tokenised asset and DeFi landscape.",keep,keep,INTEROP.domestic,INTEROP.domestic,INTEROP,INTEROP,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0270,PC-01878,en|openai_only,19.21875,Hong Kong Monetary Authority (e-HKD),"Similarly, a bank may need 
+to access transaction data of customers of other banks while processing a transaction for its customer.",keep,exclude,PRIV.ANON,,PRIV,,proposal,,decreases,,from_intermediary,,2.0,,,,high,high
+SV-0271,PC-06523,en|both,19.069444444444443,Federal Reserve Bank of New York (Project Cedar Phase I),"Phase I was a successful twelve-week undertaking demonstrating the viability 
+of this technology to enable instant and atomic settlement in a simulated foreign 
+exchange (FX) spot transaction between the New York Fed and counterparties 
+across separate, homogeneous ledgers.",keep,keep,INTEROP.crossborder,TECH.DLT,INTEROP,TECH,finding,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0272,PC-06706,es|openai_only,21.0,Banco Central del Uruguay (e-Peso pilot),"Realizar en RedPagos la primera carga a efectos 
+de crear la billetera digital (Cash In)",keep,exclude,INTEROP.domestic,,INTEROP,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0273,PC-03840,en|both,19.069444444444443,Bank of Japan,"The architecture evaluation based on the test results suggests the possibility that some databases 
+could maintain high-performance scalability even under the load expected in the possible event of 
+social implementation, implying that they could be used in ledger systems.",keep,keep,SYS.design,TECH.TOKEN.considered,SYS,TECH,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0274,PC-01856,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD),"In other words, cross -ledger asset recognition is achieved through signed 
+transactions.",keep,keep,TECH.DLT,SYS.design,TECH,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0275,PC-04624,en|both,19.069444444444443,Banco Central de Reserva del Peru,"• Multiple use cases, allow ing person-to-person (P2P), person-to- business (P2B) , and 
+government-to-person (G2P) payments, and vice versa.",keep,keep,LEGAL.basis,SYS.design,LEGAL,SYS,finding,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0276,PC-05832,en|both,19.069444444444443,Central Bank of the Republic of Turkiye (Digital Turkish Lira),"it has been found that the digital currency system can be 
+integrated into the distributed asset systems that are likely to be included in our lives in the future, 
+but the methods of integration can create new dependencies.",keep,keep,TECH.DLT,PROC.pilot_learning,TECH,PROC,decision,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0277,PC-04090,en|both,19.069444444444443,Norges Bank (Norwegian CBDC work),"DSP må utformes i samsvar med gode IT-arkitekturprinsipper. Overordnet 
+innebærer dette krav om skalerbarhet, tilgjengelighet, sikkerhet, teknologinøytralitet 
+og tilpasningsdyktighet.",keep,keep,OPS.resilience,SYS.design,OPS,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0278,PC-01714,en|claude_only,19.375,Bank of Ghana (eCedi),"This preserves the existing architecture that 
+provides consumers the desired level of privacy 
+without limiting the central bank or any state 
+mandated agency’s legal access to wallet or 
+transaction related information.",exclude,keep,,PRIV.BAL,,PRIV,,decision,,conditional,,from_state,,3.0,,,high,high
+SV-0279,PC-05615,en|claude_only,19.375,Bank of Thailand (retail CBDC pilot),"The tests indicated that the CBDC design 
+functioned well for minting, distribution, and 
+melting of CBDC",exclude,keep,,SYS.design,,SYS,,finding,,neutral,,not_applicable,,3.0,,,high,high
+SV-0280,PC-00538,en|both,19.069444444444443,Central Bank of The Bahamas (Sand Dollar),Monitoring for fraud detection.,exclude,keep,,OPS.resilience,,OPS,,decision,,neutral,,not_applicable,,1.0,,,high,high
+SV-0281,PC-06339,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"it is likely that the CBDC system would be designed to allow merchants to use 
+existing PoS terminals to accept CBDC payments.",keep,keep,INTEROP.domestic,SYS.design,INTEROP,SYS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0282,PC-04339,en|both,19.069444444444443,Norges Bank (Norwegian CBDC work),"Krav til kundekontroll19 vil likevel innebære at det må gjøres koblinger mellom 
+«tokens» og identitet, for eksempel ved on-boarding av nye brukere, store 
+transaksjoner og mistenkelige transaksjoner.",keep,keep,PRIV.MIN,KYC.TIER,PRIV,KYC,proposal,decision,increases,decreases,from_state,from_state,2.0,2.0,,,high,high
+SV-0283,PC-03564,en|claude_only,19.375,Banca d'Italia research context,"the itCoin infrastructure would be one layer of the system, built by the 
+Eurosystem for intermediaries, which in turn would be in charge of building, 
+on top of it, a layer for retail users.",exclude,keep,,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,3.0,,,high,high
+SV-0284,PC-01619,en|openai_only,19.21875,Bank of Ghana (eCedi),"Redemption of the eCedi to Cedi is 
+available at any time.",keep,exclude,INTEROP.domestic,,INTEROP,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0285,PC-02130,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD),"Unless adequate safeguards (see Section 4.1) are in place, the issuance and 
+redemption of e-HKD under the AB approach may lead to increased volatility of 
+the AB and hence HKD interbank liquidity conditions. The effect could be material 
+if the AB were to drop to low levels, for example, during a financial crisis period 
+with a deposit flight into e-HKD.",keep,keep,STAB.disintermediation,SYS.design,STAB,SYS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0286,PC-00392,en|claude_only,19.375,Aruba policy study / Central Bank of Aruba,"Users cannot conduct high-value 
+transactions by putting a cap on CBDC holdings, mitigating 
+sizeable potential outflows from commercial bank deposits to 
+CBDC holdings",keep,keep,AML.LIMIT,AML.LIMIT,AML,AML,decision,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0287,PC-04575,en|both,19.069444444444443,Reserve Bank of New Zealand,"Universal: A CBDC should provide low-cost, basic saving and payments to all households, including 
+those that are financially and digitally excluded.",keep,keep,ADOPT.experience,ACCESS.universal,ADOPT,ACCESS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0288,PC-03402,en|both,19.069444444444443,Reserve Bank of India (digital rupee),"While dependency on external entity shall 
+allow recoverability, it may also compromise 
+with anonymity as the service provider shall 
+always hav e visibility over the token 
+movements in and out of the wallet.",keep,keep,PRIV.CB.visibility.transparent,PRIV.ANON,PRIV,PRIV,proposal,proposal,decreases,decreases,from_state,from_intermediary,3.0,2.0,,,high,high
+SV-0289,PC-05175,en|both,19.069444444444443,Sveriges Riksbank (e-krona),"The base solution should therefore be constructed so 
+that it can be integrated with new modules and functions via open, standardised 
+interfaces.",keep,keep,PRIV.ANON,SYS.design,PRIV,SYS,proposal,proposal,decreases,neutral,from_state,not_applicable,2.0,2.0,,,high,high
+SV-0290,PC-03254,en|both,19.069444444444443,Bank of Israel (digital shekel),"While the user can choose the PSP for carrying out any payment transaction, it will likely be necessary to define a PSP 
+as the default in  the receipt of payments. In this way, the payer will only need to know the payee’s general address 
+without having to know anything else about the various PSPs with which the payee is a customer.",keep,keep,INST.mandate,SYS.design,INST,SYS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0291,PC-02065,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD Phase 2 pilots),"Near-instant conversion at a low cost between an 
+e-HKD and traditional forms of money, such as 
+commercial bank deposits and physical cash, is 
+also crucial, particularly in the initial stages when 
+an e-HKD might not yet be universally accepted.",keep,keep,INTEROP.domestic,CASH.relation,INTEROP,CASH,proposal,finding,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,x,high,high
+SV-0292,PC-03854,en|both,19.069444444444443,Bank of Japan,"In the case of the above configuration, compared with a case in which account transaction status 
+management is performed within the orchestration system, in terms of performance, the processing 
+load may be reduced because the upper-limit determination process can be closed to each system, 
+while the processin g load may increase because more data is newly updated, such as balance 
+increase schedules and upper-limit flexibility processing.",exclude,keep,,SYS.design,,SYS,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0293,PC-03803,en|openai_only,19.21875,Bank of Japan,"Instructions are sent from the scheduled t ransaction management system to the 
+orchestration system one by one at a specified time, after which the same process as for a 
+standard remittance is executed.",keep,exclude,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0295,PC-03748,ja|openai_only,2.0,Bank of Japan (CBDC pilot),"このため、パイロット実験における実験用システムとして、中央システムだけでは
+なく、仲介機関システム、中央システムと各仲介機関システムを結ぶ「仲介機関ネッ
+トワーク」や、エンドポイントデバイス（スマートフォンやタブレットを利用したア
+プリ）までを構築する。",keep,exclude,INTEROP.domestic,,INTEROP,,proposal,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0296,PC-04538,en|claude_only,19.375,Reserve Bank of New Zealand,"this issues paper focuses on a CBDC that would be issued to 
+any individual or business that wants to use it. Such a ‘general-purpose’ CBDC27 would be closer in 
+function to cash and better placed to fulfil the role of central bank money than a ‘wholesale’ CBDC.",keep,keep,CASH.relation,SYS.design,CASH,SYS,decision,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0297,PC-06644,en|both,19.069444444444443,Banco Central del Uruguay (e-Peso pilot),"The use of cash for 
+small payments is the rule and to limit CBDC to small amounts for each user is the 
+strategy to fulfill cash use without harming other instruments.",keep,keep,TECH.DLT,AML.LIMIT,TECH,AML,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0298,PC-06419,en|both,19.069444444444443,Maldives Monetary Authority / Maldives CBDC policy study,"At present, n o 
+such legislation is planned to be  introduced in the Maldives, although data protection 
+laws wou ld a pply. Some data protec tion contr ols are already in place within the 
+Maldives Banking Act and there is an expectation that a Data Privacy Act will be 
+introduced.",keep,keep,INST.mandate,PRIV.MIN,INST,PRIV,proposal,finding,neutral,increases,not_applicable,from_state,2.0,2.0,,,high,high
+SV-0299,PC-03699,en|both,19.069444444444443,Bank of Japan,"In order for a CBDC to be secure, an adequate level of security would need to be assured 
+regardless of the design, but this could make system processing performance lower or increase 
+deployment/operating costs.",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,proposal,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0300,PC-04239,en|openai_only,19.21875,Norges Bank,"Renten på DSP kan danne et gulv for styringsrenten og renten på kontopenger 
+i en kontobasert modell.",keep,exclude,PROG.remuneration_considered,,PROG,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0301,PC-01592,en|both,19.069444444444443,Bank of Ghana (eCedi),"The eCedi will also support programmable use 
+cases to enable innovation and new business 
+models while maintaining the trust of the users. 
+Notable among the programmable use cases 
+are “government-to-person” and “person-to-
+government” payments. In addition, it is capable 
+of “machine-to-machine” automated payments 
+in the Internet of Things.",keep,keep,INTEROP.crossborder,PROG.generic,INTEROP,PROG,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0302,PC-00692,en|openai_only,19.21875,Bank of Canada research on retail CBDC feasibility,"This is a micro -partitioned system based on a n 
+unspent transaction output (UTXO) funds model.",keep,exclude,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0303,PC-04755,en|openai_only,19.21875,Republic of Palau (Palau Stablecoin programme),Retail purchase — 39 (50%),keep,exclude,ADOPT.experience,,ADOPT,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0304,PC-05356,en|openai_only,19.21875,Monetary Authority of Singapore (Project Orchid / purpose-bound money),"In the long term, recipients should 
+have the freedom to choose their own wallet 
+applications to access Government issued  
+PBM tokens.",keep,exclude,INTEROP.domestic,,INTEROP,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0305,PC-04319,en|both,19.069444444444443,Norges Bank (Norwegian CBDC work),"Men det bør ikke etableres et rangforhold mellom DSP og kontanter, slik at 
+innehavere at DSP kan kreve dem vekslet til kontanter, mens innehavere av 
+kontanter ikke kan kreve dem vekslet til DSP, eller motsatt.",keep,keep,ACCESS.universal,CASH.relation,ACCESS,CASH,proposal,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0306,PC-02614,en|openai_only,19.21875,Bank Indonesia (Digital Rupiah),"The wRD 
+platform demonstrated that message formats and 
+communication protocols could be configured to 
+meet user requirements.",keep,exclude,INTEROP.domestic,,INTEROP,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0307,PC-04981,en|both,19.069444444444443,Bank of Russia (digital ruble),"With the introduction of a digital ruble, households will distribute their money based on their 
+needs between cash, accounts with commercial banks, and electronic wallets in digital rubles in the 
+same way as they currently distribute it between cash and bank accounts.",keep,keep,CASH.relation,STAB.disintermediation,CASH,STAB,proposal,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0308,PC-02691,en|both,19.069444444444443,Bank of Israel (digital shekel),"Participants will not be able to use the information accumulated about users and their 
+activities in the digital shekel system for commercial purposes unless users give clear and 
+informed consent.",keep,keep,PRIV.MIN,PRIV.MIN,PRIV,PRIV,decision,decision,increases,increases,from_intermediary,from_intermediary,3.0,2.0,,,high,high
+SV-0309,PC-04927,en|claude_only,19.375,Bank of Russia (digital ruble),"For cross-border payments, the digital ruble platform can be integrated with CBDC platforms 
+of other countries and international organisations, which will speed up and reduce the cost of 
+payments for consumers.",exclude,keep,,INTEROP.crossborder,,INTEROP,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0310,PC-05268,en|both,19.069444444444443,Monetary Authority of Singapore (Project Orchid / purpose-bound money),"PBMs are 
+bearer instruments, with self-contained 
+programming logic and transferrable 
+between two parties without intermediaries.",keep,keep,PROG.generic,SYS.design,PROG,SYS,proposal,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,x,high,high
+SV-0311,PC-02865,en|both,19.069444444444443,Bank of Israel (digital shekel),"Any PSP serving the private 
+user sector will be required to provide this access technology to its users.",keep,keep,ACCESS.universal,ACCESS.universal,ACCESS,ACCESS,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0312,PC-06194,en|openai_only,19.21875,Bank of England and HM Treasury (digital pound),"Users 
+could access CBDC through wallets on smart devices.",keep,exclude,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0313,PC-02663,en|both,19.069444444444443,Bank of Israel (digital shekel),"Alongside the backend 
+layer, several other central services will operate, such as an alias management system and a 
+fraud monitoring system that will help identify and prevent fraud through  real-time data 
+analysis. These systems will be designed to maintaining the DS's privacy principles  and 
+operate accordingly.",keep,keep,INTEROP.domestic,AML.MON,INTEROP,AML,proposal,decision,neutral,conditional,not_applicable,from_state,2.0,3.0,,,high,high
+SV-0314,PC-06743,en|openai_only,19.21875,South African Reserve Bank,"wCBDC was issued to commercial banks when 
+they bought it with money from their settlement 
+account in the SAMOS system.",keep,exclude,INTEROP.domestic,,INTEROP,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0315,PC-04977,en|both,19.069444444444443,Bank of Russia (digital ruble),"When implementing the offline digital ruble mode, special attention should 
+be paid to confirming the paying capacity of digital rubles offered as payment in this mode.",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,1.0,,,high,high
+SV-0316,PC-04536,en|both,19.069444444444443,Reserve Bank of New Zealand,"Any 
+decision to issue a CBDC would only be made following consultation with the Government, the 
+public and other stakeholders.",keep,keep,INST.mandate,INST.mandate,INST,INST,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0317,PC-02411,en|both,19.069444444444443,Bank Indonesia (Digital Rupiah),"w-Digital Rupiah platform 
+will be integrated, interconnected, and 
+interoperable (3i) with the existing BI-
+RTGS through a converter.",keep,keep,INTEROP.domestic,INTEROP.domestic,INTEROP,INTEROP,decision,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,,high,high
+SV-0318,PC-02110,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD),"Given that e-HKD 
+is designed for settling real-time small-value retail payments, it is also unlikely that its 
+use by regular citizens would be greatly inhibited by these fairly loose holding caps.",keep,keep,AML.LIMIT,SYS.design,AML,SYS,decision,proposal,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0319,PC-02013,en|both,19.069444444444443,Hong Kong Monetary Authority (e-HKD Phase 2 pilots),"System transformation would be needed for 
+enabling transactions using an e-HKD and 
+tokenised deposits. However, less system 
+overhaul would be required for banks to 
+implement tokenised deposits, as banks could 
+leverage some of the infrastructure they have 
+established for other deposit products.",keep,keep,SYS.design,SYS.design,SYS,SYS,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0320,PC-00664,en|openai_only,19.21875,Bank of Canada research on privacy-enhancing technologies for a potential CBDC,Interoperability with existing financial systems and infrastructure also poses significant challenges.,keep,exclude,INTEROP.domestic,,INTEROP,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0321,PC-03015,en|both,19.069444444444443,Bank of Israel (digital shekel),"ATMs will also 
+enable software and wallet restrictions updates, among other things, for business continuity 
+in case of network failure (assuming the ATM still has communication).",keep,keep,OPS.resilience,OPS.resilience,OPS,OPS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0322,PC-06014,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"However, to be practical and attractive, CBDC would need to be directly convertible into cash and deposits.",keep,keep,INTEROP.domestic,CASH.relation,INTEROP,CASH,proposal,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,x,high,high
+SV-0324,PC-06781,en|claude_only,19.375,South African Reserve Bank,"The 
+verification of the value of the wCBDC is linked 
+to the central bank as its issuer",exclude,keep,,SYS.design,,SYS,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0325,PC-05108,ru/uk|both,20.0,Bank of Russia (digital ruble),"Реализация указанных выше подходов позволяет обеспечить целостность и конфиденциальность 
+информации при проведении пользователями операций с цифровыми рублями. Под защитой 
+находятся сведения о средствах на счетах цифрового рубля, о транзакциях с цифровыми 
+рублями и информация, необходимая для авторизации и идентификации пользователей, включая 
+персональные данные.",keep,keep,PRIV.MIN,OPS.resilience,PRIV,OPS,decision,decision,increases,neutral,from_state,not_applicable,2.0,2.0,,,high,high
+SV-0326,PC-04598,en|both,19.069444444444443,Reserve Bank of New Zealand (digital cash/CBDC),"Rationale:Offline capability will be an important feature of a NZ CBDC, as users will be able to spend/transfer/ receive CBDC without access to the internet or cellular data.",keep,keep,ACCESS.universal,OPS.resilience,ACCESS,OPS,proposal,proposal,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,x,high,high
+SV-0327,PC-05942,en|both,19.069444444444443,National Bank of Ukraine (e-hryvnia pilot),"Considering that the Pilot Project had a limited list of 
+transaction types and a limited range of users, as well as the 
+minor quantity and volumes of executed transactions, the 
+project did not fully uncover the instrument’s att ractiveness 
+and the potential level of involvement of Ukraine's population 
+in using it.",keep,keep,PROC.pilot_learning,ADOPT.experience,PROC,ADOPT,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0329,PC-04299,en|both,19.069444444444443,Norges Bank (Norwegian CBDC work),"DSP fremstår som mer attraktivt enn 
+bankinnskudd og kan få høyere markedsverdi i et «skyggemarked».",keep,keep,ACCESS.universal,STAB.disintermediation,ACCESS,STAB,decision,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0331,PC-04135,en|claude_only,19.375,Norges Bank (Norwegian CBDC work),"Som nevnt over vil et system for registerbaserte tokenpenger i prinsippet basere seg 
+på at brukerne har tilgang til internett (er online) og at sentralbankens 
+valideringssystem er operativt.",exclude,keep,,OPS.resilience,,OPS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0332,PC-02332,en|both,19.069444444444443,Bank Indonesia (Digital Rupiah),"R-Digital	Rupiah	is	accessible	via	account- 	
+and token-based, arranged based on users’ 
+segmentation	(tiering)	and	transactions 	
+value cap.",keep,keep,AML.LIMIT,AML.LIMIT,AML,AML,decision,decision,neutral,neutral,not_applicable,not_applicable,2.0,3.0,,x,high,high
+SV-0334,PC-03634,en|claude_only,19.375,Banca d'Italia research context,"It would be possible to apply limits and thresholds in TIPS+, 
+depending on additional information collected by the platform 
+and provided by gatekeepers, to set up accounts with specific 
+characteristics for non-euro area residents.",exclude,keep,,INTEROP.crossborder,,INTEROP,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0335,PC-04222,en|both,19.069444444444443,Norges Bank,"Sikkerhet: IT-løsningen for DSP skal etterleve risikobaserte krav til 
+driftssikkerhet, sikring mot brudd på konfidensialitet, integritet og 
+tilgjengelighet, samt beskyttelse mot cyberangrep.",keep,keep,SYS.design,OPS.resilience,SYS,OPS,decision,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0336,PC-03020,en|both,19.069444444444443,Bank of Israel (digital shekel),"The PSP will configure the offline 
+wallet to prevent receiving amounts that exceed the defined limit, and a wallet in this state 
+will not be able to receive funds.",keep,keep,AML.LIMIT,AML.LIMIT,AML,AML,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0337,PC-04955,en|both,19.069444444444443,Bank of Russia (digital ruble),"use their wallets with digital rubles via various financial intermediaries without tying it to a 
+single financial intermediary where it was opened (subject to adequate user identification).",keep,keep,PRIV.MIN,SYS.design,PRIV,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0338,PC-03923,en|openai_only,19.21875,Monetary Authority of Macao (e-MOP),"the adoption 
+of e-MOP is envisaged not only to enhance the payment experience 
+for inbound visitors, but also to strengthen Macao’s strategic 
+positioning as a  “world centre of tourism and leisure”.",keep,exclude,ADOPT.experience,,ADOPT,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0339,PC-04706,en|both,19.069444444444443,Republic of Palau (Palau Stablecoin programme),"The Ministry of Finance (MOF) of the Republic of Palau recently completed Phase 1 of the Palau Stablecoin 
+(PSC) Program focusing on a Solution Design Pilot and Research and Development Project in partnership 
+with Ripple’s Central Bank Digital Currencies (CBDC) and Central Bank Engagements team and using the 
+Ripple CBDC platform.",keep,exclude,SYS.design,ACCESS.universal,SYS,ACCESS,decision,proposal,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,x,high,high
+SV-0340,PC-02925,en|openai_only,19.21875,Bank of Israel (digital shekel),"Special 
+connectivity between the digital shekel  system and MASAV will allow splitting these 
+payments also to the payees' digital shekel wallets.",keep,exclude,INTEROP.domestic,,INTEROP,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0341,PC-00654,en|claude_only,19.375,Bank of Canada research on privacy-enhancing technologies for a potential CBDC,"In general, we
+follow two principles to balance privacy and compliance requirements: (1) minimize the number of entities
+that have visibility of PII;",exclude,keep,,PRIV.MIN,,PRIV,,decision,,increases,,not_applicable,,3.0,,,high,high
+SV-0342,PC-00503,en|both,19.069444444444443,Banco Central do Brasil (Drex / Digital Real),"Adoption of resiliency and cybersecurity standards equivalent to 
+those applicable to critical infrastructures in the financial market.",keep,keep,TECH.DLT,OPS.resilience,TECH,OPS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0343,PC-05912,en|claude_only,19.375,National Bank of Ukraine (e-hryvnia pilot),"We consider the risk of influencing inflation to be improbable, 
+as the full -scale implementation of the domestic digital 
+currency foresees no uncontrollable issuance of hryvnia.",exclude,keep,,STAB.disintermediation,,STAB,,finding,,neutral,,not_applicable,,2.0,,,high,high
+SV-0344,PC-00141,en|both,19.069444444444443,Reserve Bank of Australia and Digital Finance CRC (Australian CBDC pilot),"The identity of end users was held by each industry participant, with no identity information stored 
+on the pilot CBDC platform; identity management was not a research focus of the project.",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0345,PC-01105,en|both,19.069444444444443,Bank of Canada and Payments Canada (Project Jasper),"I
+n Phase 2, the prototype was built using the Corda 
+platform. Corda was selected after a detailed  
+review of the options.",keep,keep,INTEROP.domestic,TECH.DLT,INTEROP,TECH,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,3.0,,,high,high
+SV-0347,PC-06647,en|openai_only,19.21875,Banco Central del Uruguay (e-Peso pilot),"to limit CBDC to small amounts for each user is the 
+strategy to fulfill cash use without harming other instruments.",keep,exclude,AML.LIMIT,,AML,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0348,PC-06898,en|both,19.069444444444443,South African Reserve Bank,"In iteration 3 the transactions are confidential and the 
+SARB node approves all the transactions after checks.",keep,exclude,PRIV.ANON,PRIV.CB.visibility.transparent,PRIV,PRIV,finding,finding,increases,decreases,from_state,from_state,2.0,2.0,,x,high,high
+SV-0349,PC-02064,en|openai_only,19.21875,Hong Kong Monetary Authority (e-HKD Phase 2 pilots),"The performance of public DLTs in handling 
+high-volume retail transactions is a major issue.",keep,exclude,TECH.DLT,,TECH,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0350,PC-00991,en|openai_only,19.21875,Bank of Canada and Payments Canada (Project Jasper),"The signature of the supervisory node is 
+then sought, and upon obtaining this signature, the 
+sender initiates the last leg of the transaction by sub-
+mitting the DDR Object to the notary for its signature.",keep,exclude,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0352,PC-05960,en|both,19.069444444444443,National Bank of Ukraine (e-hryvnia pilot),"The distributed ledger technology (DLT, blockchain) can be used as a platform for e-hryvnia issuance and circulation. 
+ However, main advantages of the technology, including the absence of a single center of trust and the capability of any 
+person to check any transaction, cannot be used together with the centralized e -hryvnia issuance model. Thus, it is not 
+critical whether this technology is used if the centralized model is chosen.",keep,keep,TECH.DLT,TECH.TOKEN.decided_yes,TECH,TECH,finding,finding,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,x,high,high
+SV-0353,PC-05566,en|both,19.069444444444443,Central Bank of Eswatini (Digital Lilangeni),"With regard to a 
+potential roll-out of CBDC in the Kingdom of Eswatini, the CBE will treat the topic 
+of information security with the highest priority.",exclude,keep,,OPS.resilience,,OPS,,proposal,,neutral,,not_applicable,,2.0,,,high,high
+SV-0354,PC-03308,en|both,19.069444444444443,Reserve Bank of India (digital rupee),"In the case of P2P and P2M payments made at any CBDC QR, the transactions 
+happen between two e₹ wallets, and are settled instantaneously without passing 
+through user’s bank accounts.",keep,keep,TECH.TOKEN.considered,SYS.design,TECH,SYS,decision,decision,neutral,neutral,not_applicable,not_applicable,3.0,2.0,,,high,high
+SV-0355,PC-06306,en|both,19.069444444444443,Bank of England and HM Treasury (digital pound),"the Bank may also wish to collect 
+aggregate data, which have been effectively anonymised, for the purposes of economic and 
+policy analysis, in the course of its duties for monetary and financial stability.",keep,exclude,PRIV.CB.visibility.opaque,PRIV.ANON,PRIV,PRIV,proposal,proposal,conditional,increases,from_state,from_state,1.0,2.0,,x,high,high
+SV-0356,PC-02789,en|both,19.069444444444443,Bank of Israel (digital shekel),"To increase the ability of PSPs to develop a sustainable business model, they will not be 
+required to onboard every end user who approaches them but will be allowed to specialise 
+in certain user segments.",keep,keep,SYS.design,ACCESS.universal,SYS,ACCESS,proposal,decision,neutral,neutral,not_applicable,not_applicable,3.0,1.0,,,high,high
+SV-0357,PC-02981,en|both,19.069444444444443,Bank of Israel (digital shekel),"Based on the prop osed design of 
+the backend layer, an end user can 
+open multiple wallets at the 
+central database, with the PSP 
+managing the hierarchy between 
+the wallets.",keep,keep,SYS.design,SYS.design,SYS,SYS,proposal,decision,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,,high,high
+SV-0358,PC-04726,en|both,19.069444444444443,Republic of Palau (Palau Stablecoin programme),"A weekly batch upload and distribution of 100 PSC to each approved 
+user account was scheduled and executed by the MOF.",exclude,keep,,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,high,high
+SV-0359,PC-05969,en|openai_only,19.21875,National Bank of Ukraine (e-hryvnia pilot),"Under the decentralized model, e-hryvnia will no longer be classified as CBDC, since it will be issued not by the central 
+bank but by payment market participants under the regulator’s control.",keep,exclude,SYS.design,,SYS,,proposal,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0360,PC-03329,en|both,19.069444444444443,Reserve Bank of India (digital rupee),"account-based 
+CBDC may be considered for CBDC-W.",exclude,keep,,TECH.TOKEN.decided_no,,TECH,,proposal,,neutral,,not_applicable,,1.0,,x,high,high
+SV-0361,PC-01034,en|openai_only,19.21875,Bank of Canada and Payments Canada (Project Jasper),"while the platform 
+demonstrated the ability to process 14 transactions 
+per second (similar to throughput levels observed in 
+incumbent systems), this represented maximum  
+capacity.",keep,exclude,OPS.resilience,,OPS,,finding,,neutral,,not_applicable,,2.0,,,,high,high
+SV-0362,PC-01136,en|openai_only,19.21875,Bank of Canada and Payments Canada (Project Jasper),"If n > l  we identify the single lowest payment from the party with the largest liquidity shortfall,  
+ and ask if removing this payment would put any other bank into a liquidity shortfall. If not, we remove  
+ the payment and start over . If it does, we leave that payment in the queue and remove the next smallest  
+ payment from the party with the largest liquidity shortfall.",keep,exclude,SYS.design,,SYS,,decision,,neutral,,not_applicable,,3.0,,,,high,high
+SV-0364,PC-01094,en|both,19.069444444444443,Bank of Canada and Payments Canada (Project Jasper),"• Slow mining and expensive network—R3N1 still 
+uses Proof of Work and it isn’t that much faster 
+than the public network.",keep,keep,TECH.DLT,TECH.TOKEN.considered,TECH,TECH,finding,finding,neutral,neutral,not_applicable,not_applicable,2.0,2.0,,x,high,high
+SV-0365,PC-04290,en|openai_only,19.21875,Norges Bank (Norwegian CBDC work),Arbeidsgruppen har heller ikke funnet grunnlag for å revurdere de to hovedgruppene av tekniske løsninger gitt i Norges Bank (2019).,keep,exclude,SYS.design,,SYS,,decision,,neutral,,not_applicable,,2.0,,,,high,high

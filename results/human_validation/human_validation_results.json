@@ -1,0 +1,636 @@
+{
+  "schema": "cbdc-v10.2e-human-validation-results-v2",
+  "status": "independent blind coding complete; consensus adjudication remains work in progress",
+  "blind_status": {
+    "provider_identity_hidden_during_review": true,
+    "independence_confirmed_by_authors": true,
+    "confirmation_date": "2026-08-27"
+  },
+  "confidence_assumption": "high for every candidate and dual-empty judgment, per author instruction",
+  "exclusion_reason_policy": "not analyzed; retained only as future-version feedback",
+  "sample": {
+    "population_candidates": 6949,
+    "sampled_candidates": 365,
+    "analyzable_candidates": 364,
+    "excluded_untranslated_candidates": [
+      "SV-0250"
+    ],
+    "decision_agreements": 228,
+    "decision_disagreements": 136,
+    "both_keep": 214,
+    "both_exclude": 14
+  },
+  "candidate_validity": {
+    "martin": {
+      "n": 364,
+      "unweighted": 0.7912087912087912,
+      "ipw_hajek": 0.7872053963157377,
+      "stratified": {
+        "estimate": 0.7855858699550238,
+        "standard_error": 0.015409094958032747,
+        "ci95": [
+          0.7553845988029219,
+          0.8157871411071257
+        ],
+        "strata": [
+          {
+            "stratum": "en|both",
+            "population": 4119,
+            "n_analyzed": 216,
+            "mean": 0.9351851851851852
+          },
+          {
+            "stratum": "en|claude_only",
+            "population": 1240,
+            "n_analyzed": 63,
+            "mean": 0.20634920634920634
+          },
+          {
+            "stratum": "en|openai_only",
+            "population": 1230,
+            "n_analyzed": 64,
+            "mean": 0.890625
+          },
+          {
+            "stratum": "es|both",
+            "population": 53,
+            "n_analyzed": 2,
+            "mean": 1.0
+          },
+          {
+            "stratum": "es|claude_only",
+            "population": 43,
+            "n_analyzed": 2,
+            "mean": 0.0
+          },
+          {
+            "stratum": "es|openai_only",
+            "population": 21,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|both",
+            "population": 8,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|claude_only",
+            "population": 3,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|openai_only",
+            "population": 1,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ja|both",
+            "population": 7,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ja|claude_only",
+            "population": 4,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "ja|openai_only",
+            "population": 2,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ru/uk|both",
+            "population": 120,
+            "n_analyzed": 6,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ru/uk|claude_only",
+            "population": 37,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "ru/uk|openai_only",
+            "population": 61,
+            "n_analyzed": 3,
+            "mean": 0.6666666666666666
+          }
+        ]
+      }
+    },
+    "dominik": {
+      "n": 364,
+      "unweighted": 0.7582417582417582,
+      "ipw_hajek": 0.7601742117679127,
+      "stratified": {
+        "estimate": 0.7606658603384752,
+        "standard_error": 0.01163537633031264,
+        "ci95": [
+          0.7378609417844926,
+          0.7834707788924578
+        ],
+        "strata": [
+          {
+            "stratum": "en|both",
+            "population": 4119,
+            "n_analyzed": 216,
+            "mean": 0.9398148148148148
+          },
+          {
+            "stratum": "en|claude_only",
+            "population": 1240,
+            "n_analyzed": 63,
+            "mean": 0.9365079365079365
+          },
+          {
+            "stratum": "en|openai_only",
+            "population": 1230,
+            "n_analyzed": 64,
+            "mean": 0.0
+          },
+          {
+            "stratum": "es|both",
+            "population": 53,
+            "n_analyzed": 2,
+            "mean": 1.0
+          },
+          {
+            "stratum": "es|claude_only",
+            "population": 43,
+            "n_analyzed": 2,
+            "mean": 0.5
+          },
+          {
+            "stratum": "es|openai_only",
+            "population": 21,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "fr|both",
+            "population": 8,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|claude_only",
+            "population": 3,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|openai_only",
+            "population": 1,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "ja|both",
+            "population": 7,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ja|claude_only",
+            "population": 4,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ja|openai_only",
+            "population": 2,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "ru/uk|both",
+            "population": 120,
+            "n_analyzed": 6,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ru/uk|claude_only",
+            "population": 37,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ru/uk|openai_only",
+            "population": 61,
+            "n_analyzed": 3,
+            "mean": 0.0
+          }
+        ]
+      }
+    },
+    "pre_adjudication_midpoint": {
+      "n": 364,
+      "unweighted": 0.7747252747252747,
+      "ipw_hajek": 0.7736898040418251,
+      "stratified": {
+        "estimate": 0.7731258651467495,
+        "standard_error": 0.010089789901396886,
+        "ci95": [
+          0.7533502403284357,
+          0.7929014899650634
+        ],
+        "strata": [
+          {
+            "stratum": "en|both",
+            "population": 4119,
+            "n_analyzed": 216,
+            "mean": 0.9375
+          },
+          {
+            "stratum": "en|claude_only",
+            "population": 1240,
+            "n_analyzed": 63,
+            "mean": 0.5714285714285714
+          },
+          {
+            "stratum": "en|openai_only",
+            "population": 1230,
+            "n_analyzed": 64,
+            "mean": 0.4453125
+          },
+          {
+            "stratum": "es|both",
+            "population": 53,
+            "n_analyzed": 2,
+            "mean": 1.0
+          },
+          {
+            "stratum": "es|claude_only",
+            "population": 43,
+            "n_analyzed": 2,
+            "mean": 0.25
+          },
+          {
+            "stratum": "es|openai_only",
+            "population": 21,
+            "n_analyzed": 1,
+            "mean": 0.5
+          },
+          {
+            "stratum": "fr|both",
+            "population": 8,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|claude_only",
+            "population": 3,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|openai_only",
+            "population": 1,
+            "n_analyzed": 1,
+            "mean": 0.5
+          },
+          {
+            "stratum": "ja|both",
+            "population": 7,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ja|claude_only",
+            "population": 4,
+            "n_analyzed": 1,
+            "mean": 0.5
+          },
+          {
+            "stratum": "ja|openai_only",
+            "population": 2,
+            "n_analyzed": 1,
+            "mean": 0.5
+          },
+          {
+            "stratum": "ru/uk|both",
+            "population": 120,
+            "n_analyzed": 6,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ru/uk|claude_only",
+            "population": 37,
+            "n_analyzed": 1,
+            "mean": 0.5
+          },
+          {
+            "stratum": "ru/uk|openai_only",
+            "population": 61,
+            "n_analyzed": 3,
+            "mean": 0.3333333333333333
+          }
+        ]
+      }
+    },
+    "unresolved_lower_bound": {
+      "n": 364,
+      "unweighted": 0.5879120879120879,
+      "ipw_hajek": 0.5867661589832701,
+      "stratified": {
+        "estimate": 0.5857054914833013,
+        "standard_error": 0.01592081294159663,
+        "ci95": [
+          0.5545012715131727,
+          0.6169097114534299
+        ],
+        "strata": [
+          {
+            "stratum": "en|both",
+            "population": 4119,
+            "n_analyzed": 216,
+            "mean": 0.8796296296296297
+          },
+          {
+            "stratum": "en|claude_only",
+            "population": 1240,
+            "n_analyzed": 63,
+            "mean": 0.20634920634920634
+          },
+          {
+            "stratum": "en|openai_only",
+            "population": 1230,
+            "n_analyzed": 64,
+            "mean": 0.0
+          },
+          {
+            "stratum": "es|both",
+            "population": 53,
+            "n_analyzed": 2,
+            "mean": 1.0
+          },
+          {
+            "stratum": "es|claude_only",
+            "population": 43,
+            "n_analyzed": 2,
+            "mean": 0.0
+          },
+          {
+            "stratum": "es|openai_only",
+            "population": 21,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "fr|both",
+            "population": 8,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|claude_only",
+            "population": 3,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|openai_only",
+            "population": 1,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "ja|both",
+            "population": 7,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ja|claude_only",
+            "population": 4,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "ja|openai_only",
+            "population": 2,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "ru/uk|both",
+            "population": 120,
+            "n_analyzed": 6,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ru/uk|claude_only",
+            "population": 37,
+            "n_analyzed": 1,
+            "mean": 0.0
+          },
+          {
+            "stratum": "ru/uk|openai_only",
+            "population": 61,
+            "n_analyzed": 3,
+            "mean": 0.0
+          }
+        ]
+      }
+    },
+    "unresolved_upper_bound": {
+      "n": 364,
+      "unweighted": 0.9615384615384616,
+      "ipw_hajek": 0.9606134491003802,
+      "stratified": {
+        "estimate": 0.9605462388101975,
+        "standard_error": 0.010440057650938639,
+        "ci95": [
+          0.940084101817836,
+          0.9810083758025591
+        ],
+        "strata": [
+          {
+            "stratum": "en|both",
+            "population": 4119,
+            "n_analyzed": 216,
+            "mean": 0.9953703703703703
+          },
+          {
+            "stratum": "en|claude_only",
+            "population": 1240,
+            "n_analyzed": 63,
+            "mean": 0.9365079365079365
+          },
+          {
+            "stratum": "en|openai_only",
+            "population": 1230,
+            "n_analyzed": 64,
+            "mean": 0.890625
+          },
+          {
+            "stratum": "es|both",
+            "population": 53,
+            "n_analyzed": 2,
+            "mean": 1.0
+          },
+          {
+            "stratum": "es|claude_only",
+            "population": 43,
+            "n_analyzed": 2,
+            "mean": 0.5
+          },
+          {
+            "stratum": "es|openai_only",
+            "population": 21,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|both",
+            "population": 8,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|claude_only",
+            "population": 3,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "fr|openai_only",
+            "population": 1,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ja|both",
+            "population": 7,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ja|claude_only",
+            "population": 4,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ja|openai_only",
+            "population": 2,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ru/uk|both",
+            "population": 120,
+            "n_analyzed": 6,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ru/uk|claude_only",
+            "population": 37,
+            "n_analyzed": 1,
+            "mean": 1.0
+          },
+          {
+            "stratum": "ru/uk|openai_only",
+            "population": 61,
+            "n_analyzed": 3,
+            "mean": 0.6666666666666666
+          }
+        ]
+      }
+    }
+  },
+  "intercoder_reliability": {
+    "inclusion_decision": {
+      "n": 364,
+      "agreements": 228,
+      "percent_agreement": 0.6263736263736264,
+      "ipw_percent_agreement": 0.62615270988289,
+      "krippendorff_alpha_nominal": -0.06893271060370165,
+      "gwet_ac1_nominal": 0.4260272701975698
+    },
+    "exact_code_conditional_both_keep": {
+      "n": 214,
+      "agreements": 100,
+      "percent_agreement": 0.4672897196261682,
+      "ipw_percent_agreement": 0.4655089374464146,
+      "krippendorff_alpha_nominal": 0.4227060874515246,
+      "gwet_ac1_nominal": 0.4491792174594951
+    },
+    "family_conditional_both_keep": {
+      "n": 214,
+      "agreements": 114,
+      "percent_agreement": 0.5327102803738317,
+      "ipw_percent_agreement": 0.53131778232459,
+      "krippendorff_alpha_nominal": 0.48418738373076264,
+      "gwet_ac1_nominal": 0.5027488230947612
+    },
+    "odr_conditional_both_keep": {
+      "n": 214,
+      "agreements": 127,
+      "percent_agreement": 0.5934579439252337,
+      "ipw_percent_agreement": 0.5938884467322727,
+      "krippendorff_alpha_nominal": 0.3792671311845205,
+      "gwet_ac1_nominal": 0.39619092405360923
+    },
+    "privacy_direction_conditional_both_keep": {
+      "n": 214,
+      "agreements": 195,
+      "percent_agreement": 0.9112149532710281,
+      "ipw_percent_agreement": 0.9130814976243096,
+      "krippendorff_alpha_nominal": 0.5523862068965519,
+      "gwet_ac1_nominal": 0.9049448472828862
+    },
+    "privacy_relation_conditional_both_keep": {
+      "n": 214,
+      "agreements": 193,
+      "percent_agreement": 0.9018691588785047,
+      "ipw_percent_agreement": 0.9035514095307712,
+      "krippendorff_alpha_nominal": 0.4606315789473685,
+      "gwet_ac1_nominal": 0.8955495039724812
+    },
+    "strength_conditional_both_keep": {
+      "n": 214,
+      "agreements": 116,
+      "percent_agreement": 0.5420560747663551,
+      "ipw_percent_agreement": 0.5423679023900367,
+      "krippendorff_alpha_nominal": 0.08401190788897639,
+      "gwet_ac1_nominal": 0.38990545454545444
+    }
+  },
+  "dual_empty": {
+    "coding_mode": "joint author audit; not an independent inter-rater sample",
+    "population_units": 359,
+    "sample_units": 36,
+    "excluded_untranslated_units": [
+      "DE-0013",
+      "DE-0019",
+      "DE-0022",
+      "DE-0030",
+      "DE-0031"
+    ],
+    "analyzable_units": 31,
+    "missed_units": 1,
+    "missed_unit_rate": 0.03225806451612903,
+    "wilson_95": [
+      0.005717221525416816,
+      0.16194105164724906
+    ],
+    "supplement_claims": 2,
+    "supplement_case_ids": [
+      "DE-0009"
+    ]
+  },
+  "interpretation_boundary": {
+    "candidate_consensus_available": false,
+    "reportable_now": "reviewer-specific validity, pre-adjudication midpoint, uncertainty bounds and intercoder metrics",
+    "not_reportable_until_human_adjudication": "a single final consensus validity estimate and provider-to-consensus agreement"
+  }
+}

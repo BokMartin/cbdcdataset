@@ -28,7 +28,7 @@
 <section class="hero">
   <div class="wrap">
     <h1>What are central bank digital currencies actually for?</h1>
-    <p class="lead">An open-source research project documenting the purpose, development stage and privacy design of central bank digital currencies from the official record. The current v10.2e release uses two independent language-model extractions, exact source-span verification and an explicit ensemble rule; its sampled double-blind human audit is still in progress.</p>
+    <p class="lead">An open-source research project documenting the purpose, development stage and privacy design of central bank digital currencies from the official record. The current v10.2e release uses two independent language-model extractions, exact source-span verification, an explicit ensemble rule and a completed blind human audit; consensus adjudication remains work in progress.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="data.html">Explore the data</a>
       <a class="btn btn-outline" href="paper.html">Read the paper</a>
@@ -113,18 +113,19 @@
 </div></section>
 
 <section class="block alt"><div class="wrap">
-  <h2>Three findings</h2>
-  <p class="subtle">CURRENT EXPLORATORY RESULTS — HUMAN VALIDATION IS NOT YET LOCKED.</p>
+  <h2>Four findings</h2>
+  <p class="subtle">CURRENT EXPLORATORY RESULTS — BLIND AUDIT COMPLETE, CONSENSUS ADJUDICATION OPEN.</p>
   <div class="findings">
     <div class="finding-card"><div class="n">1</div><p><strong>Privacy language is not privacy commitment.</strong> Privacy-family frequency and documented posture correlate only <em>r</em> = 0.219 (95% CI [−0.102, 0.525], <em>n</em> = 39), about 4.8% shared variance.</p></div>
     <div class="finding-card"><div class="n">2</div><p><strong>No tested institutional condition survives multiplicity correction.</strong> The largest posture-side association is with informal-economy size (<em>r</em> = −0.286, 95% CI [−0.532, 0.007], Holm-adjusted <em>p</em> = 0.651). It is a lead for further research, not a confirmed effect.</p></div>
     <div class="finding-card"><div class="n">3</div><p><strong>Model choice changes the descriptive picture.</strong> Exact code-set agreement is 41.5% among candidates found by both providers, and 38.0% of union candidates come from only one provider. The paper therefore reports an equal-vote ensemble and provider-specific sensitivity.</p></div>
+    <div class="finding-card"><div class="n">4</div><p><strong>Aggregate validity is similar, item-level agreement is limited.</strong> Reviewer-specific design-weighted validity is 78.6% and 76.1%, while inclusion agreement is 62.6% (Gwet’s AC1 = 0.426). The 77.3% midpoint is descriptive, not a final consensus estimate.</p></div>
   </div>
 </div></section>
 
 <section class="block"><div class="wrap">
   <h2>Privacy posture explorer</h2>
-  <p>Compare each entity’s documented privacy posture with how much of its coded material belongs to the privacy family. The values are derived from the current v10.2e ensemble and remain exploratory until the pre-frozen human audit is completed.</p>
+  <p>Compare each entity’s documented privacy posture with how much of its coded material belongs to the privacy family. The values are derived from the current v10.2e ensemble and remain exploratory because calibrated recall missed its frozen threshold and the completed blind audit has not yet been consensus-adjudicated.</p>
   <p><a class="btn btn-primary" href="privacy-index.html">Explore privacy posture</a></p>
 </div></section>
 
@@ -137,14 +138,19 @@
 
 <section class="block"><div class="wrap">
   <h2>Open by design</h2>
-  <p>The repository exposes the frozen canonical provider outputs, provenance manifests, exact-span checks, ensemble rule, analysis scripts and derived outputs. A deterministic 365-candidate sample plus 36 dual-empty source units is being reviewed independently by both authors; until those workbooks are locked, the production findings remain explicitly exploratory.</p>
+  <p>The repository exposes the frozen canonical provider outputs, provenance manifests, exact-span checks, ensemble rule, analysis scripts, completed paired human decisions and derived outputs. The independent blind phase covered 365 candidates and 36 dual-empty source units; all released pre-adjudication metrics can be regenerated from the public case-level files.</p>
   <p><a class="btn btn-outline" href="pipeline.html">Inspect the process</a> <a class="btn btn-outline" href="data.html">Download current outputs</a></p>
+</div></section>
+
+<section class="block alt"><div class="wrap">
+  <h2>Work in progress</h2>
+  <p>v10.2e is a transparent research release, not a finished measurement standard. We are testing whether improving LLMs, a larger and better-balanced sample of official documents, and a more precisely operationalized family structure can improve recall, cross-provider stability and human coding agreement in future research.</p>
 </div></section>
 
 <footer class="site"><div class="wrap">
   <div class="cite-as"><strong>Cite as</strong>Bok, Martin &amp; Stroukal, Dominik (2026). <em>Institutional Determinants of Privacy Design in Central Bank Digital Currencies</em>. Working paper, v10.2e.</div>
   <div>© 2026 Martin Bok &amp; Dominik Stroukal · Derived data released under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="about.html">About &amp; contact</a></div>
-  <div>Updated 26 August 2026 · <a href="https://github.com/BokMartin/cbdc-msed-v10">Reproducibility repository</a></div>
+  <div>Updated 27 August 2026 · <a href="https://github.com/BokMartin/cbdc-msed-v10">Reproducibility repository</a></div>
 </div></footer>
 </main>
 </div>

@@ -1,0 +1,13 @@
+empty_case_id,unit_id,slot,exact_span,quote_en,final_code1,final_odr,privacy_direction,privacy_relation,strength,notes,reviewer_initials,qc_status,confidence
+DE-0009,PRD-0013-P0022-U01,1,"5.2  I-CBDC and central bank seigniorage  
+Paying interest on I-CBDC would directly reduce seigniorage in proportion to the level of 
+interest rates. At the same time, paying interest would increase the demand for CBDC, especially 
+relative to bank notes, while the erosion of anonymity (discussed above) would tend to reduce 
+demand for I-CBDC relative to bank notes. Whether a sustained shift from commercial bank 
+deposits and other conventional claims to I-CBDC would occur—and so benefit seign iorage—
+depends largely on how financial institutions respond to the existence of I-CBDC, which is 
+considered in section 5.4.25  ",,PROG.remuneration_considered,finding,neutral,not_applicable,3.0,,,SET_INITIALS,high
+DE-0009,PRD-0013-P0022-U01,2,"Canada) would be required to provide information about the identity of the recipient of interest 
+income to tax authorities. The central bank would also be required to withhold tax on interest 
+income credited to non-resident holders of I-CBDC.22 As a result, anonymity— one of the main 
+attractions of bank notes—would not be fully possible with I -CBDC.23 ",,PRIV.CB.visibility.transparent,finding,decreases,from_state,2.0,,,SET_INITIALS,high

@@ -512,7 +512,7 @@ def main() -> None:
         for variant in VARIANTS
     }
     summary["human_validation"] = {
-        "status": "pending_blind_double_review",
+        "status": "independent_blind_review_complete_pre_adjudication",
         "candidate_sample": 365,
         "candidate_population": 6949,
         "dual_empty_sample": 36,

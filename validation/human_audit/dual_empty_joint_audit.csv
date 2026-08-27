@@ -1,0 +1,1413 @@
+empty_case_id,project_owner,authority_note,source_text,missed_claims,confidence,notes,unit_id,render_file,reviewer_initials,qc_status,exclude_untranslated
+DE-0001,Board of Governors of the Federal Reserve System (potential US CBDC),"Discussion paper, not an issuance decision. Retain explicit Federal Reserve positions, prerequisites, design preferences, or stated risks for a potential US CBDC. Exclude questions, option inventories, literature, and stakeholder views.","Appendix C: Access to Money andPayment ServicesIn order to serve as a means of payment and a store of value, money must be accessible to thegeneral public. The means by which the general public accesses different types of money vary.Figure C.1. Overview of a typical payment
+*Nonbank ﬁnancial service providers may be involved in various stages of both the front-end and the back-end of the payment chain. For example, there may 
+  be multiple paths from a nonbank to the receiver. 
+Sender’s bank 
+Sender 
+(e.g., consumer) 
+Receiver 
+(e.g., merchant) Payment transaction 
+Funds are sent as credits (sender pushes funds) or debits (receiver pulls funds) 
+Nonbank* Receiver’s bank 
+1
+1 2
+3 1 22 3
+2
+Front 
+end 
+(consumer 
+facing) 
+Back 
+end 
+(payment 
+processing) 
+Payment infrastructure 
+(e.g., Federal Reserve, 
+private-sector providers) 
+Payment clearing and settlement 12
+In this example, the general public interacts with the “front end” of t he payment system by swiping their credit card at a checkout 
+machine or using a mobile app to send money. These payments may     ﬂow solely through applications operated by and accounts 
+maintained by banks,     originate in a nonbank ﬁnancial service and then ﬂow through the bankin g system, or     remain only in 
+the records of the nonbank services (though customer nonbank account s may be funded/defunded by bank accounts).  
+1
+2 3
+29",no,high,,PRD-0080-P0033-U01,,,SET_INITIALS,False
+DE-0002,Banca d'Italia research context,This research paper is not automatically an issuer commitment. Retain only Banca d'Italia own-project results or explicit institutional positions; exclude literature and model assumptions.,"61
+An example of this kind is the Bitcoin DLT. 84 For each payment, a set of 
+unspent tokens belonging to the payer is destroyed and (usually) two tokens 
+with the same total value are created simultaneously: one going to the payee as 
+payment and the other one being returned to the payer as exchange. 
+In order to prevent double spending, in both the account-based and token-
+based approaches, the accounts/tokens are stored on the ledger and updated 
+by the ledger operator. In other words, neither tokens nor accounts are kept in 
+the end user devices, which in general contains the cryptographic credentials 
+that can be used to authorize transactions on the ledger. For this reason, 
+neither the account-based nor the token-based approach refer to an offline and 
+cash-like transfer, in which a payment is made without reference to any third 
+party or intermediary.85 Unless other arrangements are in place, the end user is 
+always required to have a connection to the ledger, in order to safely receive 
+payments.
+3. d istribution degrees of systems And infrAstructures
+The modern applications’ architecture has led to a dualism between system 
+and infrastructure architecture, where system depicts the business and 
+organizational view, while infrastructure refers to the technological and 
+architectural one. 
+From a business and organizational point of view, three different system 
+architectures exist: centralized, distributed and decentralized.
+A centralized system is owned by a single entity or organization. In this case, 
+users have to trust that the entity behaves correctly and in their interest. 
+Currently, most of the internet applications are centralized (Amazon, Google, 
+Facebook, etc.) and owned by a company or person that provides and 
+maintains the source code to execute on a computer, server or even a cluster. 
+As said, the centralized system concept regards a business view, irrespective 
+of the actual technical infrastructure.
+In the distributed systems, instead, the ownership is spread over some “well 
+known” organizations. In this case, there are multiple central owners that have 
+a part or a copy of the resources. With these systems the users don’t have to 
+trust a single organization or entity, but have different choices. Domain Name 
+System (DNS) is a great example of a distributed system. It maps hostname 
+to IP addresses and is implemented as a distributed, hierarchical database. 
+Focusing on the root server, one of the three classes of DNS servers, 13 root 
+name servers are available worldwide, run by 12 organizations, which the user 
+has to ultimately trust.
+84 See Nakamoto (2008). 
+85 See Bank of England (2020), Section 6.6.",no,high,,PRD-0042-P0063-U01,,,SET_INITIALS,False
+DE-0003,People's Bank of China (e-CNY),"This is a BIS research source, not automatically a PBOC position. Retain only concrete e-CNY features or decisions explicitly attributed to the PBOC; exclude modelling, literature, and foreign CBDCs.","170 BIS Papers No 123 
+ 
+After a liquidity deficit emerges, the central bank will move from absorbing 
+liquidity through deposits and bond issuance to providing liquidity through repos. If 
+required, the central bank can expand its marketable collateral list, which currently 
+contains only top -quality securities and, if need be, it can also initiate auctions for 
+loans secured by non -marketable collateral. According to the central bank’s 
+estimates, the vo lume of potential collateral is sufficient to accommodate banks’ 
+demand for liquidity arising from the introduction of a digital rouble.  
+The switch to a liquidity deficit, in turn, will affect the position of the short -term 
+money market interest rates in the central bank’s interest rates corridor. Currently, 
+due to small market inefficiencies the short-term rates have a predominantly negative 
+spread to the central bank’s main policy rate. The liquidity deficit means that the 
+overnight money market rates will form in the upper end of the corridor. The factors 
+behind the interest rates’ spread to the policy rate are well researched, and once t he 
+liquidity situation is settled, the spread will stabilise at some level. Then, the central 
+bank will be able to incorporate this spread into its policy rate decisions so as to set 
+short-term rates on the desired trajectory.  
+During the transition period  there might be some short -term interest rate 
+volatility; however, this volatility is expected to be brief and its effect on the longer 
+rates (and the economy in general) will be quite limited.  
+The liquidity drain may disproportionally affect large banks that rely more than 
+others on cheap or free funds in their clients’ current accounts, taking advantage, 
+inter alia, of the network effect and their central role in payments. The profit margins 
+of these banks will be compressed most prominently, which will even out the 
+competition in the banking sector. Conversely, the banks offering their clients better 
+conditions like remuneration of current accounts and other benefits will be able to 
+attract clients more easily. Overall, since Russia is firmly in positive  rates territory, a 
+digital rouble will not compete with banks’ liabilities as a means of saving, so the 
+liquidity outflow from the banking sector will likely be moderate and will not result in 
+any form of financial sector disintermediation.  
+The digital r ouble will affect financial stability as well. On the one hand, the 
+introduction of a new secure and sustainable means of payment will further promote 
+financial stability as well as the emergence of new types of financial transactions such 
+as transactions with automatic execution (smart contracts). On the other hand, the 
+digital rouble could pose a threat to financial stability. In the event of an adverse 
+external event a bank run could be facilitated by the existence of an extremely liquid 
+(compared even t o cash) and secure form of money. However, in reality such 
+developments are unlikely, for several reasons. First, the central bank will establish 
+transaction caps to ensure that clients cannot convert large sums from bank deposits 
+into digital roubles at once. Second, the Russian banking sector enjoys much higher 
+trust from the public than 5 or 10 years ago. In the previous periods of financial 
+turmoil, the banks witnessed deposit outflows but even they were short -lived and 
+manageable. With time, as both financial inclusion and the resilience of the payment 
+system increases, the risk of “flight to safety” will further decline.  . Finally, the central 
+bank has a strong lender of last resort framework, under which the banks can quickly borrow 
+liquidity from the central bank against a wide pool of collateral. So overall, the balance of 
+risks and opportunities for financial stability is positive.  
+Due to the already high level of financial inclusion in Russia, the introduction of 
+a digital rouble will not substan tially affect monetary policy transmission. The 
+efficiency of monetary policy may increase somewhat over the long term owing to",no,high,,PRD-0018-P0174-U01,,,SET_INITIALS,False
+DE-0004,People's Bank of China (e-CNY),"This is a BIS research source, not automatically a PBOC position. Retain only concrete e-CNY features or decisions explicitly attributed to the PBOC; exclude modelling, literature, and foreign CBDCs.","96 BIS Papers No 123 
+ 
+Standard (SNAP) and regulatory reform, as  well as the implementation plan for the 
+Bank Indonesia Fast Payment (BI -FAST) system. Digital economic and financial 
+transactions are proliferating  along with increasing acceptance  and people’s 
+preferences for online shopping, expansion, and convenience o f digital payment 
+systems, as well as digital banking acceleration. 
+The rapid changes in the payment landscape, coupled with other digital 
+disruptions such as the emergence of private digital currency, the internet of 
+things (IoT), big data, blockchain, ar tificial intelligence (AI), decentralised 
+finance (DeFi) and machine -to-machine (MtM) communication, have a 
+significant impact on central banking practices . These have triggered central 
+banks to adopt a more proactive stance to anticipate the uncertainty in the future, 
+including the issuance of CBDC.  
+Central banks consider issuing a CBDC for various reasons shaped by local 
+circumstances and at a different pace across jurisdictions and types of economy. 
+As such, the objectives of CBDC issuance in different countries converge into six 
+main objectives: (i) to provide risk-free digital payment using central bank money  
+compared to the services provided by private entities; (ii) to mitigate risk to currency 
+sovereignty and monetary stability from non- sovereign digital currency ; (iii) to 
+enhance payment system competition, efficiency and resilience, including for cross -
+border payments; (iv) to provide a new instrument for monetary and financial stability 
+policy; (v) to facilitate fiscal transfers/su bsidy distribution directly to the recipient ’s 
+account/wallet; and (vi) to s upport financial inclusion with the digitalis ation of 
+payment data, offline functionality, and cost-effective transactions.  
+To ensure the smooth implementation of CBDC, the majori ty of central 
+banks follow three common foundational principles.  First, the CBDC should be 
+implemented based on a strong legal basis which serves as a consensus from several 
+stakeholders. Second, CBDC should support the objectives of the central bank on 
+monetary, payment system and financial system stability. Third, CBDC should 
+promote financial inclusion, innovation , and efficiency of the financial system in the 
+digital era.  
+The use of CBDC as a form of central bank money that could act as both a 
+liquid, safe settlement asset and an anchor for the payment system will improve 
+the payment system’s efficiency by increasing competition in the domestic and 
+global payment systems markets . The issuance of CBDC can provide benefits for 
+the wholesale and retail pay ment rails. For wholesale payment system s, wholesale 
+CBDC ( wCBDC) could increase settlement efficiency for transactions regarding 
+securities, derivatives and cross -border payments. As a digital service, CBDC can be 
+designed to support 24/7 operation and al low easier asset exchange. In addition, it  
+could enable simplified payment data streams and better traceability of illicit 
+transactions. Lastly, certain models of CBDC might increase trust between 
+counterparties. Besides this, CBDC can also potentially benefit retail payment systems. 
+A retail CBDC (rCBDC) could reduce the cost of managing cash for central banks as 
+well as enabling fast, cost-effective and secure payments. This might result in a more 
+efficient payment system. Moreover, CBDC could promote cen tral banks’ ability to 
+monitor economic activities in real-time and support innovation by private entities, 
+including enhancing financial inclusion. A domestic CBDC might also function as the 
+requirement for better cross-border arrangements.  
+Despite the p otential benefits of CBDC, there are several challenges that  
+central banks should assess. Wholesale CBDC might disrupt the innovation already",no,high,,PRD-0018-P0100-U01,,,SET_INITIALS,False
+DE-0005,Reserve Bank of New Zealand,"Retain the named authority's own CBDC decisions, explicit proposals, requirements, features, and executed findings. Exclude generic context, literature, foreign projects, and stakeholder views not explicitly adopted by the authority.","29  
+29  Future of Money – Central Bank Digital Currency  
+One important design and calibration issue for future consideration is whether and by how much 
+the Reserve Bank may want to limit the volume of CBDC that can be issued to wholesale 
+customers, to reduce the possibility of a wholesale run on banks to a CBDC. In crisis scenarios we 
+would be able to quickly detect a run to a CBDC and halt these flows to provide stability to the 
+banking system if needed.  
+Alternatively, the Reserve Bank could impose negative interest rates on large holdings of CBDC. 
+This might replicate the storage costs of cash and reduce the attractiveness of switching money 
+from transaction accounts to a CBDC in large quantities. 
+These are just some high-level examples of the types of mitigant that will need to be thought 
+through in the next stage(s) of CBDC development. 
+(b) Reserve Bank balance sheet 
+In addition to giving proper attention and consideration to the impacts of a CBDC on private-
+sector financial intermediaries, it is necessary to think through the impacts of the issuance of a 
+CBDC on the Reserve Bank’s balance sheet. This includes impacts on the size of the balance sheet 
+and on our monetary policy settings, which would depend on how great the demand for a CBDC 
+was, where it came from (i.e. cash, transaction accounts or other assets), and whether we satisfied 
+the demand for a CBDC (see Annex C).  
+These considerations are not new; the Reserve Bank already makes decisions on the supply of 
+money (in terms of cash in circulation and liquidity in the financial system), monetary policies and 
+financial stability policies that all affect the value anchor and the financial system – it is just that the 
+current calibration, relationships, processes and policies of existing roles are more established than 
+those for a CBDC.  
+5.3 Design complexities 
+The development of a CBDC would require a significant investment in technology and systems to 
+engage in experimentation and, if a CBDC were to be issued, support a new CBDC payments 
+infrastructure.  
+As stated, the consideration of the form a CBDC should take includes whether it is token or 
+account based, whether it uses distributed ledger technology or conventional infrastructure, how it 
+can safely support offline payments, who can access it and how much can be made available.  
+Further consideration would also need to be given to its distribution. For example, there is a 
+spectrum of distribution models to consider, ranging from a CBDC that could be distributed via a 
+direct model, whereby the Reserve Bank would provide end-to-end infrastructure and services, to 
+a CBDC distributed via an intermediated model, in which the Reserve Bank would provide only 
+legal issuance and the private sector would provide all other services and infrastructure. There are 
+many possible variants along the spectrum (e.g. the central bank may provide core back-end 
+infrastructure and outsource the front-end services). The particular objectives of a CBDC and the 
+design choices would all have a bearing on the array of distribution choices. Figure 11 illustrates 
+three stylised operating models. Most central banks are considering a model where the central 
+bank issues a CBDC and the private sector provides front-end and some back-end services.54  
+  
+____________ 
+54  Auer, R and R Böhme (2020).",no,high,,PRD-0057-P0029-U01,,,SET_INITIALS,False
+DE-0006,People's Bank of China (e-CNY),"This is a BIS research source, not automatically a PBOC position. Retain only concrete e-CNY features or decisions explicitly attributed to the PBOC; exclude modelling, literature, and foreign CBDCs.","BIS Papers No 123 185 
+ 
+CBDCs in emerging market economies 
+Background 
+The request to the South African Reserve Bank (SARB) – and indeed all participating 
+EME Deputy Governors –  was for a “short paper (5 –6 pages) on one or two aspects 
+or questions listed in the draft agenda”. While there are multiple questions listed, the 
+five main aspects are as follows: 
+• Main objectives of introducing CBDCs  
+• Guiding principles of CBDC design and data governance  
+• Challenges of CBDCs for monetary policy, financial intermediation a nd financial 
+stability  
+• CBDCs and financial inclusion  
+• Cross-border aspects of CBDCs  
+Although the SARB’s note will touch on all five aspects listed above, particular 
+attention will be paid to our reflections on the objectives of retail CBDCs and the 
+cross-border aspects of CBDCs given the SARB’s ongoing feasibility study and its 
+participation in Project Dunbar respectively. 
+Overview of the SARB’s CBDC research and exploration  
+The SARB has initiated projects in both the wholesale and retail CBDC space.  
+From a retail or rCBDC perspective, the SARB is  continuing its research to 
+practically investigate the feasibility, desirability and appropriateness of a CBDC as 
+electronic legal tender, for general purpose retail use,  complementary to cash. The 
+objective of the feasibility study is to consider how the issuance of a general purpose 
+CBDC will feed into the SARB’s policy position and mandate. The SARB is working 
+with two vendors to explore the different deployment solution s to unpack and 
+understand the options and considerations for a retail CBDC in South Africa. 
+On the wholesale  or wCBDC side, the SARB is  currently finalising the second 
+phase of an initiative called Project Khokha, which explores the technical, policy and 
+regulatory implications of distributed ledger technology (DLT )-driven innovation in 
+South Africa’s financial markets. In our first iteration, Project Khokha 1 sought to trial 
+interbank wholesale settlement using DLT, while Project Khokha 2 seeks to issue, clear 
+and settle debentures on DLT usin g tokenised money. One of the key technical 
+objectives of Project Khokha 2 is to explore interoperability in financial markets with 
+multiple tokenised assets. We expect to publish our report on Project Khokha 2 during 
+the second quarter of 2022. The report  will guide the next phase in our strategy and 
+inform our strategic direction in the wCBDC area.   
+From a regional payments perspective, the SARB currently operates the real-time 
+gross settlement (RTGS) system for the Southern African Development Community 
+(SADC), or SADC -RTGS, which was originally established in part to support and 
+facilitate trade in the region among member countries. The SADC-RTGS is supported",no,high,,PRD-0018-P0189-U01,,,SET_INITIALS,False
+DE-0007,Banque de France (wholesale CBDC programme),Retain Banque de France own-programme decisions and executed findings. Exclude foreign experiments and general market regulation without a CBDC-specific conclusion.,"Payments and market infrastructures in the digital era – 5
+CHAPTER 20  THE ROLE AND CONTRIBUTION OF INNOVATION  
+FOR PAYMENT INSTRUMENTS AND MARKET INFRASTRUCTURES
+“Explore a US CBDC by placing urgency on research and development of a potential US CBDC, should 
+issuance be deemed in the national interest. The Order directs the US Government to assess the technological 
+infrastructure and capacity needs for a potential US CBDC in a manner that protects Americans’ interests. 
+The Order also encourages the Federal Reserve to continue its research, development, and assessment 
+efforts for a US CBDC, including development of a plan for broader US Government action in support of their 
+work. This effort prioritizes US participation in multi-country experimentation, and ensures US leadership 
+internationally to promote CBDC development that is consistent with US priorities and democratic values. ”
+In addition, at the multilateral level, in October 2021, the G7 adopted 13 principles applicable to retail 
+CBDC worldwide with the aim of avoiding any risks to financial stability, monetary policy and spillovers, 
+as well as ensuring data protection, cybersecurity, competition, AML/CTF , environmental protection and 
+financial inclusion.
+Other central banks, besides the Chinese Central Bank (see Box 4), that have also commenced retail 
+CBDC projects include Russia and Ukraine:
+•  The Bank of Russia published a report in October 2020 entitled A digital ruble which served as the 
+basis for a public consultation, and for which the summary of responses was published in April 2021. 
+In February 2022, it issued a press release indicating that the first phase of its pilot test programme 
+was completed in 2021 and that the tests will continue in 2022.
+•  The National Bank of Ukraine, which began CBDC projects in 2016, published a report at the start 
+of 2019 entitled “ Analytical report on the e-hryvnia pilot project” . It then launched a public consultation, 
+for which the summary of responses was published in July 2021.
+Three central banks had an operational CBDC at the start of 2022:
+•  The Central Bank of the Bahamas, which commenced its CBDC projects in 2016, followed by a pilot test 
+phase beginning at the end of 2019, will go down in history as the first central bank to have launched 
+its digital currency, the sand dollar, in October 2020.
+•  The Central Bank of Nigeria launched its digital currency, the eNaira, in October 2021.
+•  The Eastern Caribbean Central Bank (ECCB) launched its digital currency, DCash, at the start of 2022.
+Box 4: The Chinese central bank digital currency project (e-CNY or e-yuan) 1
+History
+Originally called DC/EP (Digital Currency Electronic Payment) then renamed e-CNY (or e-yuan), the Chinese 
+central bank digital currency (CBDC) project was launched in 2014 by the People’s Bank of China (PBOC). 
+In 2017 , the PBOC formed a Digital Currency Institute in charge of leading the project. After an analysis 
+and design phase, the project entered the pilot phase at the start of 2020 and the geographic perimeter 
+has gradually extended to include the major Chinese metropolitan areas.
+.../...
+1  The Chinese project has prompted many publications, but until recently it was not possible to obtain them from primary sources (namely, from the PBOC), 
+or at least not in English. This gap was filled with the publication of a white paper by the PBOC in July 2021 and with a series of talks by Changchun Mu, 
+Director General of the Digital Currency Institute of the PBOC, at international conferences, as well as a speech by Governor Yi Gang on the e-yuan.",no,high,,PRD-0029-P0007-U01,,,SET_INITIALS,False
+DE-0008,People's Bank of China (e-CNY),"This is a BIS research source, not automatically a PBOC position. Retain only concrete e-CNY features or decisions explicitly attributed to the PBOC; exclude modelling, literature, and foreign CBDCs.","182 BIS Papers No 123 
+ 
+14 It is worth n oting that some of these risks to domestic credit creation and 
+financial stability could also arise as major jurisdictions issue frictionless retail CBDCs 
+or equivalent instruments, even if Singapore does not. This could occur, for instance, 
+if there is su bstitution of domestic bank deposits to these digital monies in a crisis. 
+Digital currencies issued by foreign central banks, or stablecoins fully backed by 
+foreign safe assets (particularly central bank reserves), could be seen as substantively 
+safer than bank money in Singapore during times of stress , while being potentially 
+more easily available through digital channels than foreign bank accounts are today.  
+ 
+15 With appropriate regulatory safeguards, the macro-financial risks posed by 
+retail CBDCs can likely be made manageable. Possible measures include financial 
+disincentives or hard limits to prevent excessive CBDC holdings, as well as restrictions 
+on the use of CBDC by non- residents. These risks could further be tempered by 
+innovative design and technological solutions built into a new digital currency. Such 
+safeguards should ensure that retail CBDCs serve primarily as a medium of exchange 
+and not a major store of value.  
+ 
+16 Overall, MAS’ current view is that there is no pressing need for a retail CBDC 
+in Singapore at this point in time. Demand for cash domestically remains some way 
+from the “minimum threshold” where concerns regarding the negative implications 
+from the lack of cash in circulation might arise. Retail electronic payments are 
+generally competitive, efficient and cheap, and innovation continues to flourish. Even 
+as pockets of frictions and high costs remain, there are other initiatives in the pipeline 
+to address them. The fundamental soundness of the Singapore dollar and its 
+dominance in the dom estic economy will also be a bulwark against any rapid move 
+towards substitution with foreign currencies. 
+ 
+17 Nevertheless, MAS recognises the possibility that retail CBDCs may offer 
+innovative solutions in the future.  The gains from enabling greater innovation in 
+payments and payment-adjacent digital services will grow as businesses continue to 
+digitalise their operations. The case for a public payment alternative to protect end 
+user welfare in digital payments will na turally strengthen as more payments move 
+entirely online, and could be underscored if the market structure of electronic 
+payments grows more concentrated and rent -seeking behaviour begins to emerge, 
+as has already occurred in some jurisdictions.  
+ 
+18 There is  thus value in  MAS embark ing on the upstream technical work 
+pertinent to the issuance of a retail CBDC.  The development of a retail CBDC 
+system and its ecosystem is likely to be an extended and complex undertaking. 
+Structural trends reshaping domestic mone y and payments have long runways and 
+could accelerate unexpectedly. MAS and the financial and technology industries 
+should begin to build up the necessary expertise and capabilities to issue a CBDC if 
+the need arises.  
+ 
+19 MAS’ exploration of CBDC technology, in partnership with the industry, has 
+the potential to generate transferable know -how that could benefit payment 
+innovation more broadly.  Retail CBDCs have uniquely high requirements, of 
+scalability, extensibility and reliability. They are thus a useful “ high-water mark” to 
+spur innovations around this payment trilemma, which could have spillover benefits 
+to payments even beyond CBDCs.",no,high,,PRD-0018-P0186-U01,,,SET_INITIALS,False
+DE-0009,Bank of Canada,"Research or joint-project source: retain only executed own-project findings or concrete CBDC conclusions explicitly attributed to the named authority. Exclude author assumptions, literature, external examples, and unadopted proposals.","18 
+Canada) would be required to provide information about the identity of the recipient of interest 
+income to tax authorities. The central bank would also be required to withhold tax on interest 
+income credited to non-resident holders of I-CBDC.22 As a result, anonymity— one of the main 
+attractions of bank notes—would not be fully possible with I -CBDC.23 It should be noted, 
+however, that the identity of the I-CBDC owner and the parties involved in an I-CBDC 
+transaction could still be anonymous to other parties, aside from the central bank.  
+This erosion of anonymity would reduce the appeal of I-CBDC for those transactions where 
+(complete) privacy was desired. On the other hand, this loss of anonymity would help address 
+concerns about the use of CBDC for criminal activity. More generally, such a provision could 
+constrain access to I-CBDC to those individuals and firms who have verifiable identification 
+(e.g., a tax identification code, social insurance or a business registration number).24    
+5.2  I-CBDC and central bank seigniorage  
+Paying interest on I-CBDC would directly reduce seigniorage in proportion to the level of 
+interest rates. At the same time, paying interest would increase the demand for CBDC, especially 
+relative to bank notes, while the erosion of anonymity (discussed above) would tend to reduce 
+demand for I-CBDC relative to bank notes. Whether a sustained shift from commercial bank 
+deposits and other conventional claims to I-CBDC would occur—and so benefit seign iorage—
+depends largely on how financial institutions respond to the existence of I-CBDC, which is 
+considered in section 5.4.25  
+5.3  I-CBDC and monetary policy  
+As noted above, the central bank would remain the ultimate (monopoly) supplier of reserves, 
+bank notes and CBDC (interest-bearing or not), so the central bank could set related terms and 
+conditions, and therefore control monetary policy. So, again, paying interest on CBDC should 
+not compromise or fundamentally affect a central bank’s ability to influence short-term interest 
+rates to achieve price stability, although implementation tactics could change.  
+In principle, one would expect that the interest rate paid by the central bank on reserves would be 
+the same as the interest rate paid on I-CBDC, as each reflects the setting of monetary policy. 
+These liabilities are also close substitutes in some contexts. Further, a spread between the interest 
+                                                 
+22 In Canada, any entity that makes certain payments, including interest income, to a resident of Canada is required 
+to report such income to the Canadian Revenue Agency and to prepare a corresponding record for the income 
+recipient. These records identify the types of investment income that residents of Canada must report on their 
+income tax returns. The tax authorities in Canada also require an individual or organization to withhold income tax 
+of 25 per cent or the percentage established under a tax agreement on amounts paid or credited to non-residents.  
+23 This argument may not apply in economies such as Hong Kong where interest income is not subject to income 
+taxes. 
+24 A central bank could consider issuing both an anonymous benchmark CBDC (with a cap on the maximum amount 
+that could be held) along with an I-CBDC (with no cap on balances). Analysis of such an approach is for future 
+research. 
+25 Barrdear and Kumhof (2016) argue that interest-bearing CBDC would lead to a large increase in demand for 
+central bank liabilities, which would lead to an increase in seigniorage, and, in turn, to larger residual transfers to the 
+government. They also note that with such a large shift into CBDC, the central bank would need to hold more 
+government bonds on its balance sheet. This increased demand for government bonds, other things being equal, 
+would increase bond prices and lower associated bond interest rates, thus reducing government funding costs.",yes,high,,PRD-0013-P0022-U01,,,SET_INITIALS,False
+DE-0010,Reserve Bank of India (digital rupee),"Retain RBI proposals, decisions, requirements, and operating-model claims for the digital rupee.","Concept Note on CBDC 
+ 
+16 
+ 
+Chapter 3 - Motivations for issuance of 
+CBDCs 
+3.1 Different jurisdictions have justified the 
+adoption of CBDC for very diverse reasons. 
+Some of them are enumerated below: 
+i. Central Banks, faced with dwindling 
+usage of paper currency, seek to 
+popularise a more acceptable electronic 
+form of currency (like Sweden); 
+ii. Jurisdictions with significant physical 
+cash usage seeking to make issuance 
+more efficient (like Denmark, Germany, 
+Japan or even the US); 
+iii. Countries with geographical barriers 
+restricting the physical movement of 
+cash had motivation to go for CBDC 
+(e.g. The Bahamas and the Caribbean 
+with small and large numbers of islands 
+spread out);  
+iv. Central Banks seek to meet the public’s 
+need for digital currencies, manifested in 
+the increasing use of private virtual 
+currencies, and thereby avoid the more 
+damaging consequences of such private 
+currencies. 
+3.2 Further, CBDCs have some clear 
+advantages over other digital payments 
+systems, as it being a sovereign currency, 
+ensures settlement finality and thus reduces  
+settlement risk in the financial system. CBDCs 
+could also potentially enable a more real-time, 
+cost-effective seamless integration of cross 
+border payment systems. India has made 
+impressive progress in innovation in digital 
+                                                            
+10 RBI Annual Report 2021-22 
+payments. The payment systems are available 
+24X7, 365 days a year to both retail and 
+wholesale customers, they are largely real -
+time, the cost of transaction is perhaps the 
+lowest in the world, users have a wide array of 
+options for doing transactions and digital 
+payments have grown at an impressive CAGR 
+of 55% over the last five years.  
+3.3 Supported by the state-of-the-art 
+payment systems of India that are affordable, 
+accessible, convenient, efficient, safe and 
+secure, the e₹ system will bolster India’s  digital 
+economy, enhance financial inclusion, and 
+make the monetary and payment systems more 
+efficient. There are a large and diverse number 
+of motivations for India to consider  CBDC. 
+Some of the important motivations for India to 
+consider issuing CBDC are given below.
+ 
+3.3.1 Reduction in cost associated with physical 
+cash management 
+Cost of c ash management in India has 
+continued to be significant. The total 
+expenditure incurred on security printing during 
+April 1, 2021 to March 31, 2022 was ₹ 4,984.80 
+crore as against ₹4,012.10 crore in the previous 
+year (July 1, 2020 to March 31, 2021) 10. This 
+cost, which does not include the Environmental, 
+Social, and Governance (ESG) cost of printing 
+money, is predominantly borne by four 
+stakeholders –general public , businesses, 
+banks, and the Central Bank. CBDC affects the 
+overall value of the money issuing function to 
+the extent that it reduces operational costs e.g. 
+costs related to printing, storage, transportation 
+and replacement of banknotes, and cost s 
+associated with delay in reconciliation and",no,high,,PRD-0088-P0016-U01,,,SET_INITIALS,False
+DE-0011,South African Reserve Bank,"Retain the named authority's own CBDC decisions, explicit proposals, requirements, features, and executed findings. Exclude generic context, literature, foreign projects, and stakeholder views not explicitly adopted by the authority.","35Project Khokha Fintech Report  
+ STRUCTURE OF THE PROJECT | CHAPTER 2
+HYPOTHESES TESTED
+The technical goals  
+are expressed formally  
+as hypotheses.
+ 
+The project set out to test a number of key hypotheses 
+which are depicted in figure 6:
+ 
+ 
+Figure 6: The key hypotheses of Project Khokha
+Real-time gross settlement transactions can be executed 
+using standard payment message formats (leveraging the 
+ISO 20022 format).
+Messages can be processed at sufficient scale 
+and in line with the current system processing times.
+Blocks should be propagated within 1s to a 95% 
+confidence level and within 2s to a 99% confidence level.
+The confidentiality and privacy of transactions 
+between commercial banks is maintained.
+The visibility of the system for the SARB is sufficient 
+for oversight and operational management.",no,high,,PRD-0087-P0035-U01,,,SET_INITIALS,False
+DE-0012,Bank of Canada research on privacy-enhancing technologies for a potential CBDC,Staff research is not an adopted design. Retain empirical findings or explicit Bank of Canada conclusions tied to its potential CBDC; exclude literature summaries.,"2.3.3 Cryptographic commitment
+A cryptographic commitment scheme allows us to commit to a chosen message while preserving its secrecy
+(with the ability to reveal it later) by publishing its hash value. A binding factor can be used when data
+size is small to prevent a brute-force attack. A commitment 𝐶𝑜𝑚(𝑚,𝑟)to message 𝑚 and a blinding factor
+𝑟 has the following properties:
+• Hiding: One party wants to commit the message 𝑚 without revealing the content of 𝑚 itself.
+• Binding: If one party makes a commitment to 𝑚, they reveal a different message 𝑚′ instead.
+Brassard, Chaum, and Cr´ epeau (1988) provide a formal definition of a commitment scheme, as follows:
+A commitment scheme consists of three polynomial-time algorithms 𝐶 = (Gen,Commit,Open)satisfying
+the following constraints.
+• 𝑟 ←Gen(1𝜆): take a security parameter 1 𝜆 and output a random number 𝑟.
+• 𝑐 ←Commit(𝑚,𝑟): given a message 𝑚 and randomness 𝑟, compute as output a value 𝑐 that hides
+message 𝑚 and such that it is computationally impossible to compute any pair (𝑚′,𝑟′) such that
+Commit(𝑚′,𝑟′)=Commit(𝑚,𝑟).
+• 𝑏←Open(𝑐,𝑚,𝑟 ): given (𝑐,𝑚,𝑟 )with a commitment 𝑐, a message 𝑚 and randomness 𝑟, the algorithm
+returns true if and only if 𝑐=commit(𝑚,𝑟).
+Pedersen commitment The Pedersen commitment is a commitment scheme that is binding under a
+discrete logarithm assumption (Pedersen 1992). Given an elliptic curve 𝐸 defined over a finite field 𝐺𝐹(𝑝),
+assume that 𝐸 has a group of points of large order 𝑞in which the discrete logarithm is hard, and two random
+public generators 𝑔 and ℎ. The commitment of a message 𝑚 is a point 𝑐 on the elliptic curve 𝐸 that binds
+a message 𝑚 and a random 𝑟 to a point 𝑐 on 𝐸. The Pedersen commitment is defined as follows:
+𝐶𝑜𝑚(𝑚,𝑟)=𝑔𝑚ℎ𝑟
+It would be infeasible to calculate another pair 𝑚′, 𝑟′ that can produce the same commitment 𝐶𝑜𝑚(𝑚).
+The Petersen commitment is used in cryptocurrencies such as Monero to keep the amount of transactions
+confidential. Additionally, Pedersen commitments are additively homomorphic, meaning the sum of a set of
+commitments equals a commitment to the sum of the data, with the binding factor set as the sum of the
+individual binding factors.
+2.3.4 Zero-knowledge proofs
+Goldwasser, Micali, and Rackoff (1989) first put forward and analyzed the concept of interactive proof
+systems. This led to the creation of an important branch of cryptography and computational complexity
+theory: that is, ZKP. In a ZKP system, a prover convinces a verifier that some statement is true or some
+computations were correctly executed while leaking nothing but the validity of the assertion. ZKP has a
+broad application because of this nature. As a simple example, consider the case where the prover claims
+to have a way of factorizing large numbers. The verifier will send the prover a large number and the prover
+will send back the factors. Successful factorization of several large integers will decrease the verifier’s doubt
+about the truth of the prover’s claim. In spite of this, the verifier will learn nothing about the factorization
+method.
+Formally, a ZKP model is defined as an interactive proof system (𝑃,𝑉), where 𝑃 is a prover and 𝑉 is a
+verifier. Protocol (𝑃,𝑉)is for proving a language membership statement for a language over {0,1}. Let 𝐿
+be a language over {0,1}∗, for a membership instance 𝑥 ∈𝐿, 𝑃 and 𝑉 must share the common input 𝑥. A
+proof instance is denoted as (𝑃,𝑉)(𝑥). Upon completing the interaction between two parties, the output of
+the protocol should be of form (𝑃,𝑉)(𝑥)∈{ Accept, Reject}, representing 𝑉’s acceptance or rejection of 𝑃’s
+claim that 𝑥 ∈𝐿. Note that an interactive ZKP system can be converted to a non-interactive ZKP system
+by using the Fiat-Shamir transformation (Fiat and Shamir 1987).
+A ZKP must have the following properties:
+• Completeness: If the statement is correct, then the verifier will “always” accept.
+• Soundness: If the statement is incorrect, then the verifier will “always” reject.
+9",no,high,,PRD-0107-P0012-U01,,,SET_INITIALS,False
+DE-0013,Bank of Russia (digital ruble),"Retain implemented digital-ruble features, requirements, and reported results.","24
+Цифровой рубль: 
+текущий статус проекта
+4.	 	ПЕРСПЕКТИВЫ 	И ДАЛЬНЕЙШИЕ 	ШАГИ
+В настоящее время ключевым направлением развития цифрового рубля является 
+масштабирование пилотного проекта – поэтапное увеличение числа участников и пользователей 
+пилота, а также расширение перечня доступных сервисов.
+В ходе пилотного проекта цифрового рубля продолжается изучение эффективности различных 
+экономических моделей обращения цифрового рубля. В России в системе розничных платежей 
+уже эффективно функционируют платежная система «Мир», Система быстрых платежей 
+и другие инструменты, позволяющие удобно и оперативно осуществлять платежи гражданам 
+и принимать оплату за товары бизнесу. В ходе пилота проводится дополнительное обсуждение 
+экономической модели, в том числе оптовой составляющей цифрового рубля. Особое внимание 
+уделяется определению приоритетных направлений развития сервисов на базе цифрового рубля.
+Параллельно с этим ведется работа, направленная на взаимодействие с государственными 
+структурами, банками и коммерческими компаниями: прорабатываются наиболее востребованные 
+кейсы, исследуются сценарии использования цифрового рубля, которые позволят 
+продемонстрировать наибольший потенциал для повышения экономической эффективности.
+С запуском цифрового рубля Россия станет одной из первых стран, у которых есть весь комплекс 
+компонентов платежной инфраструктуры: Национальная система платежных карт, Система 
+быстрых платежей, Система передачи финансовых сообщений и цифровая национальная валюта.
+В перспективе платформа цифрового рубля может стать не только централизованной 
+платформой для платежей и переводов, но и основой для внедрения инноваций во многих 
+отраслях экономики. Мы рассчитываем, что привычным способом расчетов, как и безналичные 
+рубли, цифровой рубль станет на горизонте 5 – 7 лет. Это стратегический проект, способный 
+трансформировать экономику России, усилив ее устойчивость к внешним шокам, успешное 
+внедрение которого возможно только при взаимодействии Банка России с государством, 
+бизнесом и обществом.",,high,NOT ASSESSABLE – NO TRANSLATION,PRD-0065-P0025-U01,,,PENDING,True
+DE-0014,People's Bank of China (e-CNY),"This is a BIS research source, not automatically a PBOC position. Retain only concrete e-CNY features or decisions explicitly attributed to the PBOC; exclude modelling, literature, and foreign CBDCs.","132 BIS Papers No 123 
+ 
+ 
+Assessing CBDC potential for developing payment systems 
+and promoting financial inclusion in Peru 
+1. Initial conditions 
+The Central Reserve Bank of Peru (BCRP) is currently assessing the potential benefits 
+and risks of issuing a domestic central bank digital currency (CBDC). In particular, we 
+explore the potential role of CBDC implementation in promoting financial inclusion 
+and improving the payment system in Peru. 
+In recent decades, the Peruvian economy has faced two main challenges, namely 
+a bi-monetary financial system and a sizeable unbanked population. As an outcome 
+of the inflation targeting regime and other policies, dollarisation has diminished. For 
+instance, dollarisation of credit to the private sector has fallen sharply from around 
+80% in 2000 to 23% in 2021(Graph  1). In the same period, total credit to the private 
+sector increased from around 28%  to 47% of GDP, and broad money from 25 % to 
+51% of GDP
+5.  
+Aside from this progress in de -dollarisation, in Peru some transactions can still 
+be invoiced in US dollars (USD). Additionally, residents can freely open bank accounts 
+and make ATM withdrawals in either soles (PEN) or USD (although to a lesser extent 
+in the latter case). Such practice aligns with the dual currency settlement system of 
+the national real-time gross settlement (RTGS) system, which was created in 2000 and 
+is managed by the BCRP. In brief, Peru is a dual currency economy that, in the last 
+decades, has achieved a downtrend in financial dollarisation with low levels of 
+inflation. 
+Currency in circulation (CiC) also increased from a relatively low level of 2.5 % of 
+GDP in 2000 to 9.5 % of GDP in 2021(with a print of 6.8 % of GDP in 2019 before the 
+pandemic). While the de -dollarization process contributed to a higher CiC, a key 
+structural factor is that, with more access to roads, the population of rural areas 
+reduced significantly the share of production for self- consumption during this 
+century.    
+All in all, there is still an important gap in terms of financial inclusion, as it greatly 
+depends on structural factors such as a preference for cash and a low penetration of 
+financial services in remote rural areas. Based on the Global Findex statistics, the 
+ 
+5  Correspond to the BCRP statistical series PN03500MQ and PN03497MQ, respectively. 
+Evolution of financial dollarisation  Graph 1",no,high,,PRD-0018-P0136-U01,,,SET_INITIALS,False
+DE-0015,People's Bank of China (e-CNY),"This is a BIS research source, not automatically a PBOC position. Retain only concrete e-CNY features or decisions explicitly attributed to the PBOC; exclude modelling, literature, and foreign CBDCs.","BIS Papers No 123 39 
+ 
+ 
+The Central Bank of Chile´s approach to retail CBDC 
+This document describes the current status of the analysis conducted  by the Central 
+Bank of Chile (BCCh) on the eventual issuance of a retail central bank digital currency 
+(CBDC). Since this process is at an  early stage, no formal policy decision  has been 
+made yet. An internal Working Group (WG) on CBDC is preparing a white paper 
+scheduled for release  in early 2022 which will assess and describe future steps on this 
+matter. 
+The BCCh established the WG with the objective of exploring and proposing a 
+medium- to long-term strategy on digital payments in Chile. Currently, the WG has 
+scoped the internal discussion on retail CBDC.  Its first duty is to understand whether 
+there could be a compelling reason for a future issuance of CBDC in Chile. Thus, it has 
+been relevant to assess the current situation of the Chilean retail payment system , 
+looking for possible motivations for a retail CBDC and further designing principles for 
+its eventual  implementation. 
+1. Objectives and considerations for a retail CBDC issuance 
+1.1 An overview of the Chilean retail payment system 
+• The Chilean retail payment system is performing  adequately for the level of 
+development of the economy. From the analysis performed, there are no relevant 
+gaps that can be minimised with a CBDC solution. 
+• A broad view of the local retail payment system can be captured  with the 
+following figures:",no,high,,PRD-0018-P0043-U01,,,SET_INITIALS,False
+DE-0016,Banca d'Italia research context,This research paper is not automatically an issuer commitment. Retain only Banca d'Italia own-project results or explicit institutional positions; exclude literature and model assumptions.,"64
+choices that could reduce outsourcing risks to the intermediaries and potentially 
+increase the safety of the CBDC for end users.
+In the settlement agent intermediation, intermediaries own the keys to access 
+and authorize the payment in D€93 and they execute transactions on behalf of 
+their customers. As a result, a failure of the intermediary that acts as settlement 
+agent, could result not only in the users being unable to access their CBDC 
+balance and spend units, but also, potentially, in unauthorized transactions 
+being sent to the CDBC ledger.
+Unlike settlement agents, the gatekeepers are in charge of authenticating 
+end users and of complying with the Know Your Customer (KYC), AML/CFT 
+requirements; they also provide the technical connectivity between users 
+and the payment system infrastructure. In this scenario, the gatekeepers may 
+be technically unable to authorize transactions without cooperating with the 
+end users. 94 This system avoids the case of unauthorized transactions being 
+sent to the CBDC ledger when an intermediary, acting as a gatekeeper, 
+defaults. 
+For both the above intermediation types, it is also important to guarantee that 
+the information on the CBDC balance that is presented to the end user has not 
+been compromised. If the end users need to trust an intermediary to report 
+a correct balance, then a failure of the intermediary could result in the user 
+believing more funds to be available than there actually are in the central bank 
+account.
+Finally, if end user access to the ledger is not intermediated, then safety derives 
+from the fact that information written on the ledger can be directly accessed by 
+the end users. Nevertheless, the absence of intermediation entails problems of a 
+different nature, which can make intermediated access to the CBDC altogether 
+preferable.
+ Annex 2: itcoin discussion topics
+1. About on-ledger trAnsActionAl cApAcity 
+The computational capacity of any payment system is a scarce resource because 
+technological limits prevent it from being scaled indefinitely. In blockchain 
+platforms like itCoin, this limit is related to two parameters: the amount of 
+space available to describe new transactions per cycle (block space), and the 
+period of the cycle itself (block time). 
+Knowing what this limit is and working with a pseudonymous ledger – where 
+there is no possibility of distinguishing a priori well-intentioned transactions 
+93 See European Central Bank (2019).
+94 For example, in order to authorize a transfer of CBDC units, the ledger may require that the end user explicitly provide 
+a signature.",no,high,,PRD-0042-P0066-U01,,,SET_INITIALS,False
+DE-0017,Bank of Canada,"Research or joint-project source: retain only executed own-project findings or concrete CBDC conclusions explicitly attributed to the named authority. Exclude author assumptions, literature, external examples, and unadopted proposals.","23 
+countries, perhaps especially in emerging economies, but does not provide a motivation in the 
+Canadian case.  
+(ii) Increasing contestability in retail payments seems to be the most credible motivation to issue 
+CBDC, and the overall impact depends importantly on the specific attributes of the CBDC.  
+I-CBDC would provide for more contestability in payments than the benchmark CBDC, which 
+does not pay interest. Banks (and other service providers), however, could respond to I-CBDC 
+by increasing interest on payments balances or bundling services to maintain market share, 
+which would provide incremental benefits to customers, other things being equal. And these 
+developments could have wider implications for the financial system (see below). Further, to the 
+extent that promoting contestability in retail payments was the primary motivation to issue 
+CBDC, authorities should probably also consider whether there were other ways to achieve this 
+goal, including through regulatory avenues or by acting as a catalyst, and assess which strategy 
+would be most effective (Fung and Halaburda 2016). As for large-value payments, it seems 
+unlikely that CBDC would lead to material benefits relative to an RTGS system.   
+(iii) Some of the attributes of the benchmark CBDC discussed above are problematic—most 
+notably anonymity, which would facilitate criminal activity. As a practical matter, complete 
+anonymity seems to be undesirable for central bank digital currency.  
+(iv) As noted, CBDC, especially if interest-bearing, would motivate endogenous responses by 
+financial intermediaries to compete with CBDC to retain market share and funding. A plausible 
+outcome is that banks would be able to compete effectively with CBDC so that households and 
+firms would generally rely on bank deposits and related products in normal times. In stress 
+periods, however, they could (more) easily shift to CBDC. As a result, compared with the status 
+quo, CBDC (especially if interest-bearing) could lead to some redistribution of returns away 
+from financial intermediaries, perhaps a (modest) contraction of intermediation, and increased 
+volatility (other things being equal).     
+(v) It follows that designing a CBDC with a focus on a particular attribute, in pursuit of a 
+specific policy objective, is likely to have implications on other margins; indeed, 
+interdependence of effects should be expected.  
+(vi) The analysis in this paper is based on an assumption that the technological means to issue 
+and transfer CBDC— e.g., a digital wallet and the distributed ledger technology—would be 
+feasible and acceptable to the central bank. Similarly, this paper does not focus on the costs 
+involved in issuing CBDC (including central bank reputation risk). From a benefit-cost 
+perspective, including these considerations in the analysis would reduce the appeal of CBDC. 
+(vii) Finally, given the complexity and uncertainty associated with introducing CBDC, central 
+banks inclined to issue CBDC should proceed cautiously and incrementally, perhaps with a non-
+anonymous CBDC that mimics bank notes—similar to the benchmark CBDC discussed above —
+notwithstanding likely low adoption rates, and learn from experience.  
+Looking ahead and with a view to future research, it could be useful to examine the implications 
+of a CBDC with different attributes than the benchmark or I-CBDC considered in this paper. 
+Ongoing monitoring and research regarding the adoption and possible implications of private 
+cryptocurrencies also would be useful, as would further work on the interaction of CBDC, 
+monetary policy and financial stability in various institutional settings. Further, to the extent that 
+demand for bank notes decreases over time (contrary to the evidence in most countries, as shown",no,high,,PRD-0013-P0027-U01,,,SET_INITIALS,False
+DE-0018,Danmarks Nationalbank,"Retain the named authority's own CBDC decisions, explicit proposals, requirements, features, and executed findings. Exclude generic context, literature, foreign projects, and stakeholder views not explicitly adopted by the authority.","ANALYSIS  — DANMARKS NATIONALBANK
+NEW TYPES OF DIGITAL MONEY
+25
+Distribution 
+Most pilot projects on retail CBDC involve some form 
+of distribution via third parties. This means that even 
+though any such CBDC is issued by the central bank, 
+the acquisition and registration of holdings by citizens 
+take place by means of, for example, banks, payment 
+institutions or telecommunications operators.45 
+Those third parties thus handle the administra-
+tion of the account containing CBDC. At the same 
+time, there is the possibility that the central bank 
+can maintain an ongoing inventory of the citizens’ 
+holdings with third parties. With such a model, the 
+central bank will have the necessary information to 
+ensure the citizens’ CBDC holdings if a third party 
+enters into liquidation. In addition, the third parties 
+are also responsible for handling of anti-money laun-
+dering rules and know-your-customer checks. The 
+central bank will thus not be the party responsible 
+for the extensive administration in connection with 
+the handling of customer relations, and the actors 
+who already have retail solutions can service the 
+citizens’ use of retail CBDC. 
+Personal identification
+A key question in retail CBDC is the consideration 
+of user privacy, i.e. the degree to which data on the 
+user and the individual transaction are collected and 
+processed.46 Just as cash payments can be made 
+anonymously, similar options are being investigated 
+in the context of retail CBDC.
+However, an account-based solution will require 
+some form of personal identification and verification 
+to access the account. This means that anonymous 
+payments are generally not possible. This is also con-
+nected with the anti-money laundering and know-your-
+customer check requirements which obligate banks 
+to be able to identify who is making a given payment. 
+When some central banks explore the possibility of 
+an anonymous retail CBDC, this typically concerns 
+transactions involving minor amounts.47 In addition, 
+45 See Bank for International Settlements, Annual Economic Report 2021: 
+III. CBDCs: an opportunity for the monetary system, June 2021 (link ) 
+and People’s Bank of China, Progress of Research & Development of 
+E-CNY in China, July 2021 (link ).
+46 See The European Central Bank, A digital euro to meet the expectations 
+of the Europeans, April 2021 (link ).
+47 See, for example, Sveriges Riksbank, E-krona pilot Phase 1, April 2021 
+(link ).
+the degree of personal verification may depend on, for 
+example, the size of the transaction or on whether the 
+transaction is executed physically or in e-commerce. 
+Restrictions on applications 
+Central banks that are examining the use of a retail 
+CBDC often stress that such use is expected to be 
+subject to a number of restrictions. Such restrictions 
+may, for example, be in the form of a cap on the 
+amount that can be held in the account, or restric -
+tions on the number and size of transactions that 
+may be executed. In such case these restrictions will 
+require an interaction between existing payment 
+systems so that funds exceeding a given limit are 
+automatically transferred to linked bank accounts. 
+Alternatively, the applications offered by a retail 
+CBDC can be restricted by introducing an interest 
+rate on holdings above a certain amount that is less 
+attractive than the interest rate offered by banks. 
+This will reduce the holdings of retail CBDC.
+The purpose of the restrictions is that a retail CBDC 
+will be more suitable as a means of payment than as 
+a storage of value. The cap and, in part, an unat-
+tractive interest rate for holdings above a given level 
+can ensure that there is no significant reduction in 
+commercial bank deposits as a result of citizens con-
+verting large amounts to retail CBDC. 
+A retail CBDC may affect the banks’ business model, 
+as they use bank deposits as a source of funding of 
+their lending activities. For example, if the banks’ 
+deposit base is reduced or becomes less stable as a 
+result of a retail CBDC, the banks must either reduce 
+their lending or find alternative sources of funding. 
+In such a situation, the banks can seek to compen-
+sate the loss of deposits by borrowing the money 
+from the central bank. The increased lending to 
+banks and deposits from citizens in the form of CBDC 
+will, in practice, thus result in an increase in the  
+central bank’s balance sheet.48
+48 See Danmarks Nationalbank, Central bank digital currency in Den-
+mark?, Danmarks Nationalbank Analysis, no. 28, December 2017 (link ).",no,high,,PRD-0021-P0025-U01,,,SET_INITIALS,False
+DE-0019,Norges Bank (Norwegian CBDC work),Retain Norges Bank CBDC positions and requirements; exclude generic or cited research.,"66 
+NORGES BANK MEMO 
+NR 1 | 2021 
+ 
+DIGITALE 
+SENTRALBANKPENGER 
+3. RAPPORT FRA 
+ARBEIDSGRUPPEN 
+- Prototype  
+- Pilot  
+- Sandkasse/testnettverk  
+- Simulering/modellering  
+Proof-of-Concept (PoC) innebærer å teste ut om ulike løsninger konseptuelt 
+kan oppfylle spesifikasjoner/egenskaper. Dette kan gjøres på mer abstrakt 
+nivå, slik som det valideringsarbeidet som allerede er gjennomført, og kan 
+suppleres med teknisk testing. Teknisk testing vil gi ytterligere innsikt i om 
+tekniske løsninger kan oppfylle egenskapene.  
+En prototype er en avgrenset teknisk løsning som kan brukes til å teste 
+enkelte egenskaper eller enkelte moduler av et system. I motsetning til ved 
+PoC, som gir informasjon om en egenskap kan oppfylles for en teknisk 
+løsning, vil en prototype gi mer informasjon om hvordan egenskapen 
+oppfylles. En kunne for eksempel tenke seg at en lagde prototyper for 
+kjerneinfrastruktur for å teste sikkerhets- og kapasitetsegenskaper, uten at det 
+samtidig ble testet konkrete brukerløsninger basert på disse infrastrukturene. 
+På samme måte kan en lage en avgrenset løsning for brukergrensesnitt uten 
+bakenforliggende infrastruktur, for å teste brukervennligheten til disse 
+løsningene. Dette kan gi informasjon, men en vil ikke nødvendigvis teste om 
+egenskapene oppfylles i en fullverdig løsning med samvirke mellom moduler. 
+Det er derfor viktig å gjøre vurderinger av for hvilke egenskaper og moduler 
+det er nødvendig å teste samvirke.   
+I en pilot vil man typisk bygge en mer fullverdig løsning der alle eller de fleste 
+egenskaper kan testes samtidig for den samme løsningen. Blant andre 
+Riksbanken og den kinesiske sentralbanken utvikler piloter for DSP.  
+Ofte benyttes sandkasser/testnettverk for å involvere et mangfold av aktører 
+som tester ut nye innovative løsninger.  
+For teknisk testing av DSP vil dette typisk innebære at sentralbanken setter 
+noen grunnleggende forutsetninger for deltakelse. Dette kan være relevante 
+test-caser som gir innsikt i løsninger som kan oppfylle egenskapene DSP må 
+ha, og visse forutsetninger om teknologien som skal brukes, for eksempel at 
+de skal baseres på åpen kildekode. I motsetning til en regulatorisk sandkasse, 
+vil en slik sandkasse være en rent teknisk sandkasse som bare gjennomføres 
+i et testmiljø. Det vil derfor ikke være «ekte DSP» som testes. For å gi 
+insentiver til slik deltakelse kan det tilbys finansiering etter forhåndssatte 
+kriterier og det kan arrangeres «hackatons», konkurranser eller liknende 
+potensielt med pengepremier.  
+Enkelte egenskaper vil være vanskelige å teste gjennom en prototype/pilot 
+eller sandkasse, fordi de er knyttet til begivenheter som er vanskelige å 
+gjenskape i et testmiljø, slik som hvordan friksjonene virker ved finansiell 
+ustabilitet eller ved andre stressituasjoner. I slike situasjoner kan modellering 
+og simulering supplere andre testmetoder. Matematiske representasjoner av 
+de tekniske løsningene kan brukes til å analysere blant annet sikkerhet. Ved 
+agentbasert simulering kan man knytte atferdsmodeller til de tekniske 
+løsningene. Virtuell virkelighet eller augmentert virkelighet kan også tjene 
+visse funksjoner. For eksempel kan man lage «spill» der brukere kan teste ut 
+løsninger i et virtuelt miljø. Modellering og simulering vil antakeligvis være et 
+supplement til andre metoder for teknisk testing.",,high,NOT ASSESSABLE – NO TRANSLATION,PRD-0054-P0066-U01,,,PENDING,True
+DE-0020,People's Bank of China (e-CNY),"This is a BIS research source, not automatically a PBOC position. Retain only concrete e-CNY features or decisions explicitly attributed to the PBOC; exclude modelling, literature, and foreign CBDCs.","112 BIS Papers No 123 
+ 
+For a CBDC to effectively respond to the threat of big tech, it should be designed 
+and operated as an open public currency infrastructure. For this, participation of a 
+broad range of stakeholders and interoperability will be important and an effective 
+division of roles between the central bank and the private sector is requir ed. In this 
+sense, a direct CBDC model may not be a good choice since the central bank will end 
+up being solely responsible for CBDC operation. With the hybrid  or intermediated 
+model, participating institutions, such as banks and fintechs, will have more r oom to 
+creatively combine CBDC with their customer platforms and financial products to 
+provide innovative services. 
+The proliferation of global stablecoins 
+Despite the growing global popularity of cryptocurrency trading ,10 stablecoins are 
+not widely used in Korea . While the transaction volume of major cryptoasset 
+exchanges in Korea has increased rapidly, 11 unlike in other countries , cryptoasset 
+trades on Korean exchanges are settled by bank deposits rather than by stablecoins. 
+However, considering the heigh tened interest in digital innovation s such as non -
+fungible tokens (NFTs), decentralised finance (DeFi), and the metaverse, the demand 
+for digital asset-related payment may further expand beyond cryptoasset trading in 
+the future.12 In particular, if big tech firms issue a global stablecoin in the near future, 
+it is highly likely to spread rapidly into financial sector and the real economy. 
+In line with global discussions led by international organis ations such as the G7, 
+Financial Stability Board (FSB ) and Committee on Payments and Market 
+Infrastructures (CPMI), and among major countries including EU members, the United 
+States and the United Kingdom, 13 discussions about a regulatory framework for 
+stablecoins are beginning to take place in Korea as well. However, if stablecoins 
+spread widely amid the current absence of a regulatory framework, they could not 
+only cause problems in terms of consumer protection and financial stability but also, 
+with deepening global economic integration , raise the risk of currency substitution 
+similar to dollarisation in some emerging market economies. Nevertheless, in the case 
+of Korea, it seems unlikely that global stablec oins or CBDCs issued by large foreign 
+countries would cause currency substitution.14 
+Other issues 
+Some argue that a DLT -based CBDC may be more efficient at supporting  new 
+payment and settlement demands such as DeFi, the proliferation of NFTs, and the 
+internet of things (IoT). On the other hand, some take the view that it will be possible 
+ 
+10  More than $150 billion of stablecoins such as Tether (USDT) and USD Coin (USDC) have been issued 
+worldwide and used as payment instruments for cryptoasset trading and DeFi (IMF, 2021). 
+11  Daily cryptoasset transaction volume at major domestic exchanges (Upbit, Bithumb, Korbit, Coinone, 
+and Gopax) increased two-fold from KRW 2.7 trillion in January 2021 to KRW 5.4 trillion in October 
+2021. 
+12  Though in the early stages, Korea is seeing increased interest and investment in digital innovation, 
+such as IoT supported  by the high penetration of 5G, NFTs, and DeFi utilising distributed ledger 
+technology (DLT), and augmented reality. 
+13  See, e.g., FSB (2020), G7 (2019), CPIM-IOSCO (2021), PWG (2021). 
+14  Currency substitution usually occurs in a situation where high inflation continues thanks to large fiscal 
+deficits, impaired central bank independence, and a lack of public trust in monetary and fiscal policy.",no,high,,PRD-0018-P0116-U01,,,SET_INITIALS,False
+DE-0021,Banco Central de Reserva del Peru,"Retain the named authority's own CBDC decisions, explicit proposals, requirements, features, and executed findings. Exclude generic context, literature, foreign projects, and stakeholder views not explicitly adopted by the authority.","16 CBDC: Promoting digital payments in Peru 
+BOX 1 
+SUMMARY OF “RETAIL PAYMENTS IN LATIN AMERICA AND THE CARIBBEAN: PRESENT 
+AND FUTURE” (Alfonso et al., 2020) 
+ 
+Retail payment services in LAC countries are characterized by high costs and insufficient access 
+for large swathes of the population. To overcome these limitations, some of the major  LAC central 
+banks have taken the lead in introducing fast retail payments and developing an open banking 
+ecosystem. Several others have launched central bank digital currency pilots. This  shift towards  
+digital payments is likely to receive further momentum from the Covid-19 pandemic. 
+ 
+Relative to other regions, retail payment services in LAC continue to involve high costs for end-
+users and be of subpar efficiency, partly reflecting low competition among financial institutions and 
+limited compatibility among payment solutions. Along with low-income levels, high informality, and 
+reduced financial literacy, high costs contribute to limiting access to electronic and digital payments 
+for large swathes of the region’s population. 
+ 
+However, central banks and other public authorities have recently launched important initiatives to 
+improve national payment systems, which complement developments in the private sector. In 
+recent years, the region has seen a sharp rise in the number of F intech firms offering more 
+convenient ways to pay ; and Big Tech firms have begun to integrate payment services into their e-
+commerce or social media platforms. However, private sector incentives are not always aligned 
+with the need of expand payment services among all the segments of the population. 
+ 
+Central banks are the ultimate source of trust in money and payments, and therefore play a key role 
+in maintaining the safety and integrity of payment systems , as well as ensuring that private sector 
+innovation is channeled towards improving competition, securing consumer protection, enhancing 
+financial inclusion, and preserving financial stability.",no,high,,PRD-0059-P0016-U01,,,SET_INITIALS,False
+DE-0022,Norges Bank,"Retain the named authority's own CBDC decisions, explicit proposals, requirements, features, and executed findings. Exclude generic context, literature, foreign projects, and stakeholder views not explicitly adopted by the authority.","32 
+NORGES BANK MEMO 
+NR 1 | 2018 
+ 
+DIGITALE 
+SENTRALBANKPENGER 
+DSP til verdioppbevaringsformål 
+Dersom det viktigste formålet med å etterspørre DSP er verdioppbevaring, vil det 
+være et annet sett med momenter som er sentrale for mengden som vil bli etterspurt: 
+- Om det er begrensninger i mengden av midler det er mulig å plassere. 
+- Relativ avkastning på plasseringene.  
+- Sikkerheten ved plasseringen – kredittrisiko (hvor innskuddssikring spiller 
+inn) og operasjonell risiko/tyverifare. 
+- Hvor enkelt og billig det er å flytte midler til og fra bankinnskudd. 
+- Hvilke aktører som gis tilgang.  
+- Hvilke andre offentlig utstedte verdipapirer/aktiva som finnes, som er likvide 
+og enkelt kan benyttes til verdioppbevaring.",,high,NOT ASSESSABLE – NO TRANSLATION,PRD-0053-P0032-U01,,,PENDING,True
+DE-0023,State Bank of Pakistan,This BIS-hosted source is not automatically an issuer decision. Retain only concrete CBDC positions or plans explicitly attributed to the State Bank of Pakistan.,"Page 10 of 13 
+ 
+This brings me to the third theme of my speech, the topic of central bank digital 
+currencies or CBDCs as they are popularly known.   
+In simpler terms, and as Bank of International Settlements (BIS) aptly described 
+in one of its papers, CBDCs are simply digital banknotes. They are central bank 
+liabilities in digital form issued either directly to the general public or via 
+intermediaries.  
+As we all are aware that these CBDCs can be c lassified into two categories, 
+wholesale and retail. In wholesale, a number of experiments have been 
+conducted in the form of pilot projects primarily to understand the efficiencies 
+that wholesale CBDCs will bring over conventional RTGS based digital money . 
+Experiments of project Jasper by Bank of Canada and Project Stella by Bank of 
+England have demonstrated that wholesale CBDC may not have substantial 
+benefits over conventional RTGS (except reconciliations). There is also a 
+challenge of complying with int ernational principles like Principles of Financial 
+Market Infrastructure especially with regards to settlement finality. Another 
+challenge is the integration of block chain -based systems with core banking 
+systems of other participating banks and a number o f experiments are being 
+conducted to determine the issues. Project Helvetia of Bank of International 
+Settlement (BIS) innovations hub and Swiss National Bank is aimed at finding 
+answers to these questions.  
+On the retail side, a lot of work is being done a nd a number of countries have 
+initiated pilot projects. The primary objective of these experiments and pilots 
+seem to be aimed at more of understanding the role of CBDCs and their benefits 
+at retail level especially digitization and financial inclusion.",no,high,,PRD-0009-P0010-U01,,,SET_INITIALS,False
+DE-0024,People's Bank of China (e-CNY),"This is a BIS research source, not automatically a PBOC position. Retain only concrete e-CNY features or decisions explicitly attributed to the PBOC; exclude modelling, literature, and foreign CBDCs.","BIS Papers No 123 175 
+ 
+support a competitive and innovative payments landscape with digitalisation and a 
+future-proof payments channel. 
+Wholesale payments 
+A wholesale CBDC can facilitat e access for multiple financial institutions to a large -
+value payment system and support settlement for a digital financial market 
+infrastructure. The potential benefits of this type of CBDC could include, but are not 
+limited to: broader access to risk -free central bank money for large -value payments; 
+supporting delivery-versus-payment and payment-versus-payment transactions; and 
+enabling digitalisation of financial markets. 
+Cross-border payments 
+A cross-border CBDC could facilitate direct cross-border monetary relationships with 
+other CBDC networks to be established under the supervision of central banks. The 
+cross-border payments would aim to reduce risks and delays in cross -border 
+transactions, disintermediate correspondent banking models, reduce costs an d 
+enhance financial market integration. 
+Motivations behind issuing CBDC 
+There are many general driving factors that motivate central banks to issue a CBDC, 
+including the following: 
+Financial innovation: 
+A CBDC is about financial innovation, with the introd uction of a new medium that 
+serves as an enabler for a digital financial market. CBDC can be compared to the 
+introduction of banknotes during the second half of the 19th century, aiming to bring 
+new convenience to payments and responding to an evolving payments landscape to 
+ensure central bank money will remain future-proof.
+  
+Access to central bank money:  
+In some jurisdictions, a significant decrease in the use of cash can be observed amid 
+an increasing digitalisation of payments, reducing households’ and businesses’ access 
+to risk-free central bank money. By issuing a CBDC, the central bank is offering a 
+medium, with direct claim on the central bank, that can be used in digital transactions, 
+thereby enlarging the scope of a digital currency’s use. Additionally, a CBDC could be 
+seen as a potential mechanism to provide an alternative and safe payment solution 
+compared to the private money issued by non-bank issuers. 
+Payment diversity:  
+The diversification in payment methods implied by the adoption of a new me dium 
+would enhance choice and competition in the payments sector. A ccess to CBDC for",no,high,,PRD-0018-P0179-U01,,,SET_INITIALS,False
+DE-0025,Bank of England and HM Treasury (digital pound),"Retain the named authority's own CBDC decisions, explicit proposals, requirements, features, and executed findings. Exclude generic context, literature, foreign projects, and stakeholder views not explicitly adopted by the authority.","Page 19 
+ 
+3: Technology design considerations 
+Figure 5: Overview of the TWP – Technology design considerations for a UK CBDC 
+ 
+Technology design considerations are a useful way to organise and guide our work. 
+In this section, we explore six technology design considerations which can help organise and 
+guide our technology work. They will likely have significant impact on eventual CBDC design 
+choices. While there are other technology considerations to be taken into account, the Bank 
+considers that these six considerations are priorities and will provide a basis for testing 
+architectures and solutions, and evaluating design trade-offs. These design considerations 
+are: 
+• Privacy 
+• Security 
+• Resilience 
+• Performance 
+• Extensibility  
+• Energy usage",no,high,,PRD-0076-P0020-U01,,,SET_INITIALS,False
+DE-0026,People's Bank of China (e-CNY),"This is a BIS research source, not automatically a PBOC position. Retain only concrete e-CNY features or decisions explicitly attributed to the PBOC; exclude modelling, literature, and foreign CBDCs.","98 BIS Papers No 123 
+ 
+The third objective is to encourage inclusion, innovation, and efficiency on 
+an end -to-end basis. Considering the rapid growth of financial and payment 
+instruments in Indonesia, CBDC must deliver added value to  businesses and 
+consumers with new innovative ways to pay, which contribute to the development of 
+faster, cheaper, more inclusive, convenient, and efficient payment solutions in support 
+of dynamic trends and innovations. CBDC ecosystems should avoid reinforcing 
+barriers to financial access for those excluded from or underserved by the existing 
+financial system while  at the same time harnessing innovation to deliver a resilient 
+and efficient payment landscape.  
+Design choices for CBDC in Indonesia 
+To achieve the objectives mentioned above, Indonesia’s CBDC should support 
+both retail and large -value and financial marke t transactions . Therefore, B ank 
+Indonesia will develop wCBDC to support large -value and financial market 
+transactions, including monetary operation s and government transaction s, and 
+rCBDC to support retail transactions in the digital era. 
+A proper CBDC des ign is fundamental to ensure its objective s are met. 
+Currently, Bank Indonesia is still researching and assessing the potential design of a 
+CBDC which will be able to support Indonesia’s economy while minimising risks. CBDC 
+should provide more convenience in digital transaction s without further disrupting 
+the current payment system , such as fiat money, money held in accounts, digital 
+banking, electronic money , and electronic wallet s. This consideration will affect the 
+technology and architecture used in Indonesian CBDC. 
+In 2022, Bank Indonesia will continue its exploration on CBDC by publishing 
+a conceptual design for the digital rupiah to support the digital payment system 
+and accelerate international cooperation on CBDC in the G20 forum . The CBDC 
+issuance plan is designed to be integrated with existing infrastructure developments 
+based on Indonesia’s  payment and financial system blueprint, including the 
+foundation of end-to-end integration that has been built between  the financial and 
+payment infrastructures. This will add complexity to the design and require stronger 
+governance to ensure all of the objectives are met.",no,high,,PRD-0018-P0102-U01,,,SET_INITIALS,False
+DE-0027,Maldives Monetary Authority / Maldives CBDC policy study,"UN ESCAP study: retain only concrete recommendations, findings, or positions explicitly tied to the Maldives Monetary Authority or Maldives CBDC project. Exclude literature and foreign examples.","66 
+ 
+• ECB (covering France, Germany and Italy as well as smaller members) 
+conducting a 24-month project on retail CBDC, which has issued various 
+working papers looking at privacy as a significant issue. The overall view is 
+that citizens are not enthusiastic, and risks seem to outweigh benefits so a 
+potential launch would not happen in the short term. 
+• France - Banque de France has its own experimental project on wholesale 
+CBDC for domestic and cross-border, focussed on interbank transactions and 
+has experimented with MAS and with the Swiss National Bank in 2021; ready 
+to launch by 2023 but no plan to do so. 
+• Germany and Italy do not have current major projects separate from ECB 
+initiatives 
+• UK – Bank of England conducted major studies and distributed consultation 
+documents but there is little enthusiasm among politicians or the public; 
+there are concerns about financial stability and the risk of BoE getting 
+involved in controversies regarding anonymity and privacy; risks seem 
+currently to outweigh benefits, so any potential launch would not happen in 
+the short term.  
+• Japan – cancelled its CBDC project citing lack of interest from the public – 
+digital payment is already widely used in Japan and a new method did not 
+elicit enthusiasm in consultations. 
+• Canada - Project Jasper – conclusion is that privacy, security and universal 
+access are significant issues and the possibility of launching a CBDC would 
+require significant political will and public enthusiasm, which is currently 
+lacking. 
+• The flavour is that the major developed economies are looking at CBDCs only 
+as a contingency measure, should the public and the world economy demand 
+it in due course. Bank of Canada sums it up: “We are building the capability 
+so we can be ready should the need arise” – much like MAS. 
+ 
+China and India – the giants 
+• China has been running a Pilot program for the digital Yuan or eCNY for 
+several years in selected cities and claims that more than 140 million people 
+(around 10% of the population) have opened digital wallets 
+• Experimental use at the winter Olympics in Beijing was deemed a great 
+success.  
+• The wallets seem to work much like AliPay or WeChat Pay wallets and are 
+thus readily useable by the public who are used to those systems - hence the 
+retail eCNY is not a blockchain system. 
+• The Chinese government is further ahead in digital currency research than 
+any other major economy, but sees economic and political challenges to 
+conducting a national roll-out - hence, after nearly a decade of development",no,high,,PRD-0079-P0066-U01,,,SET_INITIALS,False
+DE-0028,Bank of Canada,"Research or joint-project source: retain only executed own-project findings or concrete CBDC conclusions explicitly attributed to the named authority. Exclude author assumptions, literature, external examples, and unadopted proposals.","15 
+of helicopter money might be reduced if a significant fraction of CBDC were held by non-
+residents. (The benchmark CBDC is anonymous and thus the central bank cannot target such 
+actions toward residents only.) 
+4.3  The banking system and financial stability 
+It follows from the preceding discussion of the demand for CBDC that some displacement of 
+bank deposits and other conventional savings instruments would be expected. However, since the 
+benchmark CBDC does not pay interest, a significant shift to CBDC from conventional financial 
+instruments seems unlikely. Also, like cash, the benchmark CBDC is subject to risk of theft and 
+loss, which would also discourage significant holdings of CBDC, other things being equal.  
+At the same time, if there were a material impact on deposits, for example, banks would respond 
+by increasing interest rates on their liabilities or bundling superior services on such accounts 
+relative to CBDC to maintain their funding. As a result, the steady-state impact of the benchmark 
+CBDC on bank deposits and other claims would likely be small, but balances could shift (more 
+readily) toward CBDC in stress periods, with attendant volatility and potentially significant 
+disruptions of the financial system. This endogenous aspect is probably more important for 
+interest-bearing CBDC, which is considered in section 5.4.  
+4.4  Contestability and efficiency in payments 
+Retail payments  
+Fung and Halaburda (2016) argue that digital currency would benefit retail payment efficiency in 
+two ways, which would also apply to the benchmark CBDC. First, CBDC would have lower user 
+costs than cash, which could prompt substitution from cash to CBDC for retail and person-to-
+person payments. However, relatively low-cost electronic person-to-person payment methods, 
+such as Interac e-Transfer in Canada, already exist and consumers are increasingly making use of 
+such payment methods.19  
+Second, CBDC would facilitate transactions that are currently foregone because of frictions that 
+inhibit some types of transactions. For example, some consumers avoid online purchases because 
+of security and privacy concerns when providing their credit card information. The benchmark 
+CBDC would facilitate such online transactions because it is anonymous, and because potential 
+losses from fraud to the consumer would be limited to only the amount of the single, specific 
+transaction. Also, smaller merchants often avoid selling online because of card fees, especially 
+for small-value transactions; CBDC would facilitate small-value online transactions given a 
+relatively low (or no) associated fees. (As noted in Table 1, the central bank charges no fees for 
+CBDC.)   
+As a result of these considerations, the benchmark CBDC would provide for some increased 
+contestability with other electronic payment methods, possibly in terms of reduced costs, and, in 
+particular, in terms of enhanced privacy. However, Fung and Halaburda (2016) also conclude 
+                                                 
+19 Interac e-Transfer is a person-to-person payment scheme in Canada that allows a sender to initiate a funds transfer 
+from the sender’s bank account to the receiver’s bank account by sending an email to the receiver. It is typically free 
+to receive and increasingly becoming free to send. The use of e-Transfer has grown significantly in recent years: 
+according to Interac, Canadians made 158 million e-Transfers worth $63 billion in 2016, an increase of over 40 per 
+cent from 2015.",no,high,,PRD-0013-P0019-U01,,,SET_INITIALS,False
+DE-0029,Sveriges Riksbank,"Retain the named authority's own CBDC decisions, explicit proposals, requirements, features, and executed findings. Exclude generic context, literature, foreign projects, and stakeholder views not explicitly adopted by the authority.","Safety, efficiency and accessibility 
+39 
+Many firms have difficulty estimating the cost of receiving payments 
+Understanding the cost of payments is important for firms so that they can use their 
+resources efficiently, boost profitability and increase competitiveness, which ulti-
+mately benefits society as a whole. The Riksbank's survey shows that companies' per-
+ceptions of the costs for receiving payments vary, but in particular many find it diffi-
+cult to make an approximate assessment of the cost. Almost one in three firms could 
+not estimate the approximate cost of receiving payments as a proportion of annual 
+turnover. The fact that so many were unable to answer this question indicates that 
+greater clarity is needed regarding the pricing of payment services to enable competi-
+tion. More on the Riksbank's view of payment pricing can be found in Chapter 3.3.  
+More competition among in-store payment methods is a good thing 
+In Sweden, cards (debit and credit cards) have long been the most common means of 
+payment among consumers. The card networks Visa and Mastercard have a dominant 
+position in physical trade due to strong two-sided network effects which limit compe-
+tition. The networks’ large user base among both buyers and sellers, and the fact that 
+the cards are accepted worldwide, make it convenient for consumers and firms. At 
+the same time, it will be difficult for smaller actors to enter the market. In recent 
+years, however, new payment methods have started to challenge the dominance of 
+the card networks. 
+Swish has grown rapidly and in recent years has also established itself in physical com-
+merce as a competitor to traditional card networks. Swish has been integrated into 
+many POS systems and the company behind the service, GetSwish, has also started of-
+fering a self-scanning service using the Swish app and QR codes. This is to simplify the 
+payment process and reduce queuing times for users.  
+In addition to Swish, open banking solutions can also play an important role in in-
+creasing competition in the payments market. By allowing direct access to bank ac-
+counts, open banking can reduce the number of intermediaries, which can lead to 
+lower transaction costs and increased efficiency. Open banking payments with linked 
+bank accounts are mainly used in e-commerce and for digital services, but there is po-
+tential for these solutions to move into physical stores as well. Such developments 
+can foster a more diverse and innovative payments market with greater competition, 
+where both consumers and merchants have more choice, more convenient payment 
+solutions and better conditions.",no,high,,PRD-0102-P0039-U01,,,SET_INITIALS,False
+DE-0030,Bank of Japan (CBDC pilot),Japanese source. Retain Bank of Japan own-pilot decisions and executed results; exclude workgroup purposes without results.,"25 
+ 
+4 おわりに 
+パイロット実験では、「実験用システムの構築と検証」と「 CBDC フォーラム」を
+両輪とした多角的な検証と議論を行っている。 
+今後は、CBDC フォーラムでの議論等を踏まえながら、実験用システムの構築に向
+けた作業をさらに進めていく。また、CBDC フォーラムでは、電子マネー等との交換
+等について検討するWG（仮称：他の決済手段との水平的共存WG）、基本的な機能の
+事務フローや現金との交換について検討する WG（仮称：基本機能の事務フローWG）
+の設置を想定している（前掲図表 ６参照）。基本的な機能の事務フローWG について
+は、WG１における検討との連続性を意識しながら設置・運営する予定である。 
+わが国で CBDC を導入するかどうかは、現時点では決定しておらず、今後の国民的
+議論のなかで決まっていくものだが、日本銀行としては、議論の前提となるように、
+CBDC に関する検討を引き続きしっかりと進めてまいりたい。 
+ 
+以   上",,high,NOT ASSESSABLE – NO TRANSLATION,PRD-0045-P0026-U01,,,PENDING,True
+DE-0031,Banco Central de Bolivia (Boliviano Digital),"Retain BCB project decisions, proposals, requirements, and findings; exclude headings and generic background.","45
+PRIMER INFORME DEL BOLIVIANO DIGITAL
+De igual manera se prevé la difusión de los resultados obtenidos en el segundo informe, 
+lo que permitirá compartir los principales hallazgos y recomendaciones del proceso 
+de evaluación del Boliviano Digital. Con este propósito, se llevará a cabo una amplia 
+socialización en universidades, escuelas, actores del sistema financiero y entidades del 
+sector público, fomentando así el debate académico y técnico en torno al boliviano 
+digital.
+Superada esa etapa, se iniciará una fase exploratoria de desarrollo de prototipos 
+funcionales en entornos controlados de prueba, que simulen operaciones de emisión, 
+liquidación y compensación de activos digitales entre actores regulados. Esta etapa 
+buscará evaluar la viabilidad técnica, la compatibilidad con infraestructuras existentes, 
+la robustez del diseño, y la seguridad de las operaciones bajo condiciones específicas. 
+No implicará circulación real de dinero, sino validación tecnológica y procedimental 
+para identificar cuellos de botella o riesgos sistémicos.
+Ruta Crítica de desarrollo investigativo del Boliviano Digital
+•C on la información obtenida en las reuniones con 
+los actores del sistema financiero y publico en 
+general y los resultados de la encuesta se realizará 
+un segundo documento de evaluación de una 
+posible emisión del Boliviano Digital.
+(Tercer trimestre 2026)
+2. Reunión con actores 
+relevantes para la 
+implementación de una CBDC
+•L anzamiento de la encuesta para los 
+participantes de la CBDC.
+•E sta encuesta permitirá ajustar el 
+diseño del Boliviano Digital y mejorar 
+los canales de educación financiera a 
+implementar.
+(Segundo trimestre 2026)
+3. Realización de la encuesta 
+nacional de percepción 
+ciudadana a un grupo focal
+5. Publicación y socialización 
+del segundo documento del 
+Boliviano Digital
+•D ifusión de los resultados obtenidos en 
+el segundo informe y socialización en: 
+Universidades, Escuelas, Actores del 
+Sistema Financiero y del sector público
+(Cuarto trimestre 2026)
+•R eunión con actores del sistema 
+financiero y público en general, 
+para identificar las necesidades 
+que pueden ser satisfechas con 
+el Boliviano Digital
+(Primer trimestre 2026)
+•S ocialización de la Moneda 
+Digital de Banca Central: 
+Universidades, Escuelas, 
+Actores del Sistema Financiero 
+y del sector público (Cuarto 
+trimestre 2025)
+1. Publicación y socialización 
+del primer documento del 
+Boliviano Digital
+4. Elaboración del segundo 
+documento y posible prueba 
+piloto en base a resultados
+2025
+2026
+Elaboración: BCB.",,high,NOT ASSESSABLE – NO TRANSLATION,PRD-0010-P0057-U01,,,PENDING,True
+DE-0032,Hong Kong Monetary Authority (e-HKD),Retain HKMA policy/design positions for e-HKD; exclude generic literature and open questions.,"6
+e-HKD: A Policy and Design Perspective
+2. Introduction
+In 2017, the HKMA began researching CBDC (see Box 1 for details) under Project 
+LionRock. Since then, it has been actively collaborating with the Bank of Thailand, the 
+Digital Currency Institute of the People ’s Bank of China (PBoC), the Central Bank of 
+the United Arab Emirates and the BIS Innovation Hub Hong Kong Centre to study the 
+potential of wholesale CBDC for cross-border payments under Project Multiple CBDC 
+Bridge (mBridge). The HKMA commenced Project e-HKD in June 2021 to study the 
+feasibility of an rCBDC in Hong Kong, i.e. e-HKD (Figure 1). Subject to its functionalities 
+and design features, e-HKD can pose both opportunities and challenges to the HKMA ’s 
+main functions of maintaining currency stability, financial stability, and Hong Kong as an 
+international financial centre (including the development of financial infrastructure). This 
+paper discusses the abovementioned issues, noting that the HKMA has not yet made a 
+decision on whether and when to introduce e-HKD.
+2017
+Project
+LionRock
+Project Aurum*
+Project e-HKD
+Aurum 
+prototype*
+& initial policy 
+stance
+e-HKD 
+technical 
+whitepaper
+Feedback 
+received on 
+technical 
+whitepaper
+e-HKD policy 
+discussion 
+paper
+mid-2021 Oct 2021 Dec 2021
+Apr 2022
+later in 2022
+Continuous wholesale CBDC efforts 
+including Project Inthanon-LionRock 
+and mBridge from 2017 to now *Together with BIS Innovation Hub Hong 
+Kong Centre, the HKMA will share results with 
+central banking community
+Figure 1: The CBDC journey of the HKMA",no,high,,PRD-0090-P0007-U01,,,SET_INITIALS,False
+DE-0033,Bank of England and HM Treasury (digital pound),"Retain the named authority's own CBDC decisions, explicit proposals, requirements, features, and executed findings. Exclude generic context, literature, foreign projects, and stakeholder views not explicitly adopted by the authority.","Page 38 
+ 
+Next steps  
+During the design phase, the Bank will assess and then seek feedback on 
+comprehensive resilience requirements for Bank-managed infrastructure. That will 
+include analysis of the design prioritisation between system integrity and availability.  
+The Bank plans to analyse the feasibility of, and the potential challenges in, attaining the 
+potential resilience metrics for Bank-managed infrastructure. That will involve 
+examination of ledger designs that support these resilience outcomes, as well as the 
+optimisation of system availability in response to future user needs.  
+Definition of resilience requirements for PIPs and ESIPs, and an evaluation of the 
+associated impact on ecosystem business models is also likely to be required as part of 
+the evaluations undertaken during the design phase. 
+Considerations for how the Bank, PIPs, ESIPs and critical third parties in the CBDC 
+ecosystem could minimise the likelihood of disruption, mitigate its impact and recover 
+from a disruptive event will also be evaluated. This might include using a risk 
+assessment framework to identify operational risks and disruption impacts, and the 
+mitigants to protect against these.",no,high,,PRD-0076-P0039-U01,,,SET_INITIALS,False
+DE-0034,United States federal interagency CBDC technical evaluation,"This is a technical evaluation, not an issuance decision. Retain explicit US design objectives, requirements, or conclusions; exclude option inventories without an institutional position.","       
+ 
+TECHNICAL  EVALUATION  FOR  A  U.S.  CBDC  SYSTEM  43 
+The sets of design choices defined below provide examples of varying levels of complexity. 
+They are meant to represent the potential challenges that delivering a CBDC MVP with a 
+particular set of expectations could present.  
+Example Set #1: Minimally Complex 
+One set of design choices for a CBDC MVP is minimally complex, which should provide for a 
+faster development speed. This set of design choices could provide early access for retail 
+consumers and involves low interoperability with other payment systems. This approach de-
+prioritizes concepts like offline payments and privacy-enhancing features. These choices also 
+lend themselves to simplicity of development, administration, and delivery. 
+The minimum set of participants in this set of design choices could be retail consumers and 
+intermediaries facilitating CBDC accounts. Under this approach, there could exist intermediaries, 
+public or private, for the online intermediation of all retail CBDC customers.  
+If the set of intermediaries were limited to those in the United States, existing Know Your 
+Customer (KYC) infrastructure might be applied in a similar manner to the current system,
+56 
+which would likely reduce the technical challenges that need to be addressed and make it easier 
+to achieve higher adoption in less time. 
+Access to the system could be controlled by well-known identity-based and role-based access 
+controls. It would be permissioned, and there would be little or no access tiering. Remediation 
+could be done very simply because there would be a centralized settlement and transaction layer. 
+There would be no offline transactions. Adjustments or fees could be administered in a 
+straightforward fashion by system administrators. Privacy and oversight controls would be 
+governed by whomever is appointed to administrate the system. 
+Developing and launching a CBDC MVP with requirements that look like this set of design 
+choices has relatively low complexity, compared to other sets of design choices. The tools and 
+systems that would underpin a secure and functional system of this nature are more well-known 
+and pose less complexity than those in the other example sets of design choices. A CBDC MVP 
+with these design choices could be tested in a bounded context within a relatively short time 
+frame and with relatively few resources.  
+Estimating specific build timelines, especially with limited information about the product and 
+team, is largely a futile exercise, both for this example set and the two that follow below. In 
+support of a relatively fast timeline is that a small set of skills and expertise should be required 
+under these requirements as all of the components are well known. Much would depend on 
+clearing various non-technical hurdles in a timely manner. As examples: intermediaries would 
+                                                 
+effectiveness of a CBDC system toward achieving the policy priorities. Without a specific use case, it would be 
+harder to demonstrate the potential benefits and risks of adopting any novel financial instrument relative to existing 
+or planned payment rails. Additionally, along with use cases and primary objectives, a CBDC MVP should 
+incorporate a well-defined scope so that it may be evaluated safely. Assessing the effectiveness of a CBDC MVP 
+while bounding the risk amongst a well-defined set of participants will provide a baseline for distinguishing a CBDC 
+MVP from existing forms of currency. An appropriate boundary could be either geographically, socially, or 
+technologically defined.  
+56 There are other factors that could make this more or less challenging; for example, the ease of implementing a 
+KYC infrastructure would depend, in part, on the intermediary or intermediaries chosen and the legal and regulatory 
+constraints.",no,high,,PRD-0082-P0043-U01,,,SET_INITIALS,False
+DE-0035,State Bank of Pakistan,This BIS-hosted source is not automatically an issuer decision. Retain only concrete CBDC positions or plans explicitly attributed to the State Bank of Pakistan.,"Page 2 of 13 
+ 
+special relationship are as follows: one of the first governors of the S audi 
+Monetary Authority was Mr. Anwar Ali a Pakistani; the road that I take to work 
+every day in Karachi is called Shahrah -e-Faisal. The largest mosque in Pakistan 
+is the Faisal Mosque. And the list goes on. So today as a Pakistani I also bring to 
+you the good wishes and prayers of the people of Pakistan.  
+In my remarks I’ll cover three points:  
+ First, I would like to dwell upon the rapid transformation we are witnessing 
+today from cash to digital. The history of money is one where innovation 
+has occurred in sudden bursts. We are in one such burst today. I will speak 
+about how this transformation from cash to digital is manifesting itself in 
+Pakistan. The State Bank of Pakistan in recent history has not witnessed the 
+pace of work on digital payments in decad es as we are experiencing now.  
+ My second main point will be that while promoting digital payments is a key 
+goal of the State Bank this is not the same as promoting crypto currencies. 
+Over the past months we have carefully looked at the private digital 
+currencies and we have come to the view that, based on what is on offer 
+now, such virtual currencies have more risks than benefits when evaluated 
+against our objectives as a central bank and regulator of the payment and 
+financial system. I will share how we have reached this stage in our thinking. 
+ Finally, my third point will be that the work underway in many countries and 
+international institutions on Central Bank Digital Currencies (CBDCs) is 
+welcome. This work should not be driven just by the desire to offe r an 
+alternative to private digital currencies or out of the fear of them. Instead, 
+this work should be evaluated from the perspective of how CBDCs can 
+contribute to each regulator’s agenda—in our case, it is to preserve stability",no,high,,PRD-0009-P0002-U01,,,SET_INITIALS,False
+DE-0036,Board of Governors of the Federal Reserve System (potential US CBDC),"Discussion paper, not an issuance decision. Retain explicit Federal Reserve positions, prerequisites, design preferences, or stated risks for a potential US CBDC. Exclude questions, option inventories, literature, and stakeholder views.","hold. As of December 2021, there was around $16.41 trillion in bank credit outstanding, reflectingloans and other credit provided to households, businesses, and governments.40Today, the safety of commercial bank money is supported by federal deposit insurance (subject tocertain limits), a system of prudential regulation and supervision, and access to liquidity from theFederal Reserve.41Under this regime, commercial bank money is sufficiently safe that the generalpublic can transact in commercial bank money with confidence that a dollar of bank deposits iseasily exchangeable for a dollar of physical currency or a dollar of deposits at another bank. Thishas not always been the case. In the early nineteenth century, the principal form of commercialbank money was the banknote—paper money issued by a particular bank rather than thegovernment—rather than deposit balances, and banknotes were often treated very differentlydepending on the issuing bank.42Nonbank MoneySome nonbank financial service providers also issue liabilities that can be considered money.43These providers often hold balances on behalf of consumers or businesses and effect transfers ofthose balances on their own books for users that have signed up for their services.44Money market mutual fund (MMF) shares can be viewed as another form of nonbank money.45MMF shares are issued by nonbanks, and some MMFs, particularly those offered to businessesand institutions, offer immediate liquidity through the sale of shares, fostering their use as money.MMF shares can also serve as a store of value, and frequently are designed to offer investors astable share price.46
+40Seasonally adjusted amounts. This figure does not include credit unions or other thrifts. Board of Governors of the Fed-eral Reserve System, Assets and Liabilities of Commercial Banks in the United States—H.8,January 14, 2022, https://www.federalreserve.gov/releases/h8/current/.41The Federal Reserve shares supervisory and regulatory responsibility for domestic banks with the Office of the Comp-troller of the Currency and the Federal Deposit Insurance Corporation at the federal level, and with individual statebanking departments at the state level. Additionally, the National Credit Union Administration oversees federal creditunions, which provide similar if more limited services as banks. The FDIC insures deposits in federally insured banks upto $250,000 per depositor, per insured bank, for each account ownership category for every FDIC-insured bank.42See Gary Gorton, “Reputation Formation in Early Bank Note Markets,” Journal of Political Economy104.2: 346–97, 1996and Gary Gorton, “Pricing Free Bank Notes,” Journal of Monetary Economics44.1: 33–64, 1999.43Nonbank financial service providers are broadly defined as institutions other than banks that offer financial services.See Bank for International Settlements, Committee on Payments and Market Infrastructures, Non-Banks in Retail Pay-ments(Basel: BIS, September 2014), https://www.bis.org/cpmi/publ/d118.pdf for more information on nonbanks.44A variety of mechanisms are used by nonbanks to offer payment services, many of which do not involve issuing liabili-ties. Some nonbank service providers provide user interfaces as an overlay for the customer’s deposit relationship withthe bank. These types of arrangements would be considered “commercial bank money.” Such balances may vary interms, conditions, and protections.45An MMF is a kind of mutual fund that invests in highly liquid, near-term instruments. It is intended to offer investors highliquidity with low risk.46MMFs are registered with and regulated by the Securities and Exchange Commission under the Investment Company Actof 1940. For discussion of recent MMF market events and regulatory reforms, see President’s Working Group on Finan-cial Markets, “Overview of Recent Events and Potential Reform Options for Money Market Funds,” December 2020,https://home.treasury.gov/system/files/136/PWG-MMF-report-final-Dec-2020.pdf.
+26Money and Payments: The U.S. Dollar in the Age of Digital Transformation",no,high,,PRD-0080-P0030-U01,,,SET_INITIALS,False

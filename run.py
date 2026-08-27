@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproduce the released calibration and v10.2e ensemble results."""
+"""Reproduce the released calibration, ensemble, and human-audit results."""
 
 from __future__ import annotations
 
@@ -42,6 +42,14 @@ STEPS = [
     (
         "ensemble verification",
         [PYTHON, str(ROOT / "scripts/verify_ensemble_analysis_v10_2e.py")],
+    ),
+    (
+        "blind human-audit analysis",
+        [PYTHON, str(ROOT / "scripts/analyze_human_validation_v10_2e.py")],
+    ),
+    (
+        "website integrity",
+        [PYTHON, str(ROOT / "scripts/update_website_checksums.py")],
     ),
     (
         "repository verification",
