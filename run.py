@@ -61,7 +61,14 @@ STEPS = [
 def main() -> None:
     for label, command in STEPS:
         print(f"\n[{label}]", flush=True)
-        subprocess.run(command, check=True, cwd=ROOT)
+        try:
+            subprocess.run(command, check=True, cwd=ROOT)
+        except subprocess.CalledProcessError as error:
+            print(
+                f"::error title=Reproduction step failed::{label} exited with status {error.returncode}",
+                flush=True,
+            )
+            raise
     print("\nReproduction complete.")
 
 
