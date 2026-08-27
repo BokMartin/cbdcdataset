@@ -114,11 +114,19 @@ def verify_figures() -> None:
 
 
 def main() -> None:
-    verify_checksums()
-    verify_minimal_boundary()
-    verify_calibration()
-    verify_human_boundary()
-    verify_figures()
+    checks = [
+        ("bundle checksums", verify_checksums),
+        ("minimal repository boundary", verify_minimal_boundary),
+        ("calibration claims", verify_calibration),
+        ("blind human-audit boundary", verify_human_boundary),
+        ("figure integrity", verify_figures),
+    ]
+    for label, check in checks:
+        try:
+            check()
+        except Exception as error:
+            print(f"::error title=Repository verification failed::{label}: {error}", flush=True)
+            raise
     print("repository: minimal bundle, hashes, calibration, ensemble and blind human audit verified")
 
 
